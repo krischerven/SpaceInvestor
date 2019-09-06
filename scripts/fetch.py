@@ -30,7 +30,7 @@ import mysql.connector
 database = mysql.connector.connect(
   host="localhost",
   user="root",
-  passwd="PASSWORD GOES HERE",
+  passwd="Java2019",
   database="planet_db"
 )
 
