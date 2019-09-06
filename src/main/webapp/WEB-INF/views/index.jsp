@@ -6,10 +6,12 @@
 <head>
 <meta charset="UTF-8">
 <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-uhut8PejFZO8994oEgm/ZfAv0mW1/b83nczZzSwElbeILxwkN491YQXsCFTE6+nx" crossorigin="anonymous"><meta charset="UTF-8">
+<link rel="stylesheet" href="spacestyle.css">
 <title>Space Real Estate Investor</title>
 </head>
 <body>
 <h1 style="text-align: center">The Planets</h1>
+<p> This is space
 ${response}
 </body>
 </html>

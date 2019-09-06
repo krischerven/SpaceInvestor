@@ -1,3 +1,28 @@
+# POJO Fields:
+
+'''
+planetName
+starName
+publicationStatus
+yearDiscovered
+mass
+massErrorMin
+massErrorMax
+radius
+radiusErrorMin
+radiusErrorMax
+period
+periodErrorMin
+periodErrorMax
+tempCalculated
+tempMeasured
+starDistance
+starDistanceErrorMin
+starDistanceErrorMax
+inclination
+inclinationErrorMin
+'''
+
 # rows we want
 COLUMNS = (
     "target_name",
@@ -58,7 +83,10 @@ for row in results:
     ]
 
     for i in range(len(vals)):
-        vals[i] = "{}".format(row[vals[i]])
+        tmp = row[vals[i]]
+        if type(tmp) == bytes:
+            tmp = tmp.decode()
+        vals[i] = "{}".format(tmp)
     cursor.execute(sql, vals)
 
 database.commit()
