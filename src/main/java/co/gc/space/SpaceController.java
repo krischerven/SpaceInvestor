@@ -11,6 +11,6 @@ public class SpaceController {
 	@RequestMapping("/")
 	public ModelAndView home() {
 		List<Planet> planets = new ArrayList<>();
-		return new ModelAndView("index", "response", planets);
+		return new ModelAndView("index", "planetList", planets);
 	}
 }
