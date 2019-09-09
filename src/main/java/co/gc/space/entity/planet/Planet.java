@@ -57,12 +57,37 @@ public class Planet {
 	
 	@Transient
 	private String imageUrl;
+	private String jspTag;
 
 	public Planet() {
 		super();
 		// TODO Auto-generated constructor stub
 
 	}
+	
+	
+
+	public String getJspTag() {
+		return jspTag;
+	}
+
+
+
+	public void setJspTag(String jspTag) {
+		this.jspTag = jspTag;
+	}
+
+
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+
 
 	public String getPlanetName() {
 		return planetName;
