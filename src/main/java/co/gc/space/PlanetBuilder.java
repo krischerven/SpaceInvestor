@@ -15,7 +15,7 @@ public final class PlanetBuilder {
 		String jspUrl = "";
 		switch (name) {
 			case "47 uma b": {
-				imageUrl = "https://upload.wikimedia.org/wikipedia/commons/4/4f/47_Ursae_Majoris_b_v4.jpg";
+				imageUrl = Image._47_uma_b().getLocalUrl();
 				jspUrl = "/planets/47_uma_b";
 				return Build(repo, name, imageUrl, jspUrl);
 			}
