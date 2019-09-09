@@ -15,7 +15,7 @@ public final class PlanetBuilder {
 		String jspUrl = "";
 		switch (name) {
 			case "47 uma b": {
-				imageUrl = Image._47_uma_b().getLocalUrl();
+				imageUrl = Image._47_uma_b().getBestUrl();
 				jspUrl = "/planets/47_uma_b";
 				return Build(repo, name, imageUrl, jspUrl);
 			}
