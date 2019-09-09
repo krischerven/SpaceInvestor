@@ -20,16 +20,6 @@ public class Saturn extends SolarSystemPlanet{
 
 	}
 
-	@Override
-	public String toString() {
-		return "<img src="+getImageUrl()+" + alt=hello height=" + 600 + " width=" + 600 +">";
-	}
 	
-	
-	
-//	@Override
-//	public String toString() {
-//		return "<img src=https://images.theconversation.com/files/286855/original/file-20190805-117866-dgviij.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C5000%2C2776&q=45&auto=format&w=496&fit=clip>" ;
-//	}
-//	
+
 }

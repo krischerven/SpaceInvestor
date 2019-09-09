@@ -19,10 +19,7 @@ public class Uranus extends SolarSystemPlanet{
 		setJspTag("planets/uranus");
 	}
 
-	@Override
-	public String toString() {
-		return "<img src="+getImageUrl()+" + alt=hello height=" + 600 + " width=" + 600 +">";
-	}
+	
 	
 	
 	

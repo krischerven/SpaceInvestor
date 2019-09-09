@@ -252,14 +252,7 @@ public class Planet {
 
 	@Override
 	public String toString() {
-		return "Planet [planetName=" + planetName + ", starName=" + starName + ", publicationStatus="
-				+ publicationStatus + ", yearDiscovered=" + yearDiscovered + ", mass=" + mass + ", massErrorMin="
-				+ massErrorMin + ", massErrorMax=" + massErrorMax + ", radius=" + radius + ", radiusErrorMin="
-				+ radiusErrorMin + ", radiusErrorMax=" + radiusErrorMax + ", period=" + period + ", periodErrorMin="
-				+ periodErrorMin + ", periodErrorMax=" + periodErrorMax + ", tempCalculated=" + tempCalculated
-				+ ", tempMeasured=" + tempMeasured + ", starDistance=" + starDistance + ", starDistanceErrorMin="
-				+ starDistanceErrorMin + ", starDistanceErrorMax=" + starDistanceErrorMax + ", inclination="
-				+ inclination + ", inclinationErrorMin=" + inclinationErrorMin + "]" + "<br><br>";
+		return "<a href=" + getJspTag() + "><img src="+getImageUrl()+" + alt=hello height=" + 600 + " width=" + 600 + "> </a>";
 	}
 
 }

@@ -20,10 +20,6 @@ public class Neptune extends SolarSystemPlanet{
 
 	}
 
-	@Override
-	public String toString() {
-		return "<img src="+getImageUrl()+ " + alt=hello height=" + 600 + " width=" + 600 +" >";
-	}
 	
 
 	

@@ -20,16 +20,4 @@ public class Mercury extends SolarSystemPlanet{
 
 }
 
-	@Override
-	public String toString() {
-		return "<img src="+getImageUrl()+" + alt=hello height=" + 600 + " width=" + 600 +">";
-	}
-
-	
-	
-//	@Override
-//	public String toString() {
-//		return "<img src=https://cbsnews1.cbsistatic.com/hub/i/2015/06/15/6e1bf532-0b6e-4c2a-a0ec-afa4283782a2/messengersiridescentmercury-1.jpg alt=hello>" ;
-//	}
-	
 }

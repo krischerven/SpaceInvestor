@@ -20,10 +20,6 @@ public class Jupiter extends SolarSystemPlanet{
 		
 	}
 
-	@Override
-	public String toString() {
-		return "<img src="+getImageUrl()+" + alt=hello height=" + 425 + " width=" + 425 +">";
-	}
 
 	
 	
