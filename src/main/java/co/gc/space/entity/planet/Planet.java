@@ -51,6 +51,8 @@ public class Planet {
 	private String inclination;
 	@Column(name = "inclinationerrormin")
 	private String inclinationErrorMin;
+	
+	private String imageUrl;
 
 	public Planet() {
 		super();
