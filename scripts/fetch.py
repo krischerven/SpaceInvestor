@@ -86,7 +86,7 @@ for row in results:
         tmp = row[vals[i]]
         if type(tmp) == bytes:
             tmp = tmp.decode()
-        vals[i] = "{}".format(tmp)
+        vals[i] = ("{}".format(tmp)).lower()
     cursor.execute(sql, vals)
 
 database.commit()
