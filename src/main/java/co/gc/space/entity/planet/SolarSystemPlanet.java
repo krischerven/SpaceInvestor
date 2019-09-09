@@ -29,7 +29,7 @@ public class SolarSystemPlanet extends Planet {
 
 	@Override
 	public String toString() {
-		return "SolarSystemPlanet [minTemp=" + minTemp + ", maxTemp=" + maxTemp + ", getMinTemp()=" + getMinTemp()
+		return "SolarSystemPlanet [minTemp=" + minTemp + "maxTemp=" + maxTemp + ", getMinTemp()=" + getMinTemp()
 				+ ", getMaxTemp()=" + getMaxTemp() + ", getPlanetName()=" + getPlanetName() + ", getStarName()="
 				+ getStarName() + ", getPublicationStatus()=" + getPublicationStatus() + ", getYearDiscovered()="
 				+ getYearDiscovered() + ", getMass()=" + getMass() + ", getMassErrorMin()=" + getMassErrorMin()
@@ -41,7 +41,7 @@ public class SolarSystemPlanet extends Planet {
 				+ getStarDistanceErrorMin() + ", getStarDistanceErrorMax()=" + getStarDistanceErrorMax()
 				+ ", getInclination()=" + getInclination() + ", getInclinationErrorMin()=" + getInclinationErrorMin()
 				+ ", toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
-				+ "]";
+				+ "<br>";
 	}
 
 
