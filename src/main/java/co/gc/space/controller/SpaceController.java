@@ -32,37 +32,37 @@ public class SpaceController {
 	}
 
 
-	@RequestMapping("planets/jupiter")
+	@RequestMapping("/planets/jupiter")
 	public ModelAndView jupiter() {
 		return new ModelAndView("planets/jupiter", "planet", new Jupiter());
 	}
 
-	@RequestMapping("planets/mars")
+	@RequestMapping("/planets/mars")
 	public ModelAndView mars() {
 		return new ModelAndView("planets/mars", "planet", new Mars());
 	}
 
-	@RequestMapping("planets/mercury")
+	@RequestMapping("/planets/mercury")
 	public ModelAndView mercury() {
 		return new ModelAndView("planets/mercury", "planet", new Mercury());
 	}
 
-	@RequestMapping("planets/neptune")
+	@RequestMapping("/planets/neptune")
 	public ModelAndView neptune() {
 		return new ModelAndView("planets/neptune", "planet", new Neptune());
 	}
 
-	@RequestMapping("planets/saturn")
+	@RequestMapping("/planets/saturn")
 	public ModelAndView saturn() {
 		return new ModelAndView("planets/saturn", "planet", new Saturn());
 	}
 
-	@RequestMapping("planets/uranus")
+	@RequestMapping("/planets/uranus")
 	public ModelAndView uranus() {
 		return new ModelAndView("planets/uranus", "planet", new Uranus());
 	}
 
-	@RequestMapping("planets/venus")
+	@RequestMapping("/planets/venus")
 	public ModelAndView venus() {
 		return new ModelAndView("planets/venus", "planet", new Venus());
 	}
