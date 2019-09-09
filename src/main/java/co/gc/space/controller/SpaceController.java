@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import co.gc.space.PlanetBuilder;
 import co.gc.space.entity.planet.*;
 import co.gc.space.repo.PlanetRepo;
 
@@ -14,6 +16,7 @@ public class SpaceController {
 	PlanetRepo repo;
 	@RequestMapping("/")
 	public ModelAndView home() {
+		PlanetBuilder builder = new PlanetBuilder();
 		List<Planet> planets = new ArrayList<>();
 		planets.add(new Jupiter());
 		planets.add(new Mars());
