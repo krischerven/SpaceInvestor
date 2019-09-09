@@ -27,43 +27,44 @@ public class SpaceController {
 		planets.add(new Saturn());
 		planets.add(new Uranus());
 		planets.add(new Venus());
+		
 		return new ModelAndView("index", "planetList", planets);
 	}
 
 
-	@RequestMapping("jupiter")
+	@RequestMapping("planets/jupiter")
 	public ModelAndView jupiter() {
-		return new ModelAndView("jupiter", "planet", new Jupiter());
+		return new ModelAndView("planets/jupiter", "planet", new Jupiter());
 	}
 
-	@RequestMapping("mars")
+	@RequestMapping("planets/mars")
 	public ModelAndView mars() {
-		return new ModelAndView("mars", "planet", new Mars());
+		return new ModelAndView("planets/mars", "planet", new Mars());
 	}
 
-	@RequestMapping("mercury")
+	@RequestMapping("planets/mercury")
 	public ModelAndView mercury() {
-		return new ModelAndView("mercury", "planet", new Mercury());
+		return new ModelAndView("planets/mercury", "planet", new Mercury());
 	}
 
-	@RequestMapping("neptune")
+	@RequestMapping("planets/neptune")
 	public ModelAndView neptune() {
-		return new ModelAndView("neptune", "planet", new Neptune());
+		return new ModelAndView("planets/neptune", "planet", new Neptune());
 	}
 
-	@RequestMapping("saturn")
+	@RequestMapping("planets/saturn")
 	public ModelAndView saturn() {
-		return new ModelAndView("saturn", "planet", new Saturn());
+		return new ModelAndView("planets/saturn", "planet", new Saturn());
 	}
 
-	@RequestMapping("uranus")
+	@RequestMapping("planets/uranus")
 	public ModelAndView uranus() {
-		return new ModelAndView("uranus", "planet", new Uranus());
+		return new ModelAndView("planets/uranus", "planet", new Uranus());
 	}
 
-	@RequestMapping("venus")
+	@RequestMapping("planets/venus")
 	public ModelAndView venus() {
-		return new ModelAndView("venus", "planet", new Venus());
+		return new ModelAndView("planets/venus", "planet", new Venus());
 	}
 
 }
