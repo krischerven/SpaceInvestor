@@ -17,4 +17,11 @@ public final class Image {
 				new String[] {"https://upload.wikimedia.org/wikipedia/commons/4/4f/47_Ursae_Majoris_b_v4.jpg"}
 		);
 	}
+	public static Image _kepler_421_b() {
+		return new Image
+		(
+				new String[] {"https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/hires-kepler-421b_0.jpg"}
+		);
+	}
+	
 }

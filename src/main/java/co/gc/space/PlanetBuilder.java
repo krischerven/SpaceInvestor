@@ -18,6 +18,11 @@ public final class PlanetBuilder {
 				jspUrl = "/planets/47_uma_b";
 				return Build(repo, name, imageUrl, jspUrl);
 			}
+			case "kepler-421 b": {
+				imageUrl = Image._kepler_421_b().getBestUrl();
+				jspUrl = "/planets/kepler-421_b";
+				return Build(repo, name, imageUrl, jspUrl);
+			}
 		}
 		return null;
 	}
