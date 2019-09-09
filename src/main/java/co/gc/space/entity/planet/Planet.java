@@ -233,7 +233,7 @@ public class Planet {
 				+ periodErrorMin + ", periodErrorMax=" + periodErrorMax + ", tempCalculated=" + tempCalculated
 				+ ", tempMeasured=" + tempMeasured + ", starDistance=" + starDistance + ", starDistanceErrorMin="
 				+ starDistanceErrorMin + ", starDistanceErrorMax=" + starDistanceErrorMax + ", inclination="
-				+ inclination + ", inclinationErrorMin=" + inclinationErrorMin + "]";
+				+ inclination + ", inclinationErrorMin=" + inclinationErrorMin + "]" + "<br><br>";
 	}
 
 }
