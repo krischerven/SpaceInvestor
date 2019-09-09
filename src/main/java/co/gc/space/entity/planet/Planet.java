@@ -1,36 +1,62 @@
 package co.gc.space.entity.planet;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@Entity
+@Table(name = "exoplanets")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Planet {
 
+	@Id
+
+	@Column(name = "planetname")
 	private String planetName;
+
+	@Column(name = "starname")
 	private String starName;
+	@Column(name = "publicationstatus")
 	private String publicationStatus;
+	@Column(name = "yeardiscovered")
 	private String yearDiscovered;
 	private String mass;
+	@Column(name = "masserrormin")
 	private String massErrorMin;
+	@Column(name = "masserrormax")
 	private String massErrorMax;
 	private String radius;
+	@Column(name = "radiuserrormin")
 	private String radiusErrorMin;
+	@Column(name = "radiuserrormax")
 	private String radiusErrorMax;
 	private String period;
+	@Column(name = "perioderrormin")
 	private String periodErrorMin;
+	@Column(name = "perioderrormax")
 	private String periodErrorMax;
+	@Column(name = "tempcalculated")
 	private String tempCalculated;
+	@Column(name = "tempmeasured")
 	private String tempMeasured;
+	@Column(name = "stardistance")
 	private String starDistance;
+	@Column(name = "stardistanceerrormin")
 	private String starDistanceErrorMin;
+	@Column(name = "stardistanceerrormax")
 	private String starDistanceErrorMax;
 	private String inclination;
+	@Column(name = "inclinationerrormin")
 	private String inclinationErrorMin;
 
 	public Planet() {
 		super();
 		// TODO Auto-generated constructor stub
-	
-}
+
+	}
 
 	public String getPlanetName() {
 		return planetName;

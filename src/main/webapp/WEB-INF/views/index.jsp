@@ -14,5 +14,6 @@
 <p> This is space
 <br>
 ${planetList}
+${findPlanet }
 </body>
 </html>
