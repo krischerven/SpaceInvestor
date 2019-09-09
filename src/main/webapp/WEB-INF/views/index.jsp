@@ -14,7 +14,7 @@
 <br>
 <p>
 ${planetList}
-${findPlanet }
+
 </p>
 </body>
 </html>
