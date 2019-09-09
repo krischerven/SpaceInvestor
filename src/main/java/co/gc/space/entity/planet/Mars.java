@@ -15,26 +15,14 @@ public class Mars extends SolarSystemPlanet {
 		setMaxTemp("293K");
 		setStarDistance("33.9 Million Miles");
 		
-		setImageUrl("https://www.classicalwcrb.org/sites/wcrb/files/styles/medium/public/201609/mars-614x412.jpg");
+		setImageUrl("https://space-facts.com/wp-content/uploads/mars-transparent.png");
 		setJspTag("planets/mars");
 		
 	}
 
 	@Override
 	public String toString() {
-		return "<img src=https://www.classicalwcrb.org/sites/wcrb/files/styles/medium/public/201609/mars-614x412.jpg alt=hello>" + "Mars [getMinTemp()=" + getMinTemp() + ", getMaxTemp()=" + getMaxTemp() + ", toString()="
-				+ super.toString() + ", getJspTag()=" + getJspTag() + ", getImageUrl()=" + getImageUrl()
-				+ ", getPlanetName()=" + getPlanetName() + ", getStarName()=" + getStarName()
-				+ ", getPublicationStatus()=" + getPublicationStatus() + ", getYearDiscovered()=" + getYearDiscovered()
-				+ ", getMass()=" + getMass() + ", getMassErrorMin()=" + getMassErrorMin() + ", getMassErrorMax()="
-				+ getMassErrorMax() + ", getRadius()=" + getRadius() + ", getRadiusErrorMin()=" + getRadiusErrorMin()
-				+ ", getRadiusErrorMax()=" + getRadiusErrorMax() + ", getPeriod()=" + getPeriod()
-				+ ", getPeriodErrorMin()=" + getPeriodErrorMin() + ", getPeriodErrorMax()=" + getPeriodErrorMax()
-				+ ", getTempCalculated()=" + getTempCalculated() + ", getTempMeasured()=" + getTempMeasured()
-				+ ", getStarDistance()=" + getStarDistance() + ", getStarDistanceErrorMin()="
-				+ getStarDistanceErrorMin() + ", getStarDistanceErrorMax()=" + getStarDistanceErrorMax()
-				+ ", getInclination()=" + getInclination() + ", getInclinationErrorMin()=" + getInclinationErrorMin()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+		return "<img src="+getImageUrl()+" + alt=hello height=" + 600 + " width=" + 600 +">" ;
 	}
 	
 	
