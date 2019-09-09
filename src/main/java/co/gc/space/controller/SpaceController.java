@@ -30,6 +30,7 @@ public class SpaceController {
 		return new ModelAndView("index", "planetList", planets);
 	}
 
+
 	@RequestMapping("jupiter")
 	public ModelAndView jupiter() {
 		return new ModelAndView("jupiter", "planet", new Jupiter());

@@ -57,6 +57,7 @@ public class Planet {
 	
 	@Transient
 	private String imageUrl;
+	@Transient
 	private String jspTag;
 
 	public Planet() {

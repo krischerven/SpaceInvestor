@@ -15,6 +15,29 @@ public class Venus extends SolarSystemPlanet{
 		setMaxTemp("755");
 		setStarDistance("67 Million Miles");
 		
+		setImageUrl("https://specials-images.forbesimg.com/imageserve/646438312/960x0.jpg?fit=scale");
+		setJspTag("planets/venus");
+		
+	}
+
+	@Override
+	public String toString() {
+		return "<img src=https://specials-images.forbesimg.com/imageserve/646438312/960x0.jpg?fit=scale alt=hello>" + "Venus [getMinTemp()=" + getMinTemp() + ", getMaxTemp()=" + getMaxTemp() + ", toString()="
+				+ super.toString() + ", getJspTag()=" + getJspTag() + ", getImageUrl()=" + getImageUrl()
+				+ ", getPlanetName()=" + getPlanetName() + ", getStarName()=" + getStarName()
+				+ ", getPublicationStatus()=" + getPublicationStatus() + ", getYearDiscovered()=" + getYearDiscovered()
+				+ ", getMass()=" + getMass() + ", getMassErrorMin()=" + getMassErrorMin() + ", getMassErrorMax()="
+				+ getMassErrorMax() + ", getRadius()=" + getRadius() + ", getRadiusErrorMin()=" + getRadiusErrorMin()
+				+ ", getRadiusErrorMax()=" + getRadiusErrorMax() + ", getPeriod()=" + getPeriod()
+				+ ", getPeriodErrorMin()=" + getPeriodErrorMin() + ", getPeriodErrorMax()=" + getPeriodErrorMax()
+				+ ", getTempCalculated()=" + getTempCalculated() + ", getTempMeasured()=" + getTempMeasured()
+				+ ", getStarDistance()=" + getStarDistance() + ", getStarDistanceErrorMin()="
+				+ getStarDistanceErrorMin() + ", getStarDistanceErrorMax()=" + getStarDistanceErrorMax()
+				+ ", getInclination()=" + getInclination() + ", getInclinationErrorMin()=" + getInclinationErrorMin()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
 	}
 	
+	
+	
+
 }
