@@ -1,9 +1,12 @@
 package co.gc.space.entity.planet;
 
+
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -52,6 +55,7 @@ public class Planet {
 	@Column(name = "inclinationerrormin")
 	private String inclinationErrorMin;
 	
+	@Transient
 	private String imageUrl;
 
 	public Planet() {
