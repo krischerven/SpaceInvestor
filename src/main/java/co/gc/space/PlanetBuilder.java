@@ -10,4 +10,16 @@ public final class PlanetBuilder {
 		p.setJspTag(jspUrl);
 		return p;
 	}
+	public Planet Build(PlanetRepo repo, String name) {
+		String imageUrl = "";
+		String jspUrl = "";
+		switch (name) {
+			case "47 uma b": {
+				imageUrl = "https://upload.wikimedia.org/wikipedia/commons/4/4f/47_Ursae_Majoris_b_v4.jpg";
+				jspUrl = "/planets/47_uma_b";
+				return Build(repo, name, imageUrl, jspUrl);
+			}
+		}
+		return null;
+	}
 }
