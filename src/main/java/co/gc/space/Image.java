@@ -9,6 +9,7 @@ public final class Image {
 	public String[] getUrls() {
 		return urls;
 	}
+	// use conditionals here if an Image instance needs to use another url (maybe one of them broke?)
 	public String getBestUrl() {
 		return urls[0];
 	}
