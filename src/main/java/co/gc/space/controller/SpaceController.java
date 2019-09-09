@@ -27,7 +27,7 @@ public class SpaceController {
 		planets.add(new Saturn());
 		planets.add(new Uranus());
 		planets.add(new Venus());
-		
+		planets.add(builder.Build(repo, "47 uma b"));
 		return new ModelAndView("index", "planetList", planets);
 	}
 
@@ -67,4 +67,8 @@ public class SpaceController {
 		return new ModelAndView("planets/venus", "planet", new Venus());
 	}
 
+	@RequestMapping("/planets/47_uma_b")
+	public ModelAndView _47_uma_b() {
+		return new ModelAndView("planets/47_uma_b", "planet", builder.Build(repo, "47 uma b"));
+	}
 }
