@@ -12,7 +12,9 @@
 <body>
 <h1 style="text-align: center">The Planets</h1>
 <br>
+<p>
 ${planetList}
 ${findPlanet }
+</p>
 </body>
 </html>
