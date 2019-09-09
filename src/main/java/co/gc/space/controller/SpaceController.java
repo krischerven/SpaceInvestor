@@ -1,4 +1,5 @@
 package co.gc.space.controller;
+
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ public class SpaceController {
 	@Autowired
 	PlanetRepo repo;
 	final PlanetBuilder builder = new PlanetBuilder();
+
 	@RequestMapping("/")
 	public ModelAndView home() {
 		List<Planet> planets = new ArrayList<>();
@@ -27,32 +29,40 @@ public class SpaceController {
 		planets.add(new Venus());
 		return new ModelAndView("index", "planetList", planets);
 	}
-	@RequestMapping("/planets/jupiter")
+
+	@RequestMapping("jupiter")
 	public ModelAndView jupiter() {
-		return new ModelAndView("planets/jupiter", "planet", new Jupiter());
+		return new ModelAndView("jupiter", "planet", new Jupiter());
 	}
-	@RequestMapping("/planets/mars")
+
+	@RequestMapping("mars")
 	public ModelAndView mars() {
-		return new ModelAndView("planets/mars", "planet", new Mars());
+		return new ModelAndView("mars", "planet", new Mars());
 	}
-	@RequestMapping("/planets/mercury")
+
+	@RequestMapping("mercury")
 	public ModelAndView mercury() {
-		return new ModelAndView("planets/mercury", "planet", new Mercury());
+		return new ModelAndView("mercury", "planet", new Mercury());
 	}
-	@RequestMapping("/planets/neptune")
+
+	@RequestMapping("neptune")
 	public ModelAndView neptune() {
-		return new ModelAndView("planets/neptune", "planet", new Neptune());
+		return new ModelAndView("neptune", "planet", new Neptune());
 	}
-	@RequestMapping("/planets/saturn")
+
+	@RequestMapping("saturn")
 	public ModelAndView saturn() {
-		return new ModelAndView("planets/saturn", "planet", new Saturn());
+		return new ModelAndView("saturn", "planet", new Saturn());
 	}
-	@RequestMapping("/planets/uranus")
+
+	@RequestMapping("uranus")
 	public ModelAndView uranus() {
-		return new ModelAndView("planets/uranus", "planet", new Uranus());
+		return new ModelAndView("uranus", "planet", new Uranus());
 	}
-	@RequestMapping("/planets/venus")
+
+	@RequestMapping("venus")
 	public ModelAndView venus() {
-		return new ModelAndView("planets/venus", "planet", new Venus());
+		return new ModelAndView("venus", "planet", new Venus());
 	}
+
 }

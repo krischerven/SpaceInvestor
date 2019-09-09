@@ -9,8 +9,9 @@
 <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er" crossorigin="anonymous">
 <link rel="stylesheet" href="css/spacestyle.css">
 </head>
-<h1>Jupiter</h1>
 <body>
+<h1>Mars</h1>
+${planet.planetName }
 
 </body>
 </html>
