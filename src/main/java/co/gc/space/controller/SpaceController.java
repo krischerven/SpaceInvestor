@@ -15,6 +15,7 @@ public class SpaceController {
 	@Autowired
 	PlanetRepo repo;
 	final PlanetBuilder builder = new PlanetBuilder();
+	
 	@RequestMapping("/")
 	public ModelAndView home() {
 		List<Planet> planets = new ArrayList<>();
@@ -25,8 +26,10 @@ public class SpaceController {
 		planets.add(new Saturn());
 		planets.add(new Uranus());
 		planets.add(new Venus());
+		planets.add(builder.Build(repo, "47 uma b", "https://upload.wikimedia.org/wikipedia/commons/4/4f/47_Ursae_Majoris_b_v4.jpg", "/planets/47_uma_b"));
 		return new ModelAndView("index", "planetList", planets);
 	}
+	// solar system planets
 	@RequestMapping("/planets/jupiter")
 	public ModelAndView jupiter() {
 		return new ModelAndView("planets/jupiter", "planet", new Jupiter());
@@ -54,5 +57,10 @@ public class SpaceController {
 	@RequestMapping("/planets/venus")
 	public ModelAndView venus() {
 		return new ModelAndView("planets/venus", "planet", new Venus());
+	}
+	// exoplanets
+	@RequestMapping("/planets/47_uma_b")
+	public ModelAndView _47_uma_b() {
+		return new ModelAndView("planets/47_uma_b", "planet", builder.Build(repo, "47 uma b", "https://upload.wikimedia.org/wikipedia/commons/4/4f/47_Ursae_Majoris_b_v4.jpg", "/planets/47_uma_b"));
 	}
 }
