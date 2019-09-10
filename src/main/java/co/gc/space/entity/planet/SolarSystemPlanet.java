@@ -1,9 +1,13 @@
 package co.gc.space.entity.planet;
 
+import javax.persistence.Transient;
+
 public class SolarSystemPlanet extends Planet {
 	
 	private String minTemp;
 	private String maxTemp;
+	@Transient
+	private String gifImage;
 	
 
 	public SolarSystemPlanet() {
@@ -25,6 +29,14 @@ public class SolarSystemPlanet extends Planet {
 
 	public void setMaxTemp(String maxTemp) {
 		this.maxTemp = maxTemp;
+	}
+
+	public String getGifImage() {
+		return gifImage;
+	}
+
+	public void setGifImage(String gifImage) {
+		this.gifImage = gifImage;
 	}
 
 	

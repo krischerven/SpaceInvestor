@@ -17,6 +17,7 @@ public class Venus extends SolarSystemPlanet{
 		
 		setImageUrl("https://space-facts.com/wp-content/uploads/venus-transparent.png");
 		setJspTag("planets/venus");
+		setGifImage("../images/venusspin.gif");
 		
 	}
 

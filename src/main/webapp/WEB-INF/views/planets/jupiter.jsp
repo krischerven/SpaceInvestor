@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="../images/jupiterspin.gif"
+				src=${planet.gifImage }
 				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>

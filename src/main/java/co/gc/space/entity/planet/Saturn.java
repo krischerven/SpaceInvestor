@@ -17,6 +17,7 @@ public class Saturn extends SolarSystemPlanet{
 		
 		setImageUrl("https://space-facts.com/wp-content/uploads/saturn-transparent.png");
 		setJspTag("planets/saturn");
+		setGifImage("../images/sasturnspin.gif");
 
 	}
 

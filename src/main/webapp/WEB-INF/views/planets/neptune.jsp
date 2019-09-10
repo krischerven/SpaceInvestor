@@ -18,7 +18,7 @@
 	<br>
 	<table>
 		<tr>
-			<td><img src="../images/neptunespin.gif"
+			<td><img src=${planet.gifImage }
 				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>
