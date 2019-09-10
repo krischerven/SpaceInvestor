@@ -69,6 +69,8 @@ public class SpaceController {
 		mv.addObject("third", planetArr[2]);
 		return mv;
 	}
+	
+	
 
 
 	@RequestMapping("/planets/jupiter")
