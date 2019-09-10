@@ -48,8 +48,8 @@
 					<tr>
 						<td>${planet.mass }</td>
 						<td>${planet.tempCalculated }</td>
-						<td></td>
-						<td></td>
+						<td>nan</td>
+						<td>nan</td>
 					</tr>
 				</table>
 </body>

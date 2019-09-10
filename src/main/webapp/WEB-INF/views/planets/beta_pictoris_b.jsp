@@ -37,8 +37,8 @@
 			<td>${planet.radius }</td>
 			<td>${planet.period }</td>
 			<td>${planet.tempCalculated }</td>
-			<td></td>
-			<td></td>
+			<td>nan</td>
+			<td>nan</td>
 			<td>${planet.starDistance }</td>
 		</tr>
 	</table>
