@@ -18,8 +18,7 @@
 	<br>
 	<table>
 		<tr>
-			<td><img
-				src=${planet.gifImage }
+			<td><img src=${planet.gifImage }
 				style="width: 300px; height: 300px;"></td>
 			<td>
 				<table>
@@ -65,8 +64,7 @@
 					Football on all day. What a life? If you want to miss out on an
 					opportunity like this then go ahead, browse another website, the
 					Martians won't miss you.
-
-				</table>
+	</table>
 	</table>
 
 </body>

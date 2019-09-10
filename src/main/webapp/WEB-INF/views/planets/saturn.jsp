@@ -18,12 +18,7 @@
 	<br>
 	<table>
 		<tr>
-
-			<td><img src="../images/saturnspin.gif">
-
-			<td><img
-				src=${planet.gifImage }
-
+			<td><img src=${planet.gifImage }
 				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>
@@ -67,7 +62,6 @@
 					is the surface made up of rocks it is also covered in ice that is
 					structured in ways that are unimaginable. You really have to see it
 					to believe it.
-
 	</table>
 
 </body>

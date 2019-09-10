@@ -58,12 +58,11 @@
 					dark so no more having to wake up and be productive. On this planet
 					you can just sleep away your days in the warmth and comfort of your
 					home without being looked down upon by society. Well, one there's
-					yet to be any societies on Neptune, and two when there is one, that society 
-					will be made up of a population who does nothing because it's far
-					too cold. This planet is for all of my people who like to sleep all day and all night.
-				</p>
-
-				</table>
+					yet to be any societies on Neptune, and two when there is one, that
+					society will be made up of a population who does nothing because
+					it's far too cold. This planet is for all of my people who like to
+					sleep all day and all night.</p>
+	</table>
 	</table>
 
 </body>
