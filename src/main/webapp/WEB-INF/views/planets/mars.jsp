@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://space-facts.com/wp-content/uploads/mars-transparent.png"
+				src="../images/marsspin.gif"
 				style="width: 300px; height: 300px;"></td>
 			<td>
 				<table>
