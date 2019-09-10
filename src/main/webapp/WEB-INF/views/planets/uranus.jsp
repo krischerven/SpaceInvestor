@@ -19,8 +19,8 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://space-facts.com/wp-content/uploads/uranus-transparent.png"
-				style="width: 300px; height: 300px;"></td>
+				src="../images/uranusspin.gif"
+				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>
 					<tr>

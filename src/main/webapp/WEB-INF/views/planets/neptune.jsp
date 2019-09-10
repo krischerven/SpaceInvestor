@@ -18,8 +18,7 @@
 	<br>
 	<table>
 		<tr>
-			<td><img
-				src="../images/neptunespin.gif"
+			<td><img src="../images/neptunespin.gif"
 				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>
@@ -53,5 +52,6 @@
 						<td>${planet.maxTemp }</td>
 					</tr>
 				</table>
+	</table>
 </body>
 </html>
