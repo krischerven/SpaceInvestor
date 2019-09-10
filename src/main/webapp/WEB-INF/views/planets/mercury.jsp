@@ -54,8 +54,8 @@
 					</tr>
 				</table> <br>
 
-				<p>Buy land on Mercury before it is too Late! Land on Mercury is
-					selling so fast our realtors cannot keep up! Aging on Mercury is
+				 <p>Buy land on Mercury before it is too Late! Land on Mercury
+					is selling so fast our realtors cannot keep up! Aging on Mercury is
 					nearly impossible, one day on Mercury is equivalent to 176 days on
 					Earth. A year on Mercury is made up of 88 days. That means one year
 					on Mercury is 15,488 boring old Earth days. If you're 42 on Earth
