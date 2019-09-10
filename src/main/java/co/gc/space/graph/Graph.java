@@ -4,14 +4,16 @@ import java.util.ArrayList;
 
 public class Graph {
 
-	protected ArrayList<Object> xPoints;
-	protected ArrayList<Object> yPoints;
+	protected ArrayList<Object> xPoints = new ArrayList<>();
+	protected ArrayList<Object> yPoints = new ArrayList<>();
 	protected String xName;
 	protected String yName;
+	
+
 
 	public Graph() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public ArrayList<Object> getxPoints() {
