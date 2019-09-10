@@ -53,5 +53,6 @@
 						<td>${planet.maxTemp }</td>
 					</tr>
 				</table>
+	</table>
 </body>
 </html>
