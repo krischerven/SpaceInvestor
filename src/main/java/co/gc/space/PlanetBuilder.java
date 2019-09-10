@@ -3,7 +3,12 @@ import co.gc.space.entity.planet.Planet;
 import co.gc.space.repo.PlanetRepo;
 
 public final class PlanetBuilder {
-	public PlanetRepo repo;
+	private PlanetRepo repo;
+	public void setRepo(PlanetRepo _repo) {
+		if (repo == null) {
+			repo = _repo;
+		}
+	}
 	public Planet Build(String name, String imageUrl, String jspUrl) {
 		Planet p = repo.findById(name).get();
 		p.setImageUrl(imageUrl);

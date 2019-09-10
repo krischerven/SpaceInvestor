@@ -29,7 +29,7 @@ public class SpaceController {
 	
 	@PostConstruct
 	private void initialize() {
-		builder.repo = repo;
+		builder.setRepo(repo);
 	}
 
 	@RequestMapping("/")
