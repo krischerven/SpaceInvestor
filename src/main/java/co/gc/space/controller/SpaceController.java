@@ -3,6 +3,8 @@ package co.gc.space.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +26,11 @@ public class SpaceController {
 	@Autowired
 	PlanetRepo repo;
 	final PlanetBuilder builder = new PlanetBuilder();
+	
+	@PostConstruct
+	private void initialize() {
+		builder.repo = repo;
+	}
 
 	@RequestMapping("/")
 	public ModelAndView home() {
@@ -35,8 +42,8 @@ public class SpaceController {
 		planets.add(new Saturn());
 		planets.add(new Uranus());
 		planets.add(new Venus());
-		planets.add(builder.Build(repo, "47 uma b"));
-		planets.add(builder.Build(repo, "kepler-421 b"));
+		planets.add(builder.Build("47 uma b"));
+		planets.add(builder.Build("kepler-421 b"));
 		return new ModelAndView("index", "planetList", planets);
 	}
 
@@ -78,11 +85,11 @@ public class SpaceController {
 
 	@RequestMapping("/planets/47_uma_b")
 	public ModelAndView _47_uma_b() {
-		return new ModelAndView("planets/47_uma_b", "planet", builder.Build(repo, "47 uma b"));
+		return new ModelAndView("planets/47_uma_b", "planet", builder.Build("47 uma b"));
 	}
 	
 	@RequestMapping("/planets/kepler-421_b")
 	public ModelAndView _kepler_421_b() {
-		return new ModelAndView("planets/kepler-421_b", "planet", builder.Build(repo, "kepler-421 b"));
+		return new ModelAndView("planets/kepler-421_b", "planet", builder.Build("kepler-421 b"));
 	}
 }
