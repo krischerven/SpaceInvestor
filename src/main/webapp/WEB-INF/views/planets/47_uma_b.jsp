@@ -16,31 +16,41 @@
 <body>
 	<h1>47 Uma B</h1>
 	<br>
-	<img src=${planet.imageUrl } style="width:500px;height:600px;">
 	<table>
 		<tr>
-			<th>Star Name</th>
-			<th>Year Discovered</th>
-			<th>Mass</th>
-			<th>Radius</th>
-			<th>Period</th>
-			<th>Temperature Calculated</th>
-			<th>Minimum Temperature</th>
-			<th>Maximum Temperature</th>
-			<th>Star Distance</th>
-		</tr>
-		<tr>
-			<td>${planet.starName }</td>
-			<td>${planet.yearDiscovered }</td>
-			<td>${planet.mass }</td>
-			<td>${planet.radius }</td>
-			<td>${planet.period }</td>
-			<td>${planet.tempCalculated }</td>
-			<td></td>
-			<td></td>
-			<td>${planet.starDistance }</td>
-		</tr>
-	</table>
+			<td><img src=${planet.imageUrl }
+				style="width: 300px; height: 300px;"></td>
+			<td>
+				<table>
+					<tr>
+						<th>Star Name</th>
+						<th>Star Distance</th>
+						<th>Year Discovered</th>
+						<th>Radius</th>
+						<th>Period</th>
+					</tr>
+					<tr>
+						<td>${planet.starName }</td>
+						<td>${planet.starDistance }</td>
+						<td>${planet.yearDiscovered }</td>
+						<td>${planet.radius }</td>
+						<td>${planet.period }</td>
+					</tr>
+				</table> <br>
 
+				<table>
+					<tr>
+						<th>Mass</th>
+						<th>Temperature Calculated</th>
+						<th>Minimum Temperature</th>
+						<th>Maximum Temperature</th>
+					</tr>
+					<tr>
+						<td>${planet.mass }</td>
+						<td>${planet.tempCalculated }</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
 </body>
 </html>

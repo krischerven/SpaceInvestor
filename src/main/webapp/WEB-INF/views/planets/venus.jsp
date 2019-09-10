@@ -15,6 +15,7 @@
 </head>
 <body>
 	<h1>Venus</h1>
+	<br>
 	<table>
 		<tr>
 			<td><img
