@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Mars</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://space-facts.com/wp-content/uploads/mars-transparent.png"
+				src=${planet.gifImage }
 				style="width: 300px; height: 300px;"></td>
 			<td>
 				<table>
@@ -52,6 +52,7 @@
 						<td>${planet.minTemp }</td>
 						<td>${planet.maxTemp }</td>
 					</tr>
+
 				</table> <br>
 				<p>Elon Musk, this one is for you! Other than Tesla Dealerships
 					everywhere, this planet will be the best of all planets to raise a
@@ -64,5 +65,9 @@
 					Football on all day. What a life? If you want to miss out on an
 					opportunity like this then go ahead, browse another website, the
 					Martians won't miss you.
+
+				</table>
+	</table>
+
 </body>
 </html>

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Mercury</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://space-facts.com/wp-content/uploads/mercury-transparent.png"
+				src=${planet.gifImage }
 				style="width: 300px; height: 300px;"></td>
 			<td>
 				<table>
@@ -63,5 +63,6 @@
 					were thirty you ask?! You have 12 more years before you're EVEN
 					born. You don't want to miss out on an opportunity like that, now
 					do you? If you then I guess we'll see you later geezer!</p>
+	</table>
 </body>
 </html>

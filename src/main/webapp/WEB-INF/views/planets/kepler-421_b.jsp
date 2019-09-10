@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Kepler-421 B</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -48,9 +48,10 @@
 					<tr>
 						<td>${planet.mass }</td>
 						<td>${planet.tempCalculated }</td>
-						<td></td>
-						<td></td>
+						<td>nan</td>
+						<td>nan</td>
 					</tr>
 				</table>
+	</table>
 </body>
 </html>

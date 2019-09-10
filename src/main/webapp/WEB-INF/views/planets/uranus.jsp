@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Uranus</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -19,8 +19,8 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://space-facts.com/wp-content/uploads/uranus-transparent.png"
-				style="width: 300px; height: 300px;"></td>
+				src=${planet.gifImage }
+				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>
 					<tr>
@@ -52,6 +52,7 @@
 						<td>${planet.minTemp }</td>
 						<td>${planet.maxTemp }</td>
 					</tr>
+
 				</table> <br>
 				<p>Let's send a probe to Uranus! I know what you're thinking,
 					get your mind out of the gutter we're about to get serious. If your
@@ -65,5 +66,9 @@
 					magnificent business plan? Selling something you get for free?
 					Something really wrong would have to be wrong with you to not get
 					your hands on this opportunity.
+
+				</table>
+	</table>
+
 </body>
 </html>

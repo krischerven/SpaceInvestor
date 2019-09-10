@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Neptune</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -18,9 +18,8 @@
 	<br>
 	<table>
 		<tr>
-			<td><img
-				src="https://space-facts.com/wp-content/uploads/neptune-transparent.png"
-				style="width: 300px; height: 300px;"></td>
+			<td><img src=${planet.gifImage }
+				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>
 					<tr>
@@ -52,6 +51,7 @@
 						<td>${planet.minTemp }</td>
 						<td>${planet.maxTemp }</td>
 					</tr>
+
 				</table> <br>
 				<p>Who wants to live on a planet full of vegetation and warmth?
 					Pfft I'll tell you who....losers! Neptune is a planet that's always
@@ -62,5 +62,9 @@
 					will be made up of a population who does nothing because it's far
 					too cold. This planet is for all of my people who like to sleep all day and all night.
 				</p>
+
+				</table>
+	</table>
+
 </body>
 </html>

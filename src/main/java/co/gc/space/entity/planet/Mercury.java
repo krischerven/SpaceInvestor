@@ -17,6 +17,7 @@ public class Mercury extends SolarSystemPlanet{
 		
 		setImageUrl("https://space-facts.com/wp-content/uploads/mercury-transparent.png");
 		setJspTag("planets/mercury");
+		setGifImage("../images/mercuryspin.gif");
 
 }
 

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Venus</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://space-facts.com/wp-content/uploads/venus-transparent.png"
+				src=${planet.gifImage }
 				style="width: 300px; height: 300px;"></td>
 			<td>
 				<table>
@@ -67,5 +67,6 @@
 					world then the Oculus is for you. Now, if you are a champ and want
 					to take the experiences of Mario Kart to the real 
 					world, then Venus is for you.
+	</table>
 </body>
 </html>

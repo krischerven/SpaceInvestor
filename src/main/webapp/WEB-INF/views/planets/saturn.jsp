@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Saturn</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -18,7 +18,12 @@
 	<br>
 	<table>
 		<tr>
-			<td><img src="../images/saturnspin.gif"
+
+			<td><img src="../images/saturnspin.gif">
+
+			<td><img
+				src=${planet.gifImage }
+
 				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>
@@ -52,6 +57,7 @@
 						<td>${planet.maxTemp }</td>
 					</tr>
 				</table>
+
 				<p>If you like it, then you should of put a ring on it!
 					Vacationing on Saturn is out of this world. Be the first to fully
 					commit your hotel business on this exotic planet. Your guests will
@@ -61,5 +67,8 @@
 					is the surface made up of rocks it is also covered in ice that is
 					structured in ways that are unimaginable. You really have to see it
 					to believe it.
+
+	</table>
+
 </body>
 </html>

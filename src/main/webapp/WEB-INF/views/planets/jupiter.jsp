@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Jupiter</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://media.giphy.com/media/s2uampOAMWksU/giphy.gif"
+				src=${planet.gifImage }
 				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>
@@ -53,6 +53,7 @@
 						<td>${planet.maxTemp }</td>
 					</tr>
 				</table>
+
 				<p>No, going to Jupiter will in fact not make you more stupider.
 					There is no better opportunity to open your honeymoon resort than
 					right now on this planet of all planets. Imagine being able to kiss
@@ -66,5 +67,8 @@
 					CHA CHING. Time to make that bank baby, but resorts here are going
 					up fast so be one of the first to secure your resort's place on
 					this beautiful planet.
+
+	</table>
+
 </body>
 </html>

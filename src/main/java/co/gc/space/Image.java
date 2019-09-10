@@ -1,14 +1,13 @@
 package co.gc.space;
 
 public final class Image {
-	String[] urls;
+	final String[] urls;
 	public Image(String[] _urls) {
 		super();
 		urls = _urls;
 	}
-	// use conditionals here if an Image instance needs to use another url (maybe one of them broke?)
 	public String getBestUrl() {
-		return urls[0];
+		return urls[urls.length-1];
 	}
 	// Image builders
 	public static Image _47_uma_b() {
