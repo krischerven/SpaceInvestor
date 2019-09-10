@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 h1 {
 	font-family: 'Teio';
 	font-size: 50px;
@@ -9,43 +10,41 @@ h1 {
 body {
 	background-image: url("../images/space.gif");
 	background-size: cover;
-	
 	image-align: left;
-    
-    
-    
-    height: 100vh;
-    padding:0;
-    margin:0;
-    
-    font-family: 'andromeda';
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	font-family: 'andromeda';
 	font-size: 18px;
-	color: white;	
+	color: white;
 }
 
 table {
 	width: 100%;
 	text-align: left;
-	
 }
 
 .space-table {
 	color: #FFFFFF;
 }
 
-.space-table > tbody > tr > td, .space-table > tbody > tr > th, .space-table > tfoot > tr > td, .space-table > tfoot > tr > th, .space-table > thead > tr > td, .space-table > thead > tr > th {
-    border-color: #FFFFFF;
+.space-table>tbody>tr>td, .space-table>tbody>tr>th, .space-table>tfoot>tr>td,
+	.space-table>tfoot>tr>th, .space-table>thead>tr>td, .space-table>thead>tr>th
+	{
+	border-color: #FFFFFF;
 }
 
 th {
 	text-align: left;
 }
+
 td {
-  height: 50px;
-  align: left;
+	height: 50px;
+	align: left;
+	font-size: 101%;
 }
 
-p:before{
-    content:"\a";
-    white-space: pre;
+p:before {
+	content: "\a";
+	white-space: pre;
 }
