@@ -80,6 +80,7 @@ public class SpaceController {
 	public ModelAndView _47_uma_b() {
 		return new ModelAndView("planets/47_uma_b", "planet", builder.Build(repo, "47 uma b"));
 	}
+	
 	@RequestMapping("/planets/kepler-421_b")
 	public ModelAndView _kepler_421_b() {
 		return new ModelAndView("planets/kepler-421_b", "planet", builder.Build(repo, "kepler-421 b"));
