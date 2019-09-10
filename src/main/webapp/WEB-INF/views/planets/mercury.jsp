@@ -15,34 +15,46 @@
 </head>
 <body>
 	<h1>Mercury</h1>
-	${planet }
-	<br>
-	
-	<br>
+<!-- 	<img src="https://space-facts.com/wp-content/uploads/mercury-transparent.png"style="width:400px;height:500px;">
+ -->	
+ <table>
+	<tr>
+	<td><img src="https://space-facts.com/wp-content/uploads/mercury-transparent.png"style="width:300px;height:400px;"></td>
+	<td>
 	<table>
 		<tr>
 			<th>Star Name</th>
+			<th>Star Distance</th>
 			<th>Year Discovered</th>
-			<th>Mass</th>
 			<th>Radius</th>
 			<th>Period</th>
-			<th>Temperature Calculated</th>
-			<th>Minimum Temperature</th>
-			<th>Maximum Temperature</th>
-			<th>Star Distance</th>
 		</tr>
 		<tr>
 			<td>${planet.starName }</td>
+			<td>${planet.starDistance }</td>
 			<td>${planet.yearDiscovered }</td>
-			<td>${planet.mass }</td>
 			<td>${planet.radius }</td>
 			<td>${planet.period }</td>
+		</tr>
+	</table>
+	<br>
+
+	<table>
+		<tr>
+			<th>Mass</th>
+			<th>Temperature Calculated</th>
+			<th>Minimum Temperature</th>
+			<th>Maximum Temperature</th>
+		</tr>
+		<tr>
+			<td>${planet.mass }</td>
 			<td>${planet.tempCalculated }</td>
 			<td>${planet.minTemp }</td>
 			<td>${planet.maxTemp }</td>
-			<td>${planet.starDistance }</td>
 		</tr>
 	</table>
+	
+
 
 
 </body>
