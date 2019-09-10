@@ -19,7 +19,7 @@
  -->	
  <table>
 	<tr>
-	<td><img src="https://space-facts.com/wp-content/uploads/mercury-transparent.png"style="width:300px;height:400px;"></td>
+	<td><img src="https://space-facts.com/wp-content/uploads/mercury-transparent.png"style="width:300px;height:300px;"></td>
 	<td>
 	<table>
 		<tr>
@@ -53,8 +53,9 @@
 			<td>${planet.maxTemp }</td>
 		</tr>
 	</table>
+	<br>
 	
-
+<p>Buy land on Mercury before it is too </p>
 
 
 </body>
