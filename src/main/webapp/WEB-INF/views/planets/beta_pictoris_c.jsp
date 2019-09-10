@@ -21,7 +21,7 @@
 			<td><img src=${planet.imageUrl }
 				style="width: 300px; height: 300px;"></td>
 			<td>
-				<table>
+				<table class="table space-table">
 					<tr>
 						<th>Star Name</th>
 						<th>Star Distance</th>
@@ -38,7 +38,7 @@
 					</tr>
 				</table> <br>
 
-				<table>
+				<table class="table space-table">
 					<tr>
 						<th>Mass</th>
 						<th>Temperature Calculated</th>
