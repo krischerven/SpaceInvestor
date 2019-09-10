@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://space-facts.com/wp-content/uploads/mercury-transparent.png"
+				src="../images/mercuryspin.gif"
 				style="width: 300px; height: 300px;"></td>
 			<td>
 				<table>
