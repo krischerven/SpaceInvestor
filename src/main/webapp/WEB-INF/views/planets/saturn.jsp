@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="../images/saturnspin.gif"
+				src="https://space-facts.com/wp-content/uploads/saturn-transparent.png"
 				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>

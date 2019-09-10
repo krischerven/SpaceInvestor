@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://media.giphy.com/media/s2uampOAMWksU/giphy.gif"
+				src="../images/jupiterspin.gif"
 				style="width: 350px; height: 300px;"></td>
 			<td>
 				<table>
