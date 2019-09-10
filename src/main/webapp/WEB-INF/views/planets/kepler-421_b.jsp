@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
+	<input type="button" class="btn btn-primary hBack" value="<- Return to Index" onclick="window.location='/'" />
 	<h1>kepler-421 b</h1>
 	<br>
 	<table>
