@@ -29,6 +29,11 @@ public final class PlanetBuilder {
 				jspUrl = "/planets/kepler-421_b";
 				return Build(name, imageUrl, jspUrl);
 			}
+			case "beta pic c": {
+				imageUrl = Image.beta_pic_c().getBestUrl();
+				jspUrl = "/planets/beta_pictoris_c";
+				return Build(name, imageUrl, jspUrl);
+			}
 		}
 		return null;
 	}

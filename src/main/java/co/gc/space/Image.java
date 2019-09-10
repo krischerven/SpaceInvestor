@@ -23,5 +23,11 @@ public final class Image {
 				new String[] {"https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/hires-kepler-421b_0.jpg"}
 		);
 	}
+	public static Image beta_pic_c() {
+		return new Image
+		(
+				new String[] {"https://techlapse.com/wp-content/uploads/2019/08/Astronomers-are-discovering-a-new-planet-1280x720.jpg"}
+		);
+	}
 	
 }
