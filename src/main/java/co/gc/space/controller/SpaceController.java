@@ -31,6 +31,22 @@ public class SpaceController {
 	private void initialize() {
 		builder.setRepo(repo);
 	}
+	
+	private static ArrayList[] partition(List<Planet> planets) {
+		ArrayList<Planet> _1 = new ArrayList<>();
+		ArrayList<Planet> _2 = new ArrayList<>();
+		ArrayList<Planet> _3 = new ArrayList<>();
+		for (int i = 0; i < planets.size(); ++i) {
+			if ((i % 3) == 0) {
+				_3.add(planets.get(i));
+			} else if ((i % 2) == 0) {
+				_2.add(planets.get(i));
+			} else {
+				_1.add(planets.get(i));
+			}
+		}
+		return new ArrayList[] {_3, _2, _1};
+	}
 
 	@RequestMapping("/")
 	public ModelAndView home() {
@@ -46,7 +62,12 @@ public class SpaceController {
 		planets.add(builder.Build("kepler-421 b"));
 		planets.add(builder.Build("beta pic b"));
 		planets.add(builder.Build("beta pic c"));
-		return new ModelAndView("index", "planetList", planets);
+		ArrayList[] planetArr = partition(planets);
+		ModelAndView mv = new ModelAndView("index");
+		mv.addObject("first", planetArr[0]);
+		mv.addObject("second", planetArr[1]);
+		mv.addObject("third", planetArr[2]);
+		return mv;
 	}
 
 

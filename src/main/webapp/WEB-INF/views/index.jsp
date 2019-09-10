@@ -17,6 +17,30 @@
 <body>
 	<h1>The Planets</h1>
 	<br>
-	<p>${planetList}</p>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4">
+				<p>
+				 <c:forEach var="planet" items="${first}">
+				 	${planet}
+				 </c:forEach>
+				 </p>
+			</div>
+			<div class="col-lg-4">
+				<p>
+				 <c:forEach var="planet" items="${second}">
+				 	${planet}
+				 </c:forEach>
+				 </p>
+			</div>
+			<div class="col-lg-4">
+				<p>
+				 <c:forEach var="planet" items="${third}">
+				 	${planet}
+				 </c:forEach>
+				 </p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
