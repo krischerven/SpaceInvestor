@@ -52,5 +52,6 @@
 						<td>nan</td>
 					</tr>
 				</table>
+	</table>
 </body>
 </html>
