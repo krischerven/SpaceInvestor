@@ -66,6 +66,8 @@
 					is the surface made up of rocks it is also covered in ice that is
 					structured in ways that are unimaginable. You really have to see it
 					to believe it.</p>
+					<br>
+					<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 
 </body>
 </html>

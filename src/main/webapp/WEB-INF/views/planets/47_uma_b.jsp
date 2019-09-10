@@ -54,5 +54,7 @@
 					</tr>
 				</table>
 	</table>
+	<br>
+	<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 </body>
 </html>

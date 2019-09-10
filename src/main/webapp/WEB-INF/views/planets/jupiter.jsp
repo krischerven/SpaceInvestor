@@ -67,5 +67,7 @@
 		on earth will have to step up their game. CHA CHING. Time to make that
 		bank baby, but resorts here are going up fast so be one of the first
 		to secure your resort's place on this beautiful planet.</p>
+		<br>
+		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 </body>
 </html>

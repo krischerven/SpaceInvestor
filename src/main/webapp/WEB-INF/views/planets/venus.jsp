@@ -66,6 +66,9 @@
 		his Oculus headsets will be of no value on this planet. If you want to
 		be a wimp and play games in a FAKE world then the Oculus is for you.
 		Now, if you are a champ and want to take the experiences of Mario Kart
-		to the real world, then Venus is for you.
+		to the real world, then Venus is for you.</p>
+		<br>
+		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
+		
 </body>
 </html>

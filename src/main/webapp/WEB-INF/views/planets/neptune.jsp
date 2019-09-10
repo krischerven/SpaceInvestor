@@ -64,6 +64,8 @@
 		society will be made up of a population who does nothing because it's
 		far too cold. This planet is for all of my people who like to sleep
 		all day and all night.</p>
+		<br>
+		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 
 
 </body>

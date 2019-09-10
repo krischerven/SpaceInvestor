@@ -65,5 +65,7 @@
 		the fireplace with a warm cup of coffee and Earth Football on all day.
 		What a life? If you want to miss out on an opportunity like this then
 		go ahead, browse another website, the Martians won't miss you.</p>
+		<br>
+		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 </body>
 </html>

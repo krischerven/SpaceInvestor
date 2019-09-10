@@ -66,5 +66,7 @@
 		and you can sell it all, what a magnificent business plan? Selling
 		something you get for free? Something really wrong would have to be
 		wrong with you to not get your hands on this opportunity.</p>
+		<br>
+		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 </body>
 </html>

@@ -20,7 +20,9 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-4">
+			
 				<p>
+					
 				 <c:forEach var="planet" items="${first}">
 				 	${planet}
 				 </c:forEach>

@@ -63,5 +63,7 @@
 		thirty you ask?! You have 12 more years before you're EVEN born. You
 		don't want to miss out on an opportunity like that, now do you? If you
 		then I guess we'll see you later geezer!</p>
+		<br>
+		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 </body>
 </html>
