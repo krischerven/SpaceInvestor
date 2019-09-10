@@ -23,6 +23,12 @@ public final class Image {
 				new String[] {"https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/hires-kepler-421b_0.jpg"}
 		);
 	}
+	public static Image beta_pic_b() {
+		return new Image
+		(
+				new String[] {"https://upload.wikimedia.org/wikipedia/commons/1/12/Artist%E2%80%99s_impression_of_the_planet_Beta_Pictoris_b.jpg"}
+		);
+	}
 	public static Image beta_pic_c() {
 		return new Image
 		(

@@ -44,6 +44,7 @@ public class SpaceController {
 		planets.add(new Venus());
 		planets.add(builder.Build("47 uma b"));
 		planets.add(builder.Build("kepler-421 b"));
+		planets.add(builder.Build("beta pic b"));
 		planets.add(builder.Build("beta pic c"));
 		return new ModelAndView("index", "planetList", planets);
 	}
@@ -92,6 +93,11 @@ public class SpaceController {
 	@RequestMapping("/planets/kepler-421_b")
 	public ModelAndView _kepler_421_b() {
 		return new ModelAndView("planets/kepler-421_b", "planet", builder.Build("kepler-421 b"));
+	}
+	
+	@RequestMapping("/planets/beta_pictoris_b")
+	public ModelAndView beta_pictoris_b() {
+		return new ModelAndView("planets/beta_pictoris_b", "planet", builder.Build("beta pic b"));
 	}
 	
 	@RequestMapping("/planets/beta_pictoris_c")
