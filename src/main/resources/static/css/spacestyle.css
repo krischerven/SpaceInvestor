@@ -19,8 +19,9 @@ body {
     margin:0;
     
     font-family: 'andromeda';
-	font-size: 18px;
+	font-size: 20px;
 	color: white;	
+	
 }
 
 table {
@@ -48,4 +49,5 @@ td {
 p:before{
     content:"\a";
     white-space: pre;
+    font-weight: bold;
 }
