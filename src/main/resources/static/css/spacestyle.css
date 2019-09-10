@@ -15,8 +15,11 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'andromeda';
-	font-size: 18px;
 	color: white;
+}
+
+p {
+	font-size: 130%;
 }
 
 table {
