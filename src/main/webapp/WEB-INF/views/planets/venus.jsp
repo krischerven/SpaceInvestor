@@ -19,7 +19,7 @@
 	<table>
 		<tr>
 			<td><img
-				src="https://space-facts.com/wp-content/uploads/venus-transparent.png"
+				src="../images/venusspin.gif"
 				style="width: 300px; height: 300px;"></td>
 			<td>
 				<table>
