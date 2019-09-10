@@ -52,16 +52,15 @@
 						<td>${planet.maxTemp }</td>
 					</tr>
 				</table> <br>
-
-				<p>Buy land on Mercury before it is too Late! Land on Mercury is
-					selling so fast our realtors cannot keep up! Aging on Mercury is
-					nearly impossible, one day on Mercury is equivalent to 176 days on
-					Earth. A year on Mercury is made up of 88 days. That means one year
-					on Mercury is 15,488 boring old Earth days. If you're 42 on Earth
-					on Mercury you would have just been born. Now, what about if you
-					were thirty you ask?! You have 12 more years before you're EVEN
-					born. You don't want to miss out on an opportunity like that, now
-					do you? If you then I guess we'll see you later geezer!</p>
 	</table>
+	<p>Buy land on Mercury before it is too Late! Land on Mercury is
+		selling so fast our realtors cannot keep up! Aging on Mercury is
+		nearly impossible, one day on Mercury is equivalent to 176 days on
+		Earth. A year on Mercury is made up of 88 days. That means one year on
+		Mercury is 15,488 boring old Earth days. If you're 42 on Earth on
+		Mercury you would have just been born. Now, what about if you were
+		thirty you ask?! You have 12 more years before you're EVEN born. You
+		don't want to miss out on an opportunity like that, now do you? If you
+		then I guess we'll see you later geezer!</p>
 </body>
 </html>
