@@ -53,11 +53,11 @@ public class SpaceController {
 	@RequestMapping("/")
 	public ModelAndView home() {
 		List<Planet> planets = new ArrayList<>();
-		planets.add(new Jupiter());
 		planets.add(new Mars());
+		planets.add(new Jupiter());
+		planets.add(new Saturn());
 		planets.add(new Mercury());
 		planets.add(new Neptune());
-		planets.add(new Saturn());
 		planets.add(new Uranus());
 		planets.add(new Venus());
 		planets.add(builder.Build("47 uma b"));
