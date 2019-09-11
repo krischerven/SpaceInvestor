@@ -16,16 +16,30 @@ public class Graph {
 		
 	}
 
-	public ArrayList<Object> getxPoints() {
-		return xPoints;
+	public String getXPoints() {
+		String ret = "";
+		for (int i = 0; i < xPoints.size(); ++i) {
+			ret += xPoints.get(i);
+			if (i != xPoints.size()-1) {
+				ret += ",";
+			}
+		}
+		return ret;
 	}
 
 //	public void setxPoints(ArrayList<Object> xPoints) {
 //		this.xPoints = xPoints;
 //	}
 
-	public ArrayList<Object> getyPoints() {
-		return yPoints;
+	public String getYPoints() {
+		String ret = "";
+		for (int i = 0; i < yPoints.size(); ++i) {
+			ret += yPoints.get(i);
+			if (i != yPoints.size()-1) {
+				ret += ",";
+			}
+		}
+		return ret;
 	}
 
 	public String getxName() {

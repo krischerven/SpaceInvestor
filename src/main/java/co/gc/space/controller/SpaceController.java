@@ -19,6 +19,7 @@ import co.gc.space.entity.planet.Planet;
 import co.gc.space.entity.planet.Saturn;
 import co.gc.space.entity.planet.Uranus;
 import co.gc.space.entity.planet.Venus;
+import co.gc.space.graph.MarsGraph;
 import co.gc.space.repo.PlanetRepo;
 
 @Controller
@@ -80,7 +81,9 @@ public class SpaceController {
 
 	@RequestMapping("/planets/mars")
 	public ModelAndView mars() {
-		return new ModelAndView("planets/mars", "planet", new Mars());
+		ModelAndView mv = new ModelAndView("planets/mars", "planet", new Mars());
+		mv.addObject("marsGraph1", new MarsGraph());
+		return mv;
 	}
 
 	@RequestMapping("/planets/mercury")
