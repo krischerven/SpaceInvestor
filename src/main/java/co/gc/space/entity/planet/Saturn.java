@@ -1,6 +1,6 @@
 package co.gc.space.entity.planet;
 
-public class Saturn extends SolarSystemPlanet{
+public class Saturn extends SolarSystemPlanet {
 
 	public Saturn() {
 		super();
@@ -14,13 +14,11 @@ public class Saturn extends SolarSystemPlanet{
 		setMinTemp("99K");
 		setMaxTemp("160K");
 		setStarDistance("886 Million Miles");
-		
+
 		setImageUrl("https://space-facts.com/wp-content/uploads/saturn-transparent.png");
 		setJspTag("planets/saturn");
 		setGifImage("../images/saturnspin.gif");
 
 	}
-
-	
 
 }

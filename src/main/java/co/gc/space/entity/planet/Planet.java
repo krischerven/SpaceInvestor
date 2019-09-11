@@ -1,7 +1,5 @@
 package co.gc.space.entity.planet;
 
-
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -54,7 +52,7 @@ public class Planet {
 	private String inclination;
 	@Column(name = "inclinationerrormin")
 	private String inclinationErrorMin;
-	
+
 	@Transient
 	private String imageUrl;
 	@Transient
@@ -65,30 +63,22 @@ public class Planet {
 		// TODO Auto-generated constructor stub
 
 	}
-	
-	
 
 	public String getJspTag() {
 		return jspTag;
 	}
 
-
-
 	public void setJspTag(String jspTag) {
 		this.jspTag = jspTag;
 	}
-
-
 
 	public String getImageUrl() {
 		return imageUrl;
 	}
 
-
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
-
 
 	public String getPlanetName() {
 		return planetName;
@@ -276,7 +266,8 @@ public class Planet {
 
 	@Override
 	public String toString() {
-		return "<h2>" + planetName + "</h2><a href=" + getJspTag() + "><img src="+getImageUrl()+" + alt=hello height=" + 600 + " width=" + 600 + "> </a>";
+		return "<h2>" + planetName + "</h2><a href=" + getJspTag() + "><img src=" + getImageUrl()
+				+ " + alt=hello height=" + 600 + " width=" + 600 + "> </a>";
 	}
 
 }

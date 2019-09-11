@@ -1,7 +1,7 @@
 package co.gc.space.land;
 
 public class MarsHouse extends Land {
-	
+
 	public MarsHouse() {
 		price = "2_000_000_000_000l";
 		arces = "150";

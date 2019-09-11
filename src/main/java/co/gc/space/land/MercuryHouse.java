@@ -1,6 +1,6 @@
 package co.gc.space.land;
 
-public class MercuryHouse extends Land{
+public class MercuryHouse extends Land {
 
 	public MercuryHouse() {
 		price = "1_000_000_000_000l";
@@ -10,6 +10,6 @@ public class MercuryHouse extends Land{
 		architecturalStyle = "Pueblo Revival architecture";
 		condition = "New";
 		yearBuilt = "2040";
-		
+
 	}
 }

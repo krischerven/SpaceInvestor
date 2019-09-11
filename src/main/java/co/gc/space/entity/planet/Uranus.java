@@ -1,6 +1,6 @@
 package co.gc.space.entity.planet;
 
-public class Uranus extends SolarSystemPlanet{
+public class Uranus extends SolarSystemPlanet {
 
 	public Uranus() {
 		super();
@@ -14,15 +14,10 @@ public class Uranus extends SolarSystemPlanet{
 		setMinTemp("49K");
 		setMaxTemp("69K");
 		setStarDistance("1.8 Billion Miles");
-		
+
 		setImageUrl("https://space-facts.com/wp-content/uploads/uranus-transparent.png");
 		setJspTag("planets/uranus");
 		setGifImage("../images/uranusspin.gif");
 	}
-
-	
-	
-	
-	
 
 }

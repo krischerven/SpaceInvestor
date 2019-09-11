@@ -1,6 +1,6 @@
 package co.gc.space.entity.planet;
 
-public class Mercury extends SolarSystemPlanet{
+public class Mercury extends SolarSystemPlanet {
 
 	public Mercury() {
 		super();
@@ -14,11 +14,11 @@ public class Mercury extends SolarSystemPlanet{
 		setMinTemp("100K");
 		setMaxTemp("700K");
 		setStarDistance("48 Million Miles");
-		
+
 		setImageUrl("https://space-facts.com/wp-content/uploads/mercury-transparent.png");
 		setJspTag("planets/mercury");
 		setGifImage("../images/mercuryspin.gif");
 
-}
+	}
 
 }

@@ -1,6 +1,6 @@
 package co.gc.space.entity.planet;
 
-public class Jupiter extends SolarSystemPlanet{
+public class Jupiter extends SolarSystemPlanet {
 
 	public Jupiter() {
 		super();
@@ -14,19 +14,11 @@ public class Jupiter extends SolarSystemPlanet{
 		setMinTemp("49K");
 		setMaxTemp("313K");
 		setStarDistance("484 Million Miles");
-		
+
 		setImageUrl("https://i.dlpng.com/static/png/479568_preview.png");
 		setJspTag("planets/jupiter");
 		setGifImage("../images/jupiterspin.gif");
-		
+
 	}
 
-	
-	
-
-	
-	
-	
-
-	
 }

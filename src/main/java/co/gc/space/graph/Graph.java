@@ -8,7 +8,7 @@ public class Graph {
 	protected ArrayList<Object> yPoints = new ArrayList<>();
 	protected String xName = "";
 	protected String yName = "";
-	
+
 	public Graph() {
 		super();
 	}
@@ -17,7 +17,7 @@ public class Graph {
 		String ret = "";
 		for (int i = 0; i < xPoints.size(); ++i) {
 			ret += xPoints.get(i);
-			if (i != xPoints.size()-1) {
+			if (i != xPoints.size() - 1) {
 				ret += ",";
 			}
 		}
@@ -28,7 +28,7 @@ public class Graph {
 		String ret = "";
 		for (int i = 0; i < yPoints.size(); ++i) {
 			ret += yPoints.get(i);
-			if (i != yPoints.size()-1) {
+			if (i != yPoints.size() - 1) {
 				ret += ",";
 			}
 		}
@@ -42,5 +42,5 @@ public class Graph {
 	public String getYName() {
 		return yName;
 	}
-	
+
 }

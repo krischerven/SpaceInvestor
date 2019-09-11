@@ -24,14 +24,14 @@ import co.gc.space.repo.PlanetRepo;
 
 @Controller
 public class SpaceController {
-	
+
 	@Autowired PlanetRepo repo;
 	final PlanetBuilder builder = new PlanetBuilder();
-	
+
 	@PostConstruct private void initialize() {
 		builder.setRepo(repo);
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	private static ArrayList<Object>[] partition(List<Planet> planets) {
 		ArrayList<Planet> _1 = new ArrayList<>();
@@ -46,7 +46,7 @@ public class SpaceController {
 				_1.add(planets.get(i));
 			}
 		}
-		return new ArrayList[] {_3, _2, _1};
+		return new ArrayList[] { _3, _2, _1 };
 	}
 
 	@RequestMapping("/")
@@ -112,17 +112,17 @@ public class SpaceController {
 	public ModelAndView _47_uma_b() {
 		return new ModelAndView("planets/47_uma_b", "planet", builder.Build("47 uma b"));
 	}
-	
+
 	@RequestMapping("/planets/kepler-421_b")
 	public ModelAndView _kepler_421_b() {
 		return new ModelAndView("planets/kepler-421_b", "planet", builder.Build("kepler-421 b"));
 	}
-	
+
 	@RequestMapping("/planets/beta_pictoris_b")
 	public ModelAndView beta_pictoris_b() {
 		return new ModelAndView("planets/beta_pictoris_b", "planet", builder.Build("beta pic b"));
 	}
-	
+
 	@RequestMapping("/planets/beta_pictoris_c")
 	public ModelAndView beta_pictoris_c() {
 		return new ModelAndView("planets/beta_pictoris_c", "planet", builder.Build("beta pic c"));

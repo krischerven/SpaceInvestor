@@ -14,16 +14,11 @@ public class Mars extends SolarSystemPlanet {
 		setMinTemp("120K");
 		setMaxTemp("293K");
 		setStarDistance("33.9 Million Miles");
-		
+
 		setImageUrl("https://space-facts.com/wp-content/uploads/mars-transparent.png");
 		setJspTag("planets/mars");
 		setGifImage("../images/marsspin.gif");
-		
+
 	}
-
-
-	
-
-	
 
 }

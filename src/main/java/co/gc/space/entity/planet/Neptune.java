@@ -1,6 +1,6 @@
 package co.gc.space.entity.planet;
 
-public class Neptune extends SolarSystemPlanet{
+public class Neptune extends SolarSystemPlanet {
 
 	public Neptune() {
 		super();
@@ -14,14 +14,11 @@ public class Neptune extends SolarSystemPlanet{
 		setMinTemp("55K");
 		setMaxTemp("72");
 		setStarDistance("2.8 Billion Miles");
-		
+
 		setImageUrl("https://space-facts.com/wp-content/uploads/neptune-transparent.png");
 		setJspTag("planets/neptune");
 		setGifImage("../images/neptunespin.gif");
 
 	}
 
-	
-
-	
 }
