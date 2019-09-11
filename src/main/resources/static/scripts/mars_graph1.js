@@ -19,4 +19,8 @@ let layout = {
 		},
 };
 
+layout.title = document.getElementById("title_1").innerText
+layout.xaxis.title = document.getElementById("xName_1").innerText
+layout.yaxis.title = document.getElementById("yName_1").innerText
+
 Plotly.newPlot('graph1', [graph], layout);

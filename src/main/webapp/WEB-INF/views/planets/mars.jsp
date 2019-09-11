@@ -71,6 +71,9 @@
 
 	<p id="xPoints_1" hidden=true>${marsGraph1.getXPoints()}</p>
 	<p id="yPoints_1" hidden=true>${marsGraph1.getYPoints()}</p>
+	<p id="title_1" hidden=true>${marsGraph1.titleName}</p>
+	<p id="xName_1" hidden=true>${marsGraph1.xName}</p>
+	<p id="yName_1" hidden=true>${marsGraph1.yName}</p>
 
 	<div class="container" id="graph1">
 		<!-- Graph #1 goes here -->
