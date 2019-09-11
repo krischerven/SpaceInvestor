@@ -36,11 +36,11 @@ public class Graph {
 		return ret;
 	}
 
-	public String getXName() {
+	public String getxName() {
 		return xName;
 	}
 
-	public String getYName() {
+	public String getyName() {
 		return yName;
 	}
 
