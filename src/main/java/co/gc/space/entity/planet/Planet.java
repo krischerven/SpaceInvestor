@@ -123,7 +123,11 @@ public class Planet {
 	}
 
 	public String getMass() {
-		return mass;
+		if (this instanceof SolarSystemPlanet || mass.equals("nan")) {
+			return mass;
+		} else {
+			return mass + " Mj";
+		}
 	}
 
 	public void setMass(String mass) {
@@ -147,7 +151,11 @@ public class Planet {
 	}
 
 	public String getRadius() {
-		return radius;
+		if (this instanceof SolarSystemPlanet || radius.equals("nan")) {
+			return radius;
+		} else {
+			return radius + " Rj";
+		}
 	}
 
 	public void setRadius(String radius) {
@@ -171,7 +179,11 @@ public class Planet {
 	}
 
 	public String getPeriod() {
-		return period;
+		if (this instanceof SolarSystemPlanet || period.equals("nan")) {
+			return period;
+		} else {
+			return period + " days";
+		}
 	}
 
 	public void setPeriod(String period) {
@@ -195,7 +207,11 @@ public class Planet {
 	}
 
 	public String getTempCalculated() {
-		return tempCalculated;
+		if (this instanceof SolarSystemPlanet || tempCalculated.equals("nan")) {
+			return tempCalculated;
+		} else {
+			return tempCalculated + " K";
+		}
 	}
 
 	public void setTempCalculated(String tempCalculated) {
@@ -203,7 +219,11 @@ public class Planet {
 	}
 
 	public String getTempMeasured() {
-		return tempMeasured;
+		if (this instanceof SolarSystemPlanet || tempMeasured.equals("nan")) {
+			return tempMeasured;
+		} else {
+			return tempMeasured + " K";
+		}
 	}
 
 	public void setTempMeasured(String tempMeasured) {
@@ -211,7 +231,11 @@ public class Planet {
 	}
 
 	public String getStarDistance() {
-		return starDistance;
+		if (this instanceof SolarSystemPlanet || starDistance.equals("nan")) {
+			return starDistance;
+		} else {
+			return starDistance + " pc";
+		}
 	}
 
 	public void setStarDistance(String starDistance) {
