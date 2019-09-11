@@ -24,12 +24,11 @@ import co.gc.space.repo.PlanetRepo;
 
 @Controller
 public class SpaceController {
-	@Autowired
-	PlanetRepo repo;
+	
+	@Autowired PlanetRepo repo;
 	final PlanetBuilder builder = new PlanetBuilder();
 	
-	@PostConstruct
-	private void initialize() {
+	@PostConstruct private void initialize() {
 		builder.setRepo(repo);
 	}
 	
