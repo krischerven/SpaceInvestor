@@ -25,6 +25,7 @@
 					
 				 <c:forEach var="planet" items="${first}">
 				 	${planet}
+				 	<br><br>
 				 </c:forEach>
 				 </p>
 			</div>
@@ -32,6 +33,7 @@
 				<p>
 				 <c:forEach var="planet" items="${second}">
 				 	${planet}
+				 	<br><br>
 				 </c:forEach>
 				 </p>
 			</div>
@@ -39,6 +41,7 @@
 				<p>
 				 <c:forEach var="planet" items="${third}">
 				 	${planet}
+				 	<br><br>
 				 </c:forEach>
 				 </p>
 			</div>
