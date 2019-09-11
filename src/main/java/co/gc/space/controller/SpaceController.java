@@ -33,7 +33,8 @@ public class SpaceController {
 		builder.setRepo(repo);
 	}
 	
-	private static ArrayList[] partition(List<Planet> planets) {
+	@SuppressWarnings("unchecked")
+	private static ArrayList<Object>[] partition(List<Planet> planets) {
 		ArrayList<Planet> _1 = new ArrayList<>();
 		ArrayList<Planet> _2 = new ArrayList<>();
 		ArrayList<Planet> _3 = new ArrayList<>();
@@ -63,7 +64,7 @@ public class SpaceController {
 		planets.add(builder.Build("kepler-421 b"));
 		planets.add(builder.Build("beta pic b"));
 		planets.add(builder.Build("beta pic c"));
-		ArrayList[] planetArr = partition(planets);
+		final ArrayList<Object>[] planetArr = partition(planets);
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("first", planetArr[0]);
 		mv.addObject("second", planetArr[1]);
