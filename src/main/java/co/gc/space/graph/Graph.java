@@ -6,6 +6,7 @@ public class Graph {
 
 	protected ArrayList<Object> xPoints = new ArrayList<>();
 	protected ArrayList<Object> yPoints = new ArrayList<>();
+	protected String titlename;
 	protected String xName = "";
 	protected String yName = "";
 
@@ -42,5 +43,10 @@ public class Graph {
 	public String getYName() {
 		return yName;
 	}
+
+	public String getTitlename() {
+		return titlename;
+	}
+	
 
 }
