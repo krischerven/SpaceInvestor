@@ -14,7 +14,10 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-	<input type="button" class="btn btn-primary hBack" value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary" value="Create User"
+		onclick="window.location='../create-user'" />
 	<h1>Venus</h1>
 	<br>
 	<table>
@@ -67,8 +70,5 @@
 		be a wimp and play games in a FAKE world then the Oculus is for you.
 		Now, if you are a champ and want to take the experiences of Mario Kart
 		to the real world, then Venus is for you.</p>
-		<br>
-		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
-		
 </body>
 </html>

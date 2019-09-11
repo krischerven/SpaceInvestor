@@ -14,7 +14,10 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-	<input type="button" class="btn btn-primary hBack" value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary" value="Create User"
+		onclick="window.location='../create-user'" />
 	<h1>Uranus</h1>
 	<br>
 	<table>
@@ -53,7 +56,7 @@
 						<td>${planet.maxTemp }</td>
 					</tr>
 
-				</table> <br>
+				</table>
 	</table>
 	<p>Let's send a probe to Uranus! I know what you're thinking, get
 		your mind out of the gutter we're about to get serious. If your
@@ -66,7 +69,5 @@
 		and you can sell it all, what a magnificent business plan? Selling
 		something you get for free? Something really wrong would have to be
 		wrong with you to not get your hands on this opportunity.</p>
-		<br>
-		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 </body>
 </html>

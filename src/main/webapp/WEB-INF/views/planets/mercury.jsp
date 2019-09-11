@@ -14,7 +14,10 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-	<input type="button" class="btn btn-primary hBack" value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary" value="Create User"
+		onclick="window.location='../create-user'" />
 	<h1>Mercury</h1>
 	<br>
 	<table>
@@ -52,7 +55,7 @@
 						<td>${planet.minTemp }</td>
 						<td>${planet.maxTemp }</td>
 					</tr>
-				</table> <br>
+				</table>
 	</table>
 	<p>Buy land on Mercury before it is too Late! Land on Mercury is
 		selling so fast our realtors cannot keep up! Aging on Mercury is
@@ -63,7 +66,5 @@
 		thirty you ask?! You have 12 more years before you're EVEN born. You
 		don't want to miss out on an opportunity like that, now do you? If you
 		then I guess we'll see you later geezer!</p>
-		<br>
-		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 </body>
 </html>

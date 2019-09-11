@@ -14,7 +14,10 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-	<input type="button" class="btn btn-primary hBack" value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary" value="Create User"
+		onclick="window.location='../create-user'" />
 	<h1>Mars</h1>
 	<br>
 	<table>
@@ -53,7 +56,7 @@
 						<td>${planet.maxTemp }</td>
 					</tr>
 
-				</table> <br>
+				</table>
 	</table>
 	<p>Elon Musk, this one is for you! Other than Tesla Dealerships
 		everywhere, this planet will be the best of all planets to raise a
@@ -65,19 +68,17 @@
 		the fireplace with a warm cup of coffee and Earth Football on all day.
 		What a life? If you want to miss out on an opportunity like this then
 		go ahead, browse another website, the Martians won't miss you.</p>
-		<br>
-		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
-		
-<p id="xPoints_1" hidden=true>${marsGraph1.getXPoints()}</p>
-<p id="yPoints_1" hidden=true>${marsGraph1.getYPoints()}</p>
 
-<div class="container" id="graph1">
-<!-- Graph #1 goes here -->
-</div>
+	<p id="xPoints_1" hidden=true>${marsGraph1.getXPoints()}</p>
+	<p id="yPoints_1" hidden=true>${marsGraph1.getYPoints()}</p>
 
-<!--  JS that actually creates the graphs -->
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script type="text/javascript" src="../scripts/mars_graph1.js"></script>
+	<div class="container" id="graph1">
+		<!-- Graph #1 goes here -->
+	</div>
+
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script type="text/javascript" src="../scripts/mars_graph1.js"></script>
 
 </body>
 </html>

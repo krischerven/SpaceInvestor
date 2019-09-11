@@ -14,7 +14,10 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-	<input type="button" class="btn btn-primary hBack" value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary" value="Create User"
+		onclick="window.location='../create-user'" />
 	<h1>47 Uma B</h1>
 	<br>
 	<table>
@@ -54,7 +57,5 @@
 					</tr>
 				</table>
 	</table>
-	<br>
-	<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
 </body>
 </html>

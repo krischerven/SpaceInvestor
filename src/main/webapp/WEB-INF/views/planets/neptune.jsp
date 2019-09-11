@@ -14,7 +14,10 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-	<input type="button" class="btn btn-primary hBack" value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary" value="Create User"
+		onclick="window.location='../create-user'" />
 	<h1>Neptune</h1>
 	<br>
 	<table>
@@ -53,7 +56,7 @@
 						<td>${planet.maxTemp }</td>
 					</tr>
 
-				</table> <br>
+				</table>
 	</table>
 	<p>Who wants to live on a planet full of vegetation and warmth?
 		Pfft I'll tell you who....losers! Neptune is a planet that's always
@@ -64,9 +67,5 @@
 		society will be made up of a population who does nothing because it's
 		far too cold. This planet is for all of my people who like to sleep
 		all day and all night.</p>
-		<br>
-		<input type = "button" class = "btn btn-primary" value = "Create User" onclick = "window.location='../create-user'" />
-
-
 </body>
 </html>
