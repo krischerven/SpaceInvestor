@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MarsGraph extends Graph {
 
 	private long moneyFormula(long startingPoint, long i ){
-		return (long) ((double)startingPoint - ((double) i - Math.pow(i, 10)));
+		return (long) (((double)startingPoint) * (1.0/Math.pow((i+1), 2.2)));
 	}
 	private ArrayList<Object> money(long startingPoint, int numPoints){
 		ArrayList<Object> returnMoney = new ArrayList<>();
