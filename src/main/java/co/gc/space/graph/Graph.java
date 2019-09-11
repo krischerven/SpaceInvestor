@@ -6,14 +6,11 @@ public class Graph {
 
 	protected ArrayList<Object> xPoints = new ArrayList<>();
 	protected ArrayList<Object> yPoints = new ArrayList<>();
-	protected String xName;
-	protected String yName;
+	protected String xName = "";
+	protected String yName = "";
 	
-
-
 	public Graph() {
 		super();
-		
 	}
 
 	public String getXPoints() {
@@ -27,10 +24,6 @@ public class Graph {
 		return ret;
 	}
 
-//	public void setxPoints(ArrayList<Object> xPoints) {
-//		this.xPoints = xPoints;
-//	}
-
 	public String getYPoints() {
 		String ret = "";
 		for (int i = 0; i < yPoints.size(); ++i) {
@@ -42,25 +35,12 @@ public class Graph {
 		return ret;
 	}
 
-	public String getxName() {
+	public String getXName() {
 		return xName;
 	}
 
-//	public void setxName(String xName) {
-//		this.xName = xName;
-//	}
-
-	public String getyName() {
+	public String getYName() {
 		return yName;
 	}
-
-//	public void setyName(String yName) {
-//		this.yName = yName;
-//	}
-
-//	public void setyPoints(ArrayList<Object> yPoints) {
-//		this.yPoints = yPoints;
-//	}
-
 	
 }
