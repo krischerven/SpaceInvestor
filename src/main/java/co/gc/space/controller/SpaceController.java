@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import co.gc.space.PlanetBuilder;
+import co.gc.space.entity.planet.Europa;
 import co.gc.space.entity.planet.Jupiter;
 import co.gc.space.entity.planet.Mars;
 import co.gc.space.entity.planet.Mercury;
@@ -59,6 +60,7 @@ public class SpaceController {
 		planets.add(new Neptune());
 		planets.add(new Uranus());
 		planets.add(new Venus());
+		planets.add(new Europa());
 		planets.add(builder.Build("47 uma b"));
 		planets.add(builder.Build("kepler-421 b"));
 		planets.add(builder.Build("beta pic b"));
@@ -126,5 +128,10 @@ public class SpaceController {
 	@RequestMapping("/planets/beta_pictoris_c")
 	public ModelAndView beta_pictoris_c() {
 		return new ModelAndView("planets/beta_pictoris_c", "planet", builder.Build("beta pic c"));
+	}
+	
+	@RequestMapping("/planets/europa")
+	public ModelAndView europa() {
+		return new ModelAndView("planets/europa", "planet", new Europa());
 	}
 }
