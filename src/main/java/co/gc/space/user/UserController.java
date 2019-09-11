@@ -20,5 +20,10 @@ public class UserController {
 	public ModelAndView addUser() {
 		return new ModelAndView("create-user");
 	}
-
+	
+	@RequestMapping("save-user")
+	public ModelAndView saveUser(User user) {
+		a.save(user);
+		return new ModelAndView("/");
+	}
 }

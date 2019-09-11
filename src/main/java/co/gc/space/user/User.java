@@ -15,20 +15,14 @@ public class User {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer id;
 	private String username;
 	private String email;
 	private String password;
-	private Integer creditcard;
-	private Integer expiration;
-	private Integer cvv;
+	private int creditcard;
+	private int expiration;
+	private int cvv;
 	
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
+	
 	public String getUsername() {
 		return username;
 	}

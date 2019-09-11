@@ -7,11 +7,19 @@ h1 {
 	text-align: center;
 }
 
+h2{
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+
 body {
 	background-image: url("../images/space.gif");
 	background-size: cover;
 	image-align: left;
-<<<<<<< HEAD
+	
     
     
     
@@ -23,7 +31,7 @@ body {
 	font-size: 20px;
 	color: white;	
 	
-=======
+
 	height: 100vh;
 	padding: 0;
 	margin: 0;
@@ -33,7 +41,7 @@ body {
 
 p {
 	font-size: 130%;
->>>>>>> 8f3e34b5366d106abee734632a5b26729aec4a74
+
 }
 
 table {
@@ -61,14 +69,15 @@ td {
 	font-size: 120%;
 }
 
-<<<<<<< HEAD
+
 p:before{
     content:"\a";
     white-space: pre;
     font-weight: bold;
-=======
+
 p:before {
 	content: "\a";
 	white-space: pre;
->>>>>>> 8f3e34b5366d106abee734632a5b26729aec4a74
+
 }
+

@@ -15,7 +15,7 @@
 <title>Space Real Estate Investor</title>
 </head>
 <body>
-	<h1>The Planets</h1>
+	<h1>Planet Investor Real Estate Professionals</h1>
 	<br>
 	<div class="container-fluid">
 		<div class="row">
