@@ -276,7 +276,7 @@ public class Planet {
 
 	@Override
 	public String toString() {
-		return "<a href=" + getJspTag() + "><img src="+getImageUrl()+" + alt=hello height=" + 600 + " width=" + 600 + "> </a>";
+		return "<h2>" + planetName + "</h2><a href=" + getJspTag() + "><img src="+getImageUrl()+" + alt=hello height=" + 600 + " width=" + 600 + "> </a>";
 	}
 
 }
