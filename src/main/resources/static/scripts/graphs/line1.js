@@ -26,6 +26,6 @@ let layout = {
 };
 
 layout.title = "<span style=\"color: #145051\">" + document.getElementById("title_1").innerText + "</span>";
-layout.xaxis.title = document.getElementById("xName_1").innerText
-layout.yaxis.title = document.getElementById("yName_1").innerText
+layout.xaxis.title = "<span style=\"color: #145051\">" + document.getElementById("xName_1").innerText + "</span>";
+layout.yaxis.title = "<span style=\"color: #145051\">" + document.getElementById("yName_1").innerText + "</span>";
 Plotly.newPlot('graph1', [graph], layout);
