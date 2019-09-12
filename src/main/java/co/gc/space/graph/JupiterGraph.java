@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class JupiterGraph extends Graph {
 
-	private long moneyFormula(long startingPoint, long i) {
-		return (long) ((double) startingPoint - ((double) i - Math.pow(i, 10)));
+	private long moneyFormula(double d, long i) {
+		return (long) ((double) d - ((double) i - Math.pow(i, 10)));
 	}
 
-	private ArrayList<Object> money(long startingPoint, int numPoints) {
+	private ArrayList<Object> money(double d, int numPoints) {
 		ArrayList<Object> returnMoney = new ArrayList<>();
 		for (long i = 0; i < numPoints; ++i) {
-			returnMoney.add(moneyFormula(startingPoint, i));
+			returnMoney.add(moneyFormula(d, i));
 
 		}
 		return returnMoney;
@@ -26,7 +26,10 @@ public class JupiterGraph extends Graph {
 	}
 
 	public JupiterGraph() {
+		titleName = "Price Projection of Hydrogen Sold From Jupiter";
+		xName = "Year"; 
+		yName = "Price $";
 		xPoints = years(2020, 7);
-		yPoints = money(500_000_000_000l, xPoints.size());
+		yPoints = money(0.70, xPoints.size());
 	}
 }

@@ -75,7 +75,9 @@ public class SpaceController {
 
 	@RequestMapping("/planets/jupiter")
 	public ModelAndView jupiter() {
-		return new ModelAndView("planets/jupiter", "planet", new Jupiter());
+		ModelAndView mv = new ModelAndView ("planets/jupiter", "planet", new Jupiter());
+		mv.addObject("jupiterGraph1", new MarsGraph());
+		return mv;
 	}
 
 	@RequestMapping("/planets/mars")
