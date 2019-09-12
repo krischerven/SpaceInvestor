@@ -25,8 +25,7 @@ let layout = {
 		plot_bgcolor: "#1c253c",
 };
 
-layout.title = document.getElementById("title_1").innerText
+layout.title = "<span style=\"color: #145051\">" + document.getElementById("title_1").innerText + "</span>";
 layout.xaxis.title = document.getElementById("xName_1").innerText
 layout.yaxis.title = document.getElementById("yName_1").innerText
-
 Plotly.newPlot('graph1', [graph], layout);
