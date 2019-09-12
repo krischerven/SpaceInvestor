@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>47 Uma B</title>
+<title>${planet.getTitle()}</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -29,7 +29,7 @@ body {
 	<input type="button" class="btn btn-primary" value="Create User"
 		onclick="window.location='../create-user'" />
 	<div id="section1" class="container-fluid">
-		<h1>47 Uma B</h1>
+		<h1>${planet.getTitle()}</h1>
 		<br>
 		<table>
 			<tr>
