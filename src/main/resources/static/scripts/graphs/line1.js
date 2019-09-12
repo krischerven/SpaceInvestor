@@ -1,3 +1,4 @@
+// colors: https://www.color-hex.com/color-palette/30647
 let graph = {
 		type: 'scatter',
 		mode: 'lines',
