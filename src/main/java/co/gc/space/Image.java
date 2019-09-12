@@ -13,25 +13,25 @@ public final class Image {
 	public static Image _47_uma_b() {
 		return new Image
 		(
-				new String[] {"https://upload.wikimedia.org/wikipedia/commons/4/4f/47_Ursae_Majoris_b_v4.jpg"}
+				new String[] {"../images/47umab.png"}
 		);
 	}
 	public static Image _kepler_421_b() {
 		return new Image
 		(
-				new String[] {"https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/hires-kepler-421b_0.jpg"}
+				new String[] {"../images/kepler-421b.png"}
 		);
 	}
 	public static Image beta_pic_b() {
 		return new Image
 		(
-				new String[] {"https://upload.wikimedia.org/wikipedia/commons/1/12/Artist%E2%80%99s_impression_of_the_planet_Beta_Pictoris_b.jpg"}
+				new String[] {"../images/betapicb.png"}
 		);
 	}
 	public static Image beta_pic_c() {
 		return new Image
 		(
-				new String[] {"https://techlapse.com/wp-content/uploads/2019/08/Astronomers-are-discovering-a-new-planet-1280x720.jpg"}
+				new String[] {"../images/betapicc.png"}
 		);
 	}
 	
