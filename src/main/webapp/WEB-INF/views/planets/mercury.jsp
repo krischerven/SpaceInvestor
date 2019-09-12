@@ -66,5 +66,20 @@
 		thirty you ask?! You have 12 more years before you're EVEN born. You
 		don't want to miss out on an opportunity like that, now do you? If you
 		then I guess we'll see you later geezer!</p>
+		
+	<p id="xPoints_1" hidden=true>${mercuryGraph1.getXPoints()}</p>
+	<p id="yPoints_1" hidden=true>${mercuryGraph1.getYPoints()}</p>
+	<p id="title_1" hidden=true>${mercuryGraph1.titleName}</p>
+	<p id="xName_1" hidden=true>${mercuryGraph1.xName}</p>
+	<p id="yName_1" hidden=true>${mercuryGraph1.yName}</p>
+
+	<div class="container" id="graph1">
+		<!-- Graph #1 goes here -->
+	</div>
+
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script type="text/javascript" src="../scripts/jupiter_graph1.js"></script>
+	
 </body>
 </html>

@@ -68,6 +68,21 @@
 		has the helium you need. You won't have to pay for any of the helium
 		and you can sell it all, what a magnificent business plan? Selling
 		something you get for free? Something really wrong would have to be
-		wrong with you to not get your hands on this opportunity.</p>
+		wrong with you to not get your hands on this opportunity.</p>	
+			
+	<p id="xPoints_1" hidden=true>${uranusGraph1.getXPoints()}</p>
+	<p id="yPoints_1" hidden=true>${uranusGraph1.getYPoints()}</p>
+	<p id="title_1" hidden=true>${uranusGraph1.titleName}</p>
+	<p id="xName_1" hidden=true>${uranusGraph1.xName}</p>
+	<p id="yName_1" hidden=true>${uranusGraph1.yName}</p>
+
+	<div class="container" id="graph1">
+		<!-- Graph #1 goes here -->
+	</div>
+
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script type="text/javascript" src="../scripts/jupiter_graph1.js"></script>
+	
 </body>
 </html>

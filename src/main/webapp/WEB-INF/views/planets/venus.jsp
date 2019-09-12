@@ -69,6 +69,21 @@
 		his Oculus headsets will be of no value on this planet. If you want to
 		be a wimp and play games in a FAKE world then the Oculus is for you.
 		Now, if you are a champ and want to take the experiences of Mario Kart
-		to the real world, then Venus is for you.</p>
+		to the real world, then Venus is for you.</p>	
+				
+	<p id="xPoints_1" hidden=true>${venusGraph1.getXPoints()}</p>
+	<p id="yPoints_1" hidden=true>${venusGraph1.getYPoints()}</p>
+	<p id="title_1" hidden=true>${venusGraph1.titleName}</p>
+	<p id="xName_1" hidden=true>${venusGraph1.xName}</p>
+	<p id="yName_1" hidden=true>${venusGraph1.yName}</p>
+
+	<div class="container" id="graph1">
+		<!-- Graph #1 goes here -->
+	</div>
+
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script type="text/javascript" src="../scripts/jupiter_graph1.js"></script>
+	
 </body>
 </html>

@@ -65,6 +65,21 @@
 		above them. If you think the Grand Canyon is cool wait until you see
 		the rocky surface of good old Saturn. Not only is the surface made up
 		of rocks it is also covered in ice that is structured in ways that are
-		unimaginable. You really have to see it to believe it.</p>
+		unimaginable. You really have to see it to believe it.</p>		
+		
+	<p id="xPoints_1" hidden=true>${saturnGraph1.getXPoints()}</p>
+	<p id="yPoints_1" hidden=true>${saturnGraph1.getYPoints()}</p>
+	<p id="title_1" hidden=true>${saturnGraph1.titleName}</p>
+	<p id="xName_1" hidden=true>${saturnGraph1.xName}</p>
+	<p id="yName_1" hidden=true>${saturnGraph1.yName}</p>
+
+	<div class="container" id="graph1">
+		<!-- Graph #1 goes here -->
+	</div>
+
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script type="text/javascript" src="../scripts/jupiter_graph1.js"></script>
+	
 </body>
 </html>
