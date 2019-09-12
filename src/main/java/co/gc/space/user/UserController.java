@@ -18,7 +18,16 @@ public class UserController {
 
 	@RequestMapping("save-user")
 	public ModelAndView saveUser(User user) {
-		a.save(user);
-		return new ModelAndView("/");
+		if (user.getCreditcard() != null && user.getCvv() != null) {
+			String test = CreditCard.getMatchingCreditCard(user.getCreditcard(), user.getCvv());
+			System.out.println(test);
+			if (test != null)
+				a.save(user);
+			if (test == null)
+				return new ModelAndView("error-message");
+
+		}
+	
+		return new ModelAndView("user-created");
 	}
 }

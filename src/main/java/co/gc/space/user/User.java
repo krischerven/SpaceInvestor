@@ -6,21 +6,41 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 @Entity
 @Table(name = "users")
-@JsonIgnoreProperties(ignoreUnknown = true)
+
 public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
 	private String username;
 	private String email;
 	private String password;
-	private int creditcard;
-	private int expiration;
-	private int cvv;
+	private String creditcard;
+	private Integer expiration;
+	private String cvv;
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getCreditcard() {
+		return creditcard;
+	}
+
+	public void setCreditcard(String creditcard) {
+		this.creditcard = creditcard;
+	}
 
 	public String getUsername() {
 		return username;
@@ -46,14 +66,6 @@ public class User {
 		this.password = password;
 	}
 
-	public Integer getCreditcard() {
-		return creditcard;
-	}
-
-	public void setCreditcard(Integer creditcard) {
-		this.creditcard = creditcard;
-	}
-
 	public Integer getExpiration() {
 		return expiration;
 	}
@@ -62,11 +74,11 @@ public class User {
 		this.expiration = expiration;
 	}
 
-	public Integer getCvv() {
+	public String getCvv() {
 		return cvv;
 	}
 
-	public void setCvv(Integer cvv) {
+	public void setCvv(String cvv) {
 		this.cvv = cvv;
 	}
 
