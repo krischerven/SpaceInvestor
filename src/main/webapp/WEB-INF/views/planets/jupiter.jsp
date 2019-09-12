@@ -20,6 +20,7 @@ body {
 }
 #section1 { padding-top: 50px; height: 100%; }
 #section2 { padding-top: 50px; height: 100%; }
+#section3 { padding-top: 50px; height: 100%; }
 </style>
 </head>
 <body>
@@ -110,6 +111,25 @@ body {
 				<td>${house.architecturalStyle }</td>
 			</tr>
 		</table>
-	</div>
+	</div>	
+	<!-- graph section -->
+    <p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
+    <p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
+    <p id="title_1" hidden=true>${graph1.titleName}</p>
+    <p id="xName_1" hidden=true>${graph1.xName}</p>
+    <p id="yName_1" hidden=true>${graph1.yName}</p>
+
+    <div id="section3" class="container-fluid">	
+		<h1>Graphs</h1>
+		<br>
+        <div id="graph1">
+            <!-- Graph #1 goes here -->
+        </div>
+    </div>
+
+    <!--  JS that actually creates the graphs -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script type="text/javascript" src="../scripts/graphs/line1.js"></script>
 </body>
 </html>

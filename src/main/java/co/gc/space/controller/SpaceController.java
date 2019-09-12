@@ -95,7 +95,7 @@ public class SpaceController {
 	@RequestMapping("/planets/jupiter")
 	public ModelAndView jupiter() {
 		ModelAndView mv = new ModelAndView ("planets/jupiter", "planet", new Jupiter());
-		mv.addObject("jupiterGraph1", new JupiterGraph());
+		mv.addObject("graph1", new JupiterGraph());
 		mv.addObject("jupiterHouse", new JupiterHouse());
 		return mv;
 	}
@@ -103,7 +103,7 @@ public class SpaceController {
 	@RequestMapping("/planets/mars")
 	public ModelAndView mars() {
 		ModelAndView mv = new ModelAndView("planets/mars", "planet", new Mars());
-		mv.addObject("marsGraph1", new MarsGraph());
+		mv.addObject("graph1", new MarsGraph());
 		mv.addObject("marsHouse", new MarsHouse());
 		return mv;
 	}
@@ -111,7 +111,7 @@ public class SpaceController {
 	@RequestMapping("/planets/mercury")
 	public ModelAndView mercury() {
 		ModelAndView mv = new ModelAndView("planets/mercury", "planet", new Mercury());
-		mv.addObject("mercuryGraph1", new MercuryGraph());
+		mv.addObject("graph1", new MercuryGraph());
 		mv.addObject("mercuryHouse", new MercuryHouse());
 		return mv;
 	}
@@ -119,7 +119,7 @@ public class SpaceController {
 	@RequestMapping("/planets/neptune")
 	public ModelAndView neptune() {
 		ModelAndView mv = new ModelAndView("planets/neptune", "planet", new Neptune());
-		mv.addObject("neptuneGraph1", new NeptuneGraph());
+		mv.addObject("graph1", new NeptuneGraph());
 		mv.addObject("neptuneHouse", new NeptuneHouse());
 		return mv;
 	}
@@ -127,7 +127,7 @@ public class SpaceController {
 	@RequestMapping("/planets/saturn")
 	public ModelAndView saturn() {
 		ModelAndView mv = new ModelAndView("planets/saturn", "planet", new Saturn());
-		mv.addObject("saturnGraph1", new SaturnGraph());
+		mv.addObject("graph1", new SaturnGraph());
 		mv.addObject("saturnHouse", new SaturnHouse());
 		return mv;
 	}
@@ -135,7 +135,7 @@ public class SpaceController {
 	@RequestMapping("/planets/uranus")
 	public ModelAndView uranus() {
 		ModelAndView mv = new ModelAndView("planets/uranus", "planet", new Uranus());
-		mv.addObject("uranusGraph1", new UranusGraph());
+		mv.addObject("graph1", new UranusGraph());
 		mv.addObject("uranusHouse", new UranusHouse());
 		return mv;
 	}
@@ -143,7 +143,7 @@ public class SpaceController {
 	@RequestMapping("/planets/venus")
 	public ModelAndView venus() {
 		ModelAndView mv = new ModelAndView("planets/venus", "planet", new Venus());
-		mv.addObject("venusGraph1", new VenusGraph());
+		mv.addObject("graph1", new VenusGraph());
 		mv.addObject("venusHouse", new VenusHouse());
 		return mv;
 	}
