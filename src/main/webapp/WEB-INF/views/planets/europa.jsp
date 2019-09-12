@@ -58,8 +58,19 @@
 				</table>
 	</table>
 
-	<p>TODO</p>
-	
+	<p>Show your loved one that you love them to the moon and back by
+		buying property on Europa. If you and your loved one are fascinated by
+		the view of Jupiter's moons, now is the chance to actually live on one
+		of these beauties. Europa is the smallest of the 4 Galilean moons that
+		orbit Jupiter. But you know what they say, great things come in small
+		packages. Europa has the smoothest surface of any known solid object
+		in our solar system. That means there will be no hills or mountains
+		blocking your view of your loved one! On Europa you'll also have a
+		wonderful view of Jupiter, anywhere you go. That way you can also keep
+		your eyes on any properties you own there, if you are a big
+		baller that is. If you're not a big baller then there is no place for
+		you on this moon, sorry.</p>
+
 	<p id="xPoints_1" hidden=true>${europaGraph1.getXPoints()}</p>
 	<p id="yPoints_1" hidden=true>${europaGraph1.getYPoints()}</p>
 	<p id="title_1" hidden=true>${europaGraph1.titleName}</p>
@@ -72,8 +83,9 @@
 
 	<!--  JS that actually creates the graphs -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
-	
+
 </body>
 </html>

@@ -57,5 +57,17 @@
 					</tr>
 				</table>
 	</table>
+	<p>Beta Pictoris C wasn't enough for you I see. Listen we get it,
+		you're a super loner who loves reading books all day and enjoying life
+		alone. You're not a loner, you say? You hate being a lone but you just
+		hate being around other people...Oh I see, look, you and your 9 cats
+		are more than welcome on Beta Pictoris C. This planet will have you as
+		isolated as possible. It's 9 times the size of Jupiter. For those
+		people who live in major cities and want to get away from people,
+		cars, and polluted air for a while, now is your opportunity to buy a
+		vacation home away from all of the noise. You might run into weirdos
+		with 9 cats if you really try, but other than that this planet will
+		not have many natives or others living around your vacation home if
+		you choose not to.</p>
 </body>
 </html>

@@ -57,5 +57,14 @@
 					</tr>
 				</table>
 	</table>
+	<p>Look if you thought Jupiter was something, then your going to
+		love this exoplanet. Beta Pictoris B is considered the super Jupiter.
+		The radius and mass of Beta Pictoris B are greater than that of
+		Jupiter. Getting there might be more expensive but the properties are
+		much more affordable. There is enough space for everybody to move
+		here. But look the whole point of moving to an exoplanet is probably
+		to get away from those annoying earthlings who do not value their own
+		planet. Even if everybody in Earth moved to Beta Pictoris B you'd
+		still have plenty of space to keep yourself isolated. </p>
 </body>
 </html>

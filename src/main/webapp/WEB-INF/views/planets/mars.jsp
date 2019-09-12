@@ -65,7 +65,7 @@
 		temperatures(some days). Make sure to bring extra blankets and coats
 		because temperatures on Mars can get as low as -284 degrees. But hey
 		kids, more snow days! The adults can enjoy those cold days in front of
-		the fireplace with a warm cup of coffee and Earth Football on all day.
+		the fireplace with a warm cup of coffee and Earth Football all day.
 		What a life? If you want to miss out on an opportunity like this then
 		go ahead, browse another website, the Martians won't miss you.</p>
 
