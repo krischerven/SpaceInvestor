@@ -21,7 +21,7 @@
 	<form action="save-user">
 		<h3>UserName</h3>
 		<center>
-			<input type="text" pattern = "[a-z0-9._%+-]" name="username" maxLength="20"
+			<input type="text" pattern = "[A-Za-z]{1,12}" name="username" maxLength="20"
 				style="width: 250px;" />
 
 		</center>
@@ -29,14 +29,14 @@
 
 		<h3>Email</h3>
 		<center>
-			<input type="text" name="email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxLength="20" style="width: 250px;" />
+			<input type="text" name="email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxLength="50" style="width: 250px;" />
 		</center>
 
 		<br>
 
 		<h3>Password</h3>
 		<center>
-			<input type="password" pattern="[a-z0-9._%+-]" name="password" maxLength="20"
+			<input type="password" pattern="[A-Za-z]{0,12}" name="password" maxLength="50"
 				style="width: 250px;" />
 		</center>
 
@@ -52,7 +52,7 @@
 
 		<h3>Expiration Date</h3>
 		<center>
-			<input type="number" pattern="\\d{2}\\/\\d{2}" name="expiration" maxLength="4"
+			<input type="text" pattern="\d{2}/\d{2}" name="expiration" maxLength="10"
 				style="width: 250px" />
 
 		</center>
@@ -60,7 +60,7 @@
 
 		<h3>CVV</h3>
 		<center>
-			<input type="number" name="cvv" maxlength="3" style="width: 250px" />
+			<input type="number" name="cvv" maxlength="4" style="width: 250px" />
 		</center>
 
 		<br>

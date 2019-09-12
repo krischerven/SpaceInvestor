@@ -18,7 +18,7 @@ public class User {
 	private String email;
 	private String password;
 	private String creditcard;
-	private Integer expiration;
+	private String expiration;
 	private String cvv;
 
 	public User() {
@@ -66,11 +66,11 @@ public class User {
 		this.password = password;
 	}
 
-	public Integer getExpiration() {
+	public String getExpiration() {
 		return expiration;
 	}
 
-	public void setExpiration(Integer expiration) {
+	public void setExpiration(String expiration) {
 		this.expiration = expiration;
 	}
 
