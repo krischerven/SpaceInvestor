@@ -20,7 +20,7 @@ body {
 }
 #section1 { padding-top: 50px; height: 100%; }
 #section2 { padding-top: 50px; height: 100%; }
-#section3 { padding-top: 50px; height: 100%; }
+#section3 { padding-top: 50px; height: 100%; width: 75% }
 </style>
 </head>
 <body>
