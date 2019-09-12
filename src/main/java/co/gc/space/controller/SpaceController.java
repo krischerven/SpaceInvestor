@@ -151,28 +151,28 @@ public class SpaceController {
 	@RequestMapping("/planets/47_uma_b")
 	public ModelAndView _47_uma_b() {
 		ModelAndView mv = new ModelAndView("planets/47_uma_b", "planet", builder.Build("47 uma b"));
-		mv.addObject("47umaBHouse", new UmaBHouse());
+		mv.addObject("house", new UmaBHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/kepler-421_b")
 	public ModelAndView _kepler_421_b() {
 		ModelAndView mv = new ModelAndView("planets/kepler-421_b", "planet", builder.Build("kepler-421 b"));
-		mv.addObject("kepler-421BHouse", new Kepler421BHouse());
+		mv.addObject("house", new Kepler421BHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/beta_pictoris_b")
 	public ModelAndView beta_pictoris_b() {
 		ModelAndView mv = new ModelAndView("planets/beta_pictoris_b", "planet", builder.Build("beta pic b"));
-		mv.addObject("betaPicBHouse", new BetaPicBHouse());
+		mv.addObject("house", new BetaPicBHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/beta_pictoris_c")
 	public ModelAndView beta_pictoris_c() {
 		ModelAndView mv = new ModelAndView("planets/beta_pictoris_c", "planet", builder.Build("beta pic c"));
-		mv.addObject("betaPicCHouse", new BetaPicCHouse());
+		mv.addObject("house", new BetaPicCHouse());
 		return mv;
 	}
 	
