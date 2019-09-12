@@ -70,6 +70,8 @@ body {
 		</table>
 	</div>
 	<div id="section2" class="container-fluid">	
+		<h1>Houses</h1>
+		<br>
 		<table>
 			<tr>
 				<th>Price</th>
