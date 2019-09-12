@@ -1,6 +1,10 @@
 let graph = {
 		type: 'scatter',
 		mode: 'lines',
+		line: {
+			color: "#145051",
+			width: 2,
+		},
 };
 
 graph.x = document.getElementById("xPoints_1").innerText.split(",");
@@ -17,8 +21,7 @@ let layout = {
 			title: 'ERROR',
 			showline: false
 		},
-		plot_color: "#FFFFFF",
-		plot_bgcolor: "#000000",
+		plot_bgcolor: "#1c253c",
 };
 
 layout.title = document.getElementById("title_1").innerText
