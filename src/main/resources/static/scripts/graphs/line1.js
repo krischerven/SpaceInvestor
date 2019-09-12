@@ -11,6 +11,11 @@ let graph = {
 graph.x = document.getElementById("xPoints_1").innerText.split(",");
 graph.y = document.getElementById("yPoints_1").innerText.split(",");
 
+for (let i = 0; i < graph.x.length; ++i) {
+	graph.x[i] = "<span style=\"color: #145051\">" + graph.x[i] + "</span>"
+	graph.y[i] = "<span style=\"color: #145051\">" + graph.y[i] + "</span>"
+} 
+
 let layout = {
 		title: 'ERROR',
 		xaxis: {
