@@ -8,6 +8,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import co.gc.space.PlanetBuilder;
@@ -180,7 +181,12 @@ public class SpaceController {
 	public ModelAndView europa() {
 		ModelAndView mv = new ModelAndView("planets/europa", "planet", new Europa());
 		mv.addObject("europaGraph1", new EuropaGraph());
-		mv.addObject("europaHouse", new EuropaHouse());
+		mv.addObject("house", new EuropaHouse());
 		return mv;
+	}
+	
+	@RequestMapping("/buyhouse") 
+	public ModelAndView buyHouse(@RequestParam("house") String house) {
+		return new ModelAndView("buyhouse", "house", house);
 	}
 }
