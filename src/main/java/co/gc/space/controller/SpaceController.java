@@ -8,6 +8,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import co.gc.space.PlanetBuilder;
@@ -95,84 +96,84 @@ public class SpaceController {
 	@RequestMapping("/planets/jupiter")
 	public ModelAndView jupiter() {
 		ModelAndView mv = new ModelAndView ("planets/jupiter", "planet", new Jupiter());
-		mv.addObject("jupiterGraph1", new JupiterGraph());
-		mv.addObject("jupiterHouse", new JupiterHouse());
+		mv.addObject("graph1", new JupiterGraph());
+		mv.addObject("house", new JupiterHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/mars")
 	public ModelAndView mars() {
 		ModelAndView mv = new ModelAndView("planets/mars", "planet", new Mars());
-		mv.addObject("marsGraph1", new MarsGraph());
-		mv.addObject("marsHouse", new MarsHouse());
+		mv.addObject("graph1", new MarsGraph());
+		mv.addObject("house", new MarsHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/mercury")
 	public ModelAndView mercury() {
 		ModelAndView mv = new ModelAndView("planets/mercury", "planet", new Mercury());
-		mv.addObject("mercuryGraph1", new MercuryGraph());
-		mv.addObject("mercuryHouse", new MercuryHouse());
+		mv.addObject("graph1", new MercuryGraph());
+		mv.addObject("house", new MercuryHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/neptune")
 	public ModelAndView neptune() {
 		ModelAndView mv = new ModelAndView("planets/neptune", "planet", new Neptune());
-		mv.addObject("neptuneGraph1", new NeptuneGraph());
-		mv.addObject("neptuneHouse", new NeptuneHouse());
+		mv.addObject("graph1", new NeptuneGraph());
+		mv.addObject("house", new NeptuneHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/saturn")
 	public ModelAndView saturn() {
 		ModelAndView mv = new ModelAndView("planets/saturn", "planet", new Saturn());
-		mv.addObject("saturnGraph1", new SaturnGraph());
-		mv.addObject("saturnHouse", new SaturnHouse());
+		mv.addObject("graph1", new SaturnGraph());
+		mv.addObject("house", new SaturnHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/uranus")
 	public ModelAndView uranus() {
 		ModelAndView mv = new ModelAndView("planets/uranus", "planet", new Uranus());
-		mv.addObject("uranusGraph1", new UranusGraph());
-		mv.addObject("uranusHouse", new UranusHouse());
+		mv.addObject("graph1", new UranusGraph());
+		mv.addObject("house", new UranusHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/venus")
 	public ModelAndView venus() {
 		ModelAndView mv = new ModelAndView("planets/venus", "planet", new Venus());
-		mv.addObject("venusGraph1", new VenusGraph());
-		mv.addObject("venusHouse", new VenusHouse());
+		mv.addObject("graph1", new VenusGraph());
+		mv.addObject("house", new VenusHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/47_uma_b")
 	public ModelAndView _47_uma_b() {
 		ModelAndView mv = new ModelAndView("planets/47_uma_b", "planet", builder.Build("47 uma b"));
-		mv.addObject("47umaBHouse", new UmaBHouse());
+		mv.addObject("house", new UmaBHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/kepler-421_b")
 	public ModelAndView _kepler_421_b() {
 		ModelAndView mv = new ModelAndView("planets/kepler-421_b", "planet", builder.Build("kepler-421 b"));
-		mv.addObject("kepler-421BHouse", new Kepler421BHouse());
+		mv.addObject("house", new Kepler421BHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/beta_pictoris_b")
 	public ModelAndView beta_pictoris_b() {
 		ModelAndView mv = new ModelAndView("planets/beta_pictoris_b", "planet", builder.Build("beta pic b"));
-		mv.addObject("betaPicBHouse", new BetaPicBHouse());
+		mv.addObject("house", new BetaPicBHouse());
 		return mv;
 	}
 
 	@RequestMapping("/planets/beta_pictoris_c")
 	public ModelAndView beta_pictoris_c() {
 		ModelAndView mv = new ModelAndView("planets/beta_pictoris_c", "planet", builder.Build("beta pic c"));
-		mv.addObject("betaPicCHouse", new BetaPicCHouse());
+		mv.addObject("house", new BetaPicCHouse());
 		return mv;
 	}
 	
@@ -180,7 +181,12 @@ public class SpaceController {
 	public ModelAndView europa() {
 		ModelAndView mv = new ModelAndView("planets/europa", "planet", new Europa());
 		mv.addObject("europaGraph1", new EuropaGraph());
-		mv.addObject("europaHouse", new EuropaHouse());
+		mv.addObject("house", new EuropaHouse());
 		return mv;
+	}
+	
+	@RequestMapping("/buyhouse") 
+	public ModelAndView buyHouse(@RequestParam("house") String house) {
+		return new ModelAndView("buyhouse", "house", house);
 	}
 }
