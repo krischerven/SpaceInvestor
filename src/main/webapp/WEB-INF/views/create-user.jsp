@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
+<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Index" onclick="window.location='/'" />
 	<h2>Create your Account to Start Investing in Properties That are
 		Out of This World Today!</h2>
 

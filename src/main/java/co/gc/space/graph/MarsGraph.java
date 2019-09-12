@@ -28,7 +28,7 @@ public class MarsGraph extends Graph {
 	public MarsGraph() {
 		titleName = "Price Projections of Sending a Shuttle To Mars";
 		xName = "Year";
-		yName = "Price (Billion $)";
+		yName = "Price ($ Billion)";
 		xPoints = years(2020, 7);
 		yPoints = money(500_000_000_000l, xPoints.size());
 

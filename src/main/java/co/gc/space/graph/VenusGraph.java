@@ -28,7 +28,7 @@ public class VenusGraph extends Graph {
 	public VenusGraph() {
 		titleName = "Price of Nitrogen Sold From Venus";
 		xName = "Year";
-		yName = "Price ($)";
+		yName = "Price ($ per liter)";
 		xPoints = years(2020, 7);
 		yPoints = money(1, xPoints.size());
 	}
