@@ -34,7 +34,7 @@ body {
 #section3 {
 	padding-top: 50px;
 	height: 100%;
-	width: 75%
+	width: 75%;
 }
 </style>
 </head>
