@@ -11,6 +11,7 @@
 	rel="stylesheet"
 	integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er"
 	crossorigin="anonymous">
+<link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
 	<h1>You just bought your first house in space!</h1>
