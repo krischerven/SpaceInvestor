@@ -96,7 +96,7 @@ public class SpaceController {
 	public ModelAndView jupiter() {
 		ModelAndView mv = new ModelAndView ("planets/jupiter", "planet", new Jupiter());
 		mv.addObject("graph1", new JupiterGraph());
-		mv.addObject("jupiterHouse", new JupiterHouse());
+		mv.addObject("house", new JupiterHouse());
 		return mv;
 	}
 
@@ -104,7 +104,7 @@ public class SpaceController {
 	public ModelAndView mars() {
 		ModelAndView mv = new ModelAndView("planets/mars", "planet", new Mars());
 		mv.addObject("graph1", new MarsGraph());
-		mv.addObject("marsHouse", new MarsHouse());
+		mv.addObject("house", new MarsHouse());
 		return mv;
 	}
 
@@ -112,7 +112,7 @@ public class SpaceController {
 	public ModelAndView mercury() {
 		ModelAndView mv = new ModelAndView("planets/mercury", "planet", new Mercury());
 		mv.addObject("graph1", new MercuryGraph());
-		mv.addObject("mercuryHouse", new MercuryHouse());
+		mv.addObject("house", new MercuryHouse());
 		return mv;
 	}
 
@@ -120,7 +120,7 @@ public class SpaceController {
 	public ModelAndView neptune() {
 		ModelAndView mv = new ModelAndView("planets/neptune", "planet", new Neptune());
 		mv.addObject("graph1", new NeptuneGraph());
-		mv.addObject("neptuneHouse", new NeptuneHouse());
+		mv.addObject("house", new NeptuneHouse());
 		return mv;
 	}
 
@@ -128,7 +128,7 @@ public class SpaceController {
 	public ModelAndView saturn() {
 		ModelAndView mv = new ModelAndView("planets/saturn", "planet", new Saturn());
 		mv.addObject("graph1", new SaturnGraph());
-		mv.addObject("saturnHouse", new SaturnHouse());
+		mv.addObject("house", new SaturnHouse());
 		return mv;
 	}
 
@@ -136,7 +136,7 @@ public class SpaceController {
 	public ModelAndView uranus() {
 		ModelAndView mv = new ModelAndView("planets/uranus", "planet", new Uranus());
 		mv.addObject("graph1", new UranusGraph());
-		mv.addObject("uranusHouse", new UranusHouse());
+		mv.addObject("house", new UranusHouse());
 		return mv;
 	}
 
@@ -144,7 +144,7 @@ public class SpaceController {
 	public ModelAndView venus() {
 		ModelAndView mv = new ModelAndView("planets/venus", "planet", new Venus());
 		mv.addObject("graph1", new VenusGraph());
-		mv.addObject("venusHouse", new VenusHouse());
+		mv.addObject("house", new VenusHouse());
 		return mv;
 	}
 
