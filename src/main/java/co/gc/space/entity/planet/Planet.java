@@ -272,7 +272,7 @@ public class Planet {
 	
 	// helpers
 	public String getTitle() {
-		String[] tmp = planetName.replace("_", " ").split(" ");
+		String[] tmp = planetName.replace("pic", "pictoris").replace("_", " ").split(" ");
 		String tmp2 = "";
 		for (String tmp3 : tmp) {
 			try {
