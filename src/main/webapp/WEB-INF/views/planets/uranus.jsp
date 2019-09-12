@@ -82,7 +82,7 @@
 
 	<!--  JS that actually creates the graphs -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<script type="text/javascript" src="../scripts/jupiter_graph1.js"></script>
+	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
 	
 </body>
 </html>
