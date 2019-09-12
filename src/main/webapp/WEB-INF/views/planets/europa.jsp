@@ -59,5 +59,20 @@
 	</table>
 
 	<p>TODO</p>
+	
+	<p id="xPoints_1" hidden=true>${europaGraph1.getXPoints()}</p>
+	<p id="yPoints_1" hidden=true>${europaGraph1.getYPoints()}</p>
+	<p id="title_1" hidden=true>${europaGraph1.titleName}</p>
+	<p id="xName_1" hidden=true>${europaGraph1.xName}</p>
+	<p id="yName_1" hidden=true>${europaGraph1.yName}</p>
+
+	<div class="container" id="graph1">
+		<!-- Graph #1 goes here -->
+	</div>
+
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+	
 </body>
 </html>
