@@ -12,15 +12,30 @@
 	integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er"
 	crossorigin="anonymous">
 <link rel="stylesheet" href="../css/spacestyle.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
 body {
-    position: relative; 
+	position: relative;
 }
-#section1 { padding-top: 50px; height: 100%; }
-#section2 { padding-top: 50px; height: 100%; }
-#section3 { padding-top: 50px; height: 100%; width: 75% }
+
+#section1 {
+	padding-top: 50px;
+	height: 100%;
+}
+
+#section2 {
+	padding-top: 50px;
+	height: 100%;
+}
+
+#section3 {
+	padding-top: 50px;
+	height: 100%;
+	width: 75%
+}
 </style>
 </head>
 <body>
@@ -53,7 +68,7 @@ body {
 							<td>${planet.period }</td>
 						</tr>
 					</table> <br>
-	
+
 					<table class="table space-table">
 						<tr>
 							<th>Mass</th>
@@ -76,17 +91,16 @@ body {
 			mainly made up of sand, sand dunes, and volcanoes. But hey, don't let
 			the volacanoes intimidate you. Once you get the hang of riding your
 			four wheelers and dirt bikes around the lava it won't be that bad.
-			It'll be like a video game you play in real life. Tell Mark Zuckerberg
-			his Oculus headsets will be of no value on this planet. If you want to
-			be a wimp and play games in a FAKE world then the Oculus is for you.
-			Now, if you are a champ and want to take the experiences of Mario Kart
-			to the real world, then Venus is for you.</p>	
+			It'll be like a video game you play in real life. Tell Mark
+			Zuckerberg his Oculus headsets will be of no value on this planet. If
+			you want to be a wimp and play games in a FAKE world then the Oculus
+			is for you. Now, if you are a champ and want to take the experiences
+			of Mario Kart to the real world, then Venus is for you.</p>
 	</div>
-	<div id="section2" class="container-fluid">	
+	<div id="section2" class="container-fluid">
 		<h1>Houses</h1>
-		<br>
-		<input type="button" class="btn btn-primary hBack"
-		value="Buy House" onclick="window.location='buyhouse'" />
+		<br> <input type="button" class="btn btn-primary hBack"
+			value="Buy House" onclick="window.location='../buyhouse'" />
 		<table>
 			<tr>
 				<th>Price</th>
@@ -113,25 +127,26 @@ body {
 				<td>${house.architecturalStyle }</td>
 			</tr>
 		</table>
-	</div>	
+	</div>
 	<!-- graph section -->
-    <p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
-    <p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
-    <p id="title_1" hidden=true>${graph1.titleName}</p>
-    <p id="xName_1" hidden=true>${graph1.xName}</p>
-    <p id="yName_1" hidden=true>${graph1.yName}</p>
+	<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
+	<p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
+	<p id="title_1" hidden=true>${graph1.titleName}</p>
+	<p id="xName_1" hidden=true>${graph1.xName}</p>
+	<p id="yName_1" hidden=true>${graph1.yName}</p>
 
-    <div id="section3" class="container-fluid">	
+	<div id="section3" class="container-fluid">
 		<h1>Graphs</h1>
 		<br>
-        <div id="graph1">
-            <!-- Graph #1 goes here -->
-        </div>
-    </div>
+		<div id="graph1">
+			<!-- Graph #1 goes here -->
+		</div>
+	</div>
 
-    <!--  JS that actually creates the graphs -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-    <script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
 </body>
 </html>

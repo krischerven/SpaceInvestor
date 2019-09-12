@@ -87,65 +87,12 @@ body {
 	<p id="xName_1" hidden=true>${marsGraph1.xName}</p>
 	<p id="yName_1" hidden=true>${marsGraph1.yName}</p>
 
-	<div class="container" id="graph1">
-		<!-- Graph #1 goes here -->
-=======
-	<div id="section1" class="container-fluid">
-		<h1>${planet.getTitle()}</h1>
-		<br>
-		<table>
-			<tr>
-				<td><img src=${planet.imageUrl }
-					style="width: 300px; height: 300px;"></td>
-				<td>
-					<table class="table space-table">
-						<tr>
-							<th>Star Name</th>
-							<th>Star Distance</th>
-							<th>Year Discovered</th>
-							<th>Radius</th>
-							<th>Period</th>
-						</tr>
-						<tr>
-							<td>${planet.starName }</td>
-							<td>${planet.starDistance }</td>
-							<td>${planet.yearDiscovered }</td>
-							<td>${planet.radius }</td>
-							<td>${planet.period }</td>
-						</tr>
-					</table> <br>
+
 	
-					<table class="table space-table">
-						<tr>
-							<th>Mass</th>
-							<th>Temperature Calculated</th>
-							<th>Minimum Temperature</th>
-							<th>Maximum Temperature</th>
-						</tr>
-						<tr>
-							<td>${planet.mass }</td>
-							<td>${planet.tempCalculated }</td>
-							<td>${planet.minTemp}</td>
-							<td>${planet.maxTemp}</td>
-						</tr>
-					</table>
-		</table>
-		<p>Elon Musk, this one is for you! Other than Tesla Dealerships
-			everywhere, this planet will be the best of all planets to raise a
-			family. Mars is like one huge bouncy house with 62.5% less gravity.
-			Jump around the sand dunes and enjoy the nice Earth like
-			temperatures(some days). Make sure to bring extra blankets and coats
-			because temperatures on Mars can get as low as -284 degrees. But hey
-			kids, more snow days! The adults can enjoy those cold days in front of
-			the fireplace with a warm cup of coffee and Earth Football on all day.
-			What a life? If you want to miss out on an opportunity like this then
-			go ahead, browse another website, the Martians won't miss you.</p>
-	</div>
 	<div id="section2" class="container-fluid">	
 		<h1>Houses</h1>
-		<br>
-		<input type="button" class="btn btn-primary hBack"
-		value="Buy House" onclick="window.location='buyhouse'" />
+		<br> <input type="button" class="btn btn-primary hBack" value="Buy House"
+			onclick="window.location='../buyhouse'" />
 		<table>
 			<tr>
 				<th>Price</th>

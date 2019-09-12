@@ -12,14 +12,24 @@
 	integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er"
 	crossorigin="anonymous">
 <link rel="stylesheet" href="../css/spacestyle.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
 body {
-    position: relative; 
+	position: relative;
 }
-#section1 { padding-top: 50px; height: 100%; }
-#section2 { padding-top: 50px; height: 100%; }
+
+#section1 {
+	padding-top: 50px;
+	height: 100%;
+}
+
+#section2 {
+	padding-top: 50px;
+	height: 100%;
+}
 </style>
 </head>
 <body>
@@ -52,7 +62,7 @@ body {
 							<td>${planet.period }</td>
 						</tr>
 					</table> <br>
-	
+
 					<table class="table space-table">
 						<tr>
 							<th>Mass</th>
@@ -69,11 +79,10 @@ body {
 					</table>
 		</table>
 	</div>
-	<div id="section2" class="container-fluid">	
+	<div id="section2" class="container-fluid">
 		<h1>Houses</h1>
-		<br>
-		<input type="button" class="btn btn-primary hBack"
-		value="Buy House" onclick="window.location='buyhouse'" />
+		<br> <input type="button" class="btn btn-primary hBack"
+			value="Buy House" onclick="window.location='../buyhouse'" />
 		<table>
 			<tr>
 				<th>Price</th>

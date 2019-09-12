@@ -12,14 +12,24 @@
 	integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er"
 	crossorigin="anonymous">
 <link rel="stylesheet" href="../css/spacestyle.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
 body {
-    position: relative; 
+	position: relative;
 }
-#section1 { padding-top: 50px; height: 100%; }
-#section2 { padding-top: 50px; height: 100%; }
+
+#section1 {
+	padding-top: 50px;
+	height: 100%;
+}
+
+#section2 {
+	padding-top: 50px;
+	height: 100%;
+}
 </style>
 </head>
 <body>
@@ -81,36 +91,36 @@ body {
 		not have many natives or others living around your vacation home if
 		you choose not to.</p>
 
-		<h1>Houses</h1>
-		<br>
-		<input type="button" class="btn btn-primary hBack"
-		value="Buy House" onclick="window.location='buyhouse'" />
-		<table>
-			<tr>
-				<th>Price</th>
-				<th>Acres</th>
-				<th>Year Built</th>
-				<th>Condition</th>
-			</tr>
-			<tr>
-				<td>${house.price }</td>
-				<td>${house.arces }</td>
-				<td>${house.yearBuilt }</td>
-				<td>${house.condition }</td>
-			</tr>
-		</table>
-		<table>
-			<tr>
-				<th>Property Details</th>
-				<th>House Features</th>
-				<th>Architectural Style</th>
-			</tr>
-			<tr>
-				<td>${house.propertyDetails }</td>
-				<td>${house.houseFeatures }</td>
-				<td>${house.architecturalStyle }</td>
-			</tr>
-		</table>
+	<h1>Houses</h1>
+	<br>
+	<input type="button" class="btn btn-primary hBack" value="Buy House"
+		onclick="window.location='../buyhouse'" />
+	<table>
+		<tr>
+			<th>Price</th>
+			<th>Acres</th>
+			<th>Year Built</th>
+			<th>Condition</th>
+		</tr>
+		<tr>
+			<td>${house.price }</td>
+			<td>${house.arces }</td>
+			<td>${house.yearBuilt }</td>
+			<td>${house.condition }</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>Property Details</th>
+			<th>House Features</th>
+			<th>Architectural Style</th>
+		</tr>
+		<tr>
+			<td>${house.propertyDetails }</td>
+			<td>${house.houseFeatures }</td>
+			<td>${house.architecturalStyle }</td>
+		</tr>
+	</table>
 	</div>
 
 </body>
