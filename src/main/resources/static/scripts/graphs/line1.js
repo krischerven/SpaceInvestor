@@ -4,7 +4,7 @@ let graph = {
 		mode: 'lines',
 		line: {
 			color: "#145051",
-			width: 2,
+			width: 5,
 		},
 };
 
@@ -13,7 +13,7 @@ graph.y = document.getElementById("yPoints_1").innerText.split(",");
 
 for (let i = 0; i < graph.x.length; ++i) {
 	graph.x[i] = "<span style=\"color: #145051\">" + graph.x[i] + "</span>"
-	graph.y[i] = "<span style=\"color: #145051\">" + graph.y[i] + "</span>"
+	graph.y[i] = "<span style=\"color: #145051\">" + numeral(graph.y[i]).format('0a') + "</span>"
 } 
 
 let layout = {
