@@ -14,7 +14,8 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-
+<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Create User" onclick="window.location='create-user'" />
 	<h2>Invalid Credit Card Entry!</h2>
 
 </body>
