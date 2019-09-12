@@ -26,7 +26,10 @@ public class NeptuneGraph extends Graph {
 	}
 
 	public NeptuneGraph() {
+		titleName = "Price of Ammonia Sold From Neptune";
+		xName = "Year";
+		yName = "Price ($ per ton)";
 		xPoints = years(2020, 7);
-		yPoints = money(500_000_000_000l, xPoints.size());
+		yPoints = money(401, xPoints.size());
 	}
 }

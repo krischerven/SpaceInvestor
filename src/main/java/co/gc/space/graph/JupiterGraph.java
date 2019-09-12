@@ -28,7 +28,7 @@ public class JupiterGraph extends Graph {
 	public JupiterGraph() {
 		titleName = "Price Projection of Hydrogen Sold From Jupiter";
 		xName = "Year"; 
-		yName = "Price ($)";
+		yName = "Price ($ per kilogram)";
 		xPoints = years(2020, 7);
 		yPoints = money(0.70, xPoints.size());
 	}
