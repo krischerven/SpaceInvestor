@@ -68,6 +68,18 @@ body {
 						</tr>
 					</table>
 		</table>
+		<p>No, going to Jupiter will in fact not make you more stupider.
+		There is no better opportunity to open your honeymoon resort than
+		right now on this planet of all planets. Imagine being able to kiss
+		the love of your life not under the stars and ONE moon but under the
+		stars and SEVENTY FIVE whole moons. Now if that's not romantic I don't
+		know what is. Valentine's day will have this planet packed and create
+		opportunities for your wallets to get nice and hefty. When one couple
+		puts up a picture of their anniversary celebration under Jupiter's 75
+		moons on Instagram, every woman on earth will be envious and every man
+		on earth will have to step up their game. CHA CHING. Time to make that
+		bank baby, but resorts here are going up fast so be one of the first
+		to secure your resort's place on this beautiful planet.</p>
 	</div>
 	<div id="section2" class="container-fluid">	
 		<h1>Houses</h1>

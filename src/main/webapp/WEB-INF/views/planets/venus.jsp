@@ -68,6 +68,18 @@ body {
 						</tr>
 					</table>
 		</table>
+		<p>Venus, a planet soon to be filled with four wheelers and dirt
+			bikes. If you want to live your days riding four wheelers and dirt
+			bikes then Venus is the planet for you. It is a hot planet with
+			minimal water so be sure to bring a water bottle. Its landscape is
+			mainly made up of sand, sand dunes, and volcanoes. But hey, don't let
+			the volacanoes intimidate you. Once you get the hang of riding your
+			four wheelers and dirt bikes around the lava it won't be that bad.
+			It'll be like a video game you play in real life. Tell Mark Zuckerberg
+			his Oculus headsets will be of no value on this planet. If you want to
+			be a wimp and play games in a FAKE world then the Oculus is for you.
+			Now, if you are a champ and want to take the experiences of Mario Kart
+			to the real world, then Venus is for you.</p>	
 	</div>
 	<div id="section2" class="container-fluid">	
 		<h1>Houses</h1>

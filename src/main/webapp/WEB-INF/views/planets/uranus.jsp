@@ -68,6 +68,17 @@ body {
 						</tr>
 					</table>
 		</table>
+		<p>Let's send a probe to Uranus! I know what you're thinking, get
+			your mind out of the gutter we're about to get serious. If your
+			favorite color is blue then this is the Planet for you. Uranus is made
+			of water, methane, and ammonia fluids above a small rocky center. The
+			atmosphere is made of hydrogen and helium making it the perfect
+			opportunity to open up your very own glactic balloon store. Everything
+			from hot air balloons to balloons for your kid's birthday party Uranus
+			has the helium you need. You won't have to pay for any of the helium
+			and you can sell it all, what a magnificent business plan? Selling
+			something you get for free? Something really wrong would have to be
+			wrong with you to not get your hands on this opportunity.</p>	
 	</div>
 	<div id="section2" class="container-fluid">	
 		<h1>Houses</h1>
