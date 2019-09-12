@@ -17,6 +17,8 @@ let layout = {
 			title: 'ERROR',
 			showline: false
 		},
+		plot_color: "#FFFFFF",
+		plot_bgcolor: "#000000",
 };
 
 layout.title = document.getElementById("title_1").innerText
