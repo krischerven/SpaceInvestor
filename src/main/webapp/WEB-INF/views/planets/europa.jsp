@@ -41,6 +41,7 @@ body {
 
 	<h1>Europa</h1>
 	<br>
+	<div id="section1" class="container-fluid">
 	<table>
 		<tr>
 			<td><img src=${planet.gifImage }
@@ -78,7 +79,6 @@ body {
 					</tr>
 				</table>
 	</table>
-
 	<p>Show your loved one that you love them to the moon and back by
 		buying property on Europa. If you and your loved one are fascinated by
 		the view of Jupiter's moons, now is the chance to actually live on one
@@ -91,38 +91,39 @@ body {
 		your eyes on any properties you own there, if you are a big baller
 		that is. If you're not a big baller then there is no place for you on
 		this moon, sorry.</p>
+	</div>
 
-
-	<h1>Houses</h1>
-	<br>
-	<input type="button" class="btn btn-primary hBack" value="Buy House"
-		onclick="window.location='../buyhouse'" />
-	<table>
-		<tr>
-			<th>Price</th>
-			<th>Acres</th>
-			<th>Year Built</th>
-			<th>Condition</th>
-		</tr>
-		<tr>
-			<td>${house.price }</td>
-			<td>${house.arces }</td>
-			<td>${house.yearBuilt }</td>
-			<td>${house.condition }</td>
-		</tr>
-	</table>
-	<table>
-		<tr>
-			<th>Property Details</th>
-			<th>House Features</th>
-			<th>Architectural Style</th>
-		</tr>
-		<tr>
-			<td>${house.propertyDetails }</td>
-			<td>${house.houseFeatures }</td>
-			<td>${house.architecturalStyle }</td>
-		</tr>
-	</table>
+	<div id="section2" class="container-fluid">
+		<h1>Houses</h1>
+		<br>
+		<input type="button" class="btn btn-primary hBack" value="Buy House"
+			onclick="window.location='buyhouse'" />
+		<table>
+			<tr>
+				<th>Price</th>
+				<th>Acres</th>
+				<th>Year Built</th>
+				<th>Condition</th>
+			</tr>
+			<tr>
+				<td>${house.price }</td>
+				<td>${house.arces }</td>
+				<td>${house.yearBuilt }</td>
+				<td>${house.condition }</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>Property Details</th>
+				<th>House Features</th>
+				<th>Architectural Style</th>
+			</tr>
+			<tr>
+				<td>${house.propertyDetails }</td>
+				<td>${house.houseFeatures }</td>
+				<td>${house.architecturalStyle }</td>
+			</tr>
+		</table>
 	</div>
 
 </body>
