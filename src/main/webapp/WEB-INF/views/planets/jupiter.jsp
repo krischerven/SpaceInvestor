@@ -101,7 +101,7 @@ body {
 	<div id="section2" class="container-fluid">
 		<h1>Houses</h1>
 		<br> <input type="button" class="btn btn-primary hBack"
-			value="Buy House" onclick="window.location='../buyhouse'" />
+			value="Buy House" onclick="window.location='../buyhouse?house=jupiter'" />
 		<table>
 			<tr>
 				<th>Price</th>

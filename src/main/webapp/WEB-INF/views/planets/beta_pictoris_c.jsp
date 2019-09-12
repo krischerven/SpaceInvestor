@@ -94,7 +94,7 @@ body {
 	<h1>Houses</h1>
 	<br>
 	<input type="button" class="btn btn-primary hBack" value="Buy House"
-		onclick="window.location='../buyhouse'" />
+		onclick="window.location='../buyhouse?house=betapicc'" />
 	<table>
 		<tr>
 			<th>Price</th>
