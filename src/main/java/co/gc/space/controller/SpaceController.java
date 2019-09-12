@@ -23,6 +23,8 @@ import co.gc.space.entity.planet.Venus;
 import co.gc.space.graph.JupiterGraph;
 import co.gc.space.graph.MarsGraph;
 import co.gc.space.graph.MercuryGraph;
+import co.gc.space.graph.NeptuneGraph;
+import co.gc.space.graph.VenusGraph;
 import co.gc.space.repo.PlanetRepo;
 
 @Controller
@@ -98,7 +100,9 @@ public class SpaceController {
 
 	@RequestMapping("/planets/neptune")
 	public ModelAndView neptune() {
-		return new ModelAndView("planets/neptune", "planet", new Neptune());
+		ModelAndView mv = new ModelAndView("planets/neptune", "planet", new Neptune());
+		mv.addObject("neptuneGraph1", new NeptuneGraph());
+		return mv;
 	}
 
 	@RequestMapping("/planets/saturn")
@@ -113,7 +117,9 @@ public class SpaceController {
 
 	@RequestMapping("/planets/venus")
 	public ModelAndView venus() {
-		return new ModelAndView("planets/venus", "planet", new Venus());
+		ModelAndView mv = new ModelAndView("planets/venus", "planet", new Venus());
+		mv.addObject("venusGraph1", new VenusGraph());
+		return mv;
 	}
 
 	@RequestMapping("/planets/47_uma_b")

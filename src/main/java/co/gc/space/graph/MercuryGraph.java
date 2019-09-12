@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MercuryGraph extends Graph {
 
 	private long moneyFormula(long startingPoint, long i) {
-		return (long) ((double) startingPoint * ((double) (1.0 + Math.pow((i + 10), 1.0))));
+		return (long) ((double) startingPoint + ((double) (1.0 + Math.pow((i + 1.0), 2.0))));
 	}
 
 	private ArrayList<Object> money(long startingPoint, int numPoints) {
@@ -30,7 +30,7 @@ public class MercuryGraph extends Graph {
 		xName = "Year";
 		yName = "Price ($)";
 		xPoints = years(2020, 7);
-		yPoints = money(9, xPoints.size());
+		yPoints = money(7, xPoints.size());
 
 	}
 
