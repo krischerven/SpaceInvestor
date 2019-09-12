@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class MercuryGraph extends Graph {
 
-	private long moneyFormula(long startingPoint, long i) {
+	private long moneyFormula(double startingPoint, long i) {
 		return (long) ((double) startingPoint + ((double) (1.0 + Math.pow((i + 1.0), 2.0))));
 	}
 
-	private ArrayList<Object> money(long startingPoint, int numPoints) {
+	private ArrayList<Object> money(double startingPoint, int numPoints) {
 		ArrayList<Object> returnMoney = new ArrayList<>();
 		for (long i = 0; i < numPoints; ++i) {
 			returnMoney.add(moneyFormula(startingPoint, i));
@@ -28,9 +28,9 @@ public class MercuryGraph extends Graph {
 	public MercuryGraph() {
 		titleName = "Price Projections of Magnesium Sold From Mercury";
 		xName = "Year";
-		yName = "Price ($)";
+		yName = "Price ($ per pound)";
 		xPoints = years(2020, 7);
-		yPoints = money(7, xPoints.size());
+		yPoints = money(2.10, xPoints.size());
 
 	}
 

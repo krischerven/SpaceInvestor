@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class UranusGraph extends Graph {
 
 	private long moneyFormula(long startingPoint, long i) {
-		return (long) ((double) startingPoint - ((double) i - Math.pow(i, 10)));
+		return (long) ((double) startingPoint * ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
 	}
 
 	private ArrayList<Object> money(long startingPoint, int numPoints) {
@@ -26,7 +26,10 @@ public class UranusGraph extends Graph {
 	}
 
 	public UranusGraph() {
+		titleName = "Price of Methane Sold From Uranus";
+		xName = "Year";
+		yName = "Price ($ per 1000 cubic feet)";
 		xPoints = years(2020, 7);
-		yPoints = money(500_000_000_000l, xPoints.size());
+		yPoints = money(15, xPoints.size());
 	}
 }
