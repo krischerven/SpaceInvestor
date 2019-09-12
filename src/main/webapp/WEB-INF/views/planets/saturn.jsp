@@ -49,7 +49,7 @@ body {
 		<br>
 		<table>
 			<tr>
-				<td><img src=${planet.imageUrl }
+				<td><img src=${planet.gifImage }
 					style="width: 300px; height: 300px;"></td>
 				<td>
 					<table class="table space-table">
@@ -96,34 +96,19 @@ body {
 	</div>
 	<div id="section2" class="container-fluid">
 		<h1>Houses</h1>
+		<br>
+		<ul>
+			<li>Price: ${house.price }</li>
+			<li>Acres: ${house.arces }</li>
+			<li>Year Built: ${house.yearBuilt }</li>
+			<li>Condition: ${house.condition }</li>
+			<li>Property Details: ${house.propertyDetails }</li>
+			<li>House Features: ${house.houseFeatures }</li>
+			<li>Architectural Style: ${house.architecturalStyle }</li>
+		</ul>
 		<br> <input type="button" class="btn btn-primary hBack"
-			value="Buy House" onclick="window.location='../buyhouse?house=saturn'" />
-		<table>
-			<tr>
-				<th>Price</th>
-				<th>Acres</th>
-				<th>Year Built</th>
-				<th>Condition</th>
-			</tr>
-			<tr>
-				<td>${house.price }</td>
-				<td>${house.arces }</td>
-				<td>${house.yearBuilt }</td>
-				<td>${house.condition }</td>
-			</tr>
-		</table>
-		<table>
-			<tr>
-				<th>Property Details</th>
-				<th>House Features</th>
-				<th>Architectural Style</th>
-			</tr>
-			<tr>
-				<td>${house.propertyDetails }</td>
-				<td>${house.houseFeatures }</td>
-				<td>${house.architecturalStyle }</td>
-			</tr>
-		</table>
+			value="Buy House"
+			onclick="window.location='../buyhouse?house=saturn'" />
 	</div>
 	<!-- graph section -->
 	<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
