@@ -20,11 +20,13 @@ import co.gc.space.entity.planet.Planet;
 import co.gc.space.entity.planet.Saturn;
 import co.gc.space.entity.planet.Uranus;
 import co.gc.space.entity.planet.Venus;
+import co.gc.space.graph.EuropaGraph;
 import co.gc.space.graph.JupiterGraph;
 import co.gc.space.graph.MarsGraph;
 import co.gc.space.graph.MercuryGraph;
 import co.gc.space.graph.NeptuneGraph;
 import co.gc.space.graph.SaturnGraph;
+import co.gc.space.graph.UranusGraph;
 import co.gc.space.graph.VenusGraph;
 import co.gc.space.repo.PlanetRepo;
 
@@ -115,7 +117,9 @@ public class SpaceController {
 
 	@RequestMapping("/planets/uranus")
 	public ModelAndView uranus() {
-		return new ModelAndView("planets/uranus", "planet", new Uranus());
+		ModelAndView mv = new ModelAndView("planets/uranus", "planet", new Uranus());
+		mv.addObject("uranusGraph1", new UranusGraph());
+		return mv;
 	}
 
 	@RequestMapping("/planets/venus")
@@ -147,6 +151,8 @@ public class SpaceController {
 	
 	@RequestMapping("/planets/europa")
 	public ModelAndView europa() {
-		return new ModelAndView("planets/europa", "planet", new Europa());
+		ModelAndView mv = new ModelAndView("planets/europa", "planet", new Europa());
+		mv.addObject("europaGraph1", new EuropaGraph());
+		return mv;
 	}
 }
