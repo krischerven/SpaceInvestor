@@ -39,7 +39,7 @@ body {
 </style>
 </head>
 <body>
-<body data-spy="scroll" data-target=".changer" data-offset="50">
+<body data-spy="scroll" data-offset="50">
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
 	<input type="button" class="btn btn-primary" value="Create User"
