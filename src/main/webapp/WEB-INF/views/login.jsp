@@ -14,14 +14,17 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-<input type="button" class="btn btn-primary hBack"
+	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
 	<h2>Log into your account to start buying planets today!</h2>
 	<br>
 	<form action="/login">
-		<input type="text" name="email" placeholder="Email Address" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxLength="50" style="width: 250px;" />
-		<input type="password" name="password" placeholder="Password" pattern="[A-Za-z]{0,12}" maxLength="50" style="width: 250px;" />
-		<input type="submit" value="SUBMIT" class="btn btn-primary"/>
+		<input type="text" name="email" placeholder="Email Address"
+			pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxLength="50"
+			style="width: 250px;" /> <input type="password" name="password"
+			placeholder="Password" pattern="[A-Za-z]{0,12}" maxLength="50"
+			style="width: 250px;" /> <input type="submit" value="SUBMIT"
+			class="btn btn-primary" />
 	</form>
 </body>
 </html>

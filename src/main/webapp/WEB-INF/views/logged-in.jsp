@@ -14,8 +14,9 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-<input type="button" class="btn btn-primary hBack"
+	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
-	<h1>Welcome, {account.username}. Click "Return to Index" to continue browsing planets.</h1>
+	<h2>Welcome, ${account.username}. Click "Return to Index" to
+		continue browsing planets.</h2>
 </body>
 </html>
