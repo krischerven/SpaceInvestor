@@ -1,5 +1,17 @@
 use planet_db;
 
+CREATE TABLE users (
+	id int(11) not null primary key auto_increment,
+    username varchar(45),
+    email varchar(45),
+    password varchar(45),
+    creditcard varchar(250),
+    expiration varchar(45),
+    cvv varchar(45)
+);
+
+SELECT * FROM users;
+
 CREATE TABLE exoplanets (
 	planetname varchar(50),
 	starname varchar(50),
