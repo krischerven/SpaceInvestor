@@ -16,7 +16,13 @@
 <body>
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
-	<h2>Welcome, ${account.username}. Click "Return to Index" to
-		continue browsing planets.</h2>
+		
+<c:if test="${account eq ERROR}">
+<p>ERROR</p>
+</c:if>
+<c:if test="${account ne ERROR}">
+<p>Welcome, ${account.username}. Press "Return to Index" to continue browsing planets.</p>
+</c:if>
+
 </body>
 </html>
