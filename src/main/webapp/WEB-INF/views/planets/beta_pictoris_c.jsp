@@ -81,48 +81,6 @@ body {
 		not have many natives or others living around your vacation home if
 		you choose not to.</p>
 
-	<div id="section1" class="container-fluid">
-		<h1>${planet.getTitle()}</h1>
-		<br>
-		<table>
-			<tr>
-				<td><img src=${planet.imageUrl }
-					style="width: 300px; height: 300px;"></td>
-				<td>
-					<table class="table space-table">
-						<tr>
-							<th>Star Name</th>
-							<th>Star Distance</th>
-							<th>Year Discovered</th>
-							<th>Radius</th>
-							<th>Period</th>
-						</tr>
-						<tr>
-							<td>${planet.starName }</td>
-							<td>${planet.starDistance }</td>
-							<td>${planet.yearDiscovered }</td>
-							<td>${planet.radius }</td>
-							<td>${planet.period }</td>
-						</tr>
-					</table> <br>
-	
-					<table class="table space-table">
-						<tr>
-							<th>Mass</th>
-							<th>Temperature Calculated</th>
-							<th>Minimum Temperature</th>
-							<th>Maximum Temperature</th>
-						</tr>
-						<tr>
-							<td>${planet.mass }</td>
-							<td>${planet.tempCalculated }</td>
-							<td>nan</td>
-							<td>nan</td>
-						</tr>
-					</table>
-		</table>
-	</div>
-	<div id="section2" class="container-fluid">	
 		<h1>Houses</h1>
 		<br>
 		<input type="button" class="btn btn-primary hBack"

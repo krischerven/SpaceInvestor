@@ -12,14 +12,24 @@
 	integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er"
 	crossorigin="anonymous">
 <link rel="stylesheet" href="../css/spacestyle.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
 body {
-    position: relative; 
+	position: relative;
 }
-#section1 { padding-top: 50px; height: 100%; }
-#section2 { padding-top: 50px; height: 100%; }
+
+#section1 {
+	padding-top: 50px;
+	height: 100%;
+}
+
+#section2 {
+	padding-top: 50px;
+	height: 100%;
+}
 </style>
 </head>
 <body>
@@ -75,54 +85,12 @@ body {
 		here. But look the whole point of moving to an exoplanet is probably
 		to get away from those annoying earthlings who do not value their own
 		planet. Even if everybody in Earth moved to Beta Pictoris B you'd
-		still have plenty of space to keep yourself isolated. </p>
+		still have plenty of space to keep yourself isolated.</p>
 
-	<div id="section1" class="container-fluid">
-		<h1>${planet.getTitle()}</h1>
-		<br>
-		<table>
-			<tr>
-				<td><img src=${planet.imageUrl }
-					style="width: 300px; height: 300px;"></td>
-				<td>
-					<table class="table space-table">
-						<tr>
-							<th>Star Name</th>
-							<th>Star Distance</th>
-							<th>Year Discovered</th>
-							<th>Radius</th>
-							<th>Period</th>
-						</tr>
-						<tr>
-							<td>${planet.starName }</td>
-							<td>${planet.starDistance }</td>
-							<td>${planet.yearDiscovered }</td>
-							<td>${planet.radius }</td>
-							<td>${planet.period }</td>
-						</tr>
-					</table> <br>
-	
-					<table class="table space-table">
-						<tr>
-							<th>Mass</th>
-							<th>Temperature Calculated</th>
-							<th>Minimum Temperature</th>
-							<th>Maximum Temperature</th>
-						</tr>
-						<tr>
-							<td>${planet.mass }</td>
-							<td>${planet.tempCalculated }</td>
-							<td>nan</td>
-							<td>nan</td>
-						</tr>
-					</table>
-		</table>
-	</div>
-	<div id="section2" class="container-fluid">	
+	<div id="section2" class="container-fluid">
 		<h1>Houses</h1>
-		<br>
-		<input type="button" class="btn btn-primary hBack"
-		value="Buy House" onclick="window.location='buyhouse'" />
+		<br> <input type="button" class="btn btn-primary hBack"
+			value="Buy House" onclick="window.location='buyhouse'" />
 		<table>
 			<tr>
 				<th>Price</th>
