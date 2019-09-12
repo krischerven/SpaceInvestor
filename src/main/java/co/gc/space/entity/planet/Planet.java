@@ -269,5 +269,28 @@ public class Planet {
 		return "<h2>" + planetName + "</h2><a href=" + getJspTag() + "><img src=" + getImageUrl()
 				+ " + alt=ERROR width=500px height=500px></a>";
 	}
+	
+	// helpers
+	public String getTitle() {
+		String[] tmp = planetName.replace("_", " ").split(" ");
+		String tmp2 = "";
+		for (String tmp3 : tmp) {
+			try {
+				Integer.parseInt(tmp3);
+				Long.parseLong(tmp3);
+				tmp2 += tmp3;
+			} catch (NumberFormatException e) {
+				if (tmp3.length() >= 2) {
+					tmp2 += (tmp3.substring(0, 1).toUpperCase() + tmp3.substring(1, tmp3.length()));
+				} else {
+					tmp2 += tmp3.toUpperCase();
+				}
+			}
+			if (tmp3 != tmp[tmp.length-1]) {
+				tmp2 += " ";
+			}
+		}
+		return tmp2;
+	}
 
 }
