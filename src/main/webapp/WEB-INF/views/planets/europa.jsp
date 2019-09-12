@@ -92,26 +92,11 @@ body {
 		that is. If you're not a big baller then there is no place for you on
 		this moon, sorry.</p>
 
-	<p id="xPoints_1" hidden=true>${europaGraph1.getXPoints()}</p>
-	<p id="yPoints_1" hidden=true>${europaGraph1.getYPoints()}</p>
-	<p id="title_1" hidden=true>${europaGraph1.titleName}</p>
-	<p id="xName_1" hidden=true>${europaGraph1.xName}</p>
-	<p id="yName_1" hidden=true>${europaGraph1.yName}</p>
-
-	<div class="container" id="graph1">
-		<!-- Graph #1 goes here -->
-	</div>
-
-	<!--  JS that actually creates the graphs -->
-	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<script
-		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
 
 	<h1>Houses</h1>
 	<br>
 	<input type="button" class="btn btn-primary hBack" value="Buy House"
-		onclick="window.location='buyhouse'" />
+		onclick="window.location='../buyhouse'" />
 	<table>
 		<tr>
 			<th>Price</th>
