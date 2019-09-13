@@ -28,6 +28,12 @@ public final class Image {
 				new String[] {"../images/kepler-421b.png"}
 		);
 	}
+	public static Image _kepler_421_b_house() {
+		return new Image
+		(
+				new String[] {"../images/ranchhouse.jpg"}
+		);
+	}
 	public static Image beta_pic_b() {
 		return new Image
 		(
