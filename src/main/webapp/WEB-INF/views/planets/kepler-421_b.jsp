@@ -38,6 +38,8 @@ body {
 		value="<- Return to Index" onclick="window.location='/'" />
 	<input type="button" class="btn btn-primary" value="Create User"
 		onclick="window.location='../create-user'" />
+	<input type="button" class="btn btn-primary" value="Login"
+		onclick="window.location='../login'" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
@@ -78,6 +80,16 @@ body {
 						</tr>
 					</table>
 		</table>
+		<p>Kepler-421 B is on one of the newer exoplanets to be discovered
+			and was discovered in June 2014. If you are somebody who likes to
+			stay trendy and likes to buy the latest of products then this is the
+			planet for you. While everybody is preoccupied with the old planets
+			you will have the new shiny one under your feet. Kepler-421 B has the
+			longest known year out of any transiting planet. This is taking
+			buying the newest iPhone to new level. You'll be the cool kid on the
+			block that has the newest gadgets and oh my the neighbor's children
+			will be so very jealous. Go get em champ! The link for buying
+			properties on Kepler-421 B is below don't be shy!</p>
 	</div>
 	<div id="section2" class="container-fluid">
 		<h1>Houses</h1>
@@ -94,6 +106,34 @@ body {
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
 			onclick="window.location='../buyhouse?house=kepler'" />
+
+		<table>
+			<tr>
+				<th>Price</th>
+				<th>Acres</th>
+				<th>Year Built</th>
+				<th>Condition</th>
+			</tr>
+			<tr>
+				<td>${house.price }</td>
+				<td>${house.arces }</td>
+				<td>${house.yearBuilt }</td>
+				<td>${house.condition }</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>Property Details</th>
+				<th>House Features</th>
+				<th>Architectural Style</th>
+			</tr>
+			<tr>
+				<td>${house.propertyDetails }</td>
+				<td>${house.houseFeatures }</td>
+				<td>${house.architecturalStyle }</td>
+			</tr>
+		</table>
+
 	</div>
 </body>
 </html>

@@ -38,6 +38,8 @@ body {
 		value="<- Return to Index" onclick="window.location='/'" />
 	<input type="button" class="btn btn-primary" value="Create User"
 		onclick="window.location='../create-user'" />
+	<input type="button" class="btn btn-primary" value="Login"
+		onclick="window.location='../login'" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
@@ -78,7 +80,16 @@ body {
 						</tr>
 					</table>
 		</table>
+		
+			<p>47 Uma B is an exoplanet that is not only out of this world but out of this solar system! 
+	It is 45.9 light years away and is 1.2 times larger than the sun. 
+	I don't about you but that is huge! With so much space the possibilities are endless. 
+	You can finally build that race track that you've wanted or build a stadium for your favorite sports team. 
+	You can also build the largest party venue and throw parties that are quite literally out of this world. The hottest artists
+	will want to be the first to host their concerts on another planet and will be lining up at your front door waiting for such a grand opportunity.
+	If you can imagine it, then it is possible on 47 Uma b. Whatever happens in 47 Uma B stays in 47 Uma B.  </p>
 	</div>
+	
 	<div id="section2" class="container-fluid">
 		<h1>Houses</h1>
 		<table>
@@ -103,8 +114,39 @@ body {
 		</table>
 		
 		<br> <input type="button" class="btn btn-primary hBack"
+
+			value="Buy House" onclick="window.location='../buyhouse?house=47umab'" />
+		<table>
+			<tr>
+				<th>Price</th>
+				<th>Acres</th>
+				<th>Year Built</th>
+				<th>Condition</th>
+			</tr>
+			<tr>
+				<td>${house.price }</td>
+				<td>${house.arces }</td>
+				<td>${house.yearBuilt }</td>
+				<td>${house.condition }</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>Property Details</th>
+				<th>House Features</th>
+				<th>Architectural Style</th>
+			</tr>
+			<tr>
+				<td>${house.propertyDetails }</td>
+				<td>${house.houseFeatures }</td>
+				<td>${house.architecturalStyle }</td>
+			</tr>
+		</table>
+		
+		
 			value="Buy House"
 			onclick="window.location='../buyhouse?house=47umab'" />
+
 	</div>
 </body>
 </html>
