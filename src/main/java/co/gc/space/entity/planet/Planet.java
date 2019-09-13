@@ -57,11 +57,21 @@ public class Planet {
 	private String imageUrl;
 	@Transient
 	private String jspTag;
+	@Transient
+	private String houseImage;
 
 	public Planet() {
 		super();
 		// TODO Auto-generated constructor stub
 
+	}
+
+	public String getHouseImage() {
+		return houseImage;
+	}
+
+	public void setHouseImage(String houseImage) {
+		this.houseImage = houseImage;
 	}
 
 	public String getJspTag() {
@@ -269,7 +279,7 @@ public class Planet {
 		return "<h2>" + getTitle() + "</h2><a href=" + getJspTag() + "><img src=" + getImageUrl()
 				+ " + alt=ERROR width=500px height=500px></a>";
 	}
-	
+
 	// helpers
 	public String getTitle() {
 		String[] tmp = planetName.replace("pic", "pictoris").replace("_", " ").split(" ");
@@ -286,7 +296,7 @@ public class Planet {
 					tmp2 += tmp3.toUpperCase();
 				}
 			}
-			if (tmp3 != tmp[tmp.length-1]) {
+			if (tmp3 != tmp[tmp.length - 1]) {
 				tmp2 += " ";
 			}
 		}

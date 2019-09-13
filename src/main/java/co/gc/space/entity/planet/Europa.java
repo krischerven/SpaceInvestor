@@ -19,6 +19,7 @@ public class Europa extends SolarSystemPlanet {
 		setImageUrl("https://i.dlpng.com/static/png/1131091_preview_preview.png");
 		setJspTag("planets/europa");
 		setGifImage("../images/europaspin.gif");
+		setHouseImage("../images/spanishhouse.jpg");
 
 	}
 

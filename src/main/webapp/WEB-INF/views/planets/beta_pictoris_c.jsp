@@ -94,7 +94,14 @@ body {
 
 	<div id="section2" class="container-fluid">
 		<h1>Houses</h1>
-		<br>
+			<table>
+		<tr>
+		<td>
+		<img src="../images/spanisharchitecturehouse.jpg" style="width: 350px; height: 350px;">
+		</td>
+		<td>
+		<table>
+		<tr>
 		<ul>
 			<li>Price: ${house.price }</li>
 			<li>Acres: ${house.arces }</li>
@@ -104,6 +111,9 @@ body {
 			<li>House Features: ${house.houseFeatures }</li>
 			<li>Architectural Style: ${house.architecturalStyle }</li>
 		</ul>
+		</tr>
+		</table>
+		</table>
 		<br>
 		<input type="button" class="btn btn-primary hBack" value="Buy House"
 			onclick="window.location='../buyhouse?house=betapicc'" />
