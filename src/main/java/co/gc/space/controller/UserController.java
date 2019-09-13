@@ -31,9 +31,15 @@ public class UserController {
 		ModelAndView mv = new ModelAndView("logged-in");
 		Optional<User> user = repo.findByEmail(email);
 		try {
-			mv.addObject("account", user.get());
+			if (user.get().getPassword().equals(password)) {
+				mv.addObject("account", user.get());
+			} else {
+				mv.addObject("account", "ERROR");
+				mv.addObject("error", "Error: Password does not match.");
+			}
 		} catch (NoSuchElementException e) {
 			mv.addObject("account", "ERROR");
+			mv.addObject("error", "Error: Email address is not in the database.");
 		}
 		return mv;
 	}
