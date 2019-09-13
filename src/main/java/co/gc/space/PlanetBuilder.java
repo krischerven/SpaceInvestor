@@ -22,6 +22,7 @@ public final class PlanetBuilder {
 	public Planet Build(String name) {
 		String imageUrl = "";
 		String jspUrl = "";
+		
 		switch (name) {
 			case "47 uma b": {
 				imageUrl = Image._47_uma_b().getBestUrl();
@@ -41,6 +42,11 @@ public final class PlanetBuilder {
 			case "beta pic c": {
 				imageUrl = Image.beta_pic_c().getBestUrl();
 				jspUrl = "/planets/beta_pictoris_c";
+				return Build(name, imageUrl, jspUrl);
+			}
+			case "K2-18 b": {
+				imageUrl = 	Image.K2_18_b().getBestUrl();
+				jspUrl = "/planets/k2_18";
 				return Build(name, imageUrl, jspUrl);
 			}
 		}

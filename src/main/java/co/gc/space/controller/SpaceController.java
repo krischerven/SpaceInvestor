@@ -85,6 +85,7 @@ public class SpaceController {
 		planets.add(builder.Build("kepler-421 b"));
 		planets.add(builder.Build("beta pic b"));
 		planets.add(builder.Build("beta pic c"));
+		planets.add(builder.Build("K2-18 b"));
 		final ArrayList<Object>[] planetArr = partition(planets);
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("first", planetArr[0]);
@@ -182,6 +183,12 @@ public class SpaceController {
 		ModelAndView mv = new ModelAndView("planets/europa", "planet", new Europa());
 		mv.addObject("europaGraph1", new EuropaGraph());
 		mv.addObject("house", new EuropaHouse());
+		return mv;
+	}
+	
+	@RequestMapping("/planets/k2_18")
+	public ModelAndView k2_18() {
+		ModelAndView mv = new ModelAndView("/planets/k2_18_b", "planet", builder.Build("K2-18 b"));
 		return mv;
 	}
 	
