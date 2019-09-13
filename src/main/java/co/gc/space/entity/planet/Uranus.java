@@ -18,6 +18,7 @@ public class Uranus extends SolarSystemPlanet {
 		setImageUrl("https://space-facts.com/wp-content/uploads/uranus-transparent.png");
 		setJspTag("planets/uranus");
 		setGifImage("../images/uranusspin.gif");
+		setHouseImage("../images/craftsmanhouse");
 	}
 
 }
