@@ -22,7 +22,7 @@
 </c:if>
 
 <c:if test="${success eq false}">
-<p style="color: #FFFFFF">${error}</p>
+<p style="color: #FF0000">${error}</p>
 </c:if>
 
 </body>
