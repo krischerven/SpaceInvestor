@@ -116,37 +116,6 @@ body {
 		<br> <input type="button" class="btn btn-primary hBack"
 
 			value="Buy House" onclick="window.location='../buyhouse?house=47umab'" />
-		<table>
-			<tr>
-				<th>Price</th>
-				<th>Acres</th>
-				<th>Year Built</th>
-				<th>Condition</th>
-			</tr>
-			<tr>
-				<td>${house.price }</td>
-				<td>${house.arces }</td>
-				<td>${house.yearBuilt }</td>
-				<td>${house.condition }</td>
-			</tr>
-		</table>
-		<table>
-			<tr>
-				<th>Property Details</th>
-				<th>House Features</th>
-				<th>Architectural Style</th>
-			</tr>
-			<tr>
-				<td>${house.propertyDetails }</td>
-				<td>${house.houseFeatures }</td>
-				<td>${house.architecturalStyle }</td>
-			</tr>
-		</table>
-		
-		
-			value="Buy House"
-			onclick="window.location='../buyhouse?house=47umab'" />
-
 	</div>
 </body>
 </html>
