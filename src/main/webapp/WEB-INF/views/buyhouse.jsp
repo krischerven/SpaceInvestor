@@ -14,7 +14,13 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-	<h1>You just bought your first house in space!</h1>
-	${house }
+	<h2 id="placeholder">REPLACEME</h2>
+	<script>
+	if (document.cookie.indexOf('authenticated=') != -1) {
+		document.getElementById("placeholder").innerText = "You just bought your first house on ${house}!"
+	} else {
+		document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
+	}
+	</script>
 </body>
 </html>

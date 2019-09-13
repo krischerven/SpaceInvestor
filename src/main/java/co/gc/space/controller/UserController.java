@@ -1,8 +1,13 @@
 package co.gc.space.controller;
 import java.util.NoSuchElementException;
 import java.util.Optional;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -26,14 +31,20 @@ public class UserController {
 		return new ModelAndView("login");
 	}
 	
-	@RequestMapping("logged-in") 
-	public ModelAndView loggedIn(@RequestParam("email") String email, @RequestParam("password") String password) {
+	@GetMapping("logged-in") 
+	public ModelAndView loggedIn(@RequestParam("email") String email, 
+			@RequestParam("password") String password, 
+			HttpServletResponse response) {
 		ModelAndView mv = new ModelAndView("logged-in");
 		Optional<User> user = repo.findByEmail(email);
 		try {
 			if (user.get().getPassword().equals(password)) {
 				mv.addObject("account", user.get());
 				mv.addObject("success", true);
+				// logged in for 15 minutes
+				Cookie cookie = new Cookie("authenticated", "true");
+				cookie.setMaxAge(60*15);
+				response.addCookie(cookie);
 			} else {
 				mv.addObject("success", false);
 				mv.addObject("error", "Error: Password does not match.");
