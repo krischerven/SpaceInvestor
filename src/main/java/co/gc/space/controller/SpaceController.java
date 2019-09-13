@@ -86,7 +86,7 @@ public class SpaceController {
 		planets.add(builder.Build("beta pic b"));
 		planets.add(builder.Build("beta pic c"));
 		final ArrayList<Object>[] planetArr = partition(planets);
-		ModelAndView mv = new ModelAndView("index");
+		final ModelAndView mv = new ModelAndView("index");
 		mv.addObject("first", planetArr[0]);
 		mv.addObject("second", planetArr[1]);
 		mv.addObject("third", planetArr[2]);
