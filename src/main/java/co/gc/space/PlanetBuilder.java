@@ -20,36 +20,35 @@ public final class PlanetBuilder {
 	}
 
 	public Planet Build(String name) {
-		String imageUrl = "";
-		String jspUrl = "";
+		String imageUrl = null;
+		String jspUrl = null;
 		
 		switch (name) {
 			case "47 uma b": {
 				imageUrl = Image._47_uma_b().getBestUrl();
 				jspUrl = "/planets/47_uma_b";
-				return Build(name, imageUrl, jspUrl);
 			}
 			case "kepler-421 b": {
 				imageUrl = Image._kepler_421_b().getBestUrl();
 				jspUrl = "/planets/kepler-421_b";
-				return Build(name, imageUrl, jspUrl);
 			}
 			case "beta pic b": {
 				imageUrl = Image.beta_pic_b().getBestUrl();
 				jspUrl = "/planets/beta_pictoris_b";
-				return Build(name, imageUrl, jspUrl);
 			}
 			case "beta pic c": {
 				imageUrl = Image.beta_pic_c().getBestUrl();
 				jspUrl = "/planets/beta_pictoris_c";
-				return Build(name, imageUrl, jspUrl);
 			}
 			case "K2-18 b": {
 				imageUrl = 	Image.K2_18_b().getBestUrl();
 				jspUrl = "/planets/k2_18";
-				return Build(name, imageUrl, jspUrl);
 			}
 		}
-		return null;
+		if (imageUrl == null) {
+			return null;
+		} else {
+			return Build(name, imageUrl, jspUrl);
+		}
 	}
 }
