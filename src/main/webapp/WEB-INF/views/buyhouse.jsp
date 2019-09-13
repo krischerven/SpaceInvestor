@@ -14,6 +14,12 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
+	<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary" value="Create User"
+		onclick="window.location='../create-user'" />
+	<input type="button" class="btn btn-primary" value="Login"
+		onclick="window.location='../login'" />
 	<h2 id="placeholder">ERROR</h2>
 	<script>
 	if (document.cookie.indexOf('authenticated=') != -1) {
