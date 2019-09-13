@@ -29,6 +29,7 @@
 		</tr>
 	</table>
 	<table>
+	
 		<tr>
 			<th>Property Details</th>
 			<th>House Features</th>

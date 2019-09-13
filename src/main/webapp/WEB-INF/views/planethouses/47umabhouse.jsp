@@ -28,6 +28,7 @@
 			<td>${house.condition }</td>
 		</tr>
 	</table>
+	
 	<table>
 		<tr>
 			<th>Property Details</th>
@@ -40,5 +41,8 @@
 			<td>${house.architecturalStyle }</td>
 		</tr>
 	</table>
+	
+	
+	
 </body>
 </html>
