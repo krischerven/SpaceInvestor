@@ -33,12 +33,13 @@ body {
 </style>
 </head>
 <body>
-<body data-spy="scroll" data-target=".changer" data-offset="50">
+<body data-spy="scroll" data-offset="50">
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
 	<input type="button" class="btn btn-primary" value="Create User"
 		onclick="window.location='../create-user'" />
-
+	<input type="button" class="btn btn-primary" value="Login"
+		onclick="window.location='../login'" />
 	<h1>Beta Pictoris C</h1>
 	<br>
 	<table>
@@ -91,36 +92,21 @@ body {
 		not have many natives or others living around your vacation home if
 		you choose not to.</p>
 
-	<h1>Houses</h1>
-	<br>
-	<input type="button" class="btn btn-primary hBack" value="Buy House"
-		onclick="window.location='../buyhouse?house=betapicc'" />
-	<table>
-		<tr>
-			<th>Price</th>
-			<th>Acres</th>
-			<th>Year Built</th>
-			<th>Condition</th>
-		</tr>
-		<tr>
-			<td>${house.price }</td>
-			<td>${house.arces }</td>
-			<td>${house.yearBuilt }</td>
-			<td>${house.condition }</td>
-		</tr>
-	</table>
-	<table>
-		<tr>
-			<th>Property Details</th>
-			<th>House Features</th>
-			<th>Architectural Style</th>
-		</tr>
-		<tr>
-			<td>${house.propertyDetails }</td>
-			<td>${house.houseFeatures }</td>
-			<td>${house.architecturalStyle }</td>
-		</tr>
-	</table>
+	<div id="section2" class="container-fluid">
+		<h1>Houses</h1>
+		<br>
+		<ul>
+			<li>Price: ${house.price }</li>
+			<li>Acres: ${house.arces }</li>
+			<li>Year Built: ${house.yearBuilt }</li>
+			<li>Condition: ${house.condition }</li>
+			<li>Property Details: ${house.propertyDetails }</li>
+			<li>House Features: ${house.houseFeatures }</li>
+			<li>Architectural Style: ${house.architecturalStyle }</li>
+		</ul>
+		<br>
+		<input type="button" class="btn btn-primary hBack" value="Buy House"
+			onclick="window.location='../buyhouse?house=betapicc'" />
 	</div>
 
 </body>
