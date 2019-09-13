@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-	<h2 id="placeholder">REPLACEME</h2>
+	<h2 id="placeholder">ERROR</h2>
 	<script>
 	if (document.cookie.indexOf('authenticated=') != -1) {
 		document.getElementById("placeholder").innerText = "You just bought your first house on ${house}!"
