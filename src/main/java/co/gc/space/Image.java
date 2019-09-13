@@ -16,6 +16,12 @@ public final class Image {
 				new String[] {"../images/47umab.png"}
 		);
 	}
+	public static Image _47_uma_b_house() {
+		return new Image
+		(
+				new String[] {"../images/modernhouse.jpg"}
+		);
+	}
 	public static Image _kepler_421_b() {
 		return new Image
 		(
@@ -28,10 +34,22 @@ public final class Image {
 				new String[] {"../images/betapicb.png"}
 		);
 	}
+	public static Image beta_pic_b_house() {
+		return new Image
+		(
+				new String[] {"../images/greekrevivalhouse.jpg"}
+		);
+	}
 	public static Image beta_pic_c() {
 		return new Image
 		(
 				new String[] {"../images/betapicc.png"}
+		);
+	}
+	public static Image beta_pic_c_house() {
+		return new Image
+		(
+				new String[] {"../images/spanisharchitecturehouse.jpg"}
 		);
 	}
 	

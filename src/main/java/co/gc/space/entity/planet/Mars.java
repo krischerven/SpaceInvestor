@@ -18,6 +18,7 @@ public class Mars extends SolarSystemPlanet {
 		setImageUrl("https://space-facts.com/wp-content/uploads/mars-transparent.png");
 		setJspTag("planets/mars");
 		setGifImage("../images/marsspin.gif");
+		setHouseImage("../images/englishcottagehouse.jpg");
 
 	}
 
