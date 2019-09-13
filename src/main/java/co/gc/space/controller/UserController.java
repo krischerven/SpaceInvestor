@@ -33,12 +33,13 @@ public class UserController {
 		try {
 			if (user.get().getPassword().equals(password)) {
 				mv.addObject("account", user.get());
+				mv.addObject("success", true);
 			} else {
-				mv.addObject("account", "ERROR");
+				mv.addObject("success", false);
 				mv.addObject("error", "Error: Password does not match.");
 			}
 		} catch (NoSuchElementException e) {
-			mv.addObject("account", "ERROR");
+			mv.addObject("success", false);
 			mv.addObject("error", "Error: Email address is not in the database.");
 		}
 		return mv;
