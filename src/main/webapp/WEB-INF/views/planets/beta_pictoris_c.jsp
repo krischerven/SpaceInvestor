@@ -38,7 +38,8 @@ body {
 		value="<- Return to Index" onclick="window.location='/'" />
 	<input type="button" class="btn btn-primary" value="Create User"
 		onclick="window.location='../create-user'" />
-
+	<input type="button" class="btn btn-primary" value="Login"
+		onclick="window.location='../login'" />
 	<h1>Beta Pictoris C</h1>
 	<br>
 	<table>
