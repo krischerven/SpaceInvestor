@@ -1,5 +1,6 @@
 package co.gc.space.controller;
 import java.util.NoSuchElementException;
+
 import java.util.Optional;
 
 import javax.servlet.http.Cookie;
@@ -9,11 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import co.gc.space.user.CreditCard;
 import co.gc.space.user.User;
-import co.gc.space.user.UserRepo;
+import co.gc.space.repo.UserRepo;
 
 @Controller
 public class UserController {
@@ -31,7 +33,7 @@ public class UserController {
 		return new ModelAndView("login");
 	}
 	
-	@GetMapping("logged-in") 
+	@RequestMapping(value="logged-in", method=RequestMethod.POST) 
 	public ModelAndView loggedIn(@RequestParam("email") String email, 
 			@RequestParam("password") String password, 
 			HttpServletResponse response) {
@@ -43,7 +45,6 @@ public class UserController {
 				mv.addObject("success", true);
 				// logged in for 15 minutes
 				Cookie cookie = new Cookie("authenticated", "true");
-				cookie.setMaxAge(60*15);
 				response.addCookie(cookie);
 			} else {
 				mv.addObject("success", false);

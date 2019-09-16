@@ -114,7 +114,7 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=kepler'" />
+			onclick="window.location='../buyhouse?house=KEPLER_421_B'" />
 	</div>
 </body>
 </html>

@@ -115,9 +115,11 @@ body {
 								<li>Architectural Style: ${house.architecturalStyle }</li>
 							</ul>
 						</tr>
-					</table> <br> <input type="button" class="btn btn-primary hBack"
-					value="Buy House"
-					onclick="window.location='../buyhouse?house=mercury'" />
+					</table>
+		</table>
+		<br> <input type="button" class="btn btn-primary hBack"
+			value="Buy House"
+			onclick="window.location='../buyhouse?house=MERCURY'" />
 	</div>
 	<!-- graph section -->
 	<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>

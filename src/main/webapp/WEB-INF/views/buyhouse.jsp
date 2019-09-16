@@ -21,12 +21,23 @@
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<h2 id="placeholder">ERROR</h2>
+	<div id="div1" style="display: none">
+		<p>This is the details of your purchase</p>
+		<ul>
+			<li>Price: ${house.price }</li>
+			<li>Acres: ${house.arces }</li>
+			<li>Property Details: ${house.propertyDetails }</li>
+			<li>House Features: ${house.houseFeatures }</li>
+			<li>Architectural Style: ${house.architecturalStyle }</li>
+		</ul>
+	</div>
 	<script>
-	if (document.cookie.indexOf('authenticated=') != -1) {
-		document.getElementById("placeholder").innerText = "You just bought your first house on ${house}!"
-	} else {
-		document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
-	}
+		if (document.cookie.indexOf('authenticated=') != -1) {
+			document.getElementById("placeholder").innerText = "You just bought your first house on ${house.planet.planetName}!"
+			document.getElementById("div1").style.display = "block";
+		} else {
+			document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
+		}
 	</script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 package co.gc.space.land;
 
+import co.gc.space.entity.planet.Planet;
+
 public class House {
 
 	protected String price;
@@ -10,6 +12,7 @@ public class House {
 	protected String condition;
 	protected String yearBuilt;
 	private String houseImage;
+	private Planet planet;
 
 	public House() {
 		super();
@@ -78,6 +81,15 @@ public class House {
 
 	public String getYearBuilt() {
 		return yearBuilt;
+	}
+
+	public Planet getPlanet() {
+		return planet;
+	}
+
+	public House setPlanet(Planet planet) {
+		this.planet = planet;
+		return this;
 	}
 
 }
