@@ -49,6 +49,19 @@ public final class PlanetBuilder {
 				jspUrl = "/planets/k2_18";
 				break;
 			}
+			case "K2-3 c": {
+			imageUrl = Image.K2_3().getBestUrl();
+			jspUrl = "/planets/k2_3";
+			break;
+			
+		}
+			case "Trappist-1 h": {
+				imageUrl = Image.Trappist_1().getBestUrl();
+				jspUrl = "/planets/trappist-1h"; 
+				break;
+			
+			}
+		
 		}
 		
 		if (imageUrl == null) {

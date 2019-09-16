@@ -5,10 +5,80 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>K2-18 b</title>
-<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-ciphE0NCAlD2/N6NUApXAN2dAs/vcSAOTzyE202jJx3oS8n4tAQezRgnlHqcJ59C" crossorigin="anonymous">
+<title>${planet.getTitle()}</title>
+<link
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="../css/spacestyle.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body {
+	position: relative;
+}
+
+#section1 {
+	padding-top: 50px;
+	height: 100%;
+}
+
+#section2 {
+	padding-top: 50px;
+	height: 100%;
+}
+</style>
 </head>
 <body>
+<body data-spy="scroll" data-offset="50">
+	<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Index" onclick="window.location='/'" />
+	<input type="button" class="btn btn-primary" value="Create User"
+		onclick="window.location='../create-user'" />
+	<input type="button" class="btn btn-primary" value="Login"
+		onclick="window.location='../login'" />
+	<div id="section1" class="container-fluid">
+		<h1>${planet.getTitle()}</h1>
+		<br>
+		<table>
+			<tr>
+				<td><img src=${planet.imageUrl }
+					style="width: 300px; height: 300px;"></td>
+				<td>
+					<table class="table space-table">
+						<tr>
+							<th>Star Name</th>
+							<th>Star Distance</th>
+							<th>Year Discovered</th>
+							<th>Radius</th>
+							<th>Period</th>
+						</tr>
+						<tr>
+							<td>${planet.starName }</td>
+							<td>${planet.starDistance }</td>
+							<td>${planet.yearDiscovered }</td>
+							<td>${planet.radius }</td>
+							<td>${planet.period }</td>
+						</tr>
+					</table> <br>
 
+					<table class="table space-table">
+						<tr>
+							<th>Mass</th>
+							<th>Temperature Calculated</th>
+							<th>Minimum Temperature</th>
+							<th>Maximum Temperature</th>
+						</tr>
+						<tr>
+							<td>${planet.mass }</td>
+							<td>${planet.tempCalculated }</td>
+							<td>nan</td>
+							<td>nan</td>
+						</tr>
+					</table>
+		</table>
 </body>
 </html>

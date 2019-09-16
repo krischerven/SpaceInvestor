@@ -1,5 +1,7 @@
 package co.gc.space.entity.planet;
 
+import java.io.UnsupportedEncodingException;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -57,21 +59,11 @@ public class Planet {
 	private String imageUrl;
 	@Transient
 	private String jspTag;
-	@Transient
-	private String houseImage;
 
 	public Planet() {
 		super();
 		// TODO Auto-generated constructor stub
 
-	}
-
-	public String getHouseImage() {
-		return houseImage;
-	}
-
-	public void setHouseImage(String houseImage) {
-		this.houseImage = houseImage;
 	}
 
 	public String getJspTag() {
@@ -276,12 +268,33 @@ public class Planet {
 
 	@Override
 	public String toString() {
-		return "<h2>" + getTitle() + "</h2><a href=" + getJspTag() + "><img src=" + getImageUrl()
+		return "<h2>" + getIndexTitle() + "</h2><a href=" + getJspTag() + "><img src=" + getImageUrl()
 				+ " + alt=ERROR width=500px height=500px></a>";
 	}
 
 	// helpers
 	public String getTitle() {
+		// "-" isn't supported by our font - "―" is.
+		// numbers also aren't supported
+		try {
+			return new String(getIndexTitle().getBytes("UTF8"), "UTF8")
+					.replace("-", " \u2015 ")
+					.replace("1", " one ")
+					.replace("2", " two ")
+					.replace("3", " three ")
+					.replace("4", " four ")
+					.replace("5", " five ")
+					.replace("6", " six ")
+					.replace("7", " seven ")
+					.replace("8", " eight ")
+					.replace("9", " nine ")
+					.replace("10", " ten ");
+		} catch (UnsupportedEncodingException e) {
+			return "Error: UnsupportedEncodingException";
+		}
+	}
+	
+	public String getIndexTitle() {
 		String[] tmp = planetName.replace("pic", "pictoris").replace("_", " ").split(" ");
 		String tmp2 = "";
 		for (String tmp3 : tmp) {
