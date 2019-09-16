@@ -32,7 +32,6 @@ import co.gc.space.graph.VenusGraph;
 import co.gc.space.house.BetaPicBHouse;
 import co.gc.space.house.BetaPicCHouse;
 import co.gc.space.house.EuropaHouse;
-import co.gc.space.house.House;
 import co.gc.space.house.JupiterHouse;
 import co.gc.space.house.Kepler421BHouse;
 import co.gc.space.house.MarsHouse;
@@ -46,6 +45,11 @@ import co.gc.space.repo.PlanetRepo;
 
 @Controller
 public class SpaceController {
+	
+	private enum Houses{
+		MERCURY, VENUS, MARS, JUPITER, SATURN, NEPTUNE, URANUS, EUROPA, _47_UMA_B, KEPLER_421_B, BETAPICB, BETAPICC;
+		
+	}
 
 	@Autowired PlanetRepo repo;
 	final PlanetBuilder builder = new PlanetBuilder();
@@ -194,7 +198,44 @@ public class SpaceController {
 	}
 	
 	@RequestMapping("/buyhouse") 
-	public ModelAndView buyHouse(@RequestParam("house") String house) {
-		return new ModelAndView("buyhouse", "house", house);
+	public ModelAndView buyHouse(@RequestParam("house") Houses house) {
+		
+		switch(house) {
+		case MERCURY:
+			return new ModelAndView("buyhouse", "house", new MercuryHouse().setPlanet(new Mercury()));
+			
+		case VENUS:
+			return new ModelAndView("buyhouse", "house", new VenusHouse().setPlanet(new Venus()));
+			
+		case MARS:
+			return new ModelAndView("buyhouse", "house", new MarsHouse().setPlanet(new Mars()));
+			
+		case JUPITER:
+			return new ModelAndView("buyhouse", "house", new JupiterHouse().setPlanet(new Jupiter()));
+			
+		case SATURN:
+			return new ModelAndView("buyhouse", "house", new SaturnHouse().setPlanet(new Saturn()));
+			
+		case NEPTUNE:
+			return new ModelAndView("buyhouse", "house", new NeptuneHouse().setPlanet(new Neptune()));
+			
+		case URANUS:
+			return new ModelAndView("buyhouse", "house", new UranusHouse().setPlanet(new Uranus()));
+		case EUROPA:
+			return new ModelAndView("buyhouse", "house", new EuropaHouse().setPlanet(new Europa()));
+		case _47_UMA_B:
+			return new ModelAndView("buyhouse", "house", new UmaBHouse().setPlanet(builder.Build("47 uma b")));
+			
+		case KEPLER_421_B:
+			return new ModelAndView("buyhouse", "house", new Kepler421BHouse().setPlanet(builder.Build("kepler-421 b")));
+			
+		case BETAPICB:
+			return new ModelAndView("buyhouse", "house", new BetaPicBHouse().setPlanet(builder.Build("beta pic b")));
+			
+		case BETAPICC:
+			return new ModelAndView("buyhouse", "house", new BetaPicCHouse().setPlanet(builder.Build("beta pic c")));
+			
+		}
+		return null;
 	}
 }

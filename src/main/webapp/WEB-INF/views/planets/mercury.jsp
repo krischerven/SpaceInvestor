@@ -119,7 +119,7 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=mercury'" />
+			onclick="window.location='../buyhouse?house=MERCURY'" />
 	</div>
 	<!-- graph section -->
 	<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>

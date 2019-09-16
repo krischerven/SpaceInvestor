@@ -11,5 +11,6 @@ public class BetaPicBHouse extends House {
 		condition = "New";
 		yearBuilt = "2040";
 		setHouseImage("../images/greekrevivalhouse.jpg");
+	
 	}
 }
