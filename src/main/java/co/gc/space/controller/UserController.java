@@ -1,5 +1,6 @@
 package co.gc.space.controller;
 import java.util.NoSuchElementException;
+
 import java.util.Optional;
 
 import javax.servlet.http.Cookie;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import co.gc.space.user.CreditCard;
 import co.gc.space.user.User;
-import co.gc.space.user.UserRepo;
+import co.gc.space.repo.UserRepo;
 
 @Controller
 public class UserController {
