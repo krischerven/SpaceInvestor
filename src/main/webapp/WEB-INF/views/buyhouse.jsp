@@ -23,6 +23,9 @@
 	<h2 id="placeholder">ERROR</h2>
 	<div id="div1" style="display: none">
 		<p>This is the details of your purchase</p>
+		<center>
+		<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+		</center>
 		<ul>
 			<li>Price: ${house.price }</li>
 			<li>Acres: ${house.arces }</li>
