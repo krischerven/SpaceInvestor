@@ -25,17 +25,15 @@
 	<br>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-4">
-			
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 				<p>
-					
 				 <c:forEach var="planet" items="${first}">
 				 	${planet}
 				 	<br><br>
 				 </c:forEach>
 				 </p>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 				<p>
 				 <c:forEach var="planet" items="${second}">
 				 	${planet}
@@ -43,7 +41,7 @@
 				 </c:forEach>
 				 </p>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 				<p>
 				 <c:forEach var="planet" items="${third}">
 				 	${planet}
