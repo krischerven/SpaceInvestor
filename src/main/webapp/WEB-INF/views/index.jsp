@@ -23,6 +23,7 @@
 	<br>
 	<h1>Planet Investor Real Estate Professionals</h1>
 	<br>
+	<!-- The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). The classes can be combined to create more dynamic and flexible layouts. -->
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
