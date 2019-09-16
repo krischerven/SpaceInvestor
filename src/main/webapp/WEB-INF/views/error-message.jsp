@@ -16,7 +16,6 @@
 <body>
 <input type="button" class="btn btn-primary hBack"
 		value="<- Return to Create User" onclick="window.location='create-user'" />
-	<h2>Invalid Credit Card Entry!</h2>
-
+	<h2 style="color: #FF0000">Invalid Credit Card Entry!</h2>
 </body>
 </html>
