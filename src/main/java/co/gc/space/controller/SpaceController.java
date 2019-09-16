@@ -29,18 +29,18 @@ import co.gc.space.graph.NeptuneGraph;
 import co.gc.space.graph.SaturnGraph;
 import co.gc.space.graph.UranusGraph;
 import co.gc.space.graph.VenusGraph;
-import co.gc.space.house.BetaPicBHouse;
-import co.gc.space.house.BetaPicCHouse;
-import co.gc.space.house.EuropaHouse;
-import co.gc.space.house.JupiterHouse;
-import co.gc.space.house.Kepler421BHouse;
-import co.gc.space.house.MarsHouse;
-import co.gc.space.house.MercuryHouse;
-import co.gc.space.house.NeptuneHouse;
-import co.gc.space.house.SaturnHouse;
-import co.gc.space.house.UmaBHouse;
-import co.gc.space.house.UranusHouse;
-import co.gc.space.house.VenusHouse;
+import co.gc.space.land.BetaPicBHouse;
+import co.gc.space.land.BetaPicCHouse;
+import co.gc.space.land.EuropaHouse;
+import co.gc.space.land.JupiterHouse;
+import co.gc.space.land.Kepler421BHouse;
+import co.gc.space.land.MarsHouse;
+import co.gc.space.land.MercuryHouse;
+import co.gc.space.land.NeptuneHouse;
+import co.gc.space.land.SaturnHouse;
+import co.gc.space.land.UmaBHouse;
+import co.gc.space.land.UranusHouse;
+import co.gc.space.land.VenusHouse;
 import co.gc.space.repo.PlanetRepo;
 
 @Controller
@@ -86,6 +86,8 @@ public class SpaceController {
 		planets.add(builder.Build("beta pic b"));
 		planets.add(builder.Build("beta pic c"));
 		planets.add(builder.Build("K2-18 b"));
+		planets.add(builder.Build("K2-3 c"));
+		planets.add(builder.Build("Trappist-1 h"));
 		final ArrayList<Object>[] planetArr = partition(planets);
 		final ModelAndView mv = new ModelAndView("index");
 		mv.addObject("first", planetArr[0]);
@@ -192,8 +194,24 @@ public class SpaceController {
 		return mv;
 	}
 	
+	@RequestMapping("/planets/k2_3")
+	public ModelAndView k2_3() {
+		ModelAndView mv = new ModelAndView("/planets/k2_3", "planet", builder.Build("K2-3 c"));
+		return mv;
+	}
+	
+	@RequestMapping("/planets/trappist-1h")
+	public ModelAndView Trappist_1 () {
+		ModelAndView mv = new ModelAndView("/planets/trappist-1h", "planet", builder.Build("Trappist-1 h"));
+		return mv; 
+	}
+	
 	@RequestMapping("/buyhouse") 
 	public ModelAndView buyHouse(@RequestParam("house") String house) {
 		return new ModelAndView("buyhouse", "house", house);
 	}
+	
+	
+	
+
 }

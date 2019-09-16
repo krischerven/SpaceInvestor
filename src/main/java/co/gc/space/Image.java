@@ -41,13 +41,20 @@ public final class Image {
 		return new Image(new String[] { "../images/betapicc.png" });
 	}
 
-	public static Image K2_18_b() {
-		return new Image(new String[] { "../images/K2-18b.png" });
-
-	}
-
 	public static Image beta_pic_c_house() {
 		return new Image(new String[] { "../images/spanisharchitecturehouse.jpg" });
 	}
 
+	public static Image K2_18_b() {
+		return new Image(new String[] { "../images/K2-18b.png" });
+
+	}
+	
+	public static Image K2_3() {
+		return new Image(new String[] {"../images/k2-3_c.png"});
+	}
+	
+	public static Image Trappist_1 () {
+		return new Image(new String [] {"../images/TRAPPIST-1h.png"});
+	}
 }
