@@ -57,7 +57,7 @@
 			<div class="col-lg-12">
 				<p>
 				 <c:forEach var="planet" items="${all}">
-				 	${planet}
+				 	${planet.toStringCentered()}
 				 	<br><br>
 				 </c:forEach>
 				 </p>
