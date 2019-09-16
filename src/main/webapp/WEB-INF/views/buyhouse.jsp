@@ -28,7 +28,8 @@
 			document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
 		}
 	</script>
-	<p>This is the details of your purchase</p>
+	<p>This is the details of your purchase
+	<img src=${house.houseImage }>
 	<ul>
 	<li>Price: ${house.price }</li>
 	<li>Acres: ${house.arces }</li>
