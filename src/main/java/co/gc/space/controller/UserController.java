@@ -43,7 +43,6 @@ public class UserController {
 				mv.addObject("success", true);
 				// logged in for 15 minutes
 				Cookie cookie = new Cookie("authenticated", "true");
-				cookie.setMaxAge(60*60);
 				response.addCookie(cookie);
 			} else {
 				mv.addObject("success", false);
