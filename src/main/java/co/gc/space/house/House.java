@@ -59,8 +59,9 @@ public class House {
 		return planet;
 	}
 
-	public void setPlanet(Planet planet) {
+	public House setPlanet(Planet planet) {
 		this.planet = planet;
+		return this;
 	}
 
 }
