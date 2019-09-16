@@ -10,38 +10,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
-import co.gc.space.PlanetBuilder;
-import co.gc.space.entity.planet.Europa;
-import co.gc.space.entity.planet.Jupiter;
-import co.gc.space.entity.planet.Mars;
-import co.gc.space.entity.planet.Mercury;
-import co.gc.space.entity.planet.Neptune;
-import co.gc.space.entity.planet.Planet;
-import co.gc.space.entity.planet.Saturn;
-import co.gc.space.entity.planet.Uranus;
-import co.gc.space.entity.planet.Venus;
-import co.gc.space.graph.EuropaGraph;
-import co.gc.space.graph.JupiterGraph;
-import co.gc.space.graph.MarsGraph;
-import co.gc.space.graph.MercuryGraph;
-import co.gc.space.graph.NeptuneGraph;
-import co.gc.space.graph.SaturnGraph;
-import co.gc.space.graph.UranusGraph;
-import co.gc.space.graph.VenusGraph;
-import co.gc.space.land.BetaPicBHouse;
-import co.gc.space.land.BetaPicCHouse;
-import co.gc.space.land.EuropaHouse;
-import co.gc.space.land.JupiterHouse;
-import co.gc.space.land.Kepler421BHouse;
-import co.gc.space.land.MarsHouse;
-import co.gc.space.land.MercuryHouse;
-import co.gc.space.land.NeptuneHouse;
-import co.gc.space.land.SaturnHouse;
-import co.gc.space.land.UmaBHouse;
-import co.gc.space.land.UranusHouse;
-import co.gc.space.land.VenusHouse;
 import co.gc.space.repo.PlanetRepo;
+import co.gc.space.PlanetBuilder;
+import co.gc.space.entity.planet.*;
+import co.gc.space.graph.*;
+import co.gc.space.land.*;
 
 @Controller
 public class SpaceController {
