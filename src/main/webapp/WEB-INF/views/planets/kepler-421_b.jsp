@@ -95,7 +95,7 @@ body {
 		<h1>Houses</h1>
 		<table>
 			<tr>
-				<td><img src="${planet.houseImage }"
+				<td><img src=${house.houseImage }
 					style="width: 350px; height: 350px;"></td>
 				<td>
 					<table>
