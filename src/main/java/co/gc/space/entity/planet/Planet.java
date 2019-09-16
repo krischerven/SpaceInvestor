@@ -303,8 +303,20 @@ public class Planet {
 			}
 		}
 		// "-" isn't supported by our font - "―" is.
+		// numbers also aren't supported
 		try {
-			return new String(tmp2.getBytes("UTF8"), "UTF8").replace("-", " \u2015 ");
+			return new String(tmp2.getBytes("UTF8"), "UTF8")
+					.replace("-", " \u2015 ")
+					.replace("1", " one ")
+					.replace("2", " two ")
+					.replace("3", " three ")
+					.replace("4", " four ")
+					.replace("5", " five ")
+					.replace("6", " six ")
+					.replace("7", " seven ")
+					.replace("8", " eight ")
+					.replace("9", " nine ")
+					.replace("10", " ten ");
 		} catch (UnsupportedEncodingException e) {
 			return "Error: UnsupportedEncodingException";
 		}
