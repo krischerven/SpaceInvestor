@@ -57,21 +57,11 @@ public class Planet {
 	private String imageUrl;
 	@Transient
 	private String jspTag;
-	@Transient
-	private String houseImage;
 
 	public Planet() {
 		super();
 		// TODO Auto-generated constructor stub
 
-	}
-
-	public String getHouseImage() {
-		return houseImage;
-	}
-
-	public void setHouseImage(String houseImage) {
-		this.houseImage = houseImage;
 	}
 
 	public String getJspTag() {

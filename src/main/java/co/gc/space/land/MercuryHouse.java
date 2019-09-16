@@ -1,0 +1,16 @@
+package co.gc.space.land;
+
+public class MercuryHouse extends House {
+
+	public MercuryHouse() {
+		price = "1,000,000,000,000";
+		arces = "100";
+		propertyDetails = "Open with carter fields or without carter fields. Far for neighbors";
+		houseFeatures = "4 bedrooms, 3 bathrooms, 6,000sqft(inside a dome)";
+		architecturalStyle = "Pueblo Revival architecture";
+		condition = "New";
+		yearBuilt = "2040";
+		setHouseImage("../images/pueblorevivalhouse.jpg");
+
+	}
+}
