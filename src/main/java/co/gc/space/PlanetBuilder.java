@@ -34,12 +34,12 @@ public final class PlanetBuilder {
 				jspUrl = "/planets/kepler-421_b";
 				break;
 			}
-			case "beta pictoris b": {
+			case "beta pic b": {
 				imageUrl = Image.beta_pic_b().getBestUrl();
 				jspUrl = "/planets/beta_pictoris_b";
 				break;
 			}
-			case "beta pictoris c": {
+			case "beta pic c": {
 				imageUrl = Image.beta_pic_c().getBestUrl();
 				jspUrl = "/planets/beta_pictoris_c";
 				break;
