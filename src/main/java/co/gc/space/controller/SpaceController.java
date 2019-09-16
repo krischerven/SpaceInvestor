@@ -71,6 +71,7 @@ public class SpaceController {
 		mv.addObject("first", planetArr[0]);
 		mv.addObject("second", planetArr[1]);
 		mv.addObject("third", planetArr[2]);
+		mv.addObject("all", planets.toArray());
 		return mv;
 	}
 

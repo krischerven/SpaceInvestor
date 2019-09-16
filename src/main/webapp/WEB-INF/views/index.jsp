@@ -52,5 +52,17 @@
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid d-sm-block">
+		<div class="row">
+			<div class="col-lg-12">
+				<p>
+				 <c:forEach var="planet" items="${all}">
+				 	${planet}
+				 	<br><br>
+				 </c:forEach>
+				 </p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
