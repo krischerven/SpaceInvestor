@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import co.gc.space.user.CreditCard;
@@ -31,7 +32,7 @@ public class UserController {
 		return new ModelAndView("login");
 	}
 	
-	@GetMapping("logged-in") 
+	@RequestMapping(value="logged-in", method=RequestMethod.POST) 
 	public ModelAndView loggedIn(@RequestParam("email") String email, 
 			@RequestParam("password") String password, 
 			HttpServletResponse response) {
