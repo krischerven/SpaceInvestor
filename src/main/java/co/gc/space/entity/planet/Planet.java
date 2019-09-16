@@ -1,5 +1,7 @@
 package co.gc.space.entity.planet;
 
+import java.io.UnsupportedEncodingException;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -300,7 +302,12 @@ public class Planet {
 				tmp2 += " ";
 			}
 		}
-		return tmp2;
+		// "-" isn't supported by our font - "―" is.
+		try {
+			return new String(tmp2.getBytes("UTF8"), "UTF8").replace("-", " \u2015 ");
+		} catch (UnsupportedEncodingException e) {
+			return "Error: UnsupportedEncodingException";
+		}
 	}
 
 }
