@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class UranusHouse extends Land {
+public class UranusHouse extends House {
 
 	public UranusHouse() {
 		price = "900,000,000,000";
@@ -10,5 +10,6 @@ public class UranusHouse extends Land {
 		architecturalStyle = "Craftsman";
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/craftsmanhouse.jpg");
 	}
 }

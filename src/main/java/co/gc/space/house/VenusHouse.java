@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class VenusHouse extends Land {
+public class VenusHouse extends House {
 
 	public VenusHouse() {
 
@@ -11,6 +11,7 @@ public class VenusHouse extends Land {
 		architecturalStyle = "Ranch";
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/ranchhouse2.jpg");
 
 	}
 }

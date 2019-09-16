@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class MercuryHouse extends Land {
+public class MercuryHouse extends House {
 
 	public MercuryHouse() {
 		price = "1,000,000,000,000";
@@ -10,6 +10,7 @@ public class MercuryHouse extends Land {
 		architecturalStyle = "Pueblo Revival architecture";
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/pueblorevivalhouse.jpg");
 
 	}
 }

@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class UmaBHouse extends Land {
+public class UmaBHouse extends House {
 
 	public UmaBHouse() {
 		price = "28,000,000,000,000";
@@ -10,5 +10,6 @@ public class UmaBHouse extends Land {
 		architecturalStyle = "Modern";
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/modernhouse.jpg");
 	}
 }

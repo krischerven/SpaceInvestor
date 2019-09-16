@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class Land {
+public class House {
 
 	protected String price;
 	protected String arces;
@@ -9,8 +9,17 @@ public class Land {
 	protected String architecturalStyle;
 	protected String condition;
 	protected String yearBuilt;
+	private String houseImage;
 
-	public Land() {
+	public String getHouseImage() {
+		return houseImage;
+	}
+
+	public void setHouseImage(String houseImage) {
+		this.houseImage = houseImage;
+	}
+
+	public House() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

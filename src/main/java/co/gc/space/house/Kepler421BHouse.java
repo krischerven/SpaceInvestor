@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class Kepler421BHouse extends Land {
+public class Kepler421BHouse extends House {
 
 	public Kepler421BHouse() {
 		price = "4,000,000,000,000";
@@ -10,5 +10,6 @@ public class Kepler421BHouse extends Land {
 		architecturalStyle = "Ranch";
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/ranchhouse.jpg");
 	}
 }

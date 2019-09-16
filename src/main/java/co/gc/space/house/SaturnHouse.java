@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class SaturnHouse extends Land {
+public class SaturnHouse extends House {
 
 	public SaturnHouse() {
 		price = "7,000,000,000,000";
@@ -10,5 +10,6 @@ public class SaturnHouse extends Land {
 		architecturalStyle = "Tudor";
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/tudorhouse.jpg");
 	}
 }

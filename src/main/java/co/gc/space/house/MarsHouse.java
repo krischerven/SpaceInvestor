@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class MarsHouse extends Land {
+public class MarsHouse extends House {
 
 	public MarsHouse() {
 		price = "2,000,000,000,000";
@@ -10,6 +10,7 @@ public class MarsHouse extends Land {
 		architecturalStyle = ("English Cottage");
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/englishcottagehouse.jpeg");
 	}
 
 }

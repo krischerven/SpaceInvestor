@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class NeptuneHouse extends Land {
+public class NeptuneHouse extends House {
 
 	public NeptuneHouse() {
 		price = "20,000,000,000,000";
@@ -10,5 +10,6 @@ public class NeptuneHouse extends Land {
 		architecturalStyle = "Greek Revival";
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/greekrevivalhouse2.jpg");
 	}
 }

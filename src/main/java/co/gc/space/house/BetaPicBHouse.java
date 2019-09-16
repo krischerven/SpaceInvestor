@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class BetaPicBHouse extends Land {
+public class BetaPicBHouse extends House {
 
 	public BetaPicBHouse() {
 		price = "600,000,000,000";
@@ -10,5 +10,6 @@ public class BetaPicBHouse extends Land {
 		architecturalStyle = "Greek Revival";
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/greekrevivalhouse.jpg");
 	}
 }

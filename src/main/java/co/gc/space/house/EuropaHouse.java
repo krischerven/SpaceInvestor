@@ -1,6 +1,6 @@
-package co.gc.space.land;
+package co.gc.space.house;
 
-public class EuropaHouse extends Land {
+public class EuropaHouse extends House {
 
 	public EuropaHouse() {
 		price = "900,000,000,000";
@@ -10,5 +10,6 @@ public class EuropaHouse extends Land {
 		architecturalStyle = "Spanish";
 		condition = "New";
 		yearBuilt = "2040";
+		setHouseImage("../images/spanishhouse.jpg");
 	}
 }
