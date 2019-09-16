@@ -32,6 +32,7 @@ import co.gc.space.graph.VenusGraph;
 import co.gc.space.house.BetaPicBHouse;
 import co.gc.space.house.BetaPicCHouse;
 import co.gc.space.house.EuropaHouse;
+import co.gc.space.house.House;
 import co.gc.space.house.JupiterHouse;
 import co.gc.space.house.Kepler421BHouse;
 import co.gc.space.house.MarsHouse;

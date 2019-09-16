@@ -10,6 +10,6 @@ public class BetaPicCHouse extends House {
 		architecturalStyle = "Spanish";
 		condition = "New";
 		yearBuilt = "2040";
-		setHouseImage("spanisharchitecturehouse.jpg");
+		setHouseImage("../images/spanisharchitecturehouse.jpg");
 	}
 }

@@ -22,11 +22,14 @@
 		onclick="window.location='../login'" />
 	<h2 id="placeholder">ERROR</h2>
 	<script>
-	if (document.cookie.indexOf('authenticated=') != -1) {
-		document.getElementById("placeholder").innerText = "You just bought your first house on ${house}!"
-	} else {
-		document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
-	}
+		if (document.cookie.indexOf('authenticated=') != -1) {
+			document.getElementById("placeholder").innerText = "You just bought your first house on ${house}!"
+		} else {
+			document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
+		}
 	</script>
+	<p>This is the details of your purchase</p>
+
+
 </body>
 </html>
