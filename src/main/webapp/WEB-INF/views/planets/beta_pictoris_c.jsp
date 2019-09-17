@@ -122,10 +122,9 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=BETAPICC'" />
-			<br>
-			<br>
-			<table>
+			onclick="window.location='../buyhouse?house=BETAPICC'" /> <br>
+		<br>
+		<table>
 			<tr>
 				<td><img src=${house2.houseImage }
 					style="width: 350px; height: 350px;"></td>
@@ -146,9 +145,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=BETAPICC2'" />
-			<br>
-				<br>
+			onclick="window.location='../buyhouse?house=BETAPICC2'" /> <br>
+		<br>
 		<table>
 			<tr>
 				<td><img src=${house3.houseImage }
@@ -171,30 +169,32 @@ body {
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
 			onclick="window.location='../buyhouse?house=BETAPICC3'" />
-	
+
 		<!-- graph section -->
-	<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
-	<p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
-	<p id="title_1" hidden=true>${graph1.titleName}</p>
-	<p id="xName_1" hidden=true>${graph1.xName}</p>
-	<p id="yName_1" hidden=true>${graph1.yName}</p>
+		<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
+		<p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
+		<p id="title_1" hidden=true>${graph1.titleName}</p>
+		<p id="xName_1" hidden=true>${graph1.xName}</p>
+		<p id="yName_1" hidden=true>${graph1.yName}</p>
 
-	<div id="section3" class="container-fluid">
-		<h1>Graphs</h1>
-		<br>
-		<div id="graph1">
-			<!-- Graph #1 goes here -->
+		<div id="section3" class="container-fluid">
+			<h1>Graphs</h1>
+			<br>
+			<div id="graph1">
+				<!-- Graph #1 goes here -->
+			</div>
+			<p>Nothing too exciting but the population of cats will go up as
+				the lonely people bring their cats to this planet. If you like cats,
+				then hey, if not, sorry!</p>
 		</div>
-	</div>
 
-	<!--  JS that actually creates the graphs -->
-	<div>
-	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<script
-		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
-	
-	</div>
+		<!--  JS that actually creates the graphs -->
+		<div>
+			<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+			<script
+				src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+			<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
 
+		</div>
 </body>
 </html>

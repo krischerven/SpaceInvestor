@@ -184,6 +184,11 @@ body {
 				<div id="graph1">
 					<!-- Graph #1 goes here -->
 				</div>
+				<p>Start your galactic lemonade stand here. You will have an
+					abundance of lemonade and will be able to make a high percentage of
+					profit. Everybody on your planet will enjoy the weather and want so
+					much lemonade, creating opportunities for you to become a
+					multi-billionaire.</p>
 			</div>
 
 			<!--  JS that actually creates the graphs -->

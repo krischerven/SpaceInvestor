@@ -124,9 +124,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House" onclick="window.location='../buyhouse?house=VENUS'" />
-<br>
-			<br>
-			<table>
+		<br> <br>
+		<table>
 			<tr>
 				<td><img src=${house2.houseImage }
 					style="width: 350px; height: 350px;"></td>
@@ -147,9 +146,7 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=VENUS2'" />
-			<br>
-				<br>
+			onclick="window.location='../buyhouse?house=VENUS2'" /> <br> <br>
 		<table>
 			<tr>
 				<td><img src=${house3.houseImage }
@@ -186,6 +183,11 @@ body {
 		<div id="graph1">
 			<!-- Graph #1 goes here -->
 		</div>
+
+		<p>Nitrogen can be used to make fertilizer products. That means
+			that our crops will grow more efficiently and we will be able to stop
+			world hunger. If you don't invest in a property on Venus you
+			basically want many people to die of starvation.</p>
 	</div>
 
 	<!--  JS that actually creates the graphs -->

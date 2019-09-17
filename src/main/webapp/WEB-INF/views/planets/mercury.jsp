@@ -121,10 +121,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=MERCURY'" />
-			<br>
-			<br>
-			<table>
+			onclick="window.location='../buyhouse?house=MERCURY'" /> <br> <br>
+		<table>
 			<tr>
 				<td><img src=${house2.houseImage }
 					style="width: 350px; height: 350px;"></td>
@@ -145,9 +143,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=MERCURY2'" />
-			<br>
-				<br>
+			onclick="window.location='../buyhouse?house=MERCURY2'" /> <br>
+		<br>
 		<table>
 			<tr>
 				<td><img src=${house3.houseImage }
@@ -184,6 +181,10 @@ body {
 		<div id="graph1">
 			<!-- Graph #1 goes here -->
 		</div>
+		<p>With all of this magnesium, you can literally make everything a
+			light weight. From laptops to carseats. Magnesium is also great for
+			making fireworks, so you'll be the one we come to for all of our 4th
+			of July needs, if you make this investment that is.</p>
 	</div>
 
 	<!--  JS that actually creates the graphs -->

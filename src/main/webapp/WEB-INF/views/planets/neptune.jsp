@@ -121,10 +121,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=NEPTUNE'" />
-			<br>
-			<br>
-			<table>
+			onclick="window.location='../buyhouse?house=NEPTUNE'" /> <br> <br>
+		<table>
 			<tr>
 				<td><img src=${house2.houseImage }
 					style="width: 350px; height: 350px;"></td>
@@ -145,9 +143,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=NEPTUNE2'" />
-			<br>
-				<br>
+			onclick="window.location='../buyhouse?house=NEPTUNE2'" /> <br>
+		<br>
 		<table>
 			<tr>
 				<td><img src=${house3.houseImage }
@@ -185,6 +182,10 @@ body {
 		<div id="graph1">
 			<!-- Graph #1 goes here -->
 		</div>
+		<p>With all of this ammonia you can blow Windex off out of the
+			water. You can sell all of the janitorial equipment that you want.
+			Nothing gets tough stains out better than ammonia.</p>
+
 	</div>
 
 	<!--  JS that actually creates the graphs -->

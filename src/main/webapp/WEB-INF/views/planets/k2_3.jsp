@@ -94,8 +94,8 @@ body {
 			is only 44 days on this planet and it was discovered in 2015. The
 			Kepler Space Telescope found this planet while looking to discover
 			exoplanets that are similar in size to Earth.</p>
-			
-					<div id="section2" class="container-fluid">
+
+		<div id="section2" class="container-fluid">
 			<h1>Houses</h1>
 			<table>
 				<tr>
@@ -118,8 +118,8 @@ body {
 						</table>
 			</table>
 			<br> <input type="button" class="btn btn-primary hBack"
-				value="Buy House" onclick="window.location='../buyhouse?house=K2_3_C'" />
-			<br> <br>
+				value="Buy House"
+				onclick="window.location='../buyhouse?house=K2_3_C'" /> <br> <br>
 			<table>
 				<tr>
 					<td><img src=${house2.houseImage }
@@ -141,7 +141,8 @@ body {
 			</table>
 			<br> <input type="button" class="btn btn-primary hBack"
 				value="Buy House"
-				onclick="window.location='../buyhouse?house=K2_3_C2'" /> <br> <br>
+				onclick="window.location='../buyhouse?house=K2_3_C2'" /> <br>
+			<br>
 			<table>
 				<tr>
 					<td><img src=${house3.houseImage }
@@ -164,7 +165,7 @@ body {
 			<br> <input type="button" class="btn btn-primary hBack"
 				value="Buy House"
 				onclick="window.location='../buyhouse?house=K2_3_C3'" />
-		<!-- graph section -->
+			<!-- graph section -->
 			<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
 			<p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
 			<p id="title_1" hidden=true>${graph1.titleName}</p>
@@ -177,6 +178,9 @@ body {
 				<div id="graph1">
 					<!-- Graph #1 goes here -->
 				</div>
+				<p>With so much natural gas you can help power the universe.
+					What an opportunity? The profits on this planet are unimaginable.
+					Better get there before anybody else does.</p>
 			</div>
 
 			<!--  JS that actually creates the graphs -->

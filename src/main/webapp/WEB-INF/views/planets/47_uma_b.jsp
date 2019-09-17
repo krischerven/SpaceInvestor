@@ -184,6 +184,11 @@ body {
 			<div id="graph1">
 				<!-- Graph #1 goes here -->
 			</div>
+			<p>With the temperatures of Earth dangerously rising, you must
+				secure your spot on this earth life planet. Or most comparable to
+				planet Earth. Think about your family and their future. Don't you
+				want them to be safe when the Earth no longer has a sustainable
+				ecosystem for its species.</p>
 		</div>
 
 		<!--  JS that actually creates the graphs -->

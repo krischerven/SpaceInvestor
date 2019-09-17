@@ -125,10 +125,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=JUPITER'" />
-			<br>
-			<br>
-			<table>
+			onclick="window.location='../buyhouse?house=JUPITER'" /> <br> <br>
+		<table>
 			<tr>
 				<td><img src=${house2.houseImage }
 					style="width: 350px; height: 350px;"></td>
@@ -149,9 +147,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse2?house2=JUPITER'" />
-			<br>
-				<br>
+			onclick="window.location='../buyhouse2?house2=JUPITER'" /> <br>
+		<br>
 		<table>
 			<tr>
 				<td><img src=${house3.houseImage }
@@ -188,6 +185,10 @@ body {
 		<div id="graph1">
 			<!-- Graph #1 goes here -->
 		</div>
+		<p>Now is your chance to start the first ever galactic fuel
+			station. Hydrogen and the mixture of liquid oxygen makes great rocket
+			fuel. You will be the one to fuel everybody's space endeavors.</p>
+
 	</div>
 
 	<!--  JS that actually creates the graphs -->
