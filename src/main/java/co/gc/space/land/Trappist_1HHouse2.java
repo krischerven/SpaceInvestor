@@ -10,6 +10,6 @@ public class Trappist_1HHouse2 extends House {
 		architecturalStyle = "English Cottage";
 		condition = "New";
 		yearBuilt = "2040";
-		setHouseImage("../images/englishcottagehouse4.jpg");
+		setHouseImage("../images/englishcottagehouse4.jpeg");
 	}
 }

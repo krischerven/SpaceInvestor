@@ -10,6 +10,6 @@ public class Trappist_1HHouse extends House {
 		architecturalStyle = "Pueblo Revival";
 		condition = "New";
 		yearBuilt = "2040";
-		setHouseImage("../images/pueblorevivalhouse4.jpg");
+		setHouseImage("../images/pueblorevivalhouse4.jpeg");
 	}
 }
