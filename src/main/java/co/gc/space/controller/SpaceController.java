@@ -181,7 +181,7 @@ public class SpaceController {
 	@RequestMapping("/planets/europa")
 	public ModelAndView europa() {
 		ModelAndView mv = new ModelAndView("planets/europa", "planet", new Europa());
-		mv.addObject("europaGraph1", new EuropaGraph());
+		mv.addObject("graph1", new EuropaGraph());
 		mv.addObject("house", new EuropaHouse());
 		mv.addObject("house2", new EuropaHouse2());
 		mv.addObject("house3", new EuropaHouse3());
