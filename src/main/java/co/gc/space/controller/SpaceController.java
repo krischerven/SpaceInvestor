@@ -303,6 +303,15 @@ public class SpaceController {
 				
 			case BETAPICC2:
 				return new ModelAndView("buyhouse", "house", new BetaPicCHouse2().setPlanet(builder.Build("beta pic c")));
+				
+			case K2_18_B2:
+				return new ModelAndView("buyhouse", "house", new K2_18BHouse2().setPlanet(builder.Build("K2-18 b")));
+				
+			case K2_3_C2:
+				return new ModelAndView("buyhouse", "house", new K2_3CHouse2().setPlanet(builder.Build("K2-3 c")));
+				
+			case TRAPIST_1_H2:
+				return new ModelAndView("buyhouse", "house", new Trapist_1HHouse2().setPlanet(builder.Build("Trappist-1 h")));
 		
 			case MERCURY3:
 				return new ModelAndView("buyhouse", "house", new MercuryHouse3().setPlanet(new Mercury()));
@@ -339,6 +348,15 @@ public class SpaceController {
 				
 			case BETAPICC3:
 				return new ModelAndView("buyhouse", "house", new BetaPicCHouse3().setPlanet(builder.Build("beta pic c")));
+		
+			case K2_18_B3:
+				return new ModelAndView("buyhouse", "house", new K2_18BHouse3().setPlanet(builder.Build("K2-18 b")));
+				
+			case K2_3_C3:
+				return new ModelAndView("buyhouse", "house", new K2_3CHouse3().setPlanet(builder.Build("K2-3 c")));
+				
+			case TRAPIST_1_H3:
+				return new ModelAndView("buyhouse", "house", new Trapist_1HHouse3().setPlanet(builder.Build("Trappist-1 h")));
 		}
 		
 		return null;
