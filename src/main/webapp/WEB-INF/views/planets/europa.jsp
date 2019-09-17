@@ -117,6 +117,54 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House" onclick="window.location='../buyhouse?house=EUROPA'" />
+			<br>
+			<br>
+			<table>
+			<tr>
+				<td><img src=${house2.houseImage }
+					style="width: 350px; height: 350px;"></td>
+				<td>
+					<table>
+						<tr>
+							<ul>
+								<li>Price: ${house2.price }</li>
+								<li>Acres: ${house2.arces }</li>
+								<li>Year Built: ${house2.yearBuilt }</li>
+								<li>Condition: ${house2.condition }</li>
+								<li>Property Details: ${house2.propertyDetails }</li>
+								<li>House Features: ${house2.houseFeatures }</li>
+								<li>Architectural Style: ${house2.architecturalStyle }</li>
+							</ul>
+						</tr>
+					</table>
+		</table>
+		<br> <input type="button" class="btn btn-primary hBack"
+			value="Buy House"
+			onclick="window.location='../buyhouse?house=EUROPA2'" />
+			<br>
+				<br>
+		<table>
+			<tr>
+				<td><img src=${house3.houseImage }
+					style="width: 350px; height: 350px;"></td>
+				<td>
+					<table>
+						<tr>
+							<ul>
+								<li>Price: ${house3.price }</li>
+								<li>Acres: ${house3.arces }</li>
+								<li>Year Built: ${house3.yearBuilt }</li>
+								<li>Condition: ${house3.condition }</li>
+								<li>Property Details: ${house3.propertyDetails }</li>
+								<li>House Features: ${house3.houseFeatures }</li>
+								<li>Architectural Style: ${house3.architecturalStyle }</li>
+							</ul>
+						</tr>
+					</table>
+		</table>
+		<br> <input type="button" class="btn btn-primary hBack"
+			value="Buy House"
+			onclick="window.location='../buyhouse?house=EUROPA3'" />
 	</div>
 
 </body>

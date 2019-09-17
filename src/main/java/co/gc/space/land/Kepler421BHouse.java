@@ -3,7 +3,7 @@ package co.gc.space.land;
 public class Kepler421BHouse extends House {
 
 	public Kepler421BHouse() {
-		price = "4,000,000,000,000";
+		price = "$730,000";
 		arces = "85";
 		propertyDetails = "Found by the snowline, Cold, snowy mountains.";
 		houseFeatures = "3 bedrooms, 2 bathrooms, 2000sqft";
