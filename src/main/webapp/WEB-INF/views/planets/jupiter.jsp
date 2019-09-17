@@ -32,7 +32,7 @@ body {
 }
 
 #section3 {
-	padding-top: 50px;
+	padding-top: 600px;
 	height: 100%;
 	width: 75%
 }
