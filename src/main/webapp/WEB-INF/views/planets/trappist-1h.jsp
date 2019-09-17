@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -80,5 +80,17 @@ body {
 						</tr>
 					</table>
 		</table>
+
+		<p>If you have ever wished you can enjoy the beautiful summer
+			weather without the intense heat of our sun then Trappist-1h is the
+			planet for you. This exoplanet that is slightly larger than earth but
+			less dense suggests that this planet could have water on it. Other
+			than the possibility of having water on it this planet orbits an
+			ultra-cool dwarf star that is believed to have a temperature under
+			2,700K. Even though it is effective enough to keep Trappist-1h warm,
+			you would never have to worry about the heat of their star causing
+			you difficulty or disease. Just kick back enjoy your cup of ice cold
+			lemonade and enjoy the breeze, because if you own a property on this
+			planet, then you're living the good life.</p>
 </body>
 </html>
