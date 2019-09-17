@@ -46,15 +46,15 @@ public final class Image {
 	}
 
 	public static Image K2_18_b() {
-		return new Image(new String[] { "../images/K2-18b.png" });
+		return new Image(new String[] { "../images/k2-18b.png" });
 
 	}
 	
 	public static Image K2_3() {
-		return new Image(new String[] {"../images/k2-3_c.png"});
+		return new Image(new String[] {"../images/k2-3c.png"});
 	}
 	
 	public static Image Trappist_1 () {
-		return new Image(new String [] {"../images/TRAPPIST-1h.png"});
+		return new Image(new String [] {"../images/trapist-1h.png"});
 	}
 }
