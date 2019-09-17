@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import co.gc.space.repo.PlanetRepo;
+import co.gc.space.HouseEnum;
 import co.gc.space.PlanetBuilder;
 import co.gc.space.entity.planet.*;
 import co.gc.space.graph.*;
@@ -18,12 +19,6 @@ import co.gc.space.land.*;
 
 @Controller
 public class SpaceController {
-	
-	private enum Houses{
-		MERCURY, VENUS, MARS, JUPITER, SATURN, NEPTUNE, URANUS, EUROPA, _47_UMA_B, KEPLER_421_B, BETAPICB, BETAPICC, K2_18_B, TRAPIST_1_H, K2_3_C,
-		MERCURY2, VENUS2, MARS2, JUPITER2, SATURN2, NEPTUNE2, URANUS2, EUROPA2, _47_UMA_B2, KEPLER_421_B2, BETAPICB2, BETAPICC2, K2_18_B2, TRAPIST_1_H2, K2_3_C2,
-		MERCURY3, VENUS3, MARS3, JUPITER3, SATURN3, NEPTUNE3, URANUS3, EUROPA3, _47_UMA_B3, KEPLER_421_B3, BETAPICB3, BETAPICC3, K2_18_B3, TRAPIST_1_H3, K2_3_C3,;
-	}
 
 	@Autowired PlanetRepo repo;
 	final PlanetBuilder builder = new PlanetBuilder();
@@ -220,7 +215,7 @@ public class SpaceController {
 	}
 	
 	@RequestMapping("/buyhouse") 
-	public ModelAndView buyHouse(@RequestParam("house") Houses house) {
+	public ModelAndView buyHouse(@RequestParam("house") HouseEnum house) {
 		
 		switch(house) {
 			case MERCURY:
