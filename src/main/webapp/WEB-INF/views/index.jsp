@@ -21,7 +21,7 @@
 		onclick="window.location='../login'" />
 	<br>
 	<br>
-	<h1>Planet Investor Real Estate Professionals</h1>
+	<h1>Space Investors Real Estate Professionals</h1>
 	<br>
 	<div class="container-fluid">
 		<div class="row">
