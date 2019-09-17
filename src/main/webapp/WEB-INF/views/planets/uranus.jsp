@@ -124,10 +124,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=URANUS'" />
-<br>
-			<br>
-			<table>
+			onclick="window.location='../buyhouse?house=URANUS'" /> <br> <br>
+		<table>
 			<tr>
 				<td><img src=${house2.houseImage }
 					style="width: 350px; height: 350px;"></td>
@@ -148,9 +146,7 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=URANUS2'" />
-			<br>
-				<br>
+			onclick="window.location='../buyhouse?house=URANUS2'" /> <br> <br>
 		<table>
 			<tr>
 				<td><img src=${house3.houseImage }
@@ -187,12 +183,17 @@ body {
 		<div id="graph1">
 			<!-- Graph #1 goes here -->
 		</div>
-	</div>
 
-	<!--  JS that actually creates the graphs -->
-	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<script
-		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+
+		<p>With all of the methane on this planet you will ensure every
+			city is well heated and lit up. The better the vision at night, the
+			safer the city. Help cities all over the galaxy stay lit during the
+			nights to prevent crimes and give drivers better visibility</p>
+
+		<!--  JS that actually creates the graphs -->
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script
+			src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+		<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
 </body>
 </html>

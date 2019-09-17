@@ -118,14 +118,12 @@ body {
 							</ul>
 						</tr>
 
-					</table> 
-					</table> 
-					<br> <input type="button" class="btn btn-primary hBack"
-					value="Buy House"
-					onclick="window.location='../buyhouse?house=SATURN'" />
-				<br>
-			<br>
-			<table>
+					</table>
+		</table>
+		<br> <input type="button" class="btn btn-primary hBack"
+			value="Buy House"
+			onclick="window.location='../buyhouse?house=SATURN'" /> <br> <br>
+		<table>
 			<tr>
 				<td><img src=${house2.houseImage }
 					style="width: 350px; height: 350px;"></td>
@@ -146,9 +144,7 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=SATURN2'" />
-			<br>
-				<br>
+			onclick="window.location='../buyhouse?house=SATURN2'" /> <br> <br>
 		<table>
 			<tr>
 				<td><img src=${house3.houseImage }
@@ -185,6 +181,9 @@ body {
 		<div id="graph1">
 			<!-- Graph #1 goes here -->
 		</div>
+		<p>With the price of Helium going up on Saturn now is the time for
+			you to get your balloon business started before those guys on
+			Uranus find an actual solid surface to land on.</p>
 	</div>
 
 	<!--  JS that actually creates the graphs -->

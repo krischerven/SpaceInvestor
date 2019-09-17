@@ -121,8 +121,9 @@ body {
 						</table>
 			</table>
 			<br> <input type="button" class="btn btn-primary hBack"
-				value="Buy House" onclick="window.location='../buyhouse?house=K2_18_B'" />
-			<br> <br>
+				value="Buy House"
+				onclick="window.location='../buyhouse?house=K2_18_B'" /> <br>
+			<br>
 			<table>
 				<tr>
 					<td><img src=${house2.houseImage }
@@ -144,7 +145,8 @@ body {
 			</table>
 			<br> <input type="button" class="btn btn-primary hBack"
 				value="Buy House"
-				onclick="window.location='../buyhouse?house=K2_18_B2'" /> <br> <br>
+				onclick="window.location='../buyhouse?house=K2_18_B2'" /> <br>
+			<br>
 			<table>
 				<tr>
 					<td><img src=${house3.houseImage }
@@ -167,30 +169,32 @@ body {
 			<br> <input type="button" class="btn btn-primary hBack"
 				value="Buy House"
 				onclick="window.location='../buyhouse?house=K2_18_B3'" />
-		
-		<!-- graph section -->
-	<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
-	<p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
-	<p id="title_1" hidden=true>${graph1.titleName}</p>
-	<p id="xName_1" hidden=true>${graph1.xName}</p>
-	<p id="yName_1" hidden=true>${graph1.yName}</p>
 
-	<div id="section3" class="container-fluid">
-		<h1>Graphs</h1>
-		<br>
-		<div id="graph1">
-			<!-- Graph #1 goes here -->
-		</div>
-	</div>
+			<!-- graph section -->
+			<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
+			<p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
+			<p id="title_1" hidden=true>${graph1.titleName}</p>
+			<p id="xName_1" hidden=true>${graph1.xName}</p>
+			<p id="yName_1" hidden=true>${graph1.yName}</p>
 
-	<!--  JS that actually creates the graphs -->
-	<div>
-	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<script
-		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
-	
-	</div>
-		
+			<div id="section3" class="container-fluid">
+				<h1>Graphs</h1>
+				<br>
+				<div id="graph1">
+					<!-- Graph #1 goes here -->
+				</div>
+				<p>Hey! Earth Corporations! Get your hands off the Amazon! Go
+					ahead and get all of your wood from K2-18 B. You can have as much
+					wood as you please!</p>
+			</div>
+
+			<!--  JS that actually creates the graphs -->
+			<div>
+				<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+				<script
+					src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+				<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+
+			</div>
 </body>
 </html>

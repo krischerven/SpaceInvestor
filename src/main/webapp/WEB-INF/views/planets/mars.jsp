@@ -181,12 +181,21 @@ body {
 		<div id="graph1">
 			<!-- Graph #1 goes here -->
 		</div>
+	
+	<p>With the price of flying to mars decreasing, now is your
+		opportunity to get reserve your spot. Once it it becomes easier to
+		land on mars, space on this planet will run out and you won't find
+		your comfort zone.</p>
+		
 	</div>
+	
 
 	<!--  JS that actually creates the graphs -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script
 		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+	
+
 </body>
 </html>
