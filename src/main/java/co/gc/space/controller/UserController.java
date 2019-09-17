@@ -17,6 +17,10 @@ import co.gc.space.repo.UserRepo;
 import co.gc.space.user.CreditCard;
 import co.gc.space.user.User;
 
+import co.gc.space.Hasher;
+import co.gc.space.repo.UserRepo;
+
+
 @Controller
 public class UserController {
 
@@ -41,7 +45,7 @@ public class UserController {
 		ModelAndView mv = new ModelAndView("logged-in");
 		Optional<User> user = repo.findByEmail(email);
 		try {
-			if (user.get().getPassword().equals(password)) {
+			if (user.get().getPassword().equals(Hasher.Hash(password))) {
 				mv.addObject("account", user.get());
 				mv.addObject("success", true);
 				// logged in for 15 minutes
@@ -61,6 +65,7 @@ public class UserController {
 	@RequestMapping("save-user")
 	public ModelAndView saveUser(User user) {
 		if (user.getCreditcard() != null && user.getCvv() != null) {
+			user.setPassword(Hasher.Hash(user.getPassword()));
 			String test = CreditCard.getMatchingCreditCard(user.getCreditcard(), user.getCvv());
 			System.out.println(test);
 			if (test == null) {

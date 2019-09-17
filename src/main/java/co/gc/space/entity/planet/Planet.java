@@ -271,6 +271,11 @@ public class Planet {
 		return "<h2>" + getIndexTitle() + "</h2><a href=" + getJspTag() + "><img src=" + getImageUrl()
 				+ " + alt=ERROR width=500px height=500px></a>";
 	}
+	
+	public String toStringCentered() {
+		return "<h2>" + getIndexTitle() + "</h2><a href=" + getJspTag() + "><img src=" + getImageUrl()
+				+ " + alt=ERROR width=500px height=500px class=center></a>";
+	}
 
 	// helpers
 	public String getTitle() {

@@ -119,10 +119,10 @@ body {
 							</ul>
 						</tr>
 					</table>
-
-					<br> <input type="button" class="btn btn-primary hBack"
-					value="Buy House"
-					onclick="window.location='../buyhouse?house=URANUS'" />
+		</table>
+		<br> <input type="button" class="btn btn-primary hBack"
+			value="Buy House"
+			onclick="window.location='../buyhouse?house=URANUS'" />
 
 	</div>
 	<!-- graph section -->

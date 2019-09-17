@@ -23,12 +23,11 @@
 	<br>
 	<h1>Space Investors Real Estate Professionals</h1>
 	<br>
-	<div class="container-fluid">
+	<!-- The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). The classes can be combined to create more dynamic and flexible layouts. -->
+	<div class="container-fluid d-none d-md-block">
 		<div class="row">
 			<div class="col-lg-4">
-			
 				<p>
-					
 				 <c:forEach var="planet" items="${first}">
 				 	${planet}
 				 	<br><br>
@@ -47,6 +46,18 @@
 				<p>
 				 <c:forEach var="planet" items="${third}">
 				 	${planet}
+				 	<br><br>
+				 </c:forEach>
+				 </p>
+			</div>
+		</div>
+	</div>
+	<div class="d-md-none">
+		<div class="row">
+			<div class="col-lg-12">
+				<p>
+				 <c:forEach var="planet" items="${all}">
+				 	${planet.toStringCentered()}
 				 	<br><br>
 				 </c:forEach>
 				 </p>
