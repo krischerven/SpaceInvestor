@@ -1,8 +1,8 @@
 package co.gc.space.land;
 
-public class Trapist_1HHouse3 extends House {
+public class Trappist_1HHouse3 extends House {
 
-	public Trapist_1HHouse3() {
+	public Trappist_1HHouse3() {
 		price = "$378,323";
 		arces = "34";
 		propertyDetails = "Might be like Earth and Mars.";

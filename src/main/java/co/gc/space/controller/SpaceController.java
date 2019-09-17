@@ -208,9 +208,9 @@ public class SpaceController {
 	@RequestMapping("/planets/trappist-1h")
 	public ModelAndView Trappist_1 () {
 		ModelAndView mv = new ModelAndView("/planets/trappist-1h", "planet", builder.Build("Trappist-1 h"));
-		mv.addObject("house", new Trapist_1HHouse());
-		mv.addObject("house2", new Trapist_1HHouse2());
-		mv.addObject("house3", new Trapist_1HHouse3());
+		mv.addObject("house", new Trappist_1HHouse());
+		mv.addObject("house2", new Trappist_1HHouse2());
+		mv.addObject("house3", new Trappist_1HHouse3());
 		return mv; 
 	}
 	
@@ -260,8 +260,8 @@ public class SpaceController {
 			case K2_3_C:
 				return new ModelAndView("buyhouse", "house", new K2_3CHouse().setPlanet(builder.Build("K2-3 c")));
 				
-			case TRAPIST_1_H:
-				return new ModelAndView("buyhouse", "house", new Trapist_1HHouse().setPlanet(builder.Build("Trappist-1 h")));
+			case TRAPPIST_1_H:
+				return new ModelAndView("buyhouse", "house", new Trappist_1HHouse().setPlanet(builder.Build("Trappist-1 h")));
 				
 			case MERCURY2:
 				return new ModelAndView("buyhouse", "house", new MercuryHouse2().setPlanet(new Mercury()));
@@ -305,8 +305,8 @@ public class SpaceController {
 			case K2_3_C2:
 				return new ModelAndView("buyhouse", "house", new K2_3CHouse2().setPlanet(builder.Build("K2-3 c")));
 				
-			case TRAPIST_1_H2:
-				return new ModelAndView("buyhouse", "house", new Trapist_1HHouse2().setPlanet(builder.Build("Trappist-1 h")));
+			case TRAPPIST_1_H2:
+				return new ModelAndView("buyhouse", "house", new Trappist_1HHouse2().setPlanet(builder.Build("Trappist-1 h")));
 		
 			case MERCURY3:
 				return new ModelAndView("buyhouse", "house", new MercuryHouse3().setPlanet(new Mercury()));
@@ -350,8 +350,8 @@ public class SpaceController {
 			case K2_3_C3:
 				return new ModelAndView("buyhouse", "house", new K2_3CHouse3().setPlanet(builder.Build("K2-3 c")));
 				
-			case TRAPIST_1_H3:
-				return new ModelAndView("buyhouse", "house", new Trapist_1HHouse3().setPlanet(builder.Build("Trappist-1 h")));
+			case TRAPPIST_1_H3:
+				return new ModelAndView("buyhouse", "house", new Trappist_1HHouse3().setPlanet(builder.Build("Trappist-1 h")));
 		}
 		
 		return null;
