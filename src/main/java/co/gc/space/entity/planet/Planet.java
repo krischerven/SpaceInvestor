@@ -19,7 +19,6 @@ public class Planet {
 
 	@Column(name = "planetname")
 	private String planetName;
-
 	@Column(name = "starname")
 	private String starName;
 	@Column(name = "publicationstatus")
