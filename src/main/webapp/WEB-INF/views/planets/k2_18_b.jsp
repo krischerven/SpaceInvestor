@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -80,5 +80,20 @@ body {
 						</tr>
 					</table>
 		</table>
+
+		<p>If you're just looking for a fresh start and would like to live
+			on a planet that has a similar atmosphere to that of Earth, then K2-18 b
+			is the planet for you. This is our opportunity for a fresh start and
+			a way for us to right all of our wrongs. We completely gave up on our
+			own planet and destroyed it by letting corporate greed get the best
+			of us. We took as much as we could possibly take from our planet
+			without any consideration for any other species in our ecosystem.
+			It's very shameful, what we have done to the planet we call home. But
+			on the bright side this planet is a planet that is just right for our
+			fresh start. We will not allow greed to take over this planet and
+			deplete it of its natural resources. We must all collaborate and work
+			as a team. The Earth's natural resources were more than enough to
+			support the human population in its entirety yet we have failed. So
+			let us not fail again.
 </body>
 </html>
