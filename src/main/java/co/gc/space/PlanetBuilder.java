@@ -1,25 +1,21 @@
 package co.gc.space;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import co.gc.space.controller.ControllerHelper;
 import co.gc.space.entity.planet.Planet;
 import co.gc.space.repo.PlanetRepo;
 
 public final class PlanetBuilder {
-	public static PlanetRepo repo;
 
-	public void setRepo(PlanetRepo _repo) {
-		if (repo == null) {
-			repo = _repo;
-		}
-	}
-
-	public Planet Build(String name, String imageUrl, String jspUrl) {
-		Planet p = repo.findById(name).get();
+	public static Planet Build(String name, String imageUrl, String jspUrl) {
+		Planet p = ControllerHelper.repo.findById(name).get();
 		p.setImageUrl(imageUrl);
 		p.setJspTag(jspUrl);
 		return p;
 	}
 
-	public Planet Build(String name) {
+	public static Planet Build(String name) {
 		String imageUrl = null;
 		String jspUrl = null;
 		

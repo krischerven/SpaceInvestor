@@ -2,30 +2,22 @@ package co.gc.space.land;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import co.gc.space.HouseEnum;
 import co.gc.space.entity.planet.Planet;
-import co.gc.space.user.User;
 
 @Entity
 @Table(name = "houses")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class House {
-		
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -46,12 +38,30 @@ public class House {
 	@Transient
 	private Planet planet;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "user_id", nullable = false)	
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonIgnore
-    private User user;
-    
+	@Column(name="user_id")
+	private Integer userId;
+//	@ManyToOne /// (fetch = FetchType.LAZY, optional = false)
+////    @JoinColumn(name = "user_id", nullable = false)	
+////    @OnDelete(action = OnDeleteAction.CASCADE)
+//    @JsonIgnore
+	// private User user;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+//
+//	public User getUser() {
+//		return user;
+//	}
+//
+//	public void setUser(User user) {
+//		this.user = user;
+//	}
+
 	public House() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -129,9 +139,19 @@ public class House {
 		this.planet = planet;
 		return this;
 	}
-	
+
 	public HouseEnum toEnum() {
 		return null;
 	}
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
+
+
 
 }

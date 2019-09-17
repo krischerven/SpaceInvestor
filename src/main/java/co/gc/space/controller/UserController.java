@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
+import javax.annotation.PostConstruct;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
@@ -15,13 +16,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-
+import co.gc.space.repo.HouseRepo;
 import co.gc.space.repo.UserRepo;
 import co.gc.space.user.CreditCard;
 import co.gc.space.user.User;
 
 import co.gc.space.Hasher;
 import co.gc.space.HouseEnum;
+import co.gc.space.PlanetBuilder;
 import co.gc.space.entity.planet.Europa;
 import co.gc.space.entity.planet.Jupiter;
 import co.gc.space.entity.planet.Mars;
@@ -82,7 +84,10 @@ public class UserController {
 
 	@Autowired
 	UserRepo repo;
-
+	
+	@Autowired
+	HouseRepo hrepo;
+	
 	@RequestMapping("create-user")
 	public ModelAndView addUser() {
 		return new ModelAndView("create-user");
@@ -161,11 +166,15 @@ public class UserController {
 			}
 		}
 		String email = hasher.getStringFromHash(auth);
-		Optional<User> _user = repo.findByEmail(email);
+		Optional<User> _user = repo.findByEmail("kris@gmail.com");
 		if (!_user.isEmpty()) {
 			User user = _user.get();
-			user.addHouse(house);
+			//user.addHouse(house);
 			repo.save(user);
+			house.setUserId(user.getId());
+			House newHouse = new House();
+			newHouse.setUserId(user.getId());
+			hrepo.save(newHouse);
 		}
 		List<Planet> planets = new ArrayList<>();
 		planets.add(new Mars());
@@ -176,13 +185,13 @@ public class UserController {
 		planets.add(new Uranus());
 		planets.add(new Venus());
 		planets.add(new Europa());
-		/*planets.add(builder.Build("47 uma b"));
-		planets.add(builder.Build("kepler-421 b"));
-		planets.add(builder.Build("beta pic b"));
-		planets.add(builder.Build("beta pic c"));
-		planets.add(builder.Build("K2-18 b"));
-		planets.add(builder.Build("K2-3 c"));
-		planets.add(builder.Build("Trappist-1 h"));*/
+		planets.add(PlanetBuilder.Build("47 uma b"));
+		planets.add(PlanetBuilder.Build("kepler-421 b"));
+		planets.add(PlanetBuilder.Build("beta pic b"));
+		planets.add(PlanetBuilder.Build("beta pic c"));
+		planets.add(PlanetBuilder.Build("K2-18 b"));
+		planets.add(PlanetBuilder.Build("K2-3 c"));
+		planets.add(PlanetBuilder.Build("Trappist-1 h"));
 		final ArrayList<Object>[] planetArr = partition(planets);
 		final ModelAndView mv = new ModelAndView("index");
 		mv.addObject("first", planetArr[0]);
@@ -191,7 +200,7 @@ public class UserController {
 		mv.addObject("all", planets.toArray());
 		return mv;
 	}
-	
+	/*
 	@RequestMapping("see-houses")
 	public ModelAndView seeHouses(String auth) {
 		String email = hasher.getStringFromHash(auth);
@@ -207,5 +216,5 @@ public class UserController {
 		} else {
 			return new ModelAndView("see-houses", "houses", new ArrayList<House>());
 		}
-	}
+	}*/
 }
