@@ -3,7 +3,7 @@ package co.gc.space.land;
 import co.gc.space.HouseEnum;
 
 public class BetaPicCHouse2 extends House {
-	
+
 	public BetaPicCHouse2() {
 		price = "$190,000";
 		arces = "70";
@@ -14,10 +14,9 @@ public class BetaPicCHouse2 extends House {
 		yearBuilt = "2040";
 		setHouseImage("../images/englishcottagehouse2.jpg");
 	}
-	
+
 	public HouseEnum toEnum() {
 		return HouseEnum.BETAPICC2;
 	}
-
 
 }

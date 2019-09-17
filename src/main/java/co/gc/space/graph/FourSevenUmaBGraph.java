@@ -3,7 +3,7 @@ package co.gc.space.graph;
 import java.util.ArrayList;
 
 public class FourSevenUmaBGraph extends Graph {
-	
+
 	private long moneyFormula(double startingPoint, long i) {
 		return (long) ((double) startingPoint * ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
 	}
@@ -27,12 +27,9 @@ public class FourSevenUmaBGraph extends Graph {
 
 	public FourSevenUmaBGraph() {
 		titleName = "Temperatures rising by Farenheit on Earth!";
-		xName = "Year"; 
+		xName = "Year";
 		yName = "Temperature (Farenheit)";
 		xPoints = years(2020, 7);
 		yPoints = money(0.70, xPoints.size());
 	}
 }
-
-
-

@@ -11,13 +11,12 @@ public enum CreditCard {
 	private CreditCard(String cardRegex, String cvvRegex) {
 		this.cardRegex = cardRegex;
 		this.cvvRegex = cvvRegex;
-		
+
 	}
 
 	public static String getMatchingCreditCard(String creditcard, String cvv) {
 		String cardCompany = null;
 
-		
 		if (creditcard.matches(MASTERCARD.cardRegex) && cvv.matches(MASTERCARD.cvvRegex)) {
 			cardCompany = "MasterCard";
 		} else if (creditcard.matches(VISA.cardRegex) && cvv.matches(VISA.cvvRegex)) {

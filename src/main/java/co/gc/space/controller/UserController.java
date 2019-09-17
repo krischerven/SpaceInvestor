@@ -1,4 +1,5 @@
 package co.gc.space.controller;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -36,8 +37,8 @@ import co.gc.space.user.User;
 
 @Controller
 public class UserController {
-	
-	@SuppressWarnings({ "unchecked" })
+
+	@SuppressWarnings("unchecked")
 	private static ArrayList<Object>[] partitionHouses(List<House> houses) {
 		ArrayList<House> _1 = new ArrayList<>();
 		ArrayList<House> _2 = new ArrayList<>();
@@ -53,14 +54,16 @@ public class UserController {
 		}
 		return new ArrayList[] { _3, _2, _1 };
 	}
-	
+
 	public final class Hasher {
-		final HashMap<String,String> hashes = new HashMap<>();
+		final HashMap<String, String> hashes = new HashMap<>();
+
 		// uniqueness isnt import
 		// if two passwords produce the same hash, that isn't an issue
 		private String hash(String in) {
 			return co.gc.space.Hasher.Hash(in);
 		}
+
 		// guaranteed unique hash
 		private String uniqueHash(String in) {
 			String _hash = hash(in);
@@ -71,34 +74,34 @@ public class UserController {
 			hashes.put(_hash, in);
 			return _hash;
 		}
+
 		// get the String used to create a unique hash
 		// this is fairly secure because it's only stored in memory
 		private String getStringFromHash(String in) {
 			return hashes.get(in);
 		}
 	}
-	
+
 	final Hasher hasher = new Hasher();
 
 	@Autowired
 	UserRepo repo;
-	
+
 	@Autowired
 	HouseRepo hrepo;
-	
+
 	@RequestMapping("create-user")
 	public ModelAndView addUser() {
 		return new ModelAndView("create-user");
 	}
-	
+
 	@RequestMapping("login")
 	public ModelAndView login() {
 		return new ModelAndView("login");
 	}
-	
-	@RequestMapping(value="logged-in", method=RequestMethod.POST) 
-	public ModelAndView loggedIn(@RequestParam("email") String email, 
-			@RequestParam("password") String password, 
+
+	@RequestMapping(value = "logged-in", method = RequestMethod.POST)
+	public ModelAndView loggedIn(@RequestParam("email") String email, @RequestParam("password") String password,
 			HttpServletResponse response) {
 		ModelAndView mv = new ModelAndView("logged-in");
 		Optional<User> user = repo.findByEmail(email);
@@ -135,7 +138,7 @@ public class UserController {
 			return new ModelAndView("user-created");
 		}
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	private static ArrayList<Object>[] partition(List<Planet> planets) {
 		ArrayList<Planet> _1 = new ArrayList<>();
@@ -152,16 +155,16 @@ public class UserController {
 		}
 		return new ArrayList[] { _3, _2, _1 };
 	}
-	
+
 	@SuppressWarnings("incomplete-switch")
 	@RequestMapping("save-user-land")
 	public ModelAndView saveUserLand(HouseEnum house, String auth) {
 		house = HouseEnum.MARS;
 		House house2 = null;
 		switch (house) {
-			case MARS: {
-				house2 = new MarsHouse();
-			}
+		case MARS: {
+			house2 = new MarsHouse();
+		}
 		}
 		String email = hasher.getStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);
@@ -194,7 +197,7 @@ public class UserController {
 		mv.addObject("all", planets.toArray());
 		return mv;
 	}
-	
+
 	@RequestMapping("see-houses")
 	public ModelAndView seeHouses(String auth) {
 		String email = hasher.getStringFromHash(auth);

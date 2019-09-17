@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class EuropaGraph extends Graph {
 
-
 	private long moneyFormula(double startingPoint, long i) {
 		return (long) ((double) startingPoint * ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
 	}

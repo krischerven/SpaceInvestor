@@ -2,7 +2,8 @@ package co.gc.space.graph;
 
 import java.util.ArrayList;
 
-public class K2_18_bGraph extends Graph{
+public class K2_18_bGraph extends Graph {
+	
 	private long moneyFormula(double startingPoint, long i) {
 		return (long) ((double) startingPoint * ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
 	}
@@ -26,7 +27,7 @@ public class K2_18_bGraph extends Graph{
 
 	public K2_18_bGraph() {
 		titleName = "Forest Growth on K2-18 B";
-		xName = "Year"; 
+		xName = "Year";
 		yName = "Square Miles(10s of thousands)";
 		xPoints = years(2020, 7);
 		yPoints = money(1, xPoints.size());

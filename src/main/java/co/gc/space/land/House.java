@@ -51,7 +51,7 @@ public class House {
 	public House() {
 		super();
 	}
-	
+
 	public House From(final House other) {
 		this.price = other.price;
 		this.arces = other.arces;

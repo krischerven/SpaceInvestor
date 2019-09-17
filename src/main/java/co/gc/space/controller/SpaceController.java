@@ -216,143 +216,154 @@ public class SpaceController {
 
 	@RequestMapping("/buyhouse")
 	public ModelAndView buyHouse(@RequestParam("house") HouseEnum house) {
-		
-		switch(house) {
+
+		switch (house) {
 			case MERCURY:
 				return new ModelAndView("buyhouse", "house", new MercuryHouse().setPlanet(new Mercury()));
-				
+	
 			case VENUS:
 				return new ModelAndView("buyhouse", "house", new VenusHouse().setPlanet(new Venus()));
-				
+	
 			case MARS:
 				return new ModelAndView("buyhouse", "house", new MarsHouse().setPlanet(new Mars()));
-				
+	
 			case JUPITER:
 				return new ModelAndView("buyhouse", "house", new JupiterHouse().setPlanet(new Jupiter()));
-				
+	
 			case SATURN:
 				return new ModelAndView("buyhouse", "house", new SaturnHouse().setPlanet(new Saturn()));
-				
+	
 			case NEPTUNE:
 				return new ModelAndView("buyhouse", "house", new NeptuneHouse().setPlanet(new Neptune()));
-				
+	
 			case URANUS:
 				return new ModelAndView("buyhouse", "house", new UranusHouse().setPlanet(new Uranus()));
-				
+	
 			case EUROPA:
 				return new ModelAndView("buyhouse", "house", new EuropaHouse().setPlanet(new Europa()));
-				
+	
 			case _47_UMA_B:
 				return new ModelAndView("buyhouse", "house", new UmaBHouse().setPlanet(PlanetBuilder.Build("47 uma b")));
-				
+	
 			case KEPLER_421_B:
-				return new ModelAndView("buyhouse", "house", new Kepler421BHouse().setPlanet(PlanetBuilder.Build("kepler-421 b")));
-				
+				return new ModelAndView("buyhouse", "house",
+						new Kepler421BHouse().setPlanet(PlanetBuilder.Build("kepler-421 b")));
+	
 			case BETAPICB:
-				return new ModelAndView("buyhouse", "house", new BetaPicBHouse().setPlanet(PlanetBuilder.Build("beta pic b")));
-				
+				return new ModelAndView("buyhouse", "house",
+						new BetaPicBHouse().setPlanet(PlanetBuilder.Build("beta pic b")));
+	
 			case BETAPICC:
-				return new ModelAndView("buyhouse", "house", new BetaPicCHouse().setPlanet(PlanetBuilder.Build("beta pic c")));
-				
+				return new ModelAndView("buyhouse", "house",
+						new BetaPicCHouse().setPlanet(PlanetBuilder.Build("beta pic c")));
+	
 			case K2_18_B:
 				return new ModelAndView("buyhouse", "house", new K2_18BHouse().setPlanet(PlanetBuilder.Build("K2-18 b")));
-				
+	
 			case K2_3_C:
 				return new ModelAndView("buyhouse", "house", new K2_3CHouse().setPlanet(PlanetBuilder.Build("K2-3 c")));
-				
+	
 			case TRAPPIST_1_H:
-				return new ModelAndView("buyhouse", "house", new Trappist_1HHouse().setPlanet(PlanetBuilder.Build("Trappist-1 h")));
-				
+				return new ModelAndView("buyhouse", "house",
+						new Trappist_1HHouse().setPlanet(PlanetBuilder.Build("Trappist-1 h")));
+	
 			case MERCURY2:
 				return new ModelAndView("buyhouse", "house", new MercuryHouse2().setPlanet(new Mercury()));
-				
+	
 			case VENUS2:
 				return new ModelAndView("buyhouse", "house", new VenusHouse2().setPlanet(new Venus()));
-				
+	
 			case MARS2:
 				return new ModelAndView("buyhouse", "house", new MarsHouse2().setPlanet(new Mars()));
-				
+	
 			case JUPITER2:
 				return new ModelAndView("buyhouse", "house", new JupiterHouse2().setPlanet(new Jupiter()));
-				
+	
 			case SATURN2:
 				return new ModelAndView("buyhouse", "house", new SaturnHouse2().setPlanet(new Saturn()));
-				
+	
 			case NEPTUNE2:
 				return new ModelAndView("buyhouse", "house", new NeptuneHouse2().setPlanet(new Neptune()));
-				
+	
 			case URANUS2:
 				return new ModelAndView("buyhouse", "house", new UranusHouse2().setPlanet(new Uranus()));
-				
+	
 			case EUROPA2:
 				return new ModelAndView("buyhouse", "house", new EuropaHouse2().setPlanet(new Europa()));
-				
+	
 			case _47_UMA_B2:
 				return new ModelAndView("buyhouse", "house", new UmaBHouse2().setPlanet(PlanetBuilder.Build("47 uma b")));
-				
+	
 			case KEPLER_421_B2:
-				return new ModelAndView("buyhouse", "house", new Kepler421BHouse2().setPlanet(PlanetBuilder.Build("kepler-421 b")));
-				
+				return new ModelAndView("buyhouse", "house",
+						new Kepler421BHouse2().setPlanet(PlanetBuilder.Build("kepler-421 b")));
+	
 			case BETAPICB2:
-				return new ModelAndView("buyhouse", "house", new BetaPicBHouse2().setPlanet(PlanetBuilder.Build("beta pic b")));
-				
+				return new ModelAndView("buyhouse", "house",
+						new BetaPicBHouse2().setPlanet(PlanetBuilder.Build("beta pic b")));
+	
 			case BETAPICC2:
-				return new ModelAndView("buyhouse", "house", new BetaPicCHouse2().setPlanet(PlanetBuilder.Build("beta pic c")));
-				
+				return new ModelAndView("buyhouse", "house",
+						new BetaPicCHouse2().setPlanet(PlanetBuilder.Build("beta pic c")));
+	
 			case K2_18_B2:
 				return new ModelAndView("buyhouse", "house", new K2_18BHouse2().setPlanet(PlanetBuilder.Build("K2-18 b")));
-				
+	
 			case K2_3_C2:
 				return new ModelAndView("buyhouse", "house", new K2_3CHouse2().setPlanet(PlanetBuilder.Build("K2-3 c")));
-				
+	
 			case TRAPPIST_1_H2:
-				return new ModelAndView("buyhouse", "house", new Trappist_1HHouse2().setPlanet(PlanetBuilder.Build("Trappist-1 h")));
-		
+				return new ModelAndView("buyhouse", "house",
+						new Trappist_1HHouse2().setPlanet(PlanetBuilder.Build("Trappist-1 h")));
+	
 			case MERCURY3:
 				return new ModelAndView("buyhouse", "house", new MercuryHouse3().setPlanet(new Mercury()));
-				
+	
 			case VENUS3:
 				return new ModelAndView("buyhouse", "house", new VenusHouse3().setPlanet(new Venus()));
-				
+	
 			case MARS3:
 				return new ModelAndView("buyhouse", "house", new MarsHouse3().setPlanet(new Mars()));
-				
+	
 			case JUPITER3:
 				return new ModelAndView("buyhouse", "house", new JupiterHouse3().setPlanet(new Jupiter()));
-				
+	
 			case SATURN3:
 				return new ModelAndView("buyhouse", "house", new SaturnHouse3().setPlanet(new Saturn()));
-				
+	
 			case NEPTUNE3:
 				return new ModelAndView("buyhouse", "house", new NeptuneHouse3().setPlanet(new Neptune()));
-				
+	
 			case URANUS3:
 				return new ModelAndView("buyhouse", "house", new UranusHouse3().setPlanet(new Uranus()));
-				
+	
 			case EUROPA3:
 				return new ModelAndView("buyhouse", "house", new EuropaHouse3().setPlanet(new Europa()));
-				
+	
 			case _47_UMA_B3:
 				return new ModelAndView("buyhouse", "house", new UmaBHouse3().setPlanet(PlanetBuilder.Build("47 uma b")));
-				
+	
 			case KEPLER_421_B3:
-				return new ModelAndView("buyhouse", "house", new Kepler421BHouse3().setPlanet(PlanetBuilder.Build("kepler-421 b")));
-				
+				return new ModelAndView("buyhouse", "house",
+						new Kepler421BHouse3().setPlanet(PlanetBuilder.Build("kepler-421 b")));
+	
 			case BETAPICB3:
-				return new ModelAndView("buyhouse", "house", new BetaPicBHouse3().setPlanet(PlanetBuilder.Build("beta pic b")));
-				
+				return new ModelAndView("buyhouse", "house",
+						new BetaPicBHouse3().setPlanet(PlanetBuilder.Build("beta pic b")));
+	
 			case BETAPICC3:
-				return new ModelAndView("buyhouse", "house", new BetaPicCHouse3().setPlanet(PlanetBuilder.Build("beta pic c")));
-		
+				return new ModelAndView("buyhouse", "house",
+						new BetaPicCHouse3().setPlanet(PlanetBuilder.Build("beta pic c")));
+	
 			case K2_18_B3:
 				return new ModelAndView("buyhouse", "house", new K2_18BHouse3().setPlanet(PlanetBuilder.Build("K2-18 b")));
-				
+	
 			case K2_3_C3:
 				return new ModelAndView("buyhouse", "house", new K2_3CHouse3().setPlanet(PlanetBuilder.Build("K2-3 c")));
-				
+	
 			case TRAPPIST_1_H3:
-				return new ModelAndView("buyhouse", "house", new Trappist_1HHouse3().setPlanet(PlanetBuilder.Build("Trappist-1 h")));
-			
+				return new ModelAndView("buyhouse", "house",
+						new Trappist_1HHouse3().setPlanet(PlanetBuilder.Build("Trappist-1 h")));
 			default:
 				return null;
 		}

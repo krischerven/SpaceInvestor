@@ -3,6 +3,7 @@ package co.gc.space.graph;
 import java.util.ArrayList;
 
 public class BetaPictorisCGraph extends Graph {
+	
 	private long moneyFormula(long startingPoint, long i) {
 		return (long) ((double) startingPoint + ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
 	}
