@@ -1,12 +1,8 @@
 package co.gc.space.land;
 
-<<<<<<< HEAD:src/main/java/co/gc/space/land/Trapist_1HHouse.java
 import co.gc.space.HouseEnum;
 
-public class Trapist_1HHouse extends House {
-=======
 public class Trappist_1HHouse extends House {
->>>>>>> master:src/main/java/co/gc/space/land/Trappist_1HHouse.java
 
 	public Trappist_1HHouse() {
 		price = "$563,000";
@@ -20,7 +16,7 @@ public class Trappist_1HHouse extends House {
 	}
 	
 	public HouseEnum toEnum() {
-		return HouseEnum.TRAPIST_1_H;
+		return HouseEnum.TRAPPIST_1_H;
 	}
 
 }

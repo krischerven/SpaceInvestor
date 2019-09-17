@@ -15,12 +15,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-
-import co.gc.space.repo.UserRepo;
-import co.gc.space.user.CreditCard;
-import co.gc.space.user.User;
-
-import co.gc.space.Hasher;
 import co.gc.space.HouseEnum;
 import co.gc.space.entity.planet.Europa;
 import co.gc.space.entity.planet.Jupiter;
@@ -33,6 +27,9 @@ import co.gc.space.entity.planet.Uranus;
 import co.gc.space.entity.planet.Venus;
 import co.gc.space.land.House;
 import co.gc.space.land.MarsHouse;
+import co.gc.space.repo.UserRepo;
+import co.gc.space.user.CreditCard;
+import co.gc.space.user.User;
 
 @Controller
 public class UserController {
@@ -162,7 +159,7 @@ public class UserController {
 		}
 		String email = hasher.getStringFromHash(auth);
 		Optional<User> _user = repo.findByEmail(email);
-		if (!_user.isEmpty()) {
+		if (_user.isPresent()) {
 			User user = _user.get();
 			user.addHouse(house);
 			repo.save(user);
@@ -196,7 +193,7 @@ public class UserController {
 	public ModelAndView seeHouses(String auth) {
 		String email = hasher.getStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);
-		if (!user.isEmpty()) {
+		if (user.isPresent()) {
 			final ArrayList<Object>[] houseArr = partitionHouses(new ArrayList<>(user.get().getHouses()));
 			final ModelAndView mv = new ModelAndView("see-houses");
 			mv.addObject("first", houseArr[0]);
