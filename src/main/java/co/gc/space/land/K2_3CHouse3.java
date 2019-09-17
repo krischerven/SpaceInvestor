@@ -3,13 +3,13 @@ package co.gc.space.land;
 public class K2_3CHouse3 extends House {
 
 	public K2_3CHouse3() {
-		price = "$412,000";
-		arces = "70";
-		propertyDetails = "No solid ground. Lots of gases everywhere.";
-		houseFeatures = "4 bedrooms, 3 bathrooms, 3000sqft(inside a dome off the ground)";
-		architecturalStyle = "Spanish";
+		price = "$472,000";
+		arces = "81";
+		propertyDetails = "Gases all around.";
+		houseFeatures = "4 bedrooms, 3 bathrooms, 3893sqft(inside a dome off the ground)";
+		architecturalStyle = "Victorian";
 		condition = "New";
 		yearBuilt = "2040";
-		setHouseImage("../images/spanishhouse2.jpg");
+		setHouseImage("../images/victorianhouse5.jpg");
 	}
 }
