@@ -14,7 +14,7 @@ public class K2_18BHouse3 extends House {
 		yearBuilt = "2040";
 		setHouseImage("../images/modernhouse6.jpg");
 	}
-	
+
 	public HouseEnum toEnum() {
 		return HouseEnum.K2_18_B3;
 	}

@@ -14,7 +14,7 @@ public class EuropaHouse2 extends House {
 		yearBuilt = "2040";
 		setHouseImage("../images/tudorhouse2.jpg");
 	}
-	
+
 	public HouseEnum toEnum() {
 		return HouseEnum.EUROPA2;
 	}
