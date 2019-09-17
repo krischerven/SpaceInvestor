@@ -144,6 +144,7 @@ public class SpaceController {
 	@RequestMapping("/planets/47_uma_b")
 	public ModelAndView _47_uma_b() {
 		ModelAndView mv = new ModelAndView("planets/47_uma_b", "planet", builder.Build("47 uma b"));
+		mv.addObject("graph1", new FourSevenUmaBGraph());
 		mv.addObject("house", new UmaBHouse());
 		mv.addObject("house2", new UmaBHouse2());
 		mv.addObject("house3", new UmaBHouse3());
