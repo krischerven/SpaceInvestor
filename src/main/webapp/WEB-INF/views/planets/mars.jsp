@@ -97,14 +97,6 @@ body {
 		What a life? If you want to miss out on an opportunity like this then
 		go ahead, browse another website, the Martians won't miss you.</p>
 
-	<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
-	<p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
-	<p id="title_1" hidden=true>${graph1.titleName}</p>
-	<p id="xName_1" hidden=true>${graph1.xName}</p>
-	<p id="yName_1" hidden=true>${graph1.yName}</p>
-
-
-
 	<div id="section2" class="container-fluid">
 		<h1>Houses</h1>
 		<table>

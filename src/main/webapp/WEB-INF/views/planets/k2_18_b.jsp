@@ -82,18 +82,89 @@ body {
 		</table>
 
 		<p>If you're just looking for a fresh start and would like to live
-			on a planet that has a similar atmosphere to that of Earth, then K2-18 b
-			is the planet for you. This is our opportunity for a fresh start and
-			a way for us to right all of our wrongs. We completely gave up on our
-			own planet and destroyed it by letting corporate greed get the best
-			of us. We took as much as we could possibly take from our planet
-			without any consideration for any other species in our ecosystem.
-			It's very shameful, what we have done to the planet we call home. But
-			on the bright side this planet is a planet that is just right for our
-			fresh start. We will not allow greed to take over this planet and
-			deplete it of its natural resources. We must all collaborate and work
-			as a team. The Earth's natural resources were more than enough to
-			support the human population in its entirety yet we have failed. So
-			let us not fail again.
+			on a planet that has a similar atmosphere to that of Earth, then
+			K2-18 b is the planet for you. This is our opportunity for a fresh
+			start and a way for us to right all of our wrongs. We completely gave
+			up on our own planet and destroyed it by letting corporate greed get
+			the best of us. We took as much as we could possibly take from our
+			planet without any consideration for any other species in our
+			ecosystem. It's very shameful, what we have done to the planet we
+			call home. But on the bright side this planet is a planet that is
+			just right for our fresh start. We will not allow greed to take over
+			this planet and deplete it of its natural resources. We must all
+			collaborate and work as a team. The Earth's natural resources were
+			more than enough to support the human population in its entirety yet
+			we have failed. So let us not fail again.</p>
+
+		<div id="section2" class="container-fluid">
+			<h1>Houses</h1>
+			<table>
+				<tr>
+					<td><img src=${house.houseImage }
+						style="width: 350px; height: 350px;"></td>
+					<td>
+						<table>
+							<tr>
+								<ul>
+									<li>Price: ${house.price }</li>
+									<li>Acres: ${house.arces }</li>
+									<li>Year Built: ${house.yearBuilt }</li>
+									<li>Condition: ${house.condition }</li>
+									<li>Property Details: ${house.propertyDetails }</li>
+									<li>House Features: ${house.houseFeatures }</li>
+									<li>Architectural Style: ${house.architecturalStyle }</li>
+								</ul>
+							</tr>
+
+						</table>
+			</table>
+			<br> <input type="button" class="btn btn-primary hBack"
+				value="Buy House" onclick="window.location='../buyhouse?house=MARS'" />
+			<br> <br>
+			<table>
+				<tr>
+					<td><img src=${house2.houseImage }
+						style="width: 350px; height: 350px;"></td>
+					<td>
+						<table>
+							<tr>
+								<ul>
+									<li>Price: ${house2.price }</li>
+									<li>Acres: ${house2.arces }</li>
+									<li>Year Built: ${house2.yearBuilt }</li>
+									<li>Condition: ${house2.condition }</li>
+									<li>Property Details: ${house2.propertyDetails }</li>
+									<li>House Features: ${house2.houseFeatures }</li>
+									<li>Architectural Style: ${house2.architecturalStyle }</li>
+								</ul>
+							</tr>
+						</table>
+			</table>
+			<br> <input type="button" class="btn btn-primary hBack"
+				value="Buy House"
+				onclick="window.location='../buyhouse?house=MARS2'" /> <br> <br>
+			<table>
+				<tr>
+					<td><img src=${house3.houseImage }
+						style="width: 350px; height: 350px;"></td>
+					<td>
+						<table>
+							<tr>
+								<ul>
+									<li>Price: ${house3.price }</li>
+									<li>Acres: ${house3.arces }</li>
+									<li>Year Built: ${house3.yearBuilt }</li>
+									<li>Condition: ${house3.condition }</li>
+									<li>Property Details: ${house3.propertyDetails }</li>
+									<li>House Features: ${house3.houseFeatures }</li>
+									<li>Architectural Style: ${house3.architecturalStyle }</li>
+								</ul>
+							</tr>
+						</table>
+			</table>
+			<br> <input type="button" class="btn btn-primary hBack"
+				value="Buy House"
+				onclick="window.location='../buyhouse?house=MARS3'" />
+		</div>
 </body>
 </html>
