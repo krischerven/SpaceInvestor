@@ -30,6 +30,11 @@ body {
 	padding-top: 50px;
 	height: 100%;
 }
+#section3 {
+	padding-top: 600px;
+	height: 100%;
+	width: 75%
+}
 </style>
 </head>
 <body>
@@ -40,7 +45,7 @@ body {
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
-	<input type="button" class="btn btn-primary" value="See Land"
+	<input type="button" class="btn btn-primary" value="See Properties"
 		onclick="window.location='../see-houses'" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
@@ -165,6 +170,29 @@ body {
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
 			onclick="window.location='../buyhouse?house=KEPLER_421_B3'" />
+	
+			<!-- graph section -->
+	<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
+	<p id="yPoints_1" hidden=true>${graph1.getYPoints()}</p>
+	<p id="title_1" hidden=true>${graph1.titleName}</p>
+	<p id="xName_1" hidden=true>${graph1.xName}</p>
+	<p id="yName_1" hidden=true>${graph1.yName}</p>
+
+	<div id="section3" class="container-fluid">
+		<h1>Graphs</h1>
+		<br>
+		<div id="graph1">
+			<!-- Graph #1 goes here -->
+		</div>
+	</div>
+
+	<!--  JS that actually creates the graphs -->
+	<div>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+	
 	</div>
 </body>
 </html>

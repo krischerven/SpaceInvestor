@@ -2,8 +2,8 @@ package co.gc.space.graph;
 
 import java.util.ArrayList;
 
-public class Kepler421bGraph extends Graph {
-	
+public class BetaPictorisBGraph extends Graph {
+
 	private long moneyFormula(double startingPoint, long i) {
 		return (long) ((double) startingPoint * ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
 	}
@@ -25,13 +25,14 @@ public class Kepler421bGraph extends Graph {
 		return yearReturn;
 	}
 
-	public Kepler421bGraph() {
-		titleName = "Price Projection of Properties on Kepler-421b";
-		xName = "Year";
-		yName = "Price ($ in millions)";
+	public BetaPictorisBGraph() {
+		titleName = "Land On Beta Pictoris B Price Projections";
+		xName = "Year"; 
+		yName = "Price ($ millions per acre)";
 		xPoints = years(2020, 7);
-		yPoints = money(5, xPoints.size());
+		yPoints = money(0.70, xPoints.size());
 	}
 }
+
 
 

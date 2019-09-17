@@ -19,10 +19,11 @@
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
+	
+	<img src="images/qr2.png" alt="QR Code" style="width: 175px; height:225px;" align="right"/>
+	
 	<br>
-	<img src="images/qr2.png" alt="QR Code"/>
-	<br>
-	<h1>Space Investors Real Estate Professionals</h1>
+	<h1>Space Investor's Real Estate Professionals</h1>
 	<br>
 	<!-- The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). The classes can be combined to create more dynamic and flexible layouts. -->
 	<div class="container-fluid d-none d-md-block">

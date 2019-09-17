@@ -30,6 +30,11 @@ body {
 	padding-top: 50px;
 	height: 100%;
 }
+#section3 {
+	padding-top: 600px;
+	height: 100%;
+	width: 75%
+}
 </style>
 </head>
 <body>
@@ -40,7 +45,7 @@ body {
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
-	<input type="button" class="btn btn-primary" value="See Land"
+	<input type="button" class="btn btn-primary" value="See Properties"
 		onclick="window.location='../see-houses'" />
 	<h1>Europa</h1>
 	<br>

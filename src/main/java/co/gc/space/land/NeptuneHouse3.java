@@ -12,7 +12,7 @@ public class NeptuneHouse3 extends House {
 		architecturalStyle = "The Cape Cod";
 		condition = "New";
 		yearBuilt = "2040";
-		setHouseImage("../images/thecapecodhouse4.jpg");
+		setHouseImage("../images/thecapecodhouse4.jpeg");
 	}
 	
 	public HouseEnum toEnum() {

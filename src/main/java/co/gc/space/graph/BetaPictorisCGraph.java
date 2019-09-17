@@ -2,13 +2,12 @@ package co.gc.space.graph;
 
 import java.util.ArrayList;
 
-public class Kepler421bGraph extends Graph {
-	
-	private long moneyFormula(double startingPoint, long i) {
-		return (long) ((double) startingPoint * ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
+public class BetaPictorisCGraph extends Graph {
+	private long moneyFormula(long startingPoint, long i) {
+		return (long) ((double) startingPoint + ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
 	}
 
-	private ArrayList<Object> money(double startingPoint, int numPoints) {
+	private ArrayList<Object> money(long startingPoint, int numPoints) {
 		ArrayList<Object> returnMoney = new ArrayList<>();
 		for (long i = 0; i < numPoints; ++i) {
 			returnMoney.add(moneyFormula(startingPoint, i));
@@ -25,13 +24,11 @@ public class Kepler421bGraph extends Graph {
 		return yearReturn;
 	}
 
-	public Kepler421bGraph() {
-		titleName = "Price Projection of Properties on Kepler-421b";
+	public BetaPictorisCGraph() {
+		titleName = "Population of Cats expected to Move to BetaPictorisC";
 		xName = "Year";
-		yName = "Price ($ in millions)";
+		yName = "Populationv(Tens of Thousands)";
 		xPoints = years(2020, 7);
 		yPoints = money(5, xPoints.size());
 	}
 }
-
-
