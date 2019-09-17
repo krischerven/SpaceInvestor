@@ -8,7 +8,7 @@ CREATE TABLE users (
     creditcard varchar(250),
     expiration varchar(45),
     cvv varchar(45),
-    houses int,
+    houses varchar(500),
 );
 
 SELECT * FROM users;

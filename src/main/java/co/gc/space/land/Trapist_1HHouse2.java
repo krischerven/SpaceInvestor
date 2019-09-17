@@ -2,9 +2,9 @@ package co.gc.space.land;
 
 import co.gc.space.HouseEnum;
 
-public class JupiterHouse extends House {
+public class Trapist_1HHouse2 extends House {
 
-	public JupiterHouse() {
+	public Trapist_1HHouse2() {
 		price = "$412,000";
 		arces = "70";
 		propertyDetails = "No solid ground. Lots of gases everywhere.";
@@ -16,7 +16,7 @@ public class JupiterHouse extends House {
 	}
 	
 	public HouseEnum toEnum() {
-		return HouseEnum.JUPITER;
+		return HouseEnum.TRAPIST_1_H2;
 	}
 
 }

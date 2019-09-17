@@ -4,7 +4,7 @@ import co.gc.space.entity.planet.Planet;
 import co.gc.space.repo.PlanetRepo;
 
 public final class PlanetBuilder {
-	private PlanetRepo repo;
+	public static PlanetRepo repo;
 
 	public void setRepo(PlanetRepo _repo) {
 		if (repo == null) {

@@ -46,6 +46,8 @@ body {
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
+	<input type="button" class="btn btn-primary" value="See Land"
+		onclick="window.location='../see-houses'" />
 	<h1>Mars</h1>
 	<br>
 	<table>

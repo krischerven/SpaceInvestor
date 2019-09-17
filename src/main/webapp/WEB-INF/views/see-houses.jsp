@@ -20,20 +20,50 @@
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
-	<h2 id="placeholder">ERROR</h2>
-	<div id="div1" style="display: none">
-		<p>This is the details of your purchase</p>
-		<center>
-		<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
-		</center>
-		<ul>
-			<li>Price: ${house.price }</li>
-			<li>Acres: ${house.arces }</li>
-			<li>Property Details: ${house.propertyDetails }</li>
-			<li>House Features: ${house.houseFeatures }</li>
-			<li>Architectural Style: ${house.architecturalStyle }</li>
-		</ul>
+	
+	<h1 id="placeholder">ERROR</h1>
+	
+	<div class="container-fluid d-none d-md-block" id="div1" style="display: none">
+		<div class="row">
+			<div class="col-lg-4">
+				<p>
+				 <c:forEach var="planet" items="${first}">
+				 	${planet}
+				 	<br><br>
+				 </c:forEach>
+				 </p>
+			</div>
+			<div class="col-lg-4">
+				<p>
+				 <c:forEach var="planet" items="${second}">
+				 	${planet}
+				 	<br><br>
+				 </c:forEach>
+				 </p>
+			</div>
+			<div class="col-lg-4">
+				<p>
+				 <c:forEach var="planet" items="${third}">
+				 	${planet}
+				 	<br><br>
+				 </c:forEach>
+				 </p>
+			</div>
+		</div>
 	</div>
+	<div class="d-md-none">
+		<div class="row">
+			<div class="col-lg-12">
+				<p>
+				 <c:forEach var="planet" items="${all}">
+				 	${planet.toStringCentered()}
+				 	<br><br>
+				 </c:forEach>
+				 </p>
+			</div>
+		</div>
+	</div>
+	
 	<script>
 		function getCookie(name) {
 			let value = "; " + document.cookie;
@@ -41,13 +71,11 @@
 			if (parts.length == 2) return parts.pop().split(";").shift();
 		}
 		if (document.cookie.indexOf('authenticated=') != -1) {
-			document.getElementById("placeholder").innerText = "You just bought your first house on ${house.planet.planetName}! Please wait to be returned to the home page..."
+			document.getElementById("placeholder").innerText = "Your Land";
 			document.getElementById("div1").style.display = "block";
-		    setTimeout(function(){
-		    	window.location='../save-user-land?house=${house.toEnum().toString()}&auth=' + getCookie("authenticated");
-		    }, 5000);
+			window.location='../save-user-land?house=${house.toEnum()}&auth=' + getCookie();
 		} else {
-			document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
+			document.getElementById("placeholder").innerText = "Error: Please log in to see your puchased land!"
 		}
 	</script>
 

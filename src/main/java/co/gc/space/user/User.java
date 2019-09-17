@@ -35,11 +35,15 @@ public class User {
     private Set<House> houses = new HashSet<>();
     
 	public Set<House> getHouses() {
-		return new HashSet<>(houses);
+		return houses;
 	}
 
 	public void setHouses(Set<House> houses) {
 		this.houses = houses;
+	}
+	
+	public void addHouse(House house) {
+		this.houses.add(house);
 	}
 
 	public User() {
