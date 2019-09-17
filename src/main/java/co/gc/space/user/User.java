@@ -1,11 +1,8 @@
 package co.gc.space.user;
 
-import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -29,11 +26,9 @@ public class User {
 	private String cvv;
 	
 	// we contain a list of houses
-    @OneToMany(cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY,
-            mappedBy = "user")
-    private Set<House> houses = new HashSet<>();
-    
+  //  @OneToMany(mappedBy = "user") //cascade = CascadeType.ALL, fetch = FetchType.LAZY,
+   // private Set<House> houses;
+    /*
 	public Set<House> getHouses() {
 		return houses;
 	}
@@ -44,7 +39,7 @@ public class User {
 	
 	public void addHouse(House house) {
 		this.houses.add(house);
-	}
+	}*/
 
 	public User() {
 		super();
