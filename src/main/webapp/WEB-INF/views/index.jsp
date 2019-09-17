@@ -19,7 +19,8 @@
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
-	
+	<input type="button" class="btn btn-primary" value="See Properties"
+		onclick="window.location='../see-houses'" />
 	<img src="images/qr2.png" alt="QR Code" style="width: 175px; height:225px;" align="right"/>
 	
 	<br>
