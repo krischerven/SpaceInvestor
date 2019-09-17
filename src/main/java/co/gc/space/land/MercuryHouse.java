@@ -1,5 +1,7 @@
 package co.gc.space.land;
 
+import co.gc.space.HouseEnum;
+
 public class MercuryHouse extends House {
 
 	public MercuryHouse() {
@@ -13,4 +15,9 @@ public class MercuryHouse extends House {
 		setHouseImage("../images/pueblorevivalhouse.jpg");
 
 	}
+	
+	public HouseEnum toEnum() {
+		return HouseEnum.MERCURY;
+	}
+
 }

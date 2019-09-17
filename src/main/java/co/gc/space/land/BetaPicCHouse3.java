@@ -1,5 +1,7 @@
 package co.gc.space.land;
 
+import co.gc.space.HouseEnum;
+
 public class BetaPicCHouse3 extends House {
 
 	public BetaPicCHouse3() {
@@ -12,4 +14,9 @@ public class BetaPicCHouse3 extends House {
 		yearBuilt = "2040";
 		setHouseImage("../images/thecapecodhouse3.jpg");
 	}
+	
+	public HouseEnum toEnum() {
+		return HouseEnum.BETAPICC3;
+	}
+
 }

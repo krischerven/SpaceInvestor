@@ -1,5 +1,7 @@
 package co.gc.space.land;
 
+import co.gc.space.HouseEnum;
+
 public class BetaPicBHouse extends House {
 
 	public BetaPicBHouse() {
@@ -13,4 +15,9 @@ public class BetaPicBHouse extends House {
 		setHouseImage("../images/greekrevivalhouse.jpg");
 	
 	}
+	
+	public HouseEnum toEnum() {
+		return HouseEnum.BETAPICB;
+	}
+
 }

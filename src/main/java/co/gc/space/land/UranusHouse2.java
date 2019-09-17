@@ -1,5 +1,7 @@
 package co.gc.space.land;
 
+import co.gc.space.HouseEnum;
+
 public class UranusHouse2 extends House {
 
 	public UranusHouse2() {
@@ -12,4 +14,9 @@ public class UranusHouse2 extends House {
 		yearBuilt = "2040";
 		setHouseImage("../images/thecapecodhouse2.jpg");
 	}
+	
+	public HouseEnum toEnum() {
+		return HouseEnum.URANUS2;
+	}
+
 }

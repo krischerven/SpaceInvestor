@@ -1,5 +1,7 @@
 package co.gc.space.land;
 
+import co.gc.space.HouseEnum;
+
 public class Kepler421BHouse2 extends House {
 
 	public Kepler421BHouse2() {
@@ -12,4 +14,9 @@ public class Kepler421BHouse2 extends House {
 		yearBuilt = "2040";
 		setHouseImage("../images/craftsmanhouse2.jpg");
 	}
+	
+	public HouseEnum toEnum() {
+		return HouseEnum.KEPLER_421_B2;
+	}
+
 }

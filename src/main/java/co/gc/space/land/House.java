@@ -17,6 +17,7 @@ import org.hibernate.annotations.OnDeleteAction;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import co.gc.space.HouseEnum;
 import co.gc.space.entity.planet.Planet;
 import co.gc.space.user.User;
 
@@ -127,6 +128,10 @@ public class House {
 	public House setPlanet(Planet planet) {
 		this.planet = planet;
 		return this;
+	}
+	
+	public HouseEnum toEnum() {
+		return null;
 	}
 
 }

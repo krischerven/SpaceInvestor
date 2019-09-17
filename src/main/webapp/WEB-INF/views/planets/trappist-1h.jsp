@@ -40,6 +40,8 @@ body {
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
+	<input type="button" class="btn btn-primary" value="See Land"
+		onclick="window.location='../see-houses'" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
