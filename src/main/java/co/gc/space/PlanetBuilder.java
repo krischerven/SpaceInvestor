@@ -1,10 +1,7 @@
 package co.gc.space;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import co.gc.space.controller.ControllerHelper;
 import co.gc.space.entity.planet.Planet;
-import co.gc.space.repo.PlanetRepo;
 
 public final class PlanetBuilder {
 

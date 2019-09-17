@@ -29,6 +29,7 @@ import co.gc.space.entity.planet.Uranus;
 import co.gc.space.entity.planet.Venus;
 import co.gc.space.land.House;
 import co.gc.space.land.MarsHouse;
+import co.gc.space.repo.HouseRepo;
 import co.gc.space.repo.UserRepo;
 import co.gc.space.user.CreditCard;
 import co.gc.space.user.User;
