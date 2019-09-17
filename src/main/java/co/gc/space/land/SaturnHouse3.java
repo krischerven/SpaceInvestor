@@ -10,6 +10,6 @@ public class SaturnHouse3 extends House {
 		architecturalStyle = "Greek Revival";
 		condition = "New";
 		yearBuilt = "2040";
-		setHouseImage("../images/greekrevivalhouse4.jpg");
+		setHouseImage("../images/greekrevivalhouse4.jpeg");
 	}
 }
