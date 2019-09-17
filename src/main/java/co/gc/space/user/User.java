@@ -24,22 +24,6 @@ public class User {
 	private String creditcard;
 	private String expiration;
 	private String cvv;
-	
-	// we contain a list of houses
-  //  @OneToMany(mappedBy = "user") //cascade = CascadeType.ALL, fetch = FetchType.LAZY,
-   // private Set<House> houses;
-    /*
-	public Set<House> getHouses() {
-		return houses;
-	}
-
-	public void setHouses(Set<House> houses) {
-		this.houses = houses;
-	}
-	
-	public void addHouse(House house) {
-		this.houses.add(house);
-	}*/
 
 	public User() {
 		super();

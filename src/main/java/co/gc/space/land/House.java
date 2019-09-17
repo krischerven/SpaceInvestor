@@ -37,15 +37,9 @@ public class House {
 	private String houseImage;
 	@Transient
 	private Planet planet;
-
 	@Column(name="user_id")
 	private Integer userId;
-//	@ManyToOne /// (fetch = FetchType.LAZY, optional = false)
-////    @JoinColumn(name = "user_id", nullable = false)	
-////    @OnDelete(action = OnDeleteAction.CASCADE)
-//    @JsonIgnore
-	// private User user;
-
+	
 	public Integer getId() {
 		return id;
 	}
@@ -53,18 +47,9 @@ public class House {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-//
-//	public User getUser() {
-//		return user;
-//	}
-//
-//	public void setUser(User user) {
-//		this.user = user;
-//	}
 
 	public House() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	public House From(final House other) {
@@ -164,7 +149,4 @@ public class House {
 	public void setUserId(Integer userId) {
 		this.userId = userId;
 	}
-
-
-
 }
