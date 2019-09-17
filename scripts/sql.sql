@@ -1,16 +1,32 @@
 use planet_db;
 
 CREATE TABLE users (
-	id int(11) not null primary key auto_increment,
+    id int(11) not null primary key auto_increment,
     username varchar(45),
     email varchar(45),
     password varchar(45),
     creditcard varchar(250),
     expiration varchar(45),
-    cvv varchar(45)
+    cvv varchar(45),
+    houses int,
 );
 
 SELECT * FROM users;
+
+CREATE TABLE houses (
+    id int(11) not null primary key auto_increment,
+    price varchar(50),
+    acres varchar(50),
+    propertydetails varchar(50),
+    housefeatures varchar(50),
+    architecturalstyle varchar(50),
+    mycondition varchar(50),
+    yearbuilt varchar(50),
+    houseimage varchar(50),
+    planet varchar(50)
+);
+
+SELECT * FROM houses;
 
 CREATE TABLE exoplanets (
 	planetname varchar(50),
