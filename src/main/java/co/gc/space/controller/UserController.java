@@ -37,7 +37,7 @@ import co.gc.space.user.User;
 @Controller
 public class UserController {
 	
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked" })
 	private static ArrayList<Object>[] partitionHouses(List<House> houses) {
 		ArrayList<House> _1 = new ArrayList<>();
 		ArrayList<House> _2 = new ArrayList<>();
@@ -164,15 +164,11 @@ public class UserController {
 			}
 		}
 		String email = hasher.getStringFromHash(auth);
-		Optional<User> _user = repo.findByEmail(email);
-		if (_user.isPresent()) {
-			User user = _user.get();
-			//user.addHouse(house);
-			repo.save(user);
-			house.setUserId(user.getId());
+		Optional<User> user = repo.findByEmail(email);
+		if (user.isPresent()) {
 			House newHouse = new House();
-			newHouse.setUserId(user.getId());
-			hrepo.save(newHouse);
+			newHouse.setUserId(user.get().getId());
+			hrepo.save(newHouse.From(house));
 		}
 		List<Planet> planets = new ArrayList<>();
 		planets.add(new Mars());
@@ -198,21 +194,22 @@ public class UserController {
 		mv.addObject("all", planets.toArray());
 		return mv;
 	}
-	/*
+	
 	@RequestMapping("see-houses")
 	public ModelAndView seeHouses(String auth) {
 		String email = hasher.getStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);
 		if (user.isPresent()) {
-			final ArrayList<Object>[] houseArr = partitionHouses(new ArrayList<>(user.get().getHouses()));
+			List<House> houses = hrepo.findByUserId(user.get().getId());
+			final ArrayList<Object>[] houseArr = partitionHouses(houses);
 			final ModelAndView mv = new ModelAndView("see-houses");
 			mv.addObject("first", houseArr[0]);
 			mv.addObject("second", houseArr[1]);
 			mv.addObject("third", houseArr[2]);
-			mv.addObject("all", user.get().getHouses().toArray());
+			mv.addObject("all", houses.toArray());
 			return mv;
 		} else {
 			return new ModelAndView("see-houses", "houses", new ArrayList<House>());
 		}
-	}*/
+	}
 }

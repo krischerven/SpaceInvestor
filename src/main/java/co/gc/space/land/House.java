@@ -66,6 +66,19 @@ public class House {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	public House From(House other) {
+		this.price = other.price;
+		this.arces = other.arces;
+		this.propertyDetails = other.propertyDetails;
+		this.houseFeatures = other.houseFeatures;
+		this.architecturalStyle = other.architecturalStyle;
+		this.condition = other.condition;
+		this.yearBuilt = other.yearBuilt;
+		this.houseImage = other.houseImage;
+		this.planet = other.planet;
+		return this;
+	}
 
 	public String getHouseImage() {
 		return houseImage;

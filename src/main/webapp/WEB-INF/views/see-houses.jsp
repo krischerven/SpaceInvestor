@@ -25,26 +25,26 @@
 	
 	<div class="container-fluid d-none d-md-block" id="div1" style="display: none">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-4" align="center">
 				<p>
-				 <c:forEach var="planet" items="${first}">
-				 	${planet}
+				 <c:forEach var="house" items="${first}">
+				 	${house}
 				 	<br><br>
 				 </c:forEach>
 				 </p>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4" align="center">
 				<p>
-				 <c:forEach var="planet" items="${second}">
-				 	${planet}
+				 <c:forEach var="house" items="${second}">
+				 	${house}
 				 	<br><br>
 				 </c:forEach>
 				 </p>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4" align="center">
 				<p>
-				 <c:forEach var="planet" items="${third}">
-				 	${planet}
+				 <c:forEach var="house" items="${third}">
+				 	${house}
 				 	<br><br>
 				 </c:forEach>
 				 </p>
@@ -53,10 +53,10 @@
 	</div>
 	<div class="d-md-none">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12" align="center">
 				<p>
-				 <c:forEach var="planet" items="${all}">
-				 	${planet.toStringCentered()}
+				 <c:forEach var="house" items="${all}">
+					${house}
 				 	<br><br>
 				 </c:forEach>
 				 </p>
@@ -73,7 +73,6 @@
 		if (document.cookie.indexOf('authenticated=') != -1) {
 			document.getElementById("placeholder").innerText = "Your Land";
 			document.getElementById("div1").style.display = "block";
-			window.location='../save-user-land?house=${house.toEnum()}&auth=' + getCookie();
 		} else {
 			document.getElementById("placeholder").innerText = "Error: Please log in to see your puchased land!"
 		}
