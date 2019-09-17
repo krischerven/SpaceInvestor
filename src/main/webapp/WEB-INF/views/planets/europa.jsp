@@ -40,7 +40,7 @@ body {
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
-	<input type="button" class="btn btn-primary" value="See Land"
+	<input type="button" class="btn btn-primary" value="See Properties"
 		onclick="window.location='../see-houses'" />
 	<h1>Europa</h1>
 	<br>
