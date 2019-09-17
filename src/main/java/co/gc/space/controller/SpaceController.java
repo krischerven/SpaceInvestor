@@ -20,8 +20,9 @@ import co.gc.space.land.*;
 public class SpaceController {
 	
 	private enum Houses{
-		MERCURY, VENUS, MARS, JUPITER, SATURN, NEPTUNE, URANUS, EUROPA, _47_UMA_B, KEPLER_421_B, BETAPICB, BETAPICC;
-		
+		MERCURY, VENUS, MARS, JUPITER, SATURN, NEPTUNE, URANUS, EUROPA, _47_UMA_B, KEPLER_421_B, BETAPICB, BETAPICC,
+		MERCURY2, VENUS2, MARS2, JUPITER2, SATURN2, NEPTUNE2, URANUS2, EUROPA2, _47_UMA_B2, KEPLER_421_B2, BETAPICB2, BETAPICC2,
+		MERCURY3, VENUS3, MARS3, JUPITER3, SATURN3, NEPTUNE3, URANUS3, EUROPA3, _47_UMA_B3, KEPLER_421_B3, BETAPICB3, BETAPICC3;
 	}
 
 	@Autowired PlanetRepo repo;
@@ -80,6 +81,8 @@ public class SpaceController {
 		ModelAndView mv = new ModelAndView ("planets/jupiter", "planet", new Jupiter());
 		mv.addObject("graph1", new JupiterGraph());
 		mv.addObject("house", new JupiterHouse());
+		mv.addObject("house2", new JupiterHouse2());
+		mv.addObject("house3", new JupiterHouse3());
 		return mv;
 	}
 
@@ -88,6 +91,8 @@ public class SpaceController {
 		ModelAndView mv = new ModelAndView("planets/mars", "planet", new Mars());
 		mv.addObject("graph1", new MarsGraph());
 		mv.addObject("house", new MarsHouse());
+		mv.addObject("house2", new MarsHouse2());
+		mv.addObject("house3", new MarsHouse3());
 		return mv;
 	}
 
@@ -96,6 +101,8 @@ public class SpaceController {
 		ModelAndView mv = new ModelAndView("planets/mercury", "planet", new Mercury());
 		mv.addObject("graph1", new MercuryGraph());
 		mv.addObject("house", new MercuryHouse());
+		mv.addObject("house2", new MercuryHouse2());
+		mv.addObject("house3", new MercuryHouse3());
 		return mv;
 	}
 
@@ -104,6 +111,8 @@ public class SpaceController {
 		ModelAndView mv = new ModelAndView("planets/neptune", "planet", new Neptune());
 		mv.addObject("graph1", new NeptuneGraph());
 		mv.addObject("house", new NeptuneHouse());
+		mv.addObject("house2", new NeptuneHouse2());
+		mv.addObject("house3", new NeptuneHouse3());
 		return mv;
 	}
 
@@ -112,6 +121,8 @@ public class SpaceController {
 		ModelAndView mv = new ModelAndView("planets/saturn", "planet", new Saturn());
 		mv.addObject("graph1", new SaturnGraph());
 		mv.addObject("house", new SaturnHouse());
+		mv.addObject("house2", new SaturnHouse2());
+		mv.addObject("house3", new SaturnHouse3());
 		return mv;
 	}
 
@@ -120,6 +131,8 @@ public class SpaceController {
 		ModelAndView mv = new ModelAndView("planets/uranus", "planet", new Uranus());
 		mv.addObject("graph1", new UranusGraph());
 		mv.addObject("house", new UranusHouse());
+		mv.addObject("house2", new UranusHouse2());
+		mv.addObject("house3", new UranusHouse3());
 		return mv;
 	}
 
@@ -128,6 +141,8 @@ public class SpaceController {
 		ModelAndView mv = new ModelAndView("planets/venus", "planet", new Venus());
 		mv.addObject("graph1", new VenusGraph());
 		mv.addObject("house", new VenusHouse());
+		mv.addObject("house2", new VenusHouse2());
+		mv.addObject("house3", new VenusHouse3());
 		return mv;
 	}
 
@@ -135,6 +150,8 @@ public class SpaceController {
 	public ModelAndView _47_uma_b() {
 		ModelAndView mv = new ModelAndView("planets/47_uma_b", "planet", builder.Build("47 uma b"));
 		mv.addObject("house", new UmaBHouse());
+		mv.addObject("house2", new UmaBHouse2());
+		mv.addObject("house3", new UmaBHouse3());
 		return mv;
 	}
 
@@ -142,6 +159,8 @@ public class SpaceController {
 	public ModelAndView _kepler_421_b() {
 		ModelAndView mv = new ModelAndView("planets/kepler-421_b", "planet", builder.Build("kepler-421 b"));
 		mv.addObject("house", new Kepler421BHouse());
+		mv.addObject("house2", new Kepler421BHouse2());
+		mv.addObject("house3", new Kepler421BHouse3());
 		return mv;
 	}
 
@@ -149,6 +168,8 @@ public class SpaceController {
 	public ModelAndView beta_pictoris_b() {
 		ModelAndView mv = new ModelAndView("planets/beta_pictoris_b", "planet", builder.Build("beta pic b"));
 		mv.addObject("house", new BetaPicBHouse());
+		mv.addObject("house2", new BetaPicBHouse2());
+		mv.addObject("house3", new BetaPicBHouse3());
 		return mv;
 	}
 
@@ -156,6 +177,8 @@ public class SpaceController {
 	public ModelAndView beta_pictoris_c() {
 		ModelAndView mv = new ModelAndView("planets/beta_pictoris_c", "planet", builder.Build("beta pic c"));
 		mv.addObject("house", new BetaPicCHouse());
+		mv.addObject("house2", new BetaPicCHouse2());
+		mv.addObject("house3", new BetaPicCHouse3());
 		return mv;
 	}
 	
@@ -164,6 +187,8 @@ public class SpaceController {
 		ModelAndView mv = new ModelAndView("planets/europa", "planet", new Europa());
 		mv.addObject("europaGraph1", new EuropaGraph());
 		mv.addObject("house", new EuropaHouse());
+		mv.addObject("house2", new EuropaHouse2());
+		mv.addObject("house3", new EuropaHouse3());
 		return mv;
 	}
 	
@@ -224,12 +249,81 @@ public class SpaceController {
 				
 			case BETAPICC:
 				return new ModelAndView("buyhouse", "house", new BetaPicCHouse().setPlanet(builder.Build("beta pic c")));
+			
+			case MERCURY2:
+				return new ModelAndView("buyhouse", "house", new MercuryHouse2().setPlanet(new Mercury()));
+				
+			case VENUS2:
+				return new ModelAndView("buyhouse", "house", new VenusHouse2().setPlanet(new Venus()));
+				
+			case MARS2:
+				return new ModelAndView("buyhouse", "house", new MarsHouse2().setPlanet(new Mars()));
+				
+			case JUPITER2:
+				return new ModelAndView("buyhouse", "house", new JupiterHouse2().setPlanet(new Jupiter()));
+				
+			case SATURN2:
+				return new ModelAndView("buyhouse", "house", new SaturnHouse2().setPlanet(new Saturn()));
+				
+			case NEPTUNE2:
+				return new ModelAndView("buyhouse", "house", new NeptuneHouse2().setPlanet(new Neptune()));
+				
+			case URANUS2:
+				return new ModelAndView("buyhouse", "house", new UranusHouse2().setPlanet(new Uranus()));
+				
+			case EUROPA2:
+				return new ModelAndView("buyhouse", "house", new EuropaHouse2().setPlanet(new Europa()));
+				
+			case _47_UMA_B2:
+				return new ModelAndView("buyhouse", "house", new UmaBHouse2().setPlanet(builder.Build("47 uma b")));
+				
+			case KEPLER_421_B2:
+				return new ModelAndView("buyhouse", "house", new Kepler421BHouse2().setPlanet(builder.Build("kepler-421 b")));
+				
+			case BETAPICB2:
+				return new ModelAndView("buyhouse", "house", new BetaPicBHouse2().setPlanet(builder.Build("beta pic b")));
+				
+			case BETAPICC2:
+				return new ModelAndView("buyhouse", "house", new BetaPicCHouse2().setPlanet(builder.Build("beta pic c")));
+		
+			case MERCURY3:
+				return new ModelAndView("buyhouse", "house", new MercuryHouse3().setPlanet(new Mercury()));
+				
+			case VENUS3:
+				return new ModelAndView("buyhouse", "house", new VenusHouse3().setPlanet(new Venus()));
+				
+			case MARS3:
+				return new ModelAndView("buyhouse", "house", new MarsHouse3().setPlanet(new Mars()));
+				
+			case JUPITER3:
+				return new ModelAndView("buyhouse", "house", new JupiterHouse3().setPlanet(new Jupiter()));
+				
+			case SATURN3:
+				return new ModelAndView("buyhouse", "house", new SaturnHouse3().setPlanet(new Saturn()));
+				
+			case NEPTUNE3:
+				return new ModelAndView("buyhouse", "house", new NeptuneHouse3().setPlanet(new Neptune()));
+				
+			case URANUS3:
+				return new ModelAndView("buyhouse", "house", new UranusHouse3().setPlanet(new Uranus()));
+				
+			case EUROPA3:
+				return new ModelAndView("buyhouse", "house", new EuropaHouse3().setPlanet(new Europa()));
+				
+			case _47_UMA_B3:
+				return new ModelAndView("buyhouse", "house", new UmaBHouse3().setPlanet(builder.Build("47 uma b")));
+				
+			case KEPLER_421_B3:
+				return new ModelAndView("buyhouse", "house", new Kepler421BHouse3().setPlanet(builder.Build("kepler-421 b")));
+				
+			case BETAPICB3:
+				return new ModelAndView("buyhouse", "house", new BetaPicBHouse3().setPlanet(builder.Build("beta pic b")));
+				
+			case BETAPICC3:
+				return new ModelAndView("buyhouse", "house", new BetaPicCHouse3().setPlanet(builder.Build("beta pic c")));
 		}
 		
 		return null;
 	}
-	
-	
-	
 
 }
