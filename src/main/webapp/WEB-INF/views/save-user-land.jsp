@@ -20,6 +20,8 @@
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
+	<input type="button" class="btn btn-primary" value="See Properties"
+		onclick="window.location='../see-houses'" />
 	<h2 id="placeholder">ERROR</h2>
 	<div id="div1" style="display: none">
 		<p>This is the details of your purchase</p>
