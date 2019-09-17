@@ -67,7 +67,7 @@ public class House {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public House From(House other) {
+	public House From(final House other) {
 		this.price = other.price;
 		this.arces = other.arces;
 		this.propertyDetails = other.propertyDetails;
