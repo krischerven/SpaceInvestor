@@ -26,7 +26,7 @@ public class SaturnGraph extends Graph {
 	}
 
 	public SaturnGraph() {
-		titleName = "Price of Heliem Sold From Saturn";
+		titleName = "Price of Helium Sold From Saturn";
 		xName = "Year";
 		yName = "Price ($ per cubic meter)";
 		xPoints = years(2020, 7);
