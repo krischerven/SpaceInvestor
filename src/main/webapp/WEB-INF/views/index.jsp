@@ -19,8 +19,9 @@
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
-	<br>
-	<img src="images/qr2.png" alt="QR Code"/>
+	
+	<img src="images/qr2.png" alt="QR Code" style="width: 175px; height:225px;" align="right"/>
+	
 	<br>
 	<h1>Space Investors Real Estate Professionals</h1>
 	<br>
