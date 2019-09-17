@@ -3,7 +3,7 @@ package co.gc.space.land;
 public class UranusHouse extends House {
 
 	public UranusHouse() {
-		price = "900,000,000,000";
+		price = "$237,000";
 		arces = "40";
 		propertyDetails = "Icy and gases covered atmosphere.";
 		houseFeatures = "4 bedrooms, 3 bathrooms, 2000sqft(inside a dome off the ground)";
