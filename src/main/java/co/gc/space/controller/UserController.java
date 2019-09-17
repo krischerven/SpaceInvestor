@@ -16,15 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-<<<<<<< HEAD
-import co.gc.space.repo.HouseRepo;
-import co.gc.space.repo.UserRepo;
-import co.gc.space.user.CreditCard;
-import co.gc.space.user.User;
-
-import co.gc.space.Hasher;
-=======
->>>>>>> master
 import co.gc.space.HouseEnum;
 import co.gc.space.PlanetBuilder;
 import co.gc.space.entity.planet.Europa;
@@ -172,13 +163,8 @@ public class UserController {
 			}
 		}
 		String email = hasher.getStringFromHash(auth);
-<<<<<<< HEAD
-		Optional<User> _user = repo.findByEmail("kris@gmail.com");
-		if (!_user.isEmpty()) {
-=======
 		Optional<User> _user = repo.findByEmail(email);
 		if (_user.isPresent()) {
->>>>>>> master
 			User user = _user.get();
 			//user.addHouse(house);
 			repo.save(user);
