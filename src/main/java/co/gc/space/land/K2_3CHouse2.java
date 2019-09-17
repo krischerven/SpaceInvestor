@@ -5,14 +5,14 @@ import co.gc.space.HouseEnum;
 public class K2_3CHouse2 extends House {
 
 	public K2_3CHouse2() {
-		price = "$412,000";
-		arces = "70";
-		propertyDetails = "No solid ground. Lots of gases everywhere.";
-		houseFeatures = "4 bedrooms, 3 bathrooms, 3000sqft(inside a dome off the ground)";
-		architecturalStyle = "Spanish";
+		price = "$301,056";
+		arces = "32";
+		propertyDetails = "Gases all around.";
+		houseFeatures = "2 bedrooms, 2 bathrooms, 1670sqft(inside a dome off the ground)";
+		architecturalStyle = "The Cape Cod";
 		condition = "New";
 		yearBuilt = "2040";
-		setHouseImage("../images/spanishhouse2.jpg");
+		setHouseImage("../images/thecapecodhouse5.jpg");
 	}
 	
 	public HouseEnum toEnum() {

@@ -121,7 +121,7 @@ body {
 						</table>
 			</table>
 			<br> <input type="button" class="btn btn-primary hBack"
-				value="Buy House" onclick="window.location='../buyhouse?house=MARS'" />
+				value="Buy House" onclick="window.location='../buyhouse?house=K2_18_B'" />
 			<br> <br>
 			<table>
 				<tr>
@@ -144,7 +144,7 @@ body {
 			</table>
 			<br> <input type="button" class="btn btn-primary hBack"
 				value="Buy House"
-				onclick="window.location='../buyhouse?house=MARS2'" /> <br> <br>
+				onclick="window.location='../buyhouse?house=K2_18_B2'" /> <br> <br>
 			<table>
 				<tr>
 					<td><img src=${house3.houseImage }
@@ -166,7 +166,7 @@ body {
 			</table>
 			<br> <input type="button" class="btn btn-primary hBack"
 				value="Buy House"
-				onclick="window.location='../buyhouse?house=MARS3'" />
+				onclick="window.location='../buyhouse?house=K2_18_B3'" />
 		</div>
 </body>
 </html>
