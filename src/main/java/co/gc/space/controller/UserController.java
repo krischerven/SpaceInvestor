@@ -1,6 +1,5 @@
 package co.gc.space.controller;
 import java.util.NoSuchElementException;
-
 import java.util.Optional;
 
 import javax.servlet.http.Cookie;
@@ -8,21 +7,26 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+
+import co.gc.space.repo.UserRepo;
 import co.gc.space.user.CreditCard;
 import co.gc.space.user.User;
+
 import co.gc.space.Hasher;
 import co.gc.space.repo.UserRepo;
+
 
 @Controller
 public class UserController {
 
 	@Autowired
 	UserRepo repo;
+
 
 	@RequestMapping("create-user")
 	public ModelAndView addUser() {
@@ -67,7 +71,9 @@ public class UserController {
 			if (test == null) {
 				return new ModelAndView("error-message");
 			} else {
+				
 				repo.save(user);
+				
 				return new ModelAndView("user-created");
 			}
 		} else {
