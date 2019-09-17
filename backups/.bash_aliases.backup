@@ -1,0 +1,25 @@
+alias ksj='kill -9 `jobs -ps`'
+alias sksj='sudo kill -9 `jobs -ps`'
+alias use-mysql='mysql -u ubuntu -pjava2019'
+alias fix-java-bullshit='export JAVA_TOOL_OPTIONS="-Xmx512m -Xms512m"'
+alias fix-port-bullshit='sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8080'
+alias run-maven='fix-java-bullshit && mvn install'
+
+space() {
+        echo "0. Moving to ~/space..."
+        cd ~/space
+        echo "1. Pulling from git..."
+        git fetch
+        git reset --hard origin/master
+        echo "2. Killing all java instances..."
+        pkill -9 java
+        echo "3. Running maven install..."
+        rm -rf target/
+        run-maven
+        echo "4. Running the binary..."
+        (cd target && java -jar space-0.0.1-SNAPSHOT.war)
+}
+
+space2() {
+        (space &); exit
+}
