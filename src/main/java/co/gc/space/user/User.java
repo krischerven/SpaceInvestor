@@ -1,14 +1,21 @@
 package co.gc.space.user;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import co.gc.space.land.House;
 
 @Entity
 @Table(name = "users")
-
 public class User {
 
 	@Id
@@ -20,6 +27,20 @@ public class User {
 	private String creditcard;
 	private String expiration;
 	private String cvv;
+	
+	// we contain a list of houses
+    @OneToMany(cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY,
+            mappedBy = "user")
+    private Set<House> houses = new HashSet<>();
+    
+	public Set<House> getHouses() {
+		return new HashSet<>(houses);
+	}
+
+	public void setHouses(Set<House> houses) {
+		this.houses = houses;
+	}
 
 	public User() {
 		super();
