@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -80,5 +80,12 @@ body {
 						</tr>
 					</table>
 		</table>
+		<p>This planet is one of the smallest gas planets to be discovered
+			but double the size of earth. By many scientists it is considered a
+			mini Neptune. This planet orbits around a red dwarf star. The star is
+			called K2-3 and is cooler than the sun in our solar system The year
+			is only 44 days on this planet and it was discovered in 2015. The
+			Kepler Space Telescope found this planet while looking to discover
+			exoplanets that are similar in size to Earth.
 </body>
 </html>

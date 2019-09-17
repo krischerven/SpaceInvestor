@@ -79,7 +79,7 @@ body {
 					</tr>
 				</table>
 	</table>
-	<p>Beta Pictoris C wasn't enough for you I see. Listen we get it,
+	<p>Beta Pictoris B wasn't enough for you I see. Listen we get it,
 		you're a super loner who loves reading books all day and enjoying life
 		alone. You're not a loner, you say? You hate being a lone but you just
 		hate being around other people...Oh I see, look, you and your 9 cats
