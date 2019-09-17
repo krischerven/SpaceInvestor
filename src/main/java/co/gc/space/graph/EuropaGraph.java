@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class EuropaGraph extends Graph {
 
+
 	private long moneyFormula(double startingPoint, long i) {
 		return (long) ((double) startingPoint * ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
 	}
@@ -26,10 +27,10 @@ public class EuropaGraph extends Graph {
 	}
 
 	public EuropaGraph() {
-		titleName = "Price Projection of Hydrogen Sold From Jupiter";
-		xName = "Year"; 
-		yName = "Price ($)";
+		titleName = "Europa(Moon Rock) Price Projections";
+		xName = "Year";
+		yName = "Price ($ per ounce)";
 		xPoints = years(2020, 7);
-		yPoints = money(0.70, xPoints.size());
+		yPoints = money(5, xPoints.size());
 	}
 }
