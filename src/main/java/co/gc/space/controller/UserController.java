@@ -155,12 +155,12 @@ public class UserController {
 	
 	@SuppressWarnings("incomplete-switch")
 	@RequestMapping("save-user-land")
-	public ModelAndView saveUserLand(HouseEnum _house, String auth) {
-		_house = HouseEnum.MARS;
-		House house = null;
-		switch (_house) {
+	public ModelAndView saveUserLand(HouseEnum house, String auth) {
+		house = HouseEnum.MARS;
+		House house2 = null;
+		switch (house) {
 			case MARS: {
-				house = new MarsHouse();
+				house2 = new MarsHouse();
 			}
 		}
 		String email = hasher.getStringFromHash(auth);
@@ -168,7 +168,7 @@ public class UserController {
 		if (user.isPresent()) {
 			House newHouse = new House();
 			newHouse.setUserId(user.get().getId());
-			hrepo.save(newHouse.From(house));
+			hrepo.save(newHouse.From(house2));
 		}
 		List<Planet> planets = new ArrayList<>();
 		planets.add(new Mars());
