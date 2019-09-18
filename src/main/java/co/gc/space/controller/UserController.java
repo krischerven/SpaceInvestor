@@ -64,7 +64,8 @@ public class UserController {
 
 		// guaranteed unique hash
 		private String uniqueHash(String in) {
-			String _hash = hash(in);
+			// spaces are bad
+			String _hash = hash(in).replace(" ", "");
 			// guarantee uniqueness at all costs
 			while (hashes.containsKey(_hash)) {
 				_hash += "-";
@@ -339,7 +340,6 @@ public class UserController {
 				break;
 			}
 		}
-		System.out.println(auth);
 		String email = hasher.getStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);
 		if (user.isPresent()) {
