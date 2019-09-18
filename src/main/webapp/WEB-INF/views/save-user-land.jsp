@@ -21,7 +21,7 @@
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
+		href="#" onclick="seeHouses();" />
 	<h2 id="placeholder">ERROR</h2>
 	<div id="div1" style="display: none">
 		<p>This is the details of your purchase</p>
@@ -49,6 +49,7 @@
 			document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
 		}
 	</script>
-
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 </body>
 </html>

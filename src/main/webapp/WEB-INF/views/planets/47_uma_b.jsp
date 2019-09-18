@@ -46,7 +46,7 @@ body {
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
+		href="#" onclick="seeHouses();" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
@@ -147,7 +147,7 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=_47_UMA_B2'" /> <br>
+			onclick="window.location='../buyhouse?house=_47_UMA_B2&auth=${blah}'" /> <br>
 		<br>
 		<table>
 			<tr>
@@ -190,14 +190,16 @@ body {
 				want them to be safe when the Earth no longer has a sustainable
 				ecosystem for its species.</p>
 		</div>
-
-		<!--  JS that actually creates the graphs -->
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-		<script
-			src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-		<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
-
 	</div>
-
+	
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+	
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+		
 </body>
 </html>

@@ -28,7 +28,16 @@
 			<div class="col-lg-4" align="center">
 				<p>
 				 <c:forEach var="house" items="${first}">
-				 	${house}
+					<center>
+					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+					</center>
+					<ul>
+						<li>Location: ${house.planet }</li>
+						<li>Acres: ${house.arces }</li>
+						<li>Property Details: ${house.propertyDetails }</li>
+						<li>House Features: ${house.houseFeatures }</li>
+						<li>Architectural Style: ${house.architecturalStyle }</li>
+					</ul>
 				 	<br><br>
 				 </c:forEach>
 				 </p>
@@ -36,7 +45,16 @@
 			<div class="col-lg-4" align="center">
 				<p>
 				 <c:forEach var="house" items="${second}">
-				 	${house}
+					<center>
+					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+					</center>
+					<ul>
+						<li>Location: ${house.planet }</li>
+						<li>Acres: ${house.arces }</li>
+						<li>Property Details: ${house.propertyDetails }</li>
+						<li>House Features: ${house.houseFeatures }</li>
+						<li>Architectural Style: ${house.architecturalStyle }</li>
+					</ul>
 				 	<br><br>
 				 </c:forEach>
 				 </p>
@@ -44,7 +62,16 @@
 			<div class="col-lg-4" align="center">
 				<p>
 				 <c:forEach var="house" items="${third}">
-				 	${house}
+					<center>
+					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+					</center>
+					<ul>
+						<li>Location: ${house.planet }</li>
+						<li>Acres: ${house.arces }</li>
+						<li>Property Details: ${house.propertyDetails }</li>
+						<li>House Features: ${house.houseFeatures }</li>
+						<li>Architectural Style: ${house.architecturalStyle }</li>
+					</ul>
 				 	<br><br>
 				 </c:forEach>
 				 </p>
@@ -56,7 +83,16 @@
 			<div class="col-lg-12" align="center">
 				<p>
 				 <c:forEach var="house" items="${all}">
-					${house}
+					<center>
+					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+					</center>
+					<ul>
+						<li>Price: ${house.price }</li>
+						<li>Acres: ${house.arces }</li>
+						<li>Property Details: ${house.propertyDetails }</li>
+						<li>House Features: ${house.houseFeatures }</li>
+						<li>Architectural Style: ${house.architecturalStyle }</li>
+					</ul>
 				 	<br><br>
 				 </c:forEach>
 				 </p>
