@@ -27,6 +27,7 @@
 	<br>
 	<h1>Space Investor's<br>Real Estate Professionals</h1>
 	<br>
+	<h2 style="color: #FF0000">${error}</h2>
 	<!-- The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). The classes can be combined to create more dynamic and flexible layouts. -->
 	<div class="container-fluid d-none d-md-block">
 		<div class="row">
