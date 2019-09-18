@@ -17,13 +17,18 @@
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
 
-<c:if test="${success}">
-<p>Welcome, ${account.username}. Press "Return to Index" to continue browsing planets.</p>
-</c:if>
+	<c:if test="${success}">
+		<p>Welcome, ${account.username}. Press "Return to Index" to
+			continue browsing planets.</p>
+	</c:if>
 
-<c:if test="${success eq false}">
-<p style="color: #FF0000">${error}</p>
-</c:if>
+	<c:if test="${success eq false}">
+		<p style="color: #FF0000">${error}</p>
+	</c:if>
 
+	<footer>
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>

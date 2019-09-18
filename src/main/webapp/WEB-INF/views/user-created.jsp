@@ -15,9 +15,12 @@
 </head>
 <body>
 
-<input type="button" class="btn btn-primary hBack"
+	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
 	<h2>Your Account Has Been Created!</h2>
-
+	<footer>
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>

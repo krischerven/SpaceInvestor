@@ -20,61 +20,68 @@
 		onclick="window.location='../create-user'" />
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
-	
+
 	<h1 id="placeholder">ERROR</h1>
-	
-	<div class="container-fluid d-none d-md-block" id="div1" style="display: none">
+
+	<div class="container-fluid d-none d-md-block" id="div1"
+		style="display: none">
 		<div class="row">
 			<div class="col-lg-4" align="center">
 				<p>
-				 <c:forEach var="house" items="${first}">
-					<center>
-					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
-					</center>
-					<ul>
-						<li>Location: ${house.getPlanet().planetName }</li>
-						<li>Acres: ${house.arces }</li>
-						<li>Property Details: ${house.propertyDetails }</li>
-						<li>House Features: ${house.houseFeatures }</li>
-						<li>Architectural Style: ${house.architecturalStyle }</li>
-					</ul>
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+					<c:forEach var="house" items="${first}">
+						<center>
+							<img src=${house.houseImage }
+								style="width: 600px; height: 450px; image-align: center;">
+						</center>
+						<ul>
+							<li>Location: ${house.getPlanet().planetName }</li>
+							<li>Acres: ${house.arces }</li>
+							<li>Property Details: ${house.propertyDetails }</li>
+							<li>House Features: ${house.houseFeatures }</li>
+							<li>Architectural Style: ${house.architecturalStyle }</li>
+						</ul>
+						<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 			<div class="col-lg-4" align="center">
 				<p>
-				 <c:forEach var="house" items="${second}">
-					<center>
-					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
-					</center>
-					<ul>
-						<li>Location: ${house.getPlanet().planetName }</li>
-						<li>Acres: ${house.arces }</li>
-						<li>Property Details: ${house.propertyDetails }</li>
-						<li>House Features: ${house.houseFeatures }</li>
-						<li>Architectural Style: ${house.architecturalStyle }</li>
-					</ul>
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+					<c:forEach var="house" items="${second}">
+						<center>
+							<img src=${house.houseImage }
+								style="width: 600px; height: 450px; image-align: center;">
+						</center>
+						<ul>
+							<li>Location: ${house.getPlanet().planetName }</li>
+							<li>Acres: ${house.arces }</li>
+							<li>Property Details: ${house.propertyDetails }</li>
+							<li>House Features: ${house.houseFeatures }</li>
+							<li>Architectural Style: ${house.architecturalStyle }</li>
+						</ul>
+						<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 			<div class="col-lg-4" align="center">
 				<p>
-				 <c:forEach var="house" items="${third}">
-					<center>
-					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
-					</center>
-					<ul>
-						<li>Location: ${house.getPlanet().planetName }</li>
-						<li>Acres: ${house.arces }</li>
-						<li>Property Details: ${house.propertyDetails }</li>
-						<li>House Features: ${house.houseFeatures }</li>
-						<li>Architectural Style: ${house.architecturalStyle }</li>
-					</ul>
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+					<c:forEach var="house" items="${third}">
+						<center>
+							<img src=${house.houseImage }
+								style="width: 600px; height: 450px; image-align: center;">
+						</center>
+						<ul>
+							<li>Location: ${house.getPlanet().planetName }</li>
+							<li>Acres: ${house.arces }</li>
+							<li>Property Details: ${house.propertyDetails }</li>
+							<li>House Features: ${house.houseFeatures }</li>
+							<li>Architectural Style: ${house.architecturalStyle }</li>
+						</ul>
+						<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -82,30 +89,33 @@
 		<div class="row">
 			<div class="col-lg-12" align="center">
 				<p>
-				 <c:forEach var="house" items="${all}">
-					<center>
-					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
-					</center>
-					<ul>
-						<li>Location: ${house.getPlanet().planetName }</li>
-						<li>Price: ${house.price }</li>
-						<li>Acres: ${house.arces }</li>
-						<li>Property Details: ${house.propertyDetails }</li>
-						<li>House Features: ${house.houseFeatures }</li>
-						<li>Architectural Style: ${house.architecturalStyle }</li>
-					</ul>
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+					<c:forEach var="house" items="${all}">
+						<center>
+							<img src=${house.houseImage }
+								style="width: 600px; height: 450px; image-align: center;">
+						</center>
+						<ul>
+							<li>Location: ${house.getPlanet().planetName }</li>
+							<li>Price: ${house.price }</li>
+							<li>Acres: ${house.arces }</li>
+							<li>Property Details: ${house.propertyDetails }</li>
+							<li>House Features: ${house.houseFeatures }</li>
+							<li>Architectural Style: ${house.architecturalStyle }</li>
+						</ul>
+						<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 		</div>
 	</div>
-	
+
 	<script>
 		function getCookie(name) {
 			let value = "; " + document.cookie;
 			let parts = value.split("; " + name + "=");
-			if (parts.length == 2) return parts.pop().split(";").shift();
+			if (parts.length == 2)
+				return parts.pop().split(";").shift();
 		}
 		if (document.cookie.indexOf('authenticated=') != -1) {
 			document.getElementById("placeholder").innerText = "Your Land";
@@ -114,6 +124,9 @@
 			document.getElementById("placeholder").innerText = "Error: Please log in to see your puchased land!"
 		}
 	</script>
-
+	<footer>
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>

@@ -26,7 +26,8 @@
 	<div id="div1" style="display: none">
 		<p>This is the details of your purchase</p>
 		<center>
-		<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+			<img src=${house.houseImage }
+				style="width: 600px; height: 450px; image-align: center;">
 		</center>
 		<ul>
 			<li>Price: ${house.price }</li>
@@ -40,7 +41,8 @@
 		function getCookie(name) {
 			let value = "; " + document.cookie;
 			let parts = value.split("; " + name + "=");
-			if (parts.length == 2) return parts.pop().split(";").shift();
+			if (parts.length == 2)
+				return parts.pop().split(";").shift();
 		}
 		if (document.cookie.indexOf('authenticated=') != -1) {
 			document.getElementById("placeholder").innerText = "You just bought your first house on ${planet}!"
@@ -51,5 +53,9 @@
 	</script>
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+	<footer>
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>
