@@ -35,7 +35,7 @@
 				<p>
 				 <c:forEach var="house" items="${first}">
 					<center>
-					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center; border: solid;">
 					</center>
 					<br>
 					<ul>
@@ -53,7 +53,7 @@
 				<p>
 				 <c:forEach var="house" items="${second}">
 					<center>
-					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center; border: solid;">
 					</center>
 					<br>
 					<ul>
@@ -71,7 +71,7 @@
 				<p>
 				 <c:forEach var="house" items="${third}">
 					<center>
-					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center; border: solid;">
 					</center>
 					<br>
 					<ul>
@@ -93,7 +93,7 @@
 				<p>
 				 <c:forEach var="house" items="${all}">
 					<center>
-					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center; border: solid;">
 					</center>
 					<br>
 					<ul>
