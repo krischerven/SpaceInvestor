@@ -57,6 +57,7 @@ public class UserController {
 	public final class Hasher {
 		
 		final HashMap<String, String> hashes = new HashMap<>();
+		final HashMap<String, String> rhashes = new HashMap<>();
 
 		// uniqueness isnt import
 		// if two passwords produce the same hash, that isn't an issue
@@ -66,15 +67,20 @@ public class UserController {
 
 		// guaranteed unique hash
 		private String uniqueHash(String in) {
-			// spaces are bad
-			// hash that caused this: sTOA/8Io7l/XwUC iH5WWg==
-			String _hash = hash(in).replace(" ", "");
-			// guarantee uniqueness at all costs
-			while (hashes.containsKey(_hash)) {
-				_hash += "-";
+			if (!rhashes.containsKey(in)) {
+				// spaces are bad
+				// hash that caused this: sTOA/8Io7l/XwUC iH5WWg==
+				String _hash = hash(in).replace(" ", "");
+				// guarantee uniqueness at all costs
+				while (hashes.containsKey(_hash)) {
+					_hash += "-";
+				}
+				hashes.put(_hash, in);
+				rhashes.put(in, _hash);
+				return _hash;
+			} else {
+				return rhashes.get(in);
 			}
-			hashes.put(_hash, in);
-			return _hash;
 		}
 
 		// get the String used to create a unique hash
