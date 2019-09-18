@@ -30,6 +30,8 @@ import co.gc.space.entity.planet.Uranus;
 import co.gc.space.entity.planet.Venus;
 import co.gc.space.land.House;
 import co.gc.space.land.MarsHouse;
+import co.gc.space.land.MarsHouse2;
+import co.gc.space.land.MarsHouse3;
 import co.gc.space.repo.HouseRepo;
 import co.gc.space.repo.UserRepo;
 import co.gc.space.user.CreditCard;
@@ -156,15 +158,19 @@ public class UserController {
 		return new ArrayList[] { _3, _2, _1 };
 	}
 
-	@SuppressWarnings("incomplete-switch")
 	@RequestMapping("save-user-land")
-	public ModelAndView saveUserLand(HouseEnum house, String auth) {
-		house = HouseEnum.MARS;
+	public ModelAndView saveUserLand(String house, String auth) {
 		House house2 = null;
 		switch (house) {
-		case MARS: {
-			house2 = new MarsHouse();
-		}
+			case "MARS": {
+				house2 = new MarsHouse();
+			}
+			case "MARS2": {
+				house2 = new MarsHouse2();
+			}
+			case "MARS3": {
+				house2 = new MarsHouse3();
+			}
 		}
 		String email = hasher.getStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);

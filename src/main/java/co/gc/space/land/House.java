@@ -142,6 +142,10 @@ public class House {
 		return null;
 	}
 
+	public String toString() {
+		return toEnum().toString();
+	}
+	
 	public Integer getUserId() {
 		return userId;
 	}
