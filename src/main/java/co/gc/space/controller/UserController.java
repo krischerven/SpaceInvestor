@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -100,7 +101,7 @@ public class UserController {
 		return new ModelAndView("login");
 	}
 
-	@RequestMapping(value = "logged-in", method = RequestMethod.POST)
+	@GetMapping("logged-in")
 	public ModelAndView loggedIn(@RequestParam("email") String email, @RequestParam("password") String password,
 			HttpServletResponse response) {
 		ModelAndView mv = new ModelAndView("logged-in");
@@ -156,8 +157,9 @@ public class UserController {
 		return new ArrayList[] { _3, _2, _1 };
 	}
 
-	@RequestMapping("save-user-land")
+	@GetMapping("save-user-land")
 	public ModelAndView saveUserLand(String house, String auth) {
+		
 		House house2 = null;
 		switch (HouseEnum.valueOf(house)) {
 			case MARS: {
@@ -341,9 +343,10 @@ public class UserController {
 				break;
 			}
 		}
+		
 		String email = hasher.getStringFromHash(auth);
-		System.out.println(email);
 		Optional<User> user = repo.findByEmail(email);
+		
 		if (user.isPresent()) {
 			final House newHouse = new House();
 			newHouse.setUserId(user.get().getId());
@@ -376,7 +379,7 @@ public class UserController {
 		}
 	}
 
-	@RequestMapping("see-houses")
+	@GetMapping("see-houses")
 	public ModelAndView seeHouses(String auth) {
 		String email = hasher.getStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);
