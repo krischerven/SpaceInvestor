@@ -190,6 +190,11 @@ body {
 				planet Earth. Think about your family and their future. Don't you
 				want them to be safe when the Earth no longer has a sustainable
 				ecosystem for its species.</p>
+				
+		<footer class="footer">
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 		</div>
 	</div>
 
@@ -202,13 +207,7 @@ body {
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
-<div id="container">
-<div id="footer">
-	<footer>
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
-	</div>
-	</div>
+	
+
 </body>
 </html>

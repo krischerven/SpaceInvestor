@@ -189,6 +189,11 @@ body {
 			city is well heated and lit up. The better the vision at night, the
 			safer the city. Help cities all over the galaxy stay lit during the
 			nights to prevent crimes and give drivers better visibility</p>
+
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 
 	<!--  JS that actually creates the graphs -->
@@ -200,9 +205,5 @@ body {
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
-	<footer>
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
 </body>
 </html>

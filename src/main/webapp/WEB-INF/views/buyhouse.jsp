@@ -36,6 +36,10 @@
 			<li>House Features: ${house.houseFeatures }</li>
 			<li>Architectural Style: ${house.architecturalStyle }</li>
 		</ul>
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 	<script>
 		function getCookie(name) {
@@ -58,9 +62,6 @@
 	</script>
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
-	<footer>
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
+
 </body>
 </html>

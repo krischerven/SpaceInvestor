@@ -188,21 +188,23 @@ body {
 				shoot up, now's the time. If you thought Seattle's property values
 				were impressively profitable, I'll let you in on a little secret.
 				This will be Seattle on steroids.</p>
+			
+			<footer class="footer">
+				<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+					Reserved</small>
+			</footer>
 		</div>
+	</div>
 
 
-		<!--  JS that actually creates the graphs -->
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-		<script
-			src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-		<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
 
-		<!--  misc JS code -->
-		<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
-		<footer>
-			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-				Reserved</small>
-		</footer>
 </body>
 </html>

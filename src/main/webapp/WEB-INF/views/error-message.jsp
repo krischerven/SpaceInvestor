@@ -18,7 +18,7 @@
 		value="<- Return to Create User"
 		onclick="window.location='create-user'" />
 	<h2 style="color: #FF0000">Error: Invalid Credit Card Entry!</h2>
-	<footer>
+	<footer class="footer-planet">
 		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
 			Reserved</small>
 	</footer>

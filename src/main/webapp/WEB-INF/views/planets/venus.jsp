@@ -188,6 +188,11 @@ body {
 			that our crops will grow more efficiently and we will be able to stop
 			world hunger. If you don't invest in a property on Venus you
 			basically want many people to die of starvation.</p>
+
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 
 	<!--  JS that actually creates the graphs -->
@@ -199,9 +204,5 @@ body {
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
-	<footer>
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
 </body>
 </html>

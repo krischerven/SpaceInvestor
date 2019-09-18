@@ -48,6 +48,7 @@ body {
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
 		href="#" onclick="seeHouses();" />
+
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
@@ -188,8 +189,13 @@ body {
 		<p>Now is your chance to start the first ever galactic fuel
 			station. Hydrogen and the mixture of liquid oxygen makes great rocket
 			fuel. You will be the one to fuel everybody's space endeavors.</p>
-
+		
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
+
 
 
 	<!--  JS that actually creates the graphs -->
@@ -201,9 +207,5 @@ body {
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
-	<footer>
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
 </body>
 </html>

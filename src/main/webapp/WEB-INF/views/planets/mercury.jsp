@@ -185,6 +185,11 @@ body {
 			light weight. From laptops to carseats. Magnesium is also great for
 			making fireworks, so you'll be the one we come to for all of our 4th
 			of July needs, if you make this investment that is.</p>
+		
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 
 	<!--  JS that actually creates the graphs -->
@@ -196,9 +201,5 @@ body {
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
-	<footer>
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
 </body>
 </html>

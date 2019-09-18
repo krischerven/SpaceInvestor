@@ -184,6 +184,11 @@ body {
 		<p>With the price of Helium going up on Saturn now is the time for
 			you to get your balloon business started before those guys on Uranus
 			find an actual solid surface to land on.</p>
+		
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 
 	<!--  JS that actually creates the graphs -->
@@ -195,9 +200,5 @@ body {
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
-	<footer>
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
 </body>
 </html>

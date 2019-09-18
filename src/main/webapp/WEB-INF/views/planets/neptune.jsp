@@ -185,7 +185,11 @@ body {
 		<p>With all of this ammonia you can blow Windex off out of the
 			water. You can sell all of the janitorial equipment that you want.
 			Nothing gets tough stains out better than ammonia.</p>
-
+	
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 
 	<!--  JS that actually creates the graphs -->
@@ -197,9 +201,5 @@ body {
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
-	<footer>
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
 </body>
 </html>

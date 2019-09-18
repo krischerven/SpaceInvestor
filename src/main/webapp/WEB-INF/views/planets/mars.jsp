@@ -186,7 +186,11 @@ body {
 			opportunity to get reserve your spot. Once it it becomes easier to
 			land on mars, space on this planet will run out and you won't find
 			your comfort zone.</p>
-
+		
+		<footer class="footer-planet">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 
 	<!--  JS that actually creates the graphs -->
@@ -197,11 +201,6 @@ body {
 
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
-
-	<footer>
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
 
 </body>
 </html>

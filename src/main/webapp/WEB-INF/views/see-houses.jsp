@@ -116,7 +116,7 @@
 		}
 	</script>
 
-	<footer>
+	<footer class="footer-planet">
 		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
 			Reserved</small>
 	</footer>

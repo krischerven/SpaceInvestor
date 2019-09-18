@@ -192,21 +192,22 @@ body {
 				<p>Hey! Earth Corporations! Get your hands off the Amazon! Go
 					ahead and get all of your wood from K2-18 B. You can have as much
 					wood as you please!</p>
+			
+				<footer class="footer">
+					<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+						Reserved</small>
+				</footer>
 			</div>
+		</div>
 
 
-			<!--  JS that actually creates the graphs -->
-			<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-			<script
-				src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-			<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+		<!--  JS that actually creates the graphs -->
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script
+			src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+		<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
 
-			<!--  misc JS code -->
-			<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
-
-			<footer>
-				<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-					Reserved</small>
-			</footer>
+		<!--  misc JS code -->
+		<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 </body>
 </html>
