@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>47 Uma B</title>
+<title>${planet.getIndexTitle() }</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -60,7 +60,7 @@ body {
 		<table>
 			<tr>
 				<td><img src=${planet.imageUrl }
-					style="width: 300px; height: 300px; border: solid;"></td>
+					style="width: 300px; height: 300px;"></td>
 				<td>
 					<table class="table space-table">
 						<tr>
