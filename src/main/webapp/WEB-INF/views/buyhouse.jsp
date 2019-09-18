@@ -24,7 +24,7 @@
 		href="#" onclick="seeHouses();" />
 	<h2 id="placeholder">ERROR</h2>
 	<div id="div1" style="display: none">
-		<p>This is the details of your purchase</p>
+		<p>Here are the details of your purchase:</p>
 		<center>
 			<img src=${house.houseImage }
 				style="width: 600px; height: 450px; image-align: center;">
