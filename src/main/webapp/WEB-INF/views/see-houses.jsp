@@ -115,7 +115,7 @@
 			document.getElementById("placeholder").innerText = "Your Land In Space";
 			document.getElementById("div1").style.display = "block";
 		} else {
-			document.getElementById("error").innerText = "Error: Please log in to see your puchased land!"
+			document.getElementById("error").innerText = "ERROR: You must log in to see your purchased land."
 		}
 	</script>
 
