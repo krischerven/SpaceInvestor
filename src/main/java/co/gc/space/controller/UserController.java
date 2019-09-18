@@ -107,7 +107,7 @@ public class UserController {
 			if (user.get().getPassword().equals(hasher.hash(password))) {
 				mv.addObject("account", user.get());
 				mv.addObject("success", true);
-				// logged in for 15 minutes
+				// logged in for the entire session
 				Cookie cookie = new Cookie("authenticated", hasher.uniqueHash(email));
 				response.addCookie(cookie);
 			} else {
