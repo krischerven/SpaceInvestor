@@ -75,6 +75,7 @@ public class UserController {
 				_hash = _hash.replace("-", "");
 				_hash = _hash.replace("=", "");
 				_hash = _hash.replace("/", "");
+				_hash = _hash.replace("%", "");
 				// guarantee uniqueness at all costs
 				while (hashes.containsKey(_hash)) {
 					_hash += "a";
