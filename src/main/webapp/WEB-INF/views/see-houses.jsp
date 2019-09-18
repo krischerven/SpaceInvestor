@@ -21,7 +21,7 @@
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	
-	<h1 id="placeholder">ERROR</h1>
+	<h1 id="placeholder" style="color: #FF0000">ERROR</h1>
 	
 	<div class="container-fluid d-none d-md-block" id="div1" style="display: none">
 		<div class="row">
