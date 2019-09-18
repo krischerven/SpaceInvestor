@@ -342,6 +342,7 @@ public class UserController {
 			}
 		}
 		String email = hasher.getStringFromHash(auth);
+		System.out.println(email);
 		Optional<User> user = repo.findByEmail(email);
 		if (user.isPresent()) {
 			final House newHouse = new House();
