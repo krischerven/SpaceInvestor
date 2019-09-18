@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Your Land In Space</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -108,7 +108,7 @@
 			if (parts.length == 2) return parts.pop().split(";").shift();
 		}
 		if (document.cookie.indexOf('authenticated=') != -1) {
-			document.getElementById("placeholder").innerText = "Your Land";
+			document.getElementById("placeholder").innerText = "Your Land In Space";
 			document.getElementById("div1").style.display = "block";
 		} else {
 			document.getElementById("placeholder").innerText = "Error: Please log in to see your puchased land!"
