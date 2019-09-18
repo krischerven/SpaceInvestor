@@ -111,7 +111,7 @@
 			document.getElementById("placeholder").innerText = "Your Land In Space";
 			document.getElementById("div1").style.display = "block";
 		} else {
-			document.getElementById("placeholder").innerText = "<span style=\"color: #FF0000\">Error: Please log in to see your puchased land!</span>"
+			document.getElementById("placeholder").innerText = "<span style=\"color: #FF0000\"><h2>Error: Please log in to see your puchased land!</h2></span>"
 		}
 	</script>
 
