@@ -19,19 +19,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import co.gc.space.HouseEnum;
 import co.gc.space.PlanetBuilder;
-import co.gc.space.entity.planet.Europa;
-import co.gc.space.entity.planet.Jupiter;
-import co.gc.space.entity.planet.Mars;
-import co.gc.space.entity.planet.Mercury;
-import co.gc.space.entity.planet.Neptune;
-import co.gc.space.entity.planet.Planet;
-import co.gc.space.entity.planet.Saturn;
-import co.gc.space.entity.planet.Uranus;
-import co.gc.space.entity.planet.Venus;
-import co.gc.space.land.House;
-import co.gc.space.land.MarsHouse;
-import co.gc.space.land.MarsHouse2;
-import co.gc.space.land.MarsHouse3;
+import co.gc.space.entity.planet.*;
+import co.gc.space.land.*;
 import co.gc.space.repo.HouseRepo;
 import co.gc.space.repo.UserRepo;
 import co.gc.space.user.CreditCard;
@@ -45,13 +34,20 @@ public class UserController {
 		ArrayList<House> _1 = new ArrayList<>();
 		ArrayList<House> _2 = new ArrayList<>();
 		ArrayList<House> _3 = new ArrayList<>();
-		for (int i = 0; i < houses.size(); ++i) {
-			if ((i % 3) == 0) {
-				_3.add(houses.get(i));
-			} else if ((i % 2) == 0) {
-				_2.add(houses.get(i));
-			} else {
-				_1.add(houses.get(i));
+		if (houses.size() == 1) {
+			_3.add(houses.get(0));
+		} else if (houses.size() == 2) {
+			_3.add(houses.get(0));
+			_2.add(houses.get(1));
+		} else {
+			for (int i = 0; i < houses.size(); ++i) {
+				if ((i % 3) == 0) {
+					_3.add(houses.get(i));
+				} else if ((i % 2) == 0) {
+					_2.add(houses.get(i));
+				} else {
+					_1.add(houses.get(i));
+				}
 			}
 		}
 		return new ArrayList[] { _3, _2, _1 };
@@ -161,15 +157,141 @@ public class UserController {
 	@RequestMapping("save-user-land")
 	public ModelAndView saveUserLand(String house, String auth) {
 		House house2 = null;
-		switch (house) {
-			case "MARS": {
+		switch (HouseEnum.valueOf(house)) {
+			case MARS: {
 				house2 = new MarsHouse();
 			}
-			case "MARS2": {
+			case MARS2: {
 				house2 = new MarsHouse2();
 			}
-			case "MARS3": {
+			case MARS3: {
 				house2 = new MarsHouse3();
+			}
+			case SATURN: {
+				house2 = new SaturnHouse();
+			}
+			case SATURN2: {
+				house2 = new SaturnHouse2();
+			}
+			case SATURN3: {
+				house2 = new SaturnHouse3();
+			}
+			case JUPITER: {
+				house2 = new JupiterHouse();
+			}
+			case JUPITER2: {
+				house2 = new JupiterHouse2();
+			}
+			case JUPITER3: {
+				house2 = new JupiterHouse3();
+			}
+			case MERCURY: {
+				house2 = new MercuryHouse();
+			}
+			case MERCURY2: {
+				house2 = new MercuryHouse2();
+			}
+			case MERCURY3: {
+				house2 = new MercuryHouse3();
+			}
+			case NEPTUNE: {
+				house2 = new NeptuneHouse();
+			}
+			case NEPTUNE2: {
+				house2 = new NeptuneHouse2();
+			}
+			case NEPTUNE3: {
+				house2 = new NeptuneHouse3();
+			}
+			case URANUS: {
+				house2 = new UranusHouse();
+			}
+			case URANUS2: {
+				house2 = new UranusHouse2();
+			}
+			case URANUS3: {
+				house2 = new UranusHouse3();
+			}
+			case VENUS: {
+				house2 = new VenusHouse();
+			}
+			case VENUS2: {
+				house2 = new VenusHouse2();
+			}
+			case VENUS3: {
+				house2 = new VenusHouse3();
+			}
+			case _47_UMA_B: {
+				house2 = new UmaBHouse();
+			}
+			case _47_UMA_B2: {
+				house2 = new UmaBHouse2();
+			}
+			case _47_UMA_B3: {
+				house2 = new UmaBHouse3();
+			}
+			case EUROPA: {
+				house2 = new EuropaHouse();
+			}
+			case EUROPA2: {
+				house2 = new EuropaHouse2();
+			}
+			case EUROPA3: {
+				house2 = new EuropaHouse3();
+			}
+			case KEPLER_421_B: {
+				house2 = new Kepler421BHouse();
+			}
+			case KEPLER_421_B2: {
+				house2 = new Kepler421BHouse2();
+			}
+			case KEPLER_421_B3: {
+				house2 = new Kepler421BHouse3();
+			}
+			case BETAPICB: {
+				house2 = new BetaPicBHouse();
+			}
+			case BETAPICB2: {
+				house2 = new BetaPicBHouse2();
+			}
+			case BETAPICB3: {
+				house2 = new BetaPicBHouse3();
+			}
+			case BETAPICC: {
+				house2 = new BetaPicCHouse();
+			}
+			case BETAPICC2: {
+				house2 = new BetaPicCHouse2();
+			}
+			case BETAPICC3: {
+				house2 = new BetaPicCHouse3();
+			}
+			case K2_18_B: {
+				house2 = new K2_18BHouse();
+			}
+			case K2_18_B2: {
+				house2 = new K2_18BHouse2();
+			}
+			case K2_18_B3: {
+				house2 = new K2_18BHouse3();
+			}
+			case TRAPPIST_1_H: {
+				house2 = new Trappist_1HHouse();
+			}
+			case TRAPPIST_1_H2: {
+				house2 = new Trappist_1HHouse2();
+			}
+			case TRAPPIST_1_H3: {
+				house2 = new Trappist_1HHouse3();
+			}
+			case K2_3_C: {
+				house2 = new K2_3CHouse();
+			}
+			case K2_3_C2: {
+				house2 = new K2_3CHouse2();
+			}
+			case K2_3_C3: {
+				house2 = new K2_3CHouse3();
 			}
 		}
 		String email = hasher.getStringFromHash(auth);
@@ -218,6 +340,7 @@ public class UserController {
 			mv.addObject("all", houses.toArray());
 			return mv;
 		} else {
+			// bad cookie
 			return new ModelAndView("see-houses", "houses", new ArrayList<House>()).addObject("error", "ERROR: You must log in to see your purchased land.");
 		}
 	}

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Your Land In Space</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -21,18 +21,18 @@
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	
-	<h1 id="placeholder">ERROR</h1>
+	<h1 id="placeholder">ERROR: Unknown</h1>
 	
 	<div class="container-fluid d-none d-md-block" id="div1" style="display: none">
 		<div class="row">
-			<div class="col-lg-4" align="center">
+			<div class="col-lg-4">
 				<p>
 				 <c:forEach var="house" items="${first}">
 					<center>
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.planet }</li>
+						<li>Location: ${house.planetName }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
 						<li>House Features: ${house.houseFeatures }</li>
@@ -42,14 +42,14 @@
 				 </c:forEach>
 				 </p>
 			</div>
-			<div class="col-lg-4" align="center">
+			<div class="col-lg-4">
 				<p>
 				 <c:forEach var="house" items="${second}">
 					<center>
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.planet }</li>
+						<li>Location: ${house.planetName }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
 						<li>House Features: ${house.houseFeatures }</li>
@@ -59,14 +59,14 @@
 				 </c:forEach>
 				 </p>
 			</div>
-			<div class="col-lg-4" align="center">
+			<div class="col-lg-4">
 				<p>
 				 <c:forEach var="house" items="${third}">
 					<center>
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.planet }</li>
+						<li>Location: ${house.planetName }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
 						<li>House Features: ${house.houseFeatures }</li>
@@ -87,6 +87,7 @@
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
+						<li>Location: ${house.planetName }</li>
 						<li>Price: ${house.price }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
@@ -107,10 +108,10 @@
 			if (parts.length == 2) return parts.pop().split(";").shift();
 		}
 		if (document.cookie.indexOf('authenticated=') != -1) {
-			document.getElementById("placeholder").innerText = "Your Land";
+			document.getElementById("placeholder").innerText = "Your Land In Space";
 			document.getElementById("div1").style.display = "block";
 		} else {
-			document.getElementById("placeholder").innerText = "Error: Please log in to see your puchased land!"
+			document.getElementById("placeholder").innerText = "<span style=\"color: #FF0000\"><h2>Error: Please log in to see your puchased land!</h2></span>"
 		}
 	</script>
 

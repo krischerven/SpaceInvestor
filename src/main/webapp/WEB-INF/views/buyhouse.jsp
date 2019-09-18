@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Buy Land In Space</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -45,7 +45,7 @@
 				return parts.pop().split(";").shift();
 		}
 		if (document.cookie.indexOf('authenticated=') != -1) {
-			document.getElementById("placeholder").innerText = "You just bought your first house on ${house.planet.planetName}! Please wait to be returned to the home page..."
+			document.getElementById("placeholder").innerText = "You just bought your first house on ${house.planet.planetName}! Please wait to be returned to the home page as your purchase is finalized and submitted to the database..."
 			document.getElementById("div1").style.display = "block";
 			setTimeout(
 					function() {

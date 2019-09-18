@@ -30,7 +30,7 @@
 	<!-- The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). The classes can be combined to create more dynamic and flexible layouts. -->
 	<div class="container-fluid d-none d-md-block">
 		<div class="row">
-			<div class="col-lg-4" align="center">
+			<div class="col-lg-4">
 				<p>
 					<c:forEach var="planet" items="${first}">
 				 	${planet}
@@ -39,7 +39,7 @@
 					</c:forEach>
 				</p>
 			</div>
-			<div class="col-lg-4" align="center">
+			<div class="col-lg-4">
 				<p>
 					<c:forEach var="planet" items="${second}">
 				 	${planet}
@@ -48,7 +48,7 @@
 					</c:forEach>
 				</p>
 			</div>
-			<div class="col-lg-4" align="center">
+			<div class="col-lg-4">
 				<p>
 					<c:forEach var="planet" items="${third}">
 				 	${planet}
