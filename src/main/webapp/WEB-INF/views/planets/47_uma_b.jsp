@@ -60,7 +60,7 @@ body {
 		<table>
 			<tr>
 				<td><img src=${planet.imageUrl }
-					style="width: 300px; height: 300px;"></td>
+					style="width: 300px; height: 300px; border: solid;"></td>
 				<td>
 					<table class="table space-table">
 						<tr>
@@ -113,7 +113,7 @@ body {
 		<table>
 			<tr>
 				<td><img src=${house.houseImage }
-					style="width: 350px; height: 350px;"></td>
+					style="width: 350px; height: 350px; border: solid;"></td>
 				<td>
 					<table>
 						<tr>
@@ -136,7 +136,7 @@ body {
 		<table>
 			<tr>
 				<td><img src=${house2.houseImage }
-					style="width: 350px; height: 350px;"></td>
+					style="width: 350px; height: 350px; border: solid;"></td>
 				<td>
 					<table>
 						<tr>
@@ -159,7 +159,7 @@ body {
 		<table>
 			<tr>
 				<td><img src=${house3.houseImage }
-					style="width: 350px; height: 350px;"></td>
+					style="width: 350px; height: 350px; border: solid;"></td>
 				<td>
 					<table>
 						<tr>
