@@ -339,6 +339,7 @@ public class UserController {
 				break;
 			}
 		}
+		System.out.println(auth);
 		String email = hasher.getStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);
 		if (user.isPresent()) {
