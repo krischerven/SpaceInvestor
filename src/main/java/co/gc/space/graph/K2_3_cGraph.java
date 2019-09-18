@@ -27,7 +27,7 @@ public class K2_3_cGraph extends Graph {
 
 	public K2_3_cGraph() {
 		titleName = "Natural Gas Price Projection";
-		xName = "Year"; 
+		xName = "Year";
 		yName = "Price ($ millions per Cubic Foot)";
 		xPoints = years(2020, 7);
 		yPoints = money(0.70, xPoints.size());

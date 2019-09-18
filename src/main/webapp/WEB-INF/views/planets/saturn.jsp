@@ -47,7 +47,7 @@ body {
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
+		href="#" onclick="seeHouses();" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
@@ -182,8 +182,13 @@ body {
 			<!-- Graph #1 goes here -->
 		</div>
 		<p>With the price of Helium going up on Saturn now is the time for
-			you to get your balloon business started before those guys on
-			Uranus find an actual solid surface to land on.</p>
+			you to get your balloon business started before those guys on Uranus
+			find an actual solid surface to land on.</p>
+		
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 
 	<!--  JS that actually creates the graphs -->
@@ -191,5 +196,9 @@ body {
 	<script
 		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+
 </body>
 </html>

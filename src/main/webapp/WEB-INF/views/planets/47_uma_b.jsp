@@ -30,6 +30,7 @@ body {
 	padding-top: 50px;
 	height: 100%;
 }
+
 #section3 {
 	padding-top: 600px;
 	height: 100%;
@@ -46,7 +47,7 @@ body {
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
+		href="#" onclick="seeHouses();" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
@@ -147,8 +148,8 @@ body {
 		</table>
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
-			onclick="window.location='../buyhouse?house=_47_UMA_B2'" /> <br>
-		<br>
+			onclick="window.location='../buyhouse?house=_47_UMA_B2&auth=${blah}'" />
+		<br> <br>
 		<table>
 			<tr>
 				<td><img src=${house3.houseImage }
@@ -189,15 +190,24 @@ body {
 				planet Earth. Think about your family and their future. Don't you
 				want them to be safe when the Earth no longer has a sustainable
 				ecosystem for its species.</p>
+				
+		<footer class="footer">
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 		</div>
-
-		<!--  JS that actually creates the graphs -->
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-		<script
-			src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-		<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
-
 	</div>
+
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+
+	
 
 </body>
 </html>

@@ -47,7 +47,6 @@ public final class Image {
 
 	public static Image K2_18_b() {
 		return new Image(new String[] { "../images/k2-18b.png" });
-
 	}
 	
 	public static Image K2_3() {

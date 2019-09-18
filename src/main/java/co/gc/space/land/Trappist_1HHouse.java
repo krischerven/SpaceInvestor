@@ -1,6 +1,8 @@
 package co.gc.space.land;
 
 import co.gc.space.HouseEnum;
+import co.gc.space.PlanetBuilder;
+import co.gc.space.entity.planet.Saturn;
 
 public class Trappist_1HHouse extends House {
 
@@ -13,6 +15,7 @@ public class Trappist_1HHouse extends House {
 		condition = "New";
 		yearBuilt = "2040";
 		setHouseImage("../images/pueblorevivalhouse4.jpeg");
+		setPlanet(PlanetBuilder.Build("Trappist-1 h"));
 	}
 	
 	public HouseEnum toEnum() {

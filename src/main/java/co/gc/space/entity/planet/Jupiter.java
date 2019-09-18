@@ -18,7 +18,6 @@ public class Jupiter extends SolarSystemPlanet {
 		setImageUrl("https://i.dlpng.com/static/png/479568_preview.png");
 		setJspTag("planets/jupiter");
 		setGifImage("../images/jupiterspin.gif");
-		
 
 	}
 

@@ -27,12 +27,9 @@ public class BetaPictorisBGraph extends Graph {
 
 	public BetaPictorisBGraph() {
 		titleName = "Land On Beta Pictoris B Price Projections";
-		xName = "Year"; 
+		xName = "Year";
 		yName = "Price ($ millions per acre)";
 		xPoints = years(2020, 7);
 		yPoints = money(0.70, xPoints.size());
 	}
 }
-
-
-

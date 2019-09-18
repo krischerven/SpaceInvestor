@@ -47,7 +47,7 @@ body {
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
+		href="#" onclick="seeHouses();" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
@@ -185,6 +185,11 @@ body {
 			light weight. From laptops to carseats. Magnesium is also great for
 			making fireworks, so you'll be the one we come to for all of our 4th
 			of July needs, if you make this investment that is.</p>
+		
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 
 	<!--  JS that actually creates the graphs -->
@@ -192,5 +197,9 @@ body {
 	<script
 		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+
 </body>
 </html>

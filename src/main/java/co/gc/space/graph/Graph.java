@@ -47,6 +47,5 @@ public class Graph {
 	public String getTitleName() {
 		return titleName;
 	}
-	
 
 }

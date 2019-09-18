@@ -1,6 +1,7 @@
 package co.gc.space.land;
 
 import co.gc.space.HouseEnum;
+import co.gc.space.PlanetBuilder;
 
 public class K2_3CHouse extends House {
 
@@ -13,8 +14,9 @@ public class K2_3CHouse extends House {
 		condition = "New";
 		yearBuilt = "2040";
 		setHouseImage("../images/greekrevivalhouse3.jpeg");
+		setPlanet(PlanetBuilder.Build("K2-3 c"));
 	}
-	
+
 	public HouseEnum toEnum() {
 		return HouseEnum.K2_3_C;
 	}

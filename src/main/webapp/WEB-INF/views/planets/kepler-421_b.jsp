@@ -30,6 +30,7 @@ body {
 	padding-top: 50px;
 	height: 100%;
 }
+
 #section3 {
 	padding-top: 600px;
 	height: 100%;
@@ -46,7 +47,7 @@ body {
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
+		href="#" onclick="seeHouses();" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
@@ -187,15 +188,23 @@ body {
 				shoot up, now's the time. If you thought Seattle's property values
 				were impressively profitable, I'll let you in on a little secret.
 				This will be Seattle on steroids.</p>
+			
+			<footer class="footer">
+				<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+					Reserved</small>
+			</footer>
 		</div>
+	</div>
 
-		<!--  JS that actually creates the graphs -->
-		<div>
-			<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-			<script
-				src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-			<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
 
-		</div>
+	<!--  JS that actually creates the graphs -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+
 </body>
 </html>

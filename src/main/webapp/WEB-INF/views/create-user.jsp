@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-<input type="button" class="btn btn-primary hBack"
+	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
 	<h2>Create your Account to Start Investing in Properties That are
 		Out of This World Today!</h2>
@@ -23,23 +23,32 @@
 	<form action="save-user">
 		<h3>UserName</h3>
 		<center>
+
 			<input type="text" pattern = "[A-Za-z0-9]{1,12}" name="username" maxLength="20"
 				style="width: 250px;" />
-
+			<input type="text" pattern="[A-Za-z]{1,12}" name="username"
+				maxLength="20" style="width: 250px;" />
 		</center>
 		<br>
 
 		<h3>Email</h3>
 		<center>
-			<input type="text" name="email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxLength="50" style="width: 250px;" />
+			<input type="text" name="email"
+				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxLength="50"
+				style="width: 250px;" />
 		</center>
 
 		<br>
 
 		<h3>Password</h3>
 		<center>
+<<<<<<< HEAD
 			<input type="password" pattern="[A-Za-z0-9]{0,12}" name="password" maxLength="50"
 				style="width: 250px;" />
+=======
+			<input type="password" pattern="[A-Za-z]{0,12}" name="password"
+				maxLength="50" style="width: 250px;" />
+>>>>>>> 69a1263b1b1ba5db2fc35a0321b0bc3f43fdf932
 		</center>
 
 		<br>
@@ -54,8 +63,8 @@
 
 		<h3>Expiration Date</h3>
 		<center>
-			<input type="text" pattern="\d{2}/\d{2}" name="expiration" maxLength="10"
-				style="width: 250px" />
+			<input type="text" pattern="\d{2}/\d{2}" name="expiration"
+				maxLength="10" style="width: 250px" />
 
 		</center>
 		<br>
@@ -72,5 +81,9 @@
 		</center>
 
 	</form>
+	<footer class="footer-planet">
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>

@@ -35,17 +35,13 @@ public class House {
 	protected String yearBuilt;
 	@Column(name = "houseimage")
 	private String houseImage;
-	@Transient
-	private Planet planet;
-
+	@Transient private Planet planet;
+	@Transient private House other;
+	@Column(name="planet_name")
+	private String planetName;
 	@Column(name="user_id")
 	private Integer userId;
-//	@ManyToOne /// (fetch = FetchType.LAZY, optional = false)
-////    @JoinColumn(name = "user_id", nullable = false)	
-////    @OnDelete(action = OnDeleteAction.CASCADE)
-//    @JsonIgnore
-	// private User user;
-
+	
 	public Integer getId() {
 		return id;
 	}
@@ -53,18 +49,24 @@ public class House {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-//
-//	public User getUser() {
-//		return user;
-//	}
-//
-//	public void setUser(User user) {
-//		this.user = user;
-//	}
 
 	public House() {
 		super();
-		// TODO Auto-generated constructor stub
+	}
+
+	public House From(final House other) {
+		this.price = other.price;
+		this.arces = other.arces;
+		this.propertyDetails = other.propertyDetails;
+		this.houseFeatures = other.houseFeatures;
+		this.architecturalStyle = other.architecturalStyle;
+		this.condition = other.condition;
+		this.yearBuilt = other.yearBuilt;
+		this.houseImage = other.houseImage;
+		this.planet = other.planet;
+		this.planetName = other.planet.getPlanetName();
+		this.other = other;
+		return this;
 	}
 
 	public String getHouseImage() {
@@ -144,6 +146,10 @@ public class House {
 		return null;
 	}
 
+	public String toString() {
+		return (other != null) ? other.toEnum().toString() : (toEnum() != null) ? toEnum().toString() : "house";
+	}
+	
 	public Integer getUserId() {
 		return userId;
 	}
@@ -152,6 +158,11 @@ public class House {
 		this.userId = userId;
 	}
 
+	public String getPlanetName() {
+		return planetName;
+	}
 
-
+	public void setPlanetName(String planetName) {
+		this.planetName = planetName;
+	}
 }

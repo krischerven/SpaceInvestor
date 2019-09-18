@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Saving...</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -21,12 +21,13 @@
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
+		href="#" onclick="seeHouses();" />
 	<h2 id="placeholder">ERROR</h2>
 	<div id="div1" style="display: none">
 		<p>This is the details of your purchase</p>
 		<center>
-		<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
+			<img src=${house.houseImage }
+				style="width: 600px; height: 450px; image-align: center;">
 		</center>
 		<ul>
 			<li>Price: ${house.price }</li>
@@ -40,7 +41,8 @@
 		function getCookie(name) {
 			let value = "; " + document.cookie;
 			let parts = value.split("; " + name + "=");
-			if (parts.length == 2) return parts.pop().split(";").shift();
+			if (parts.length == 2)
+				return parts.pop().split(";").shift();
 		}
 		if (document.cookie.indexOf('authenticated=') != -1) {
 			document.getElementById("placeholder").innerText = "You just bought your first house on ${planet}!"
@@ -49,6 +51,11 @@
 			document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
 		}
 	</script>
-
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+	<footer class="footer-planet">
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>

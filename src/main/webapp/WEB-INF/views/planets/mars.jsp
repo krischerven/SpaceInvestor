@@ -47,7 +47,7 @@ body {
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
+		href="#" onclick="seeHouses();" />
 	<h1>Mars</h1>
 	<br>
 	<table>
@@ -181,21 +181,26 @@ body {
 		<div id="graph1">
 			<!-- Graph #1 goes here -->
 		</div>
-	
-	<p>With the price of flying to mars decreasing, now is your
-		opportunity to get reserve your spot. Once it it becomes easier to
-		land on mars, space on this planet will run out and you won't find
-		your comfort zone.</p>
+
+		<p>With the price of flying to mars decreasing, now is your
+			opportunity to get reserve your spot. Once it it becomes easier to
+			land on mars, space on this planet will run out and you won't find
+			your comfort zone.</p>
 		
+		<footer class="footer-planet">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
-	
 
 	<!--  JS that actually creates the graphs -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script
 		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
-	
+
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
 </body>
 </html>

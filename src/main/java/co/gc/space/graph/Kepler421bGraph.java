@@ -3,7 +3,7 @@ package co.gc.space.graph;
 import java.util.ArrayList;
 
 public class Kepler421bGraph extends Graph {
-	
+
 	private long moneyFormula(double startingPoint, long i) {
 		return (long) ((double) startingPoint * ((double) (1.0 + Math.pow((i + 1.0), 1.0))));
 	}
@@ -33,5 +33,3 @@ public class Kepler421bGraph extends Graph {
 		yPoints = money(5, xPoints.size());
 	}
 }
-
-

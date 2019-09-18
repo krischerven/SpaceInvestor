@@ -1,15 +1,13 @@
 @charset "UTF-8";
 
-@font-face
-{
-font-family: 'Teio';
-src: url('../fonts/Teio-LPR4.ttf'),
+@font-face {
+	font-family: 'Teio';
+	src: url('../fonts/Teio-LPR4.ttf'),
 }
 
-@font-face
-{
-font-family: 'andromeda';
-src: url('../fonts/andromeda.ttf'),
+@font-face {
+	font-family: 'andromeda';
+	src: url('../fonts/andromeda.ttf'),
 }
 
 h1 {
@@ -19,11 +17,11 @@ h1 {
 	text-align: center;
 }
 
-h2{
+h2 {
 	text-align: center;
 }
 
-h3{
+h3 {
 	text-align: center;
 }
 
@@ -31,32 +29,26 @@ body {
 	background-image: url("../images/space.gif");
 	background-size: cover;
 	image-align: left;
-	
-    
-    
-    
-    height: 100vh;
-    padding:0;
-    margin:0;
-    
-    font-family: 'andromeda';
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	font-family: 'andromeda';
 	font-size: 20px;
-	color: white;	
-	
-
+	color: white;
 	height: 100vh;
 	padding: 0;
 	margin: 0;
 	font-family: 'andromeda';
 	color: white;
 }
-ul > li {
+
+ul>li {
 	font-size: 27px;
 }
+
 p {
 	font-size: 130%;
 	image-align: center;
-
 }
 
 table {
@@ -84,21 +76,28 @@ td {
 	font-size: 120%;
 }
 
-
-p:before{
-    content:"\a";
-    white-space: pre;
-    font-weight: bold;
-
 p:before {
 	content: "\a";
 	white-space: pre;
-
+	font-weight: bold;
+	p: before{ 
+	content: "\a";
+	white-space: pre;
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+footer {
+	position: absolute;
+	
+
+}
+.footer-planet{
+	position: relative;
+	bottom: 0;
 }

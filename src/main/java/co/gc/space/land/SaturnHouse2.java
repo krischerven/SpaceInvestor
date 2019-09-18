@@ -1,6 +1,7 @@
 package co.gc.space.land;
 
 import co.gc.space.HouseEnum;
+import co.gc.space.entity.planet.Saturn;
 
 public class SaturnHouse2 extends House {
 
@@ -13,6 +14,7 @@ public class SaturnHouse2 extends House {
 		condition = "New";
 		yearBuilt = "2040";
 		setHouseImage("../images/modernhouse3.jpg");
+		setPlanet(new Saturn());
 	}
 	
 	public HouseEnum toEnum() {

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Success</title>
+<title>Success!</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css"
 	rel="stylesheet"
@@ -15,9 +15,12 @@
 </head>
 <body>
 
-<input type="button" class="btn btn-primary hBack"
+	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
 	<h2>Your Account Has Been Created!</h2>
-
+	<footer class="footer-planet">
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>

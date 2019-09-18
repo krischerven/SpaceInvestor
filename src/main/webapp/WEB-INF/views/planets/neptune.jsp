@@ -47,7 +47,7 @@ body {
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
+		href="#" onclick="seeHouses();" />
 	<div id="section1" class="container-fluid">
 		<h1>${planet.getTitle()}</h1>
 		<br>
@@ -185,7 +185,11 @@ body {
 		<p>With all of this ammonia you can blow Windex off out of the
 			water. You can sell all of the janitorial equipment that you want.
 			Nothing gets tough stains out better than ammonia.</p>
-
+	
+		<footer class="footer">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
 	</div>
 
 	<!--  JS that actually creates the graphs -->
@@ -193,5 +197,9 @@ body {
 	<script
 		src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 	<script type="text/javascript" src="../scripts/graphs/line1.js"></script>
+
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+
 </body>
 </html>

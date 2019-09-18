@@ -8,12 +8,13 @@ import co.gc.space.repo.PlanetRepo;
 
 @Component
 public class ControllerHelper {
-   public static PlanetRepo repo;
+	public static PlanetRepo repo;
 
-   @Autowired private PlanetRepo autoRepo;
+	@Autowired
+	private PlanetRepo autoRepo;
 
-   @PostConstruct
-   private void init() {
-	   repo = autoRepo;
-   }
+	@PostConstruct
+	private void init() {
+		repo = autoRepo;
+	}
 }

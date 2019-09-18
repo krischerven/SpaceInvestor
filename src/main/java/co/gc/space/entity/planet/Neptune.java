@@ -18,7 +18,6 @@ public class Neptune extends SolarSystemPlanet {
 		setImageUrl("https://space-facts.com/wp-content/uploads/neptune-transparent.png");
 		setJspTag("planets/neptune");
 		setGifImage("../images/neptunespin.gif");
-		
 
 	}
 

@@ -20,38 +20,43 @@
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
-		onclick="window.location='../see-houses'" />
-	<img src="images/qr2.png" alt="QR Code" style="width: 175px; height:225px;" align="right"/>
-	
+		href="#" onclick="seeHouses();" />
+	<img src="images/qr2.png" alt="QR Code"
+		style="width: 175px; height: 225px;" align="right" />
+
 	<br>
-	<h1>Space Investor's Real Estate Professionals</h1>
+	<h1>Space Investor's<br>Real Estate Professionals</h1>
 	<br>
+	<h2 style="color: #FF0000">${error}</h2>
 	<!-- The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). The classes can be combined to create more dynamic and flexible layouts. -->
 	<div class="container-fluid d-none d-md-block">
 		<div class="row">
-			<div class="col-lg-4" align="center">
+			<div class="col-lg-4">
 				<p>
-				 <c:forEach var="planet" items="${first}">
+					<c:forEach var="planet" items="${first}">
 				 	${planet}
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+				 	<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
-			<div class="col-lg-4" align="center">
+			<div class="col-lg-4">
 				<p>
-				 <c:forEach var="planet" items="${second}">
+					<c:forEach var="planet" items="${second}">
 				 	${planet}
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+				 	<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
-			<div class="col-lg-4" align="center">
+			<div class="col-lg-4">
 				<p>
-				 <c:forEach var="planet" items="${third}">
+					<c:forEach var="planet" items="${third}">
 				 	${planet}
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+				 	<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -59,13 +64,20 @@
 		<div class="row">
 			<div class="col-lg-12" align="center">
 				<p>
-				 <c:forEach var="planet" items="${all}">
+					<c:forEach var="planet" items="${all}">
 				 	${planet.toStringCentered()}
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+				 	<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 		</div>
 	</div>
+	<!--  misc JS code -->
+	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+	<footer class="footer-planet">
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>

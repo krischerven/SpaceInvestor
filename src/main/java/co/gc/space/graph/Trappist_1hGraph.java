@@ -27,7 +27,7 @@ public class Trappist_1hGraph extends Graph {
 
 	public Trappist_1hGraph() {
 		titleName = "Lemonade And Soda Sales Projection On Trappist-1h";
-		xName = "Year"; 
+		xName = "Year";
 		yName = "Price ($ millions per liter)";
 		xPoints = years(2020, 7);
 		yPoints = money(0.70, xPoints.size());

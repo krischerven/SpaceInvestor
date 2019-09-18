@@ -1,6 +1,8 @@
 package co.gc.space.land;
 
 import co.gc.space.HouseEnum;
+import co.gc.space.PlanetBuilder;
+import co.gc.space.entity.planet.Jupiter;
 
 public class K2_18BHouse extends House {
 
@@ -13,8 +15,9 @@ public class K2_18BHouse extends House {
 		condition = "New";
 		yearBuilt = "2040";
 		setHouseImage("../images/spanishhouse4.jpeg");
+		setPlanet(PlanetBuilder.Build("K2-18 b"));
 	}
-	
+
 	public HouseEnum toEnum() {
 		return HouseEnum.K2_18_B;
 	}
