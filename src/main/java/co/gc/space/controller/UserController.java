@@ -345,31 +345,32 @@ public class UserController {
 			final House newHouse = new House();
 			newHouse.setUserId(user.get().getId());
 			hrepo.save(newHouse.From(house2));
+			List<Planet> planets = new ArrayList<>();
+			planets.add(new Mars());
+			planets.add(new Jupiter());
+			planets.add(new Saturn());
+			planets.add(new Mercury());
+			planets.add(new Neptune());
+			planets.add(new Uranus());
+			planets.add(new Venus());
+			planets.add(new Europa());
+			planets.add(PlanetBuilder.Build("47 uma b"));
+			planets.add(PlanetBuilder.Build("kepler-421 b"));
+			planets.add(PlanetBuilder.Build("beta pic b"));
+			planets.add(PlanetBuilder.Build("beta pic c"));
+			planets.add(PlanetBuilder.Build("K2-18 b"));
+			planets.add(PlanetBuilder.Build("K2-3 c"));
+			planets.add(PlanetBuilder.Build("Trappist-1 h"));
+			final ArrayList<Object>[] planetArr = partition(planets);
+			final ModelAndView mv = new ModelAndView("index");
+			mv.addObject("first", planetArr[0]);
+			mv.addObject("second", planetArr[1]);
+			mv.addObject("third", planetArr[2]);
+			mv.addObject("all", planets.toArray());
+			return mv;
+		} else {
+			return (new ModelAndView("index")).addObject("error", "Error: Could not save the house to the database.");
 		}
-		// error page
-		List<Planet> planets = new ArrayList<>();
-		planets.add(new Mars());
-		planets.add(new Jupiter());
-		planets.add(new Saturn());
-		planets.add(new Mercury());
-		planets.add(new Neptune());
-		planets.add(new Uranus());
-		planets.add(new Venus());
-		planets.add(new Europa());
-		planets.add(PlanetBuilder.Build("47 uma b"));
-		planets.add(PlanetBuilder.Build("kepler-421 b"));
-		planets.add(PlanetBuilder.Build("beta pic b"));
-		planets.add(PlanetBuilder.Build("beta pic c"));
-		planets.add(PlanetBuilder.Build("K2-18 b"));
-		planets.add(PlanetBuilder.Build("K2-3 c"));
-		planets.add(PlanetBuilder.Build("Trappist-1 h"));
-		final ArrayList<Object>[] planetArr = partition(planets);
-		final ModelAndView mv = new ModelAndView("index");
-		mv.addObject("first", planetArr[0]);
-		mv.addObject("second", planetArr[1]);
-		mv.addObject("third", planetArr[2]);
-		mv.addObject("all", planets.toArray());
-		return mv;
 	}
 
 	@RequestMapping("see-houses")
