@@ -37,6 +37,7 @@
 					<center>
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
+					<br>
 					<ul>
 						<li>Location: ${house.planetName }</li>
 						<li>Acres: ${house.arces }</li>
@@ -54,6 +55,7 @@
 					<center>
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
+					<br>
 					<ul>
 						<li>Location: ${house.planetName }</li>
 						<li>Acres: ${house.arces }</li>
@@ -71,6 +73,7 @@
 					<center>
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
+					<br>
 					<ul>
 						<li>Location: ${house.planetName }</li>
 						<li>Acres: ${house.arces }</li>
@@ -92,6 +95,7 @@
 					<center>
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
+					<br>
 					<ul>
 						<li>Location: ${house.planetName }</li>
 						<li>Price: ${house.price }</li>
