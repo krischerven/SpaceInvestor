@@ -65,6 +65,7 @@ public class UserController {
 		// guaranteed unique hash
 		private String uniqueHash(String in) {
 			// spaces are bad
+			// hash that caused this: sTOA/8Io7l/XwUC iH5WWg==
 			String _hash = hash(in).replace(" ", "");
 			// guarantee uniqueness at all costs
 			while (hashes.containsKey(_hash)) {
