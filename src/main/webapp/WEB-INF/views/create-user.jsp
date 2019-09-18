@@ -23,7 +23,7 @@
 	<form action="save-user">
 		<h3>UserName</h3>
 		<center>
-			<input type="text" pattern = "[A-Za-z]{1,12}" name="username" maxLength="20"
+			<input type="text" pattern = "[A-Za-z0-9]{1,12}" name="username" maxLength="20"
 				style="width: 250px;" />
 
 		</center>
@@ -38,7 +38,7 @@
 
 		<h3>Password</h3>
 		<center>
-			<input type="password" pattern="[A-Za-z]{0,12}" name="password" maxLength="50"
+			<input type="password" pattern="[A-Za-z0-9]{0,12}" name="password" maxLength="50"
 				style="width: 250px;" />
 		</center>
 
