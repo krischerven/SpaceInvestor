@@ -42,13 +42,8 @@
 
 		<h3>Password</h3>
 		<center>
-<<<<<<< HEAD
 			<input type="password" pattern="[A-Za-z0-9]{0,12}" name="password" maxLength="50"
 				style="width: 250px;" />
-=======
-			<input type="password" pattern="[A-Za-z]{0,12}" name="password"
-				maxLength="50" style="width: 250px;" />
->>>>>>> 69a1263b1b1ba5db2fc35a0321b0bc3f43fdf932
 		</center>
 
 		<br>
