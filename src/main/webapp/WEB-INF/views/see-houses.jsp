@@ -102,13 +102,16 @@
 		</div>
 	</div>
 	
+	<p id="test" style="display: none">${first}${all}</p>
+	
 	<script>
 		function getCookie(name) {
 			let value = "; " + document.cookie;
 			let parts = value.split("; " + name + "=");
 			if (parts.length == 2) return parts.pop().split(";").shift();
 		}
-		if (document.cookie.indexOf('authenticated=') != -1) {
+		// test <p> will be "[][Ljava.lang.Object;@4616781a" (two arrays) or better if auth was sucessful
+		if (document.cookie.indexOf('authenticated=') != -1 && document.getElementById("test").innerText !== "") {
 			document.getElementById("placeholder").innerText = "Your Land In Space";
 			document.getElementById("div1").style.display = "block";
 		} else {
