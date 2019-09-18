@@ -202,9 +202,13 @@ body {
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
+<div id="container">
+<div id="footer">
 	<footer>
 		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
 			Reserved</small>
 	</footer>
+	</div>
+	</div>
 </body>
 </html>
