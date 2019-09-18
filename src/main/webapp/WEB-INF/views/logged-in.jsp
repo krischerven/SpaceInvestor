@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 <style>
 #footer{
-	margin-top: 8%;
+	margin-top: 45%;
 }
 </style>
 </head>
