@@ -32,7 +32,7 @@
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.getPlanet().planetName }</li>
+						<li>Location: ${house.planetName }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
 						<li>House Features: ${house.houseFeatures }</li>
@@ -49,7 +49,7 @@
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.getPlanet().planetName }</li>
+						<li>Location: ${house.planetName }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
 						<li>House Features: ${house.houseFeatures }</li>
@@ -66,7 +66,7 @@
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.getPlanet().planetName }</li>
+						<li>Location: ${house.planetName }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
 						<li>House Features: ${house.houseFeatures }</li>
@@ -87,7 +87,7 @@
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.getPlanet().planetName }</li>
+						<li>Location: ${house.planetName }</li>
 						<li>Price: ${house.price }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>

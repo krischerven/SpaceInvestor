@@ -35,8 +35,9 @@ public class House {
 	protected String yearBuilt;
 	@Column(name = "houseimage")
 	private String houseImage;
-	@Transient
-	private Planet planet;
+	@Transient private Planet planet;
+	@Column(name="planet_name")
+	private String planetName;
 	@Column(name="user_id")
 	private Integer userId;
 	
@@ -62,6 +63,7 @@ public class House {
 		this.yearBuilt = other.yearBuilt;
 		this.houseImage = other.houseImage;
 		this.planet = other.planet;
+		this.planetName = other.planet.getPlanetName();
 		return this;
 	}
 
@@ -152,5 +154,13 @@ public class House {
 
 	public void setUserId(Integer userId) {
 		this.userId = userId;
+	}
+
+	public String getPlanetName() {
+		return planetName;
+	}
+
+	public void setPlanetName(String planetName) {
+		this.planetName = planetName;
 	}
 }
