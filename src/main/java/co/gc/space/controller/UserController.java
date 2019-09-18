@@ -160,147 +160,193 @@ public class UserController {
 		switch (HouseEnum.valueOf(house)) {
 			case MARS: {
 				house2 = new MarsHouse();
+				break;
 			}
 			case MARS2: {
 				house2 = new MarsHouse2();
+				break;
 			}
 			case MARS3: {
 				house2 = new MarsHouse3();
+				break;
 			}
 			case SATURN: {
 				house2 = new SaturnHouse();
+				break;
 			}
 			case SATURN2: {
 				house2 = new SaturnHouse2();
+				break;
 			}
 			case SATURN3: {
 				house2 = new SaturnHouse3();
+				break;
 			}
 			case JUPITER: {
 				house2 = new JupiterHouse();
+				break;
 			}
 			case JUPITER2: {
 				house2 = new JupiterHouse2();
+				break;
 			}
 			case JUPITER3: {
 				house2 = new JupiterHouse3();
+				break;
 			}
 			case MERCURY: {
 				house2 = new MercuryHouse();
+				break;
 			}
 			case MERCURY2: {
 				house2 = new MercuryHouse2();
+				break;
 			}
 			case MERCURY3: {
 				house2 = new MercuryHouse3();
+				break;
 			}
 			case NEPTUNE: {
 				house2 = new NeptuneHouse();
+				break;
 			}
 			case NEPTUNE2: {
 				house2 = new NeptuneHouse2();
+				break;
 			}
 			case NEPTUNE3: {
 				house2 = new NeptuneHouse3();
+				break;
 			}
 			case URANUS: {
 				house2 = new UranusHouse();
+				break;
 			}
 			case URANUS2: {
 				house2 = new UranusHouse2();
+				break;
 			}
 			case URANUS3: {
 				house2 = new UranusHouse3();
+				break;
 			}
 			case VENUS: {
 				house2 = new VenusHouse();
+				break;
 			}
 			case VENUS2: {
 				house2 = new VenusHouse2();
+				break;
 			}
 			case VENUS3: {
 				house2 = new VenusHouse3();
+				break;
 			}
 			case _47_UMA_B: {
 				house2 = new UmaBHouse();
+				break;
 			}
 			case _47_UMA_B2: {
 				house2 = new UmaBHouse2();
+				break;
 			}
 			case _47_UMA_B3: {
 				house2 = new UmaBHouse3();
+				break;
 			}
 			case EUROPA: {
 				house2 = new EuropaHouse();
+				break;
 			}
 			case EUROPA2: {
 				house2 = new EuropaHouse2();
+				break;
 			}
 			case EUROPA3: {
 				house2 = new EuropaHouse3();
+				break;
 			}
 			case KEPLER_421_B: {
 				house2 = new Kepler421BHouse();
+				break;
 			}
 			case KEPLER_421_B2: {
 				house2 = new Kepler421BHouse2();
+				break;
 			}
 			case KEPLER_421_B3: {
 				house2 = new Kepler421BHouse3();
+				break;
 			}
 			case BETAPICB: {
 				house2 = new BetaPicBHouse();
+				break;
 			}
 			case BETAPICB2: {
 				house2 = new BetaPicBHouse2();
+				break;
 			}
 			case BETAPICB3: {
 				house2 = new BetaPicBHouse3();
+				break;
 			}
 			case BETAPICC: {
 				house2 = new BetaPicCHouse();
+				break;
 			}
 			case BETAPICC2: {
 				house2 = new BetaPicCHouse2();
+				break;
 			}
 			case BETAPICC3: {
 				house2 = new BetaPicCHouse3();
+				break;
 			}
 			case K2_18_B: {
 				house2 = new K2_18BHouse();
+				break;
 			}
 			case K2_18_B2: {
 				house2 = new K2_18BHouse2();
+				break;
 			}
 			case K2_18_B3: {
 				house2 = new K2_18BHouse3();
+				break;
 			}
 			case TRAPPIST_1_H: {
 				house2 = new Trappist_1HHouse();
+				break;
 			}
 			case TRAPPIST_1_H2: {
 				house2 = new Trappist_1HHouse2();
+				break;
 			}
 			case TRAPPIST_1_H3: {
 				house2 = new Trappist_1HHouse3();
+				break;
 			}
 			case K2_3_C: {
 				house2 = new K2_3CHouse();
+				break;
 			}
 			case K2_3_C2: {
 				house2 = new K2_3CHouse2();
+				break;
 			}
 			case K2_3_C3: {
 				house2 = new K2_3CHouse3();
+				break;
 			}
 		}
 		String email = hasher.getStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);
 		if (user.isPresent()) {
-			House newHouse = new House();
+			final House newHouse = new House();
 			newHouse.setUserId(user.get().getId());
 			hrepo.save(newHouse.From(house2));
 		}
+		// error page
 		List<Planet> planets = new ArrayList<>();
 		planets.add(new Mars());
 		planets.add(new Jupiter());
