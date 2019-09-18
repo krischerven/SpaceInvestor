@@ -38,7 +38,7 @@ body {
 }
 </style>
 </head>
-<body>
+<main>
 <body data-spy="scroll" data-offset="50">
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
@@ -193,10 +193,6 @@ body {
 					ahead and get all of your wood from K2-18 B. You can have as much
 					wood as you please!</p>
 			
-				<footer class="footer-planet">
-					<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-						Reserved</small>
-				</footer>
 			</div>
 		</div>
 
@@ -210,4 +206,10 @@ body {
 		<!--  misc JS code -->
 		<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 </body>
+
+				<footer class="footer-planet">
+					<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+						Reserved</small>
+				</footer>
+</main>				
 </html>

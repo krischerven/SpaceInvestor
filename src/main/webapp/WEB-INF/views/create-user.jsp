@@ -23,11 +23,8 @@
 	<form action="save-user">
 		<h3>UserName</h3>
 		<center>
-
 			<input type="text" pattern = "[A-Za-z0-9]{1,12}" name="username" maxLength="20"
 				style="width: 250px;" />
-			<input type="text" pattern="[A-Za-z]{1,12}" name="username"
-				maxLength="20" style="width: 250px;" />
 		</center>
 		<br>
 
