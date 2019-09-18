@@ -147,7 +147,7 @@ public class House {
 	}
 
 	public String toString() {
-		return (other != null) ? other.toEnum().toString() : toEnum().toString();
+		return (other != null) ? other.toEnum().toString() : (toEnum() != null) ? toEnum().toString() : "house";
 	}
 	
 	public Integer getUserId() {
