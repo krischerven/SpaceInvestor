@@ -33,7 +33,7 @@
 		<p>Here are the details of your purchase:</p>
 		<center>
 			<img src=${house.houseImage }
-				style="width: 600px; height: 450px; image-align: center;">
+				style="width: 600px; height: 450px; image-align: center; border: solid;">
 		</center>
 		<ul>
 			<li>Price: ${house.price }</li>
