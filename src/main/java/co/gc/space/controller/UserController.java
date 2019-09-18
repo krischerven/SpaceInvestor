@@ -55,6 +55,7 @@ public class UserController {
 	}
 
 	public final class Hasher {
+		
 		final HashMap<String, String> hashes = new HashMap<>();
 
 		// uniqueness isnt import
@@ -78,7 +79,7 @@ public class UserController {
 
 		// get the String used to create a unique hash
 		// this is fairly secure because it's only stored in memory
-		private String getStringFromHash(String in) {
+		private String getOriginalStringFromHash(String in) {
 			return hashes.get(in);
 		}
 	}
@@ -344,7 +345,7 @@ public class UserController {
 			}
 		}
 		
-		String email = hasher.getStringFromHash(auth);
+		String email = hasher.getOriginalStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);
 		
 		if (user.isPresent()) {
@@ -381,7 +382,7 @@ public class UserController {
 
 	@GetMapping("see-houses")
 	public ModelAndView seeHouses(String auth) {
-		String email = hasher.getStringFromHash(auth);
+		String email = hasher.getOriginalStringFromHash(auth);
 		Optional<User> user = repo.findByEmail(email);
 		if (user.isPresent()) {
 			List<House> houses = hrepo.findByUserId(user.get().getId());
