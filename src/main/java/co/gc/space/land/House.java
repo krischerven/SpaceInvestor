@@ -36,6 +36,7 @@ public class House {
 	@Column(name = "houseimage")
 	private String houseImage;
 	@Transient private Planet planet;
+	@Transient private House other;
 	@Column(name="planet_name")
 	private String planetName;
 	@Column(name="user_id")
@@ -64,6 +65,7 @@ public class House {
 		this.houseImage = other.houseImage;
 		this.planet = other.planet;
 		this.planetName = other.planet.getPlanetName();
+		this.other = other;
 		return this;
 	}
 
@@ -145,7 +147,7 @@ public class House {
 	}
 
 	public String toString() {
-		return toEnum().toString();
+		return (other != null) ? other.toEnum().toString() : toEnum().toString();
 	}
 	
 	public Integer getUserId() {
