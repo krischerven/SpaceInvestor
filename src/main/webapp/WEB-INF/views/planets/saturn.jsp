@@ -38,7 +38,7 @@ body {
 }
 </style>
 </head>
-<body>
+<main>
 <body data-spy="scroll" data-offset="50">
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
@@ -185,11 +185,9 @@ body {
 			you to get your balloon business started before those guys on Uranus
 			find an actual solid surface to land on.</p>
 		
-		<footer class="footer-planet">
-			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-				Reserved</small>
-		</footer>
 	</div>
+	<br>
+	<br>
 
 	<!--  JS that actually creates the graphs -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -201,4 +199,10 @@ body {
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
 </body>
+
+		<footer class="footer-planet">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
+</main>
 </html>

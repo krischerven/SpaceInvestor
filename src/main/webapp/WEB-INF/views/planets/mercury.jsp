@@ -38,7 +38,7 @@ body {
 }
 </style>
 </head>
-<body>
+<main>
 <body data-spy="scroll" data-offset="50">
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
@@ -186,11 +186,10 @@ body {
 			light weight. From laptops to carseats. Magnesium is also great for
 			making fireworks, so you'll be the one we come to for all of our 4th
 			of July needs, if you make this investment that is.</p>
-		<footer class="footer-planet">
-			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-				Reserved</small>
-		</footer>
+		
 	</div>
+	<br>
+	<br>
 
 	<!--  JS that actually creates the graphs -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -202,4 +201,9 @@ body {
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
 </body>
+<footer class="footer-planet">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
+</main>
 </html>

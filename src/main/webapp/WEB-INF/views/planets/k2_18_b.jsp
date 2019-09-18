@@ -195,7 +195,8 @@ body {
 			
 			</div>
 		</div>
-
+		<br>
+		<br>
 
 		<!--  JS that actually creates the graphs -->
 		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>

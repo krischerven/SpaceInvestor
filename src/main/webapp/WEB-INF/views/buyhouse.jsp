@@ -12,7 +12,13 @@
 	integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er"
 	crossorigin="anonymous">
 <link rel="stylesheet" href="../css/spacestyle.css">
+<style>
+#footer{
+	margin-top: 8%;
+}
+</style>
 </head>
+<main>
 <body>
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
@@ -36,10 +42,7 @@
 			<li>House Features: ${house.houseFeatures }</li>
 			<li>Architectural Style: ${house.architecturalStyle }</li>
 		</ul>
-		<footer class="footer">
-			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-				Reserved</small>
-		</footer>
+		
 	</div>
 	<script>
 		function getCookie(name) {
@@ -63,5 +66,12 @@
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
+<div id="footer">
+<footer class="footer-planet">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
+		</div>
 </body>
+</main>
 </html>
