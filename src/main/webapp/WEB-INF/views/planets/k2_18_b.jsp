@@ -193,7 +193,7 @@ body {
 					ahead and get all of your wood from K2-18 B. You can have as much
 					wood as you please!</p>
 			
-				<footer class="footer">
+				<footer class="footer-planet">
 					<small>&copy; Copyright 2019, SpaceInvestors. All Rights
 						Reserved</small>
 				</footer>

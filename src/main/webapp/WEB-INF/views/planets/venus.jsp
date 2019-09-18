@@ -189,7 +189,7 @@ body {
 			world hunger. If you don't invest in a property on Venus you
 			basically want many people to die of starvation.</p>
 
-		<footer class="footer">
+		<footer class="footer-planet">
 			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
 				Reserved</small>
 		</footer>

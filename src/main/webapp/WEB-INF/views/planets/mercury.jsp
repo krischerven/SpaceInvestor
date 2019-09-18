@@ -167,6 +167,7 @@ body {
 		<br> <input type="button" class="btn btn-primary hBack"
 			value="Buy House"
 			onclick="window.location='../buyhouse?house=MERCURY3'" />
+
 	</div>
 	<!-- graph section -->
 	<p id="xPoints_1" hidden=true>${graph1.getXPoints()}</p>
@@ -185,8 +186,7 @@ body {
 			light weight. From laptops to carseats. Magnesium is also great for
 			making fireworks, so you'll be the one we come to for all of our 4th
 			of July needs, if you make this investment that is.</p>
-		
-		<footer class="footer">
+		<footer class="footer-planet">
 			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
 				Reserved</small>
 		</footer>

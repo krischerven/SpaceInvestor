@@ -80,7 +80,7 @@ p:before {
 	content: "\a";
 	white-space: pre;
 	font-weight: bold;
-	p: before{ 
+	p: before{   
 	content: "\a";
 	white-space: pre;
 }
@@ -93,11 +93,27 @@ p:before {
 }
 
 footer {
-	position: absolute;
-	
-
-}
-.footer-planet{
-	position: relative;
+	position: fixed;
+	left: 0;
 	bottom: 0;
+	width: 100%;
+	background-color: red;
+	color: white;
+	text-align: left;
+	
+}
+
+.footer-planet {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: red;
+	color: white;
+	text-align: left;
+	
+}
+main{
+	display: flex;
+	flex-direction: column;
 }

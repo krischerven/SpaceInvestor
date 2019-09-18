@@ -38,7 +38,7 @@ body {
 }
 </style>
 </head>
-<body>
+<main>
 <body data-spy="scroll" data-offset="50">
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
@@ -190,11 +190,10 @@ body {
 			station. Hydrogen and the mixture of liquid oxygen makes great rocket
 			fuel. You will be the one to fuel everybody's space endeavors.</p>
 		
-		<footer class="footer">
-			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-				Reserved</small>
-		</footer>
 	</div>
+	<br>
+	<br>
+	
 
 
 
@@ -208,4 +207,10 @@ body {
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
 </body>
+
+		<footer class="footer-planet">
+			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+				Reserved</small>
+		</footer>
+</main>
 </html>

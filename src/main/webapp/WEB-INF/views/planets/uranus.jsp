@@ -190,7 +190,7 @@ body {
 			safer the city. Help cities all over the galaxy stay lit during the
 			nights to prevent crimes and give drivers better visibility</p>
 
-		<footer class="footer">
+		<footer class="footer-planet">
 			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
 				Reserved</small>
 		</footer>

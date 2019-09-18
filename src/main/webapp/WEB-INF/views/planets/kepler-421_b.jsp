@@ -189,7 +189,7 @@ body {
 				were impressively profitable, I'll let you in on a little secret.
 				This will be Seattle on steroids.</p>
 			
-			<footer class="footer">
+			<footer class="footer-planet">
 				<small>&copy; Copyright 2019, SpaceInvestors. All Rights
 					Reserved</small>
 			</footer>

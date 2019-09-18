@@ -185,7 +185,7 @@ body {
 			you to get your balloon business started before those guys on Uranus
 			find an actual solid surface to land on.</p>
 		
-		<footer class="footer">
+		<footer class="footer-planet">
 			<small>&copy; Copyright 2019, SpaceInvestors. All Rights
 				Reserved</small>
 		</footer>

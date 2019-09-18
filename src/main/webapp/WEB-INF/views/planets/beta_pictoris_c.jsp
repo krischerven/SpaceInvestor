@@ -38,7 +38,7 @@ body {
 }
 </style>
 </head>
-<body>
+<main>
 <body data-spy="scroll" data-offset="50">
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
@@ -188,10 +188,6 @@ body {
 				the lonely people bring their cats to this planet. If you like cats,
 				then hey, if not, sorry!</p>
 			
-			<footer class="footer">
-				<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-					Reserved</small>
-			</footer>
 		</div>
 	</div>
 
@@ -205,4 +201,10 @@ body {
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
 </body>
+
+			<footer class="footer-planet">
+				<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+					Reserved</small>
+			</footer>
+</main>
 </html>

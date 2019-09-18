@@ -36,9 +36,15 @@ body {
 	height: 100%;
 	width: 75%
 }
+/* added to test, can be removed */
+#section4 {
+	margin: 600px;
+	height: 100%;
+	width: 100%
+}
 </style>
 </head>
-<body>
+<main>
 <body data-spy="scroll" data-offset="50">
 	<input type="button" class="btn btn-primary hBack"
 		value="<- Return to Index" onclick="window.location='/'" />
@@ -190,13 +196,14 @@ body {
 				planet Earth. Think about your family and their future. Don't you
 				want them to be safe when the Earth no longer has a sustainable
 				ecosystem for its species.</p>
-				
-		<footer class="footer">
-		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
-			Reserved</small>
-	</footer>
+
 		</div>
 	</div>
+	<br>
+	<br>
+	
+	<!-- testing -->
+
 
 	<!--  JS that actually creates the graphs -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -207,7 +214,14 @@ body {
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
 
-	
+
 
 </body>
+<footer class="footer-planet">
+	<!-- <div class="container-fluid"> -->
+	<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+		Reserved</small>
+	<!-- 	</div> -->
+</footer>
+ </main>
 </html>
