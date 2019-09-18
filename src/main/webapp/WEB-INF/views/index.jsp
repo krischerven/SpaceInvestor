@@ -21,8 +21,9 @@
 		onclick="window.location='../login'" />
 	<input type="button" class="btn btn-primary" value="See Properties"
 		href="#" onclick="seeHouses();" />
-	<img src="images/qr2.png" alt="QR Code" style="width: 175px; height:225px;" align="right"/>
-	
+	<img src="images/qr2.png" alt="QR Code"
+		style="width: 175px; height: 225px;" align="right" />
+
 	<br>
 	<h1>Space Investor's Real Estate Professionals</h1>
 	<br>
@@ -31,27 +32,30 @@
 		<div class="row">
 			<div class="col-lg-4" align="center">
 				<p>
-				 <c:forEach var="planet" items="${first}">
+					<c:forEach var="planet" items="${first}">
 				 	${planet}
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+				 	<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 			<div class="col-lg-4" align="center">
 				<p>
-				 <c:forEach var="planet" items="${second}">
+					<c:forEach var="planet" items="${second}">
 				 	${planet}
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+				 	<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 			<div class="col-lg-4" align="center">
 				<p>
-				 <c:forEach var="planet" items="${third}">
+					<c:forEach var="planet" items="${third}">
 				 	${planet}
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+				 	<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -59,15 +63,20 @@
 		<div class="row">
 			<div class="col-lg-12" align="center">
 				<p>
-				 <c:forEach var="planet" items="${all}">
+					<c:forEach var="planet" items="${all}">
 				 	${planet.toStringCentered()}
-				 	<br><br>
-				 </c:forEach>
-				 </p>
+				 	<br>
+						<br>
+					</c:forEach>
+				</p>
 			</div>
 		</div>
 	</div>
 	<!--  misc JS code -->
 	<script type="text/javascript" src="../scripts/helpers/helpers.js"></script>
+	<footer>
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>

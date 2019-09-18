@@ -32,7 +32,7 @@
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.planetName }</li>
+						<li>Location: ${house.planet }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
 						<li>House Features: ${house.houseFeatures }</li>
@@ -49,7 +49,7 @@
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.planetName }</li>
+						<li>Location: ${house.planet }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
 						<li>House Features: ${house.houseFeatures }</li>
@@ -66,7 +66,7 @@
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.planetName }</li>
+						<li>Location: ${house.planet }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
 						<li>House Features: ${house.houseFeatures }</li>
@@ -87,7 +87,6 @@
 					<img src=${house.houseImage } style="width: 600px; height: 450px; image-align: center;">
 					</center>
 					<ul>
-						<li>Location: ${house.planetName }</li>
 						<li>Price: ${house.price }</li>
 						<li>Acres: ${house.arces }</li>
 						<li>Property Details: ${house.propertyDetails }</li>
@@ -100,8 +99,6 @@
 			</div>
 		</div>
 	</div>
-	
-	<p style="color: #FF0000">${error}</p>
 	
 	<script>
 		function getCookie(name) {
@@ -117,5 +114,9 @@
 		}
 	</script>
 
+	<footer>
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>

@@ -14,8 +14,13 @@
 <link rel="stylesheet" href="../css/spacestyle.css">
 </head>
 <body>
-<input type="button" class="btn btn-primary hBack"
-		value="<- Return to Create User" onclick="window.location='create-user'" />
+	<input type="button" class="btn btn-primary hBack"
+		value="<- Return to Create User"
+		onclick="window.location='create-user'" />
 	<h2 style="color: #FF0000">Invalid Credit Card Entry!</h2>
+	<footer>
+		<small>&copy; Copyright 2019, SpaceInvestors. All Rights
+			Reserved</small>
+	</footer>
 </body>
 </html>
