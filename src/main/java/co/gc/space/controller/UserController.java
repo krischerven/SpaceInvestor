@@ -98,7 +98,7 @@ public class UserController {
 		return new ModelAndView("login");
 	}
 
-	@RequestMapping(value = "logged-in", method = RequestMethod.POST)
+	@RequestMapping(value = "logged-in")
 	public ModelAndView loggedIn(@RequestParam("email") String email, @RequestParam("password") String password,
 			HttpServletResponse response) {
 		ModelAndView mv = new ModelAndView("logged-in");
