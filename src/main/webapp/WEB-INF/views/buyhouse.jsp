@@ -46,8 +46,8 @@
 			document.getElementById("placeholder").innerText = "You just bought your first house on ${house.planet.planetName}! Please wait to be returned to the home page..."
 			document.getElementById("div1").style.display = "block";
 		    setTimeout(function(){
-		    	window.location='save-user-land?house=${house.toEnum()}&auth=' + getCookie("authenticated");
-		    }, 5000);
+		    	window.location='save-user-land?house=${house.toString()}&auth=' + getCookie("authenticated");
+		    }, 2500);
 		} else {
 			document.getElementById("placeholder").innerText = "Error: Please log in to purchase a planet!"
 		}
