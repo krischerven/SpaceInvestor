@@ -21,7 +21,7 @@
 	<input type="button" class="btn btn-primary" value="Login"
 		onclick="window.location='../login'" />
 	
-	<h1 id="placeholder" style="color: #FF0000">ERROR</h1>
+	<h1 id="placeholder">ERROR: Unknown</h1>
 	
 	<div class="container-fluid d-none d-md-block" id="div1" style="display: none">
 		<div class="row">
@@ -111,7 +111,7 @@
 			document.getElementById("placeholder").innerText = "Your Land In Space";
 			document.getElementById("div1").style.display = "block";
 		} else {
-			document.getElementById("placeholder").innerText = "Error: Please log in to see your puchased land!"
+			document.getElementById("placeholder").innerText = "<span style=\"color: #FF0000\">Error: Please log in to see your puchased land!</span>"
 		}
 	</script>
 
