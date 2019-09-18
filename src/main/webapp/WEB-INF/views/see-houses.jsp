@@ -101,6 +101,8 @@
 		</div>
 	</div>
 	
+	<p style="color: #FF0000">${error}</p>
+	
 	<script>
 		function getCookie(name) {
 			let value = "; " + document.cookie;

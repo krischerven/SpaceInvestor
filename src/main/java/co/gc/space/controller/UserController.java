@@ -218,7 +218,7 @@ public class UserController {
 			mv.addObject("all", houses.toArray());
 			return mv;
 		} else {
-			return new ModelAndView("see-houses", "houses", new ArrayList<House>());
+			return new ModelAndView("see-houses", "houses", new ArrayList<House>()).addObject("error", "ERROR: You must log in to see your purchased land.");
 		}
 	}
 }
